@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#120D1F" />
+    <meta name="color-scheme" content="light" />
+    <meta
+      name="description"
+      content="Offline peptide reference: dose, half-life, timing, cycling, mechanisms, cautions, and supportive supplements."
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Peptides" />
+    <title>Peptide Reference</title>
+    <link rel="manifest" href="manifest.json" />
+    <link rel="icon" type="image/png" href="icons/favicon.png" />
+    <link rel="apple-touch-icon" href="icons/icon-180.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to peptides</a>
+
+    <header class="topbar">
+      <div class="topbar-inner">
+        <div class="brand">
+          <img class="brand-mark" src="icons/icon-192.png" alt="" width="40" height="40" />
+          <div>
+            <p class="eyebrow">KVA · Research desk</p>
+            <h1>Peptide Reference</h1>
+          </div>
+        </div>
+        <div class="topbar-actions">
+          <span id="offline-pill" class="status-pill" hidden>Offline</span>
+          <button type="button" class="ghost-btn" id="compare-toggle" hidden>
+            Compare
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <section class="toolbar" aria-label="Search and filters">
+      <label class="search">
+        <span class="sr-only">Search peptides</span>
+        <input
+          id="search"
+          type="search"
+          placeholder="Search name, mechanism, supplement…"
+          autocomplete="off"
+          enterkeyhint="search"
+        />
+      </label>
+      <div class="filters" id="filters" role="tablist" aria-label="Category"></div>
+    </section>
+
+    <main id="main">
+      <section id="library-view" class="view">
+        <div class="meta-row">
+          <p id="result-count" class="count"></p>
+          <p class="hint">Open a card for the full entry. Select 2–5 to compare a stack.</p>
+        </div>
+        <div id="card-grid" class="card-grid"></div>
+        <p id="empty-state" class="empty" hidden>No peptides match that search.</p>
+      </section>
+
+      <section id="compare-view" class="view" hidden>
+        <div class="compare-head">
+          <button type="button" class="ghost-btn" id="back-to-library">← Library</button>
+          <h2>Stack comparison</h2>
+          <button type="button" class="text-btn" id="clear-compare">Clear</button>
+        </div>
+        <div class="stack-presets" id="stack-presets"></div>
+        <p id="stack-note" class="stack-note" hidden></p>
+        <div id="compare-board" class="compare-board"></div>
+      </section>
+    </main>
+
+    <div id="compare-dock" class="dock" hidden>
+      <div class="dock-inner">
+        <p id="dock-label">0 selected</p>
+        <div class="dock-actions">
+          <button type="button" class="text-btn" id="dock-clear">Clear</button>
+          <button type="button" class="primary-btn" id="dock-compare" disabled>Compare stack</button>
+        </div>
+      </div>
+    </div>
+
+    <footer class="site-foot">
+      <p>Quick Reference v2.0 · Works offline after first load.</p>
+    </footer>
+
+    <script src="app.js" defer></script>
+  </body>
+</html>
