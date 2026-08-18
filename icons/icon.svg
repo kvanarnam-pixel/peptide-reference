@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192" role="img" aria-label="Peptide Reference">
+  <rect width="192" height="192" rx="36" fill="#120D1F"/>
+  <rect x="14" y="14" width="164" height="164" rx="28" fill="none" stroke="#D35400" stroke-width="8"/>
+  <text x="96" y="126" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="96" font-weight="700" fill="#F3EBDA">P</text>
+</svg>

@@ -1,4 +1,4 @@
-const CACHE_NAME = "peptide-reference-v5";
+const CACHE_NAME = "peptide-reference-v6";
 const ASSETS = [
   "./",
   "./index.html",
@@ -6,11 +6,7 @@ const ASSETS = [
   "./app.js",
   "./manifest.json",
   "./data/peptides.json",
-  "./icons/favicon.png",
-  "./icons/icon-180.png",
-  "./icons/icon-192.png",
-  "./icons/icon-512.png",
-  "./icons/icon-maskable-512.png"
+  "./icons/icon.svg"
 ];
 
 self.addEventListener("install", (event) => {
