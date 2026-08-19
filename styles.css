@@ -704,6 +704,51 @@ img {
   color: #f0d8bf;
 }
 
+.synergy-preview {
+  display: grid;
+  gap: 3px;
+  margin: 12px 0;
+  padding: 11px 13px;
+  border: 1px solid rgba(35, 75, 51, 0.22);
+  border-radius: 12px;
+  background: rgba(35, 75, 51, 0.07);
+}
+
+.synergy-preview span {
+  color: #9ed9b3;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.synergy-preview strong {
+  color: #f5ede2;
+  font-family: var(--serif);
+  font-size: 1rem;
+}
+
+.synergy-detail {
+  margin-top: 12px;
+  padding: 14px;
+  border: 1px solid rgba(35, 75, 51, 0.2);
+  border-left: 4px solid var(--field);
+  border-radius: 12px;
+  background: rgba(35, 75, 51, 0.06);
+}
+
+.synergy-detail > strong {
+  color: #9ed9b3;
+  font-family: var(--serif);
+  font-size: 1.05rem;
+}
+
+.regulatory-note {
+  margin: 18px 0 0;
+  color: #a99e93;
+  font-size: 0.78rem;
+}
+
 .site-foot {
   max-width: 1180px;
   margin: 0 auto;
