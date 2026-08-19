@@ -32,10 +32,10 @@
 
   const escapeHtml = (value) =>
     String(value)
-      .replaceAll("&", "&")
-      .replaceAll("<", "<")
-      .replaceAll(">", ">")
-      .replaceAll('"', """);
+      .replace(/&/g, ["&", "amp;"].join(""))
+      .replace(/</g, ["&", "lt;"].join(""))
+      .replace(/>/g, ["&", "gt;"].join(""))
+      .replace(/"/g, ["&", "quot;"].join(""));
 
   const categoryById = (id) => state.data.categories.find((cat) => cat.id === id);
 
@@ -206,7 +206,7 @@
     els.dock.hidden = !show;
     els.compareToggle.hidden = n < 2;
     els.dockLabel.textContent =
-      n === 0 ? "0 selected" : n === 1 ? "1 selected · add 1–4 more" : `${n} selected`;
+      n === 0 ? "0 selected" : n === 1 ? "1 selected \u00b7 add 1–4 more" : `${n} selected`;
     els.dockCompare.disabled = n < 2 || n > 5;
     els.dockCompare.textContent = n < 2 ? "Need 2–5" : `Compare ${n}`;
   };
@@ -324,7 +324,7 @@
   const registerWorker = () => {
     if (!("serviceWorker" in navigator)) return;
     navigator.serviceWorker.register("./service-worker.js").catch(() => {
-      /* file:// or unsupported — app still works online */
+      /* file:// or unsupported - app still works online */
     });
   };
 
@@ -350,6 +350,6 @@
   init().catch((error) => {
     els.grid.innerHTML = "";
     els.empty.hidden = false;
-    els.empty.textContent = `Could not load peptide data. Serve this folder over HTTP (python3 -m http.server) rather than opening the file directly. ${error.message}`;
+    els.empty.textContent = "Could not load peptide data. " + error.message;
   });
 })();
