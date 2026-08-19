@@ -1,8 +1,9 @@
-const CACHE_NAME = "peptide-reference-v9";
+const CACHE_NAME = "peptide-reference-v10";
 const ASSETS = [
   "./index.html",
   "./styles.css",
   "./app.js",
+  "./jump.js",
   "./manifest.json",
   "./data/peptides.json",
   "./icons/icon.svg"
