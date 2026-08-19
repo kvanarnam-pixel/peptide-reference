@@ -11,8 +11,8 @@
   const retatrutideHtml=p=>{const cat=categoryById(p.category),selected=state.selected.has(p.id),open=state.open.has(p.id);return `<article class="card ${selected?"selected":""} ${open?"is-open":""}" data-id="${p.id}" data-category="${p.category}">
     <div class="card-summary" data-toggle="${p.id}" role="button" tabindex="0" aria-expanded="${open}">
       <div class="badge-row"><span class="badge cat">${escapeHtml(cat?.short||"")}</span></div>
-      <h2>Retatrutide</h2><p class="tagline">Triple Metabolic Signal</p><span class="reta-analogy">Analogy · Three-switch metabolic controller</span>
-      <p class="card-desc">One molecule, three receptor signals: appetite regulation, glucose handling, and energy expenditure working together.</p>
+      <h2>Retatrutide</h2><p class="tagline">Triple Metabolic Signal</p><span class="reta-analogy">Analogy · Appetite & Fuel Traffic Controller</span>
+      <p class="card-desc">Think of Retatrutide like a traffic controller working across several metabolic signals at once — helping regulate appetite, food intake, and how the body handles fuel.</p>
       <div class="reta-quick"><div><span>Lower range</span><b>1–4 mg weekly</b></div><div><span>Mid range</span><b>4–9 mg weekly</b></div><div><span>Higher studied</span><b>9–12 mg weekly</b></div></div>
       <div class="dose-guide"><strong>Dose rule</strong><p>Hold at the lowest dose producing the result you want. Higher is not the destination.</p></div>
       <div class="reta-quick"><div><span>Cycling</span><b>No routine cycling</b></div><div><span>Timing</span><b>Once weekly</b></div><div><span>Watch for</span><b>GI tolerance · heart rate</b></div></div>
