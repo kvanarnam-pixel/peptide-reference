@@ -1,6 +1,6 @@
 # Peptide Reference App — Locked Execution Rules
 
-These rules govern implementation work in this repository. Read them before changing app code, card content structure, visuals, or interaction behavior.
+These rules govern implementation work in this repository. Read them before changing app code, card content structure, visuals, or interaction behavior. Voice and dosing-philosophy standards live in research/HOUSE_STANDARDS.md — read it alongside this file.
 
 ## 1. Inspect before editing
 - Read the current relevant files before proposing or making a change.
@@ -40,7 +40,7 @@ After every implementation change:
 ## 7. Locked premium-card fundamentals
 - Quick reference first; deeper biology underneath.
 - Analogy = memorable functional job title + short `Think of it like...` biological explanation.
-- Dose tiers use `Maintenance → Active → Therapeutic` when three meaningful ranges are supported by the evidence.
+- Dose tier labels are chosen per compound and justified in that compound's research doc — see research/HOUSE_STANDARDS.md § Choosing dose-tier labels. Not a fixed word list.
 - Do not manufacture unsupported dose tiers merely to fill boxes.
 - `Minimum effective dose beats maximum tolerated dose.`
 - `Results earn the next step up — not the calendar.`
