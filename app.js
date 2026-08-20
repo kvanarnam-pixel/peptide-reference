@@ -152,7 +152,7 @@
   const motscHtml=p=>{const cat=categoryById(p.category),selected=state.selected.has(p.id),open=state.open.has(p.id);return `<article class="card ${selected?"selected":""} ${open?"is-open":""}" data-id="${p.id}" data-category="${p.category}">
     <div class="card-summary" data-toggle="${p.id}" role="button" tabindex="0" aria-expanded="${open}">
       <div class="badge-row"><span class="badge cat">${escapeHtml(cat?.short||"")}</span></div>
-      <h2>MOTS-c</h2><p class="tagline">Mitochondrial Exercise-Mimetic Signal</p><span class="reta-analogy" ${jumpAttr(p.id,"biology")}>The Power Plant</span>
+      <h2>MOTS-c</h2><p class="tagline">Mitochondrial & Grid Reprogrammer</p><span class="reta-analogy" ${jumpAttr(p.id,"biology")}>Power-Plant Upgrade</span>
       <p class="card-desc" ${jumpAttr(p.id,"biology")}>Think of it as the power plant on a repair crew — it doesn't coordinate the job (that's BPC-157), move crews into place (that's TB-500), or deliver materials (that's GHK-Cu). A 16-amino-acid mitochondrial-encoded peptide that tells the cell to take up glucose without waiting on insulin and to build more mitochondria.</p>
       <div class="reta-quick" ${jumpAttr(p.id,"dose")}><div><span>Typical</span><b>5 mg SC</b></div><div><span>Rhythm</span><b>2–3×/week</b></div><div><span>Cycle</span><b>8–12 wks on / 1–2 off</b></div></div>
       <div class="dose-guide" ${jumpAttr(p.id,"dose")}><strong>Dose rule</strong><p>5 mg is practitioner convention, not a human trial-derived number. Hold at the exposure producing the metabolic/energy response. More frequent is not automatically more AMPK.</p></div>
