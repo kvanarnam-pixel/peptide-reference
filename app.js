@@ -12,7 +12,7 @@
   const retatrutideHtml=p=>{const cat=categoryById(p.category),selected=state.selected.has(p.id),open=state.open.has(p.id);return `<article class="card ${selected?"selected":""} ${open?"is-open":""}" data-id="${p.id}" data-category="${p.category}">
     <div class="card-summary" data-toggle="${p.id}" role="button" tabindex="0" aria-expanded="${open}">
       <div class="badge-row"><span class="badge cat">${escapeHtml(cat?.short||"")}</span></div>
-      <h2>Retatrutide</h2><p class="tagline">Triple Metabolic Signal</p><span class="reta-analogy" ${jumpAttr(p.id,"biology")}>Analogy · Appetite & Fuel Traffic Controller</span>
+      <h2>Retatrutide</h2><p class="tagline">Triple Metabolic Signal</p><span class="reta-analogy" ${jumpAttr(p.id,"biology")}>Appetite & Fuel Traffic Controller</span>
       <p class="card-desc" ${jumpAttr(p.id,"biology")}>Think of Retatrutide like a traffic controller working across several metabolic signals at once — helping regulate appetite, food intake, and how the body handles fuel.</p>
       <div class="reta-quick" ${jumpAttr(p.id,"dose")}><div><span>Maintenance</span><b>0.5–2 mg weekly</b></div><div><span>Active</span><b>2–6 mg weekly</b></div><div><span>High</span><b>Up to 12 mg weekly</b></div></div>
       <div class="dose-guide" ${jumpAttr(p.id,"dose")}><strong>Dose rule</strong><p>Hold at the lowest dose producing the result you want. Higher is not the destination.</p></div>
@@ -37,7 +37,7 @@
   const bpc157Html=p=>{const cat=categoryById(p.category),selected=state.selected.has(p.id),open=state.open.has(p.id);return `<article class="card ${selected?"selected":""} ${open?"is-open":""}" data-id="${p.id}" data-category="${p.category}">
     <div class="card-summary" data-toggle="${p.id}" role="button" tabindex="0" aria-expanded="${open}">
       <div class="badge-row"><span class="badge cat">${escapeHtml(cat?.short||"")}</span></div>
-      <h2>BPC-157</h2><p class="tagline">Repair Coordination Signal</p><span class="reta-analogy" ${jumpAttr(p.id,"biology")}>Analogy · The Foreman</span>
+      <h2>BPC-157</h2><p class="tagline">Repair Coordination Signal</p><span class="reta-analogy" ${jumpAttr(p.id,"biology")}>The Foreman</span>
       <p class="card-desc" ${jumpAttr(p.id,"biology")}>Think of an injury like a damaged job site. BPC-157 steps in as the foreman — helping restore access, coordinate repair activity, organize the rebuild, and move damaged tissue toward recovery.</p>
       <div class="reta-quick" ${jumpAttr(p.id,"dose")}><div><span>Maintenance</span><b>250 mcg daily</b></div><div><span>Active</span><b>250–500 mcg daily</b></div><div><span>Therapeutic</span><b>Not established</b></div></div>
       <div class="dose-guide" ${jumpAttr(p.id,"dose")}><strong>Dose rule</strong><p>Use the lowest exposure that is producing the repair response you are looking for. More is not automatically more repair.</p></div>
@@ -62,7 +62,7 @@
   const tb500Html=p=>{const cat=categoryById(p.category),selected=state.selected.has(p.id),open=state.open.has(p.id);return `<article class="card ${selected?"selected":""} ${open?"is-open":""}" data-id="${p.id}" data-category="${p.category}">
     <div class="card-summary" data-toggle="${p.id}" role="button" tabindex="0" aria-expanded="${open}">
       <div class="badge-row"><span class="badge cat">${escapeHtml(cat?.short||"")}</span></div>
-      <h2>TB-500</h2><p class="tagline">Systemic Repair Mobilization</p><span class="reta-analogy" ${jumpAttr(p.id,"biology")}>Analogy · Scaffolding + Access Crew</span>
+      <h2>TB-500</h2><p class="tagline">Systemic Repair Mobilization</p><span class="reta-analogy" ${jumpAttr(p.id,"biology")}>Scaffolding + Access Crew</span>
       <p class="card-desc" ${jumpAttr(p.id,"biology")}>Think of damaged tissue as a job site crews cannot easily reach. TB-500 reorganizes the cellular scaffolding that lets repair-related cells move, helps open vascular access, and supports a more organized remodeling environment.</p>
       <div class="synergy-preview" ${jumpAttr(p.id,"synergy")}><span>Pairs Well With…</span><strong>BPC-157 · GHK-Cu · MOTS-c</strong></div>
       <div class="reta-quick" ${jumpAttr(p.id,"dose")}><div><span>Common rhythm</span><b>Twice weekly</b></div><div><span>Acute demand</span><b>Tighter spacing may fit</b></div><div><span>Maintenance</span><b>Intermittent</b></div></div>
