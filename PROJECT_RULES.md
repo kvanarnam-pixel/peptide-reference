@@ -18,6 +18,7 @@ These rules govern implementation work in this repository. Read them before chan
 - The shared component standard determines how it looks and behaves.
 - Do not invent new card layouts because a compound has different biology.
 - If a field does not biologically apply, adapt the content inside the existing structure instead of redesigning the card.
+- Compound research docs follow the structure and section rules defined in research/_TEMPLATE.md. See that file's Retrofit queue for docs not yet brought up to standard.
 
 ## 4. Smallest-change rule
 - Identify the minimum code/content change needed to satisfy the request.
