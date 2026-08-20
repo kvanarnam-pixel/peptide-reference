@@ -1,6 +1,6 @@
 # Peptide Reference App — Locked Execution Rules
 
-These rules govern implementation work in this repository. Read them before changing app code, card content structure, visuals, or interaction behavior. Voice and dosing-philosophy standards live in research/HOUSE_STANDARDS.md — read it alongside this file.
+These rules govern implementation work in this repository. Read them before changing app code, card content structure, visuals, or interaction behavior. Voice and dosing-philosophy standards live in research/HOUSE_STANDARDS.md; visual/palette standards live in research/VISUAL_STANDARDS.md — read both alongside this file.
 
 ## 1. Inspect before editing
 - Read the current relevant files before proposing or making a change.
