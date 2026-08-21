@@ -9,6 +9,49 @@
   const factsHtml=p=>`<dl class="facts"><div class="fact"><dt>Dose</dt><dd>${escapeHtml(p.dose)}</dd></div><div class="fact"><dt>Half-life</dt><dd>${escapeHtml(p.halfLife)}</dd></div><div class="fact"><dt>Timing / food</dt><dd>${escapeHtml(p.timing)}</dd></div><div class="fact"><dt>Cycling</dt><dd>${escapeHtml(p.cycling)}</dd></div></dl>`;
   const jumpAttr=(id,section)=>`data-jump="${id}-${section}"`;
 
+  const TECH_DOC_NAMES = { "tb-500": "TB-500_Compound_Research.md" };
+  const techCache = new Map();
+  const inlineMd = t => { let s = escapeHtml(t); s = s.replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>"); s = s.replace(/\*(.+?)\*/g, "<em>$1</em>"); s = s.replace(/`(.+?)`/g, "<code>$1</code>"); return s };
+  const slugify = s => s.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
+  const parseResearchDoc = md => {
+    const lines = md.split("\n"); const sections = []; let current = null, paraBuf = [], listBuf = null; const usedIds = new Set();
+    const uniqueId = base => { let id = base, n = 2; while (usedIds.has(id)) id = `${base}-${n++}`; usedIds.add(id); return id };
+    const flushPara = () => { if (paraBuf.length && current) { const text = paraBuf.join(" ").trim(); if (text) current.html += `<p>${inlineMd(text)}</p>` } paraBuf = [] };
+    const flushList = () => { if (listBuf && listBuf.items.length && current) { const tag = listBuf.type; current.html += `<${tag}>${listBuf.items.map(i => `<li>${inlineMd(i)}</li>`).join("")}</${tag}>` } listBuf = null };
+    for (let raw of lines) {
+      const line = raw.replace(/\r$/, "");
+      const h2 = line.match(/^##\s+(.+)$/), h3 = line.match(/^###\s+(.+)$/), ul = line.match(/^[-*]\s+(.+)$/), ol = line.match(/^\d+\.\s+(.+)$/);
+      if (h2) { flushList(); flushPara(); if (current) sections.push(current); const title = h2[1].trim(); current = { id: uniqueId(slugify(title)), title, html: "", subs: [] }; continue }
+      if (h3) { flushList(); flushPara(); if (current) { const title = h3[1].trim(); const id = uniqueId(slugify(title)); current.subs.push({ id, title }); current.html += `<h4 id="${id}">${inlineMd(title)}</h4>` } continue }
+      if (ul) { flushPara(); if (!listBuf || listBuf.type !== "ul") { flushList(); listBuf = { type: "ul", items: [] } } listBuf.items.push(ul[1].trim()); continue }
+      if (ol) { flushPara(); if (!listBuf || listBuf.type !== "ol") { flushList(); listBuf = { type: "ol", items: [] } } listBuf.items.push(ol[1].trim()); continue }
+      if (line.trim() === "") { flushList(); flushPara(); continue }
+      if (line.trim() === "---") continue;
+      paraBuf.push(line.trim());
+    }
+    flushList(); flushPara(); if (current) sections.push(current);
+    return sections;
+  };
+  const renderTechTier = async (id, container) => {
+    container.innerHTML = `<p class="tech-loading">Loading…</p>`;
+    try {
+      let sections = techCache.get(id);
+      if (!sections) {
+        const res = await fetch(`./research/${TECH_DOC_NAMES[id]}`);
+        if (!res.ok) throw new Error("fetch failed");
+        sections = parseResearchDoc(await res.text());
+        techCache.set(id, sections);
+      }
+      const jumpHtml = sections.map(s => `<button type="button" data-tech-jump="${id}-${s.id}">${escapeHtml(s.title)}</button>${s.subs.map(sub => `<button type="button" class="jump-sub" data-tech-jump="${id}-${sub.id}">${escapeHtml(sub.title)}</button>`).join("")}`).join("");
+      const bodyHtml = sections.map(s => `<div class="tech-section" id="${id}-${s.id}"><h3>${escapeHtml(s.title)}</h3>${s.html}</div>`).join("");
+      container.innerHTML = `<p class="tech-header">Jump to a section</p><div class="jump-list">${jumpHtml}</div>${bodyHtml}`;
+    } catch (err) {
+      container.innerHTML = `<p class="tech-error">Couldn't load the technical layer${navigator.onLine ? "" : " — you're offline and it hasn't been cached yet"}. It'll work offline once you've opened it while connected at least once.</p>`;
+    }
+  };
+  const chipGridHtml = (id, chipRows) => chipRows.map((row, ri) => `<div class="chip-grid">${row.map(c => `<button type="button" class="chip-tile" data-chip="${id}|${ri}|${c.key}" aria-expanded="false"><span>${escapeHtml(c.label)}</span>${c.value ? `<b>${escapeHtml(c.value)}</b>` : ""}</button>`).join("")}</div><div class="chip-detail" id="chipdetail-${id}-${ri}" hidden></div>`).join("");
+
+
   const retatrutideHtml=p=>{const cat=categoryById(p.category),selected=state.selected.has(p.id),open=state.open.has(p.id);return `<article class="card ${selected?"selected":""} ${open?"is-open":""}" data-id="${p.id}" data-category="${p.category}">
     <div class="card-summary" data-toggle="${p.id}" role="button" tabindex="0" aria-expanded="${open}">
       <div class="badge-row"><span class="badge cat">${escapeHtml(cat?.short||"")}</span></div>
@@ -76,39 +119,31 @@
     <div class="card-actions"><button type="button" class="select-btn" data-select="${p.id}" aria-pressed="${selected}">${selected?"Selected":"Add to synergy"}</button><button type="button" class="primary-btn open-btn" data-toggle="${p.id}" aria-expanded="${open}">${open?"Close":"Go deeper"}</button></div>
   </article>`};
 
-  const tb500Html=p=>{const cat=categoryById(p.category),selected=state.selected.has(p.id),open=state.open.has(p.id);return `<article class="card ${selected?"selected":""} ${open?"is-open":""}" data-id="${p.id}" data-category="${p.category}">
-    <div class="card-summary" data-toggle="${p.id}" role="button" tabindex="0" aria-expanded="${open}">
-      <div class="badge-row"><span class="badge cat">${escapeHtml(cat?.short||"")}</span></div>
-      <h2>TB-500</h2><p class="tagline">Systemic Repair Mobilization</p><span class="reta-analogy" ${jumpAttr(p.id,"biology")}>Scaffolding + Access Crew</span>
-      <p class="card-desc" ${jumpAttr(p.id,"biology")}>Think of damaged tissue as a job site crews cannot easily reach. TB-500 reorganizes the cellular scaffolding that lets repair-related cells move, helps open vascular access, and supports a more organized remodeling environment.</p>
-      <div class="synergy-preview" ${jumpAttr(p.id,"synergy")}><span>Pairs Well With…</span><strong>BPC-157 · GHK-Cu · MOTS-c</strong></div>
-      <div class="reta-quick" ${jumpAttr(p.id,"dose")}><div><span>Common rhythm</span><b>Twice weekly</b></div><div><span>Acute demand</span><b>Tighter spacing may fit</b></div><div><span>Maintenance</span><b>Intermittent</b></div></div>
-      <div class="dose-guide" ${jumpAttr(p.id,"dose")}><strong>Dose-pattern rule</strong><p>Brief exposure can start repair processes that outlast the circulating peptide. More frequent is not automatically more repair; acute injury is the main reason to consider tighter spacing.</p></div>
-      <div class="reta-quick"><div ${jumpAttr(p.id,"cycling")}><span>Cycling</span><b>Goal-based courses</b></div><div ${jumpAttr(p.id,"timing")}><span>Timing</span><b>Food-independent</b></div><div ${jumpAttr(p.id,"watch")}><span>Watch for</span><b>Function before feeling</b></div></div>
-      <div class="dose-guide" ${jumpAttr(p.id,"expect")}><strong>What to expect</strong><p><b>First:</b> pain, mobility, or recovery may shift before structure is restored. <b>Building:</b> cell migration, vascular access, and tissue remodeling happen underneath the surface. <b>Over time:</b> durable function and loading tolerance are the better scorecard.</p></div>
-    </div>
-    <div class="card-details" ${open?"":"hidden"}>
-      <aside class="bottom-line"><strong>Bottom line</strong><p>TB-500 is not simply an “injury peptide.” Its central job is cellular mobility and tissue access: reorganizing actin so repair-related cells can move, helping vascular crews reach damaged tissue, and supporting remodeling across more than one local site.</p></aside>
-      <div class="facts"><div class="fact"><dt>Identity</dt><dd>TB-500 is associated with the N-acetylated seven-amino-acid LKKTETQ fragment from thymosin beta-4’s actin-binding region. Findings from full-length thymosin beta-4 are useful context but are labeled separately when they have not been shown with the fragment.</dd></div><div class="fact"><dt>Exposure</dt><dd>Short circulating exposure; downstream migration, vascular, and remodeling processes can persist after the peptide is no longer present in blood.</dd></div><div class="fact" id="${p.id}-dose"><dt>Practical pattern</dt><dd>Twice-weekly administration is a common practical rhythm. Acute injury can justify closer spacing because repair demand is unusually high; routine daily exposure is not established as proportionally better.</dd></div><div class="fact" id="${p.id}-timing"><dt>Food / timing</dt><dd>Food-independent. A consistent intermittent rhythm matters more than time of day.</dd></div></div>
-      <p class="mechanism" id="${p.id}-expect"><span class="mechanism-label">What to expect — early</span>Changes in discomfort, motion, or recovery can occur before repaired tissue has regained strength. Feeling better is permission to assess function, not proof that the structure is ready for unrestricted loading.</p>
-      <p class="mechanism"><span class="mechanism-label">What to expect — building</span>The less visible work is cell movement, endothelial organization, new vascular access, and remodeling of the damaged environment. Chronic injuries may move slowly because poor perfusion, altered matrix, and fibrosis are deeper bottlenecks than inflammation alone.</p>
-      <p class="mechanism"><span class="mechanism-label">What to expect — longer term</span>Use durable function as the scorecard: range of motion, tolerance to progressive load, recurring symptoms, recovery between sessions, and imaging when the injury warrants it.</p>
-      <p class="mechanism" id="${p.id}-biology"><span class="mechanism-label">Biology — actin and crew mobility</span>Actin is the cell’s internal scaffolding. Its G-actin and F-actin dynamics let cells change shape, form a leading edge, and migrate. The LKKTETQ region interacts with this system, giving TB-500 its clearest identity: it helps make repair-related cells mobile enough to reach and work within damaged tissue.</p>
-      <p class="mechanism"><span class="mechanism-label">Vascular access and angiogenesis</span>Fragment-specific and broader thymosin beta-4 models support endothelial migration and angiogenic activity. This is more than “raising VEGF”: repair requires endothelial cells to move, organize, and build access into poorly perfused tissue such as tendon, scarred tissue, or ischemic muscle.</p>
-      <p class="mechanism"><span class="mechanism-label">Fibrosis and scar remodeling</span>LKKTETQ-specific cell work shows reduced activation, proliferation, migration, alpha-SMA, and collagen-I behavior in stimulated human hepatic stellate cells through context-specific Akt inhibition. That supports a direct fragment-level anti-fibrotic signal, while broader scar-remodeling claims still require tissue-by-tissue caution.</p>
-      <p class="mechanism"><span class="mechanism-label">Systemic reach</span>The mechanism is not dependent on injecting beside an injury. Damage signals help define where repair activity is needed, while the mobility and vascular-access biology is systemic—potentially useful when several tissues or an old, poorly accessible injury are involved.</p>
-      <p class="mechanism"><span class="mechanism-label">Muscle and progenitor biology</span>Broader thymosin beta-4 research describes recruitment and migration of muscle progenitor or satellite cells during regeneration. This is biologically consistent with actin-driven mobility, but direct therapeutic outcome evidence for Ac-LKKTETQ in human muscle remains limited.</p>
-      <p class="mechanism"><span class="mechanism-label">Emerging nerve-repair biology</span>Schwann-cell migration, remyelination, and axonal repair all depend on cytoskeletal movement. Thymosin beta-4 models make this a credible emerging application; it should be treated as mechanistically promising rather than a settled TB-500 fragment outcome.</p>
-      <p class="mechanism" id="${p.id}-cycling"><span class="mechanism-label">Why intermittent use makes biological sense</span>The target is productive remodeling, not continuous maximum actin manipulation. Once migration and vascular programs begin, repeating exposure simply to keep peptide in circulation may add diminishing returns. Defined repair courses and intermittent maintenance are practical patterns; no human trial has established one universal cycle.</p>
-      <div class="synergy-detail" id="${p.id}-synergy"><strong>Synergy — why these pairings make sense</strong><ul><li><b>BPC-157 + TB-500:</b> foreman + scaffolding/access crew. BPC-157 helps coordinate local repair conditions while TB-500 improves cellular mobility, vascular access, and systemic reach.</li><li><b>GHK-Cu + TB-500:</b> materials/blueprints + access crew. GHK-Cu supports matrix production and remodeling instructions while TB-500 helps cells enter and reorganize the damaged environment.</li><li><b>MOTS-c + TB-500:</b> power plant + access crew. MOTS-c supports metabolic capacity for energy-intensive repair while TB-500 supports movement and access. This is mechanistic complementarity, not a proven clinical combination.</li></ul></div>
-      <div class="cautions" id="${p.id}-watch"><strong>Common mistakes</strong><ul><li>Treating TB-500 as a local injection that must be placed beside the injury.</li><li>Dosing more often simply to keep peptide in the bloodstream, despite the longer downstream biological response.</li><li>Calling every full-length thymosin beta-4 finding a proven Ac-LKKTETQ effect.</li><li>Assuming early pain relief or mobility means tendon, ligament, muscle, or scar tissue is structurally ready.</li><li>Expecting TB-500 to supply collagen, rehabilitation, sleep, protein, or the progressive loading that repair still requires.</li></ul></div>
-      <div class="supplements"><strong>What to monitor</strong><ul><li>Pain trend, range of motion, and whether improvement holds between doses</li><li>Progressive tolerance to loading and real-world function</li><li>Recovery between training or rehabilitation sessions</li><li>Swelling, warmth, or other signs that the site remains actively irritated</li><li>Imaging or clinician-guided testing when structural injury severity makes it useful</li></ul></div>
-      <p class="mechanism"><span class="mechanism-label">Cancer-mechanism nuance</span>There is no evidence that TB-500 transforms normal cells into cancer. The relevant biological question is whether an existing malignancy could exploit migration or angiogenesis programs that are beneficial in normal repair. Much of the tumor literature concerns full-length thymosin beta-4 expression inside tumors—not exogenous Ac-LKKTETQ—so the mechanism deserves context, not a claim that TB-500 “causes cancer.”</p>
-      <div class="dose-guide"><strong>What They’re Not Telling You</strong><p>TB-500’s real identity is access, movement, and remodeling—not generic “healing.” Old injuries may be especially interesting because they can be trapped behind poor blood supply, dysfunctional matrix, and fibrosis. Scar tissue is functional architecture, not just cosmetic residue. Short exposure can start longer repair programs, so more frequent is not automatically better. And BPC-157 and TB-500 are complementary because they occupy different jobs: foreman versus scaffolding and access crew.</p></div>
-      <p class="regulatory-note">Research context: Most injected TB-500 outcome claims remain preclinical, mechanistic, or practice-derived. Evidence type determines how confidently each claim is stated; it does not erase useful biology.</p>
-    </div>
-    <div class="card-actions"><button type="button" class="select-btn" data-select="${p.id}" aria-pressed="${selected}">${selected?"Selected":"Add to synergy"}</button><button type="button" class="primary-btn open-btn" data-toggle="${p.id}" aria-expanded="${open}">${open?"Close":"Go deeper"}</button></div>
+  const TB500_CHIPS = [
+    [
+      { key: "dose", label: "Dose", value: "5mg / 4–5d", detail: `<p>5 mg under the skin, every 4 to 5 days. That's the rhythm that keeps showing up in the practical experience we trust most for this one — not a lab-tested number, just what actually works when people use it.</p>` },
+      { key: "timing", label: "Timing", value: "Anytime", detail: `<p>Doesn't matter what time of day, and food doesn't change how it works. Morning's common mostly because it's easy to load all your shots for the day at once.</p>` },
+      { key: "cycling", label: "Cycling", value: "As needed", detail: `<p>Use it while you're actually working on something — an injury, a hard training block, whatever the goal is. Once you've gotten the results you were after, there's no reason to keep going just to keep going.</p><p>It's not something your body gets used to or stops responding to, so there's no hard rule about taking breaks. Run it as long as it's doing a job. Stop when it isn't.</p>` },
+      { key: "acute", label: "Acute injury", value: "Run tighter", detail: `<p>Just tore something? You can run it a bit tighter than the usual schedule for the first week or two while the injury is doing its heaviest repair work, then ease back to normal once things settle down.</p><p>You don't need to inject anywhere near the injury itself — this one works through the bloodstream, not by being placed at the site.</p>` }
+    ],
+    [
+      { key: "watch", label: "Watch for", value: "No long-term data", detail: `<p>No long-term human safety studies exist for this yet — worth knowing, not a reason for alarm. It's working with something your body already makes, not introducing something foreign, which is part of why the practical experience with it has been reassuring.</p><p>Still, pay attention to how you're feeling with repeated use, the same way you'd watch for any new pattern.</p>` },
+      { key: "support", label: "Take alongside", value: "6 picks", detail: `<p>Vitamin C, collagen peptides, omega-3s, magnesium glycinate, NAC, and zinc — the raw materials your body actually uses to build with once TB-500 gets repair cells where they need to go.</p>` },
+      { key: "pairs", label: "Pairs well with", value: "3 compounds", detail: `<p><b>BPC-157</b> — the foreman coordinating the repair job on-site.</p><p><b>GHK-Cu</b> — delivers the materials once cells arrive.</p><p><b>MOTS-c</b> — keeps energy available, since healing costs fuel.</p>` },
+      { key: "catch", label: "The catch", value: "", detail: `<p>This isn't really an "injury peptide" — its real job is getting repair cells where they need to go. Injury relief is a downstream result of that, not the mechanism itself.</p><p>Old injuries can actually respond well, because they're often stuck behind poor blood flow and old scar tissue — and this addresses both. And again: you don't need to inject near the injury. It finds its way there on its own.</p>` }
+    ]
+  ];
+  const tb500Html = p => { const cat = categoryById(p.category), selected = state.selected.has(p.id), open = state.open.has(p.id); return `<article class="card ${selected ? "selected" : ""}" data-id="${p.id}" data-category="${p.category}">
+    <div class="badge-row"><span class="badge cat">${escapeHtml(cat?.short || "")}</span><span class="badge analogy">Scaffolding + Access Crew</span></div>
+    <h2>TB-500</h2><p class="tagline">Systemic Repair Mobilization</p>
+    <p class="card-desc">Think of damaged tissue as a job site repair crews can't easily reach. TB-500 doesn't build anything itself — it reorganizes the cellular scaffolding that lets repair cells move, opens vascular access, and helps the whole crew get where it's needed, anywhere in the body.</p>
+    <div class="bottom-line"><strong>Bottom line</strong><p>Mobilizes repair activity across the body — muscle, vessels, and scar tissue alike.</p></div>
+    ${chipGridHtml(p.id, TB500_CHIPS)}
+    <button type="button" class="go-deeper-btn" data-go-deeper="${p.id}" aria-expanded="${open}"><span>${open ? "Close technical layer" : "Go deeper — the technical layer"}</span></button>
+    <div class="tech-tier ${open ? "open" : ""}" id="techtier-${p.id}"><div class="tech-inner" id="techinner-${p.id}"></div></div>
+    <div class="card-actions"><button type="button" class="select-btn" data-select="${p.id}" aria-pressed="${selected}">${selected ? "Selected" : "Add to synergy"}</button></div>
   </article>`};
+
 
   const ghkcuHtml=p=>{const cat=categoryById(p.category),selected=state.selected.has(p.id),open=state.open.has(p.id);return `<article class="card ${selected?"selected":""} ${open?"is-open":""}" data-id="${p.id}" data-category="${p.category}">
     <div class="card-summary" data-toggle="${p.id}" role="button" tabindex="0" aria-expanded="${open}">
@@ -200,7 +235,38 @@
   const jumpTo=(id,target)=>{state.open.add(id);state.view==="compare"?renderCompare():renderLibrary();requestAnimationFrame(()=>document.getElementById(target)?.scrollIntoView({behavior:"smooth",block:"start"}))};
   const toggleSelect=id=>{if(state.selected.has(id))state.selected.delete(id);else{if(state.selected.size>=5){els.dockLabel.textContent="Maximum 5 peptides";els.dock.hidden=false;return}state.selected.add(id)}const s=state.data.stacks.find(x=>x.peptideIds.length===state.selected.size&&x.peptideIds.every(pid=>state.selected.has(pid)));state.activeStack=s?s.id:null;persist();state.view==="compare"?renderCompare():renderLibrary();renderDock()};
   const applyStack=id=>{const s=state.data.stacks.find(x=>x.id===id);if(!s)return;state.selected=new Set(s.peptideIds.slice(0,5));state.activeStack=s.id;persist();setView("compare")};
-  const onClick=e=>{const nav=e.target.closest("[data-nav]");if(nav){const v=nav.dataset.nav;if(v==="stacks")setView("compare");else if(v==="search"){setView("library");setTimeout(()=>els.search.focus(),250)}else setView(v);return}const jump=e.target.closest("[data-jump]");if(jump){e.stopPropagation();const card=jump.closest(".card");if(card)jumpTo(card.dataset.id,jump.dataset.jump);return}const homeJump=e.target.closest("[data-home-jump]");if(homeJump){document.getElementById(homeJump.dataset.homeJump)?.scrollIntoView({behavior:"smooth"});return}const cat=e.target.closest("[data-cat]");if(cat){state.category=cat.dataset.cat;renderFilters();renderLibrary();return}const select=e.target.closest("[data-select]");if(select){toggleSelect(select.dataset.select);return}const toggle=e.target.closest("[data-toggle]");if(toggle){toggleOpen(toggle.dataset.toggle);return}const stack=e.target.closest("[data-stack]");if(stack)applyStack(stack.dataset.stack)};
+  const onClick=e=>{const nav=e.target.closest("[data-nav]");if(nav){const v=nav.dataset.nav;if(v==="stacks")setView("compare");else if(v==="search"){setView("library");setTimeout(()=>els.search.focus(),250)}else setView(v);return}const jump=e.target.closest("[data-jump]");if(jump){e.stopPropagation();const card=jump.closest(".card");if(card)jumpTo(card.dataset.id,jump.dataset.jump);return}const homeJump=e.target.closest("[data-home-jump]");if(homeJump){document.getElementById(homeJump.dataset.homeJump)?.scrollIntoView({behavior:"smooth"});return}const cat=e.target.closest("[data-cat]");if(cat){state.category=cat.dataset.cat;renderFilters();renderLibrary();return}const select=e.target.closest("[data-select]");if(select){toggleSelect(select.dataset.select);return}const toggle=e.target.closest("[data-toggle]");if(toggle){toggleOpen(toggle.dataset.toggle);return}
+    const chip = e.target.closest("[data-chip]");
+    if (chip) {
+      const [cid, ri, key] = chip.dataset.chip.split("|");
+      const slot = document.getElementById(`chipdetail-${cid}-${ri}`);
+      const row = chip.closest(".chip-grid");
+      const wasThisOpen = chip.getAttribute("aria-expanded") === "true";
+      row.querySelectorAll(".chip-tile").forEach(t => t.setAttribute("aria-expanded", "false"));
+      if (wasThisOpen) { slot.hidden = true; slot.innerHTML = ""; }
+      else {
+        const rows = cid === "tb-500" ? TB500_CHIPS : [];
+        const chipData = rows[ri]?.find(c => c.key === key);
+        slot.innerHTML = chipData ? `<div class="chip-detail-inner">${chipData.detail}</div>` : "";
+        slot.hidden = false;
+        chip.setAttribute("aria-expanded", "true");
+      }
+      return;
+    }
+    const goDeeper = e.target.closest("[data-go-deeper]");
+    if (goDeeper) {
+      const id = goDeeper.dataset.goDeeper;
+      const tier = document.getElementById(`techtier-${id}`);
+      const nowOpen = !tier.classList.contains("open");
+      tier.classList.toggle("open", nowOpen);
+      goDeeper.setAttribute("aria-expanded", nowOpen ? "true" : "false");
+      goDeeper.querySelector("span").textContent = nowOpen ? "Close technical layer" : "Go deeper — the technical layer";
+      if (nowOpen) renderTechTier(id, document.getElementById(`techinner-${id}`));
+      return;
+    }
+    const techJump = e.target.closest("[data-tech-jump]");
+    if (techJump) { document.getElementById(techJump.dataset.techJump)?.scrollIntoView({ behavior: "smooth", block: "start" }); return; }
+    const stack=e.target.closest("[data-stack]");if(stack)applyStack(stack.dataset.stack)};
   const setOffline=()=>{els.offline.hidden=navigator.onLine};
   const bind=()=>{document.addEventListener("click",onClick);els.search.addEventListener("input",e=>{state.query=e.target.value;renderLibrary()});els.dockCompare.addEventListener("click",()=>setView("compare"));els.compareToggle.addEventListener("click",()=>setView("compare"));els.back.addEventListener("click",()=>setView("library"));const clear=()=>{state.selected.clear();state.activeStack=null;persist();state.view==="compare"?renderCompare():renderLibrary();renderDock()};els.dockClear.addEventListener("click",clear);els.clearCompare.addEventListener("click",clear);document.addEventListener("keydown",e=>{if(e.key!=="Enter"&&e.key!==" ")return;const t=e.target.closest(".card-summary[data-toggle]");if(!t)return;e.preventDefault();toggleOpen(t.dataset.toggle)});window.addEventListener("online",setOffline);window.addEventListener("offline",setOffline)};
   const registerWorker=()=>{if("serviceWorker" in navigator)navigator.serviceWorker.register("./service-worker.js").catch(()=>{})};

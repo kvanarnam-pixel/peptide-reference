@@ -779,3 +779,28 @@ img {
     overflow: visible;
   }
 }
+
+.chip-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin-top:2px}
+.chip-tile{display:flex;flex-direction:column;align-items:center;gap:2px;min-height:52px;padding:7px 4px;border:1px solid #cbbca0;border-radius:10px;background:transparent;font-family:var(--sans);cursor:pointer;text-align:center}
+.chip-tile span{font-size:.64rem;letter-spacing:.03em;text-transform:uppercase;color:var(--ink-soft)}
+.chip-tile b{font-size:.74rem;font-weight:700;color:var(--ink);line-height:1.2}
+.chip-tile[aria-expanded="true"]{background:var(--cat-soft,rgba(35,75,51,.12));border-color:var(--cat,var(--field))}
+.chip-detail{margin-top:2px}
+.chip-detail-inner{padding:11px 13px;background:var(--parchment-2);border-radius:10px;font-size:.92rem;line-height:1.5;border-left:3px solid var(--cat,var(--field))}
+.chip-detail-inner p{margin:0}
+.chip-detail-inner p+p{margin-top:8px}
+.go-deeper-btn{margin-top:6px;width:100%;min-height:var(--tap);border:0;border-radius:12px;background:var(--ember);color:#fff;font-family:var(--sans);font-weight:700;font-size:.95rem;cursor:pointer}
+.tech-tier{max-height:0;overflow:hidden;transition:max-height .3s ease}
+.tech-tier.open{max-height:6000px}
+.tech-inner{margin-top:10px;padding:14px;background:var(--parchment);border:1px solid var(--line);border-radius:12px}
+.tech-header{font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft);margin:0 0 8px}
+.jump-list{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:14px}
+.jump-list button{border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:999px;padding:5px 11px;font-size:.76rem;font-family:var(--sans);cursor:pointer}
+.jump-list button.jump-sub{background:transparent;font-size:.72rem;color:var(--ink-soft)}
+.tech-section{padding-top:10px;border-top:1px solid var(--line);margin-top:10px;scroll-margin-top:12px}
+.tech-section:first-of-type{border-top:0;margin-top:0}
+.tech-section h3{font-family:var(--serif);font-size:1.02rem;margin:0 0 6px;color:var(--midnight)}
+.tech-section h4{font-family:var(--serif);font-size:.92rem;margin:14px 0 4px;color:var(--cat,var(--field))}
+.tech-section p{font-size:.9rem;line-height:1.55;margin:0 0 8px;color:var(--ink)}
+.tech-section ul,.tech-section ol{margin:0 0 8px;padding-left:20px;font-size:.9rem;line-height:1.55}
+.tech-loading,.tech-error{font-size:.88rem;color:var(--ink-soft)}
