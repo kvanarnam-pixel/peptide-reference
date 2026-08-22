@@ -1,0 +1,20 @@
+name: Patch v31
+
+on:
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 .github/patch-v31.py
+      - run: |
+          git config user.name "Kevin"
+          git config user.email "kevinvanarnam@gmail.com"
+          git add research/BPC-157_Compound_Research.md index.html service-worker.js
+          git commit -m "BPC-157 research: Common mistakes + annotated Source synthesis. Cache-bust v31."
+          git push origin HEAD:main
