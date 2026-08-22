@@ -4,9 +4,11 @@
   const escapeHtml=v=>String(v).replace(/&/g,["&","amp;"].join("")).replace(/</g,["&","lt;"].join("")).replace(/>/g,["&","gt;"].join("")).replace(/"/g,["&","quot;"].join(""));
   const categoryById=id=>state.data.categories.find(c=>c.id===id); const selectedPeptides=()=>state.data.peptides.filter(p=>state.selected.has(p.id));
   const persist=()=>{try{localStorage.setItem("peptide-ref-selected",JSON.stringify([...state.selected]))}catch{}}; const restore=()=>{try{const r=JSON.parse(localStorage.getItem("peptide-ref-selected")||"[]");if(Array.isArray(r))r.slice(0,5).forEach(id=>state.selected.add(id))}catch{}};
-  const matches=p=>{if(state.category!=="all"&&p.category!==state.category)return false;const q=state.query.trim().toLowerCase();if(!q)return true;return [p.name,...(p.aka||[]),p.analogy,p.tagline,p.cardDescription,p.bottomLine,p.dose,p.halfLife,p.timing,p.cycling,p.mechanism,...(p.cautions||[]),...(p.supplements||[]),categoryById(p.category)?.label||""].join(" ").toLowerCase().includes(q)};
+  const doseText = p => typeof p.dose === "string" ? p.dose : [p.dose.summary, p.dose.axisNote, ...(p.dose.rows || []).map(r => `${r.label} ${r.range} ${r.note || ""}`), p.dose.reference, p.dose.divergence, p.dose.routes].filter(Boolean).join(" ");
+  const doseDetailHtml = p => { if (typeof p.dose === "string") return `<p>${escapeHtml(p.dose)}</p>`; const d = p.dose; const rows = (d.rows || []).map(r => `<div class="dose-row"><span class="dose-label">${escapeHtml(r.label)}</span><span class="dose-range">${escapeHtml(r.range)}</span>${r.note ? `<span class="dose-note">${escapeHtml(r.note)}</span>` : ""}</div>`).join(""); return `<div class="dose-tiers">${rows}</div>` + (d.axisNote ? `<p class="dose-axis">${escapeHtml(d.axisNote)}</p>` : "") + (d.routes ? `<p class="dose-axis">${escapeHtml(d.routes)}</p>` : "") + (d.reference ? `<p class="dose-ref"><strong>Trial-derived:</strong> ${escapeHtml(d.reference)}${d.divergence ? ` ${escapeHtml(d.divergence)}` : ""}</p>` : ""); };
+  const matches=p=>{if(state.category!=="all"&&p.category!==state.category)return false;const q=state.query.trim().toLowerCase();if(!q)return true;return [p.name,...(p.aka||[]),p.analogy,p.tagline,p.cardDescription,p.bottomLine,doseText(p),p.halfLife,p.timing,p.cycling,p.mechanism,...(p.cautions||[]),...(p.supplements||[]),categoryById(p.category)?.label||""].join(" ").toLowerCase().includes(q)};
   const listHtml=items=>`<ul>${items.map(i=>`<li>${escapeHtml(i)}</li>`).join("")}</ul>`;
-  const factsHtml=p=>`<dl class="facts"><div class="fact"><dt>Dose</dt><dd>${escapeHtml(p.dose)}</dd></div><div class="fact"><dt>Half-life</dt><dd>${escapeHtml(p.halfLife)}</dd></div><div class="fact"><dt>Timing / food</dt><dd>${escapeHtml(p.timing)}</dd></div><div class="fact"><dt>Cycling</dt><dd>${escapeHtml(p.cycling)}</dd></div></dl>`;
+  const factsHtml=p=>`<dl class="facts"><div class="fact"><dt>Dose</dt><dd>${escapeHtml(typeof p.dose === "string" ? p.dose : p.dose.summary)}</dd></div><div class="fact"><dt>Half-life</dt><dd>${escapeHtml(p.halfLife)}</dd></div><div class="fact"><dt>Timing / food</dt><dd>${escapeHtml(p.timing)}</dd></div><div class="fact"><dt>Cycling</dt><dd>${escapeHtml(p.cycling)}</dd></div></dl>`;
   const jumpAttr=(id,section)=>`data-jump="${id}-${section}"`;
 
   const TECH_DOC_NAMES = {
@@ -58,7 +60,7 @@
   const chipGridHtml = (id, chipRows) => chipRows.map((row, ri) => `<div class="chip-grid">${row.map(c => `<button type="button" class="chip-tile" data-chip="${id}|${ri}|${c.key}" aria-expanded="false"><span>${escapeHtml(c.label)}</span>${c.value ? `<b>${escapeHtml(c.value)}</b>` : ""}</button>`).join("")}</div><div class="chip-detail" id="chipdetail-${id}-${ri}" hidden></div>`).join("");
   const genericChips = p => [
     [
-      { key: "dose", label: "Dose", value: clip(p.dose, 16), detail: `<p>${escapeHtml(p.dose)}</p>` },
+      { key: "dose", label: "Dose", value: clip(doseText(p), 16), detail: doseDetailHtml(p) },
       { key: "timing", label: "Timing", value: clip(p.timing, 16), detail: `<p>${escapeHtml(p.timing)}</p>` },
       { key: "cycling", label: "Cycling", value: clip(p.cycling, 16), detail: `<p>${escapeHtml(p.cycling)}</p>` },
       { key: "half", label: "Half-life", value: clip(p.halfLife, 16), detail: `<p>${escapeHtml(p.halfLife)}</p>` }
@@ -70,7 +72,14 @@
       { key: "catch", label: "The catch", value: "", detail: `<p>${escapeHtml(p.bottomLine||p.mechanism)}</p>` }
     ]
   ];
-  const chipsFor = id => CHIP_REGISTRY[id] || genericChips(state.data.peptides.find(x=>x.id===id)||{});
+  const chipsFor = id => {
+    const p = state.data.peptides.find(x=>x.id===id)||{};
+    const rows = CHIP_REGISTRY[id] || genericChips(p);
+    if (p.dose && typeof p.dose !== "string") {
+      return rows.map(row => row.map(c => c.key === "dose" ? { key: "dose", label: c.label || "Dose", value: clip(p.dose.summary, 16), detail: doseDetailHtml(p) } : c));
+    }
+    return rows;
+  };
 
   const TB500_CHIPS = [
     [
@@ -198,7 +207,7 @@
     <h2>Retatrutide</h2><p class="tagline">Triple Metabolic Signal</p>
     <p class="card-desc">Think of Retatrutide like a traffic controller working across several metabolic signals at once — helping regulate appetite, food intake, and how the body handles fuel.</p>
     <div class="bottom-line"><strong>Bottom line</strong><p>Combines three metabolic signals (GLP-1, GIP, and glucagon) into one weekly shot. The goal is the lowest exposure that keeps producing the result you want, not the highest dose available.</p></div>
-    ${chipGridHtml(p.id, RETATRUTIDE_CHIPS)}
+    ${chipGridHtml(p.id, chipsFor(p.id))}
     ${goDeeperTierHtml(p)}
     <div class="card-actions"><button type="button" class="select-btn" data-select="${p.id}" aria-pressed="${selected}">${selected ? "Selected" : "Add to synergy"}</button></div>
   </article>`};
