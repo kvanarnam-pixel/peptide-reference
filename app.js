@@ -113,9 +113,9 @@
 
   const GHKCU_CHIPS = [
     [
-      { key: "dose", label: "Dose", value: "1–2mg SQ", detail: `<p>Most protocols start around 1 milligram a day for the first couple weeks, step up to 2 milligrams, then settle into 1 to 2 milligrams two or three times a week for maintenance. This whole ladder is practitioner convention — there's no controlled human dosing trial behind injectable GHK-Cu at any amount.</p>` },
+      { key: "dose", label: "Dose", value: "1–2mg SQ", detail: `<p>Most protocols start around 1 milligram a day for the first couple weeks, step up to 2 milligrams, then settle into 1 to 2 milligrams two or three times a week for maintenance. This whole ladder is practitioner convention — there's no controlled human dosing trial behind injectable GHK-Cu at any amount.</p><p>Worth knowing: the researcher most of this convention traces back to actually estimated you'd need something like 100 to 200 milligrams for a real systemic effect — 50 to 100 times what people actually use. That's not a suggestion to go anywhere near that number. It just means the low end isn't validated either — it's a conservative starting point, not a tested minimum.</p>` },
       { key: "timing", label: "Timing", value: "Anytime", detail: `<p>Food doesn't matter for timing. If you're using the topical version instead, twice a day is the common pattern.</p>` },
-      { key: "cycling", label: "Cycling", value: "4–8wks on/2–4 off", detail: `<p>If you're injecting it, cycle 4 to 8 weeks on with 2 to 4 off — that's more about managing copper load than any receptor getting worn out, since no receptor's been identified here. Topical use can run continuously for 8 to 12 weeks since barely any of it gets into your bloodstream through skin.</p>` },
+      { key: "cycling", label: "Cycling", value: "4–12wks on/2–4 off", detail: `<p>If you're injecting it, cycle 4 to 12 weeks on with 2 to 4 off — that's more about managing copper load than any receptor getting worn out, since no receptor's been identified here. Topical use can run continuously for 8 to 12 weeks since barely any of it gets into your bloodstream through skin.</p>` },
       { key: "expect", label: "What to expect", value: "2–6wks", detail: `<p>Early on: mild skin or inflammation changes, maybe better tolerance of training stress. Real, visible skin or connective-tissue improvement usually shows up over 2 to 6 weeks. This is quiet biology, not a stimulant-type effect — don't expect it to do BPC-157 or TB-500's job.</p>` }
     ],
     [
@@ -129,7 +129,7 @@
   const MOTSC_CHIPS = [
     [
       { key: "dose", label: "Dose", value: "5mg SC 2–3x/wk", detail: `<p>5 milligrams under the skin, two to three times a week — that's practitioner convention, not a number that came out of a human dosing trial.</p>` },
-      { key: "timing", label: "Timing", value: "Fasted", detail: `<p>Take it fasted. And since the downstream mitochondrial work outlasts how long the peptide is actually in your blood, dosing more often than this isn't automatically doing more.</p>` },
+      { key: "timing", label: "Timing", value: "Anytime", detail: `<p>Time of day doesn't appear to matter here — that's not something the source material actually addresses either way. What does matter: the downstream mitochondrial work outlasts how long the peptide is actually in your blood, so dosing more often than the working schedule isn't automatically doing more.</p>` },
       { key: "cycling", label: "Cycling", value: "8–12wks on/1–2 off", detail: `<p>Run it 8 to 12 weeks, then take 1 to 2 weeks off — and pair it with SS-31 the whole way through if you can, that combination is doing real work here even though SS-31 isn't its own card yet.</p>` },
       { key: "expect", label: "What to expect", value: "~6.5wks", detail: `<p>Early on you might notice a shift in energy or glucose handling — not a stimulant kick. The real mitochondrial building is slower; one household case saw real improvement show up around 6.5 weeks in. If it fades within a couple weeks after stopping, that's detraining, not the treatment failing.</p>` }
     ],

@@ -100,7 +100,7 @@ The PDF names BPC-157 + TB-500 + GHK-Cu together as a deliberate trio — "utili
 
 ## Long-term copper-load nuance
 
-The honest open question isn't cancer risk — Pickart's own data, if anything, points toward anti-metastatic gene effects in vitro, though that's thin, single-lab, and not a green light either way. The real unresolved question is **chronic systemic copper load from repeated injectable cycling**, which has no long-term human safety data at all. Topical use has decades of safety history because systemic copper absorption through skin is minimal. Injectable use bypasses that safety margin, and nobody has run the multi-year copper/ceruloplasmin monitoring study needed to know how "on 8–12 weeks / off 2–4 weeks, repeated for years" actually behaves in a human liver and kidney. Treat the current cycling convention as sensible caution, not a proven-safe protocol.
+The honest open question isn't cancer risk — Pickart's own data, if anything, points toward anti-metastatic gene effects in vitro, though that's thin, single-lab, and not a green light either way. The real unresolved question is **chronic systemic copper load from repeated injectable cycling**, which has no long-term human safety data at all. Topical use has decades of safety history because systemic copper absorption through skin is minimal. Injectable use bypasses that safety margin, and nobody has run the multi-year copper/ceruloplasmin monitoring study needed to know how "on 4–12 weeks / off 2–4 weeks, repeated for years" actually behaves in a human liver and kidney. Treat the current cycling convention as sensible caution, not a proven-safe protocol.
 
 ## What They're Not Telling You
 
