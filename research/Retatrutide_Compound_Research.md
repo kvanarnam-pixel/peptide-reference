@@ -2,9 +2,19 @@
 
 ## Executive identity
 
-**Retatrutide is a triple hormone switch — three separate metabolic systems (appetite, insulin sensitivity, and hepatic fat-burning) wired to fire on the same weekly dose, not three copies of the same "eat less" signal.**
+**Retatrutide is the site's logistics manager — not swinging a hammer, but controlling what comes onto the site, how efficiently it gets processed, and whether it's burned for today's work or stockpiled for later.**
 
-This compound doesn't belong on the construction-crew roster (BPC-157/TB-500/GHK-Cu/MOTS-c — repair, scaffolding, materials, energy). It's metabolic-signaling, not tissue-repair, and it doesn't need to borrow that family's metaphor. Two of its three receptors (GLP-1, GIP) act upstream of eating — they change how much food goes in. The third (glucagon) acts downstream of eating — it changes what the liver does with fuel regardless of intake. That's the identity worth holding onto: this isn't a stronger appetite suppressant, it's appetite suppression plus a second, mechanistically distinct fat-burning program running in parallel.
+It belongs on the construction roster after all — just not on the repair-trade side of it. A site runs on more than the crew doing hands-on repair: someone has to manage what materials arrive, in what quantity, and whether they get used immediately or sit in the yard. That's this compound's actual job, and it maps cleanly onto its three receptors: GLP-1 is the site gate — it decides how much comes onto the site in the first place. GIP is the receiving dock — it makes sure whatever gets let in is actually processed efficiently once it's there, not just piled up. Glucagon is the dispatch order to the yard — it decides whether stockpiled material (fat) gets released and burned at the liver depot, rather than sitting in storage. None of that is the foreman's job or the power plant's job — it's the layer above both, controlling supply and allocation before any of that work happens.
+
+Construction model:
+
+- **BPC-157:** foreman — coordinates the local repair environment and rebuild.
+- **TB-500:** scaffolding + access crew — reorganizes cellular scaffolding, helps crews move, opens routes into damaged tissue.
+- **GHK-Cu:** materials and blueprints — supports matrix production and remodeling instructions.
+- **MOTS-c:** power plant — supports the cellular energy capacity needed to execute repair.
+- **Retatrutide:** logistics manager — controls what comes onto the site, how it's processed, and whether it's burned or stockpiled.
+
+(NAD+ and KPV are strong future additions to this same roster once their docs get built — NAD+ reads naturally as the fuel itself sitting in the yard next to the logistics manager, distinct from MOTS-c's power *plant*; KPV reads naturally as the site's fire marshal, calming false alarms without shutting the job down. Not committing either placement yet — flagging it so the roster stays consistent when those docs get written.)
 
 ## Identity and evidence boundary
 
