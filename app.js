@@ -13,7 +13,8 @@
     "tb-500": "TB-500_Compound_Research.md",
     "bpc-157": "BPC-157_Compound_Research.md",
     "ghk-cu": "GHK-Cu_Compound_Research.md",
-    "mots-c": "MOTS-c_Compound_Research.md"
+    "mots-c": "MOTS-c_Compound_Research.md",
+    "retatrutide": "Retatrutide_Compound_Research.md"
   };
   const techCache = new Map();
   const inlineMd = t => { let s = escapeHtml(t); s = s.replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>"); s = s.replace(/\*(.+?)\*/g, "<em>$1</em>"); s = s.replace(/`(.+?)`/g, "<code>$1</code>"); return s };
