@@ -20,7 +20,7 @@ Companion to PROJECT_RULES.md. That doc governs how cards behave (structure, ver
 
 Trial-derived: Phase 2/3 titrated across 1/4/8/12 mg weekly dose arms; larger average effect and more GI/dysesthesia burden toward the top of that range.
 
-Practical calibration (what's on the card): Maintenance 0.5–2 mg · Active 2–6 mg · High up to 12 mg.
+Practical calibration (what's on the card): maintenance around 0.5–2 mg; active dosing 2–6 mg; 12 mg stated as a ceiling to escalate toward only when results call for it, not as a target tier. Tolerance axis — the top of the range is a limit, and the card's wording carries that.
 
 Why they diverge: Trial arms are built to find the population's average ceiling, not an individual's minimum effective dose. Meaningful appetite/food-noise change shows up well under the trial's headline range in practice, so exposure and side-effect burden scale with what's actually needed rather than with a protocol designed to test the top end.
 
