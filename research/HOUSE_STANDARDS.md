@@ -32,9 +32,24 @@ Don't inherit a label because it's "the convention" — choose it because it's t
 
 Where this gets decided: in the compound's research doc, not at card-writing time. Each tier gets its range plus a one-sentence reason for its label — same pattern as trial-derived-vs-practical-calibrated dosing above. If you can't write that sentence, the label hasn't actually been chosen. It's been copied.
 
-Labels currently in use — a starting menu, not a required list: Maintenance, Active, High, Loading, Therapeutic (legitimate when a tier genuinely crosses into disease-treatment-level dosing, not just "the highest number"), Not established. Some compounds need a different structure entirely — TB-500 uses Common rhythm / Acute demand / Maintenance because its dosing story is about frequency, not an escalating amount. Don't force a compound into a shape it doesn't have.
+Labels currently in use — a starting menu, not a required list: Maintenance, Active, Loading, Therapeutic (legitimate when a tier genuinely crosses into disease-treatment-level dosing, not just "the highest number"), Not established. Avoid bare "High" as a top-row label: it names an amount rather than a situation, and on a tolerance-limited compound it reads as a destination when it should read as a stopping line. Some compounds need a different structure entirely — TB-500 uses Common rhythm / Acute demand / Maintenance because its dosing story is about frequency, not an escalating amount. Don't force a compound into a shape it doesn't have.
 
 Verification, at commit time: this is mechanical, not a fresh judgment call — the judgment already happened when the research doc was written. Just check: does each tile label agree with what the mechanism/dose-rule prose next to it actually says? If a label and its own card's prose contradict each other, that's the drift that let "Therapeutic" survive as long as it did on Retatrutide.
+
+Name the axis. Tiers don't all vary along the same dimension, and the label only works if it matches the one actually in play:
+
+- Burden — more tissue needs the work done. Maintenance / Active / Heavy repair.
+- Tolerance — the top of the range is a limit, not a target. The top row is written so it reads as a stopping line, and the dose-limiting signal is named. Retatrutide sits here.
+- Target shift — the dose changes what the compound does, not how much. Rows named by effect, not amount. GHK-Cu sits here.
+- Rhythm — the story is frequency, not escalating amount. TB-500 sits here.
+- Time-phase — front-loaded then sustained. This is what "Loading" means.
+- Compartment — route determines the number. A different route for a different target is not a weaker version of the same thing.
+
+Same vocabulary as the eight-reason administration rule used in the synergy protocols, applied one layer down — deliberately.
+
+Three rows are a ceiling, not a quota. Where a compound's usable range is genuinely narrow, two rows is the honest answer and the card says so. Inventing a third tier to fill a table is false precision.
+
+Cards do not indicate which row any individual is currently running. Cards are reference, not state.
 
 ## Where compound-specific research lives
 
@@ -57,38 +72,3 @@ A protocol may state route, timing, or frequency when those carry
 mechanism (a peptide timed to a meal, a compound given fasted, a
 bedtime dose aligned to a repair window). Those are rationale, not
 dosing.
-
-## Dose Tiers on Compound Cards
-
-Each compound card shows up to three practical rows, plus the
-trial-derived reference line beneath with the reason for divergence.
-
-Three rows are a ceiling, not a quota. Where a compound's usable
-range is genuinely narrow, two rows is the honest answer and the
-card says so. Inventing a third tier to fill a table is false
-precision.
-
-Never label rows low / medium / high. That implies a ladder pointing
-upward, which is wrong for most compounds here and unsafe for some.
-Label each row for the situation it describes. The card must also
-state which axis is changing between rows — it is not the same axis
-for every compound:
-
-- Burden — more tissue needs the work done. Rows read as
-  maintenance / active repair / heavy repair.
-- Tolerance — the top of the range is a limit, not a target. Rows
-  read as starting point / typical / ceiling, and the ceiling row is
-  written so it reads as a stopping line. The dose-limiting signal is
-  named explicitly.
-- Target shift — the dose changes what the compound does, not how
-  much it does. Rows are named by effect, not by amount.
-- Compartment — route determines the number. A different route for a
-  different target is not a weaker or stronger version of the same
-  thing.
-
-These are the same reasons used in the eight-reason administration
-rule for protocols, applied one layer down. Same vocabulary in both
-places, deliberately.
-
-Cards do not indicate which row any individual is currently running.
-Cards are reference, not state.
