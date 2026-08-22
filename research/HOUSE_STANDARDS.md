@@ -39,3 +39,56 @@ Verification, at commit time: this is mechanical, not a fresh judgment call — 
 ## Where compound-specific research lives
 
 research/<Compound>_Compound_Research.md — one file per compound, TB-500's file is the template. Card copy is a distillation of that file, not a replacement for it.
+---
+
+## Dose Placement — Which Layer Owns a Number
+
+Synergy protocols carry no doses. A protocol states the mechanism
+thesis, why each compound is in the combination, and why it is given
+the way it is given. Every number lives on the compound card.
+
+This is structural, not stylistic. It gives one source of truth per
+compound, so a correction lands once instead of in every protocol
+that mentions the compound. It also means running two protocols at
+the same time cannot silently double a shared ingredient — the stack
+resolves at the compound layer, where the total is visible.
+
+A protocol may state route, timing, or frequency when those carry
+mechanism (a peptide timed to a meal, a compound given fasted, a
+bedtime dose aligned to a repair window). Those are rationale, not
+dosing.
+
+## Dose Tiers on Compound Cards
+
+Each compound card shows up to three practical rows, plus the
+trial-derived reference line beneath with the reason for divergence.
+
+Three rows are a ceiling, not a quota. Where a compound's usable
+range is genuinely narrow, two rows is the honest answer and the
+card says so. Inventing a third tier to fill a table is false
+precision.
+
+Never label rows low / medium / high. That implies a ladder pointing
+upward, which is wrong for most compounds here and unsafe for some.
+Label each row for the situation it describes. The card must also
+state which axis is changing between rows — it is not the same axis
+for every compound:
+
+- Burden — more tissue needs the work done. Rows read as
+  maintenance / active repair / heavy repair.
+- Tolerance — the top of the range is a limit, not a target. Rows
+  read as starting point / typical / ceiling, and the ceiling row is
+  written so it reads as a stopping line. The dose-limiting signal is
+  named explicitly.
+- Target shift — the dose changes what the compound does, not how
+  much it does. Rows are named by effect, not by amount.
+- Compartment — route determines the number. A different route for a
+  different target is not a weaker or stronger version of the same
+  thing.
+
+These are the same reasons used in the eight-reason administration
+rule for protocols, applied one layer down. Same vocabulary in both
+places, deliberately.
+
+Cards do not indicate which row any individual is currently running.
+Cards are reference, not state.
