@@ -9,7 +9,7 @@
 
 **2. Executive identity**
 One bolded sentence stating what the compound fundamentally IS/does, in the construction-crew metaphor. Followed by the **Construction model** list — a living registry, not a one-off: every compound already built keeps its role tag here, and the new compound's role gets added. Update this list in every doc whenever a new compound joins the roster, so the cast always reads consistently across files.
-Current roster: BPC-157 = foreman · TB-500 = scaffolding/access crew · GHK-Cu = materials/blueprints · MOTS-c = power plant.
+Current roster: BPC-157 = foreman · TB-500 = scaffolding/access crew · GHK-Cu = materials/blueprints · MOTS-c = power plant · Retatrutide = logistics manager.
 
 **3. Identity and evidence boundary**
 Name this compound's specific evidence complication up front — whatever it actually is (fragment vs. parent molecule for TB-500; trial-scaled vs. practical dose and single-lab-dominance for BPC-157; something else for the next one). Lay out the evidence layers that matter for *this* compound — don't force TB-500's exact 4 layers if they don't fit. Close with a governing maxim, e.g. "Mechanism earns inclusion; evidence type determines wording."
