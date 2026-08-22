@@ -75,7 +75,7 @@
   const chipsFor = id => {
     const p = state.data.peptides.find(x=>x.id===id)||{};
     const rows = CHIP_REGISTRY[id] || genericChips(p);
-    if (p.dose && typeof p.dose !== "string") {
+    if (p.dose && typeof p.dose !== "string" && !CHIP_REGISTRY[id]) {
       return rows.map(row => row.map(c => c.key === "dose" ? { key: "dose", label: c.label || "Dose", value: clip(p.dose.summary, 16), detail: doseDetailHtml(p) } : c));
     }
     return rows;
