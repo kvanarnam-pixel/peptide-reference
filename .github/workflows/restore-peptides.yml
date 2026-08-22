@@ -1,0 +1,45 @@
+name: Restore peptides.json
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  restore:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Restore full peptides.json and apply Retatrutide dose object
+        run: |
+          set -euo pipefail
+          git checkout 6f2806cc5f84610a22d565c9b1b2f7f89180f906 -- data/peptides.json
+          python3 <<'PY'
+          import json
+          from pathlib import Path
+          peptides_path = Path("data/peptides.json")
+          dose = json.loads(Path(".github/reta-dose.json").read_text())
+          data = json.loads(peptides_path.read_text())
+          found = False
+          for pep in data["peptides"]:
+              if pep["id"] == "retatrutide":
+                  pep["dose"] = dose
+                  found = True
+                  break
+          if not found:
+              raise SystemExit("retatrutide not found")
+          if len(data["peptides"]) != 26:
+              raise SystemExit(f"expected 26 peptides, got {len(data['peptides'])}")
+          peptides_path.write_text(json.dumps(data, ensure_ascii=False, separators=(",", ":")) + "\n")
+          print("peptides", len(data["peptides"]), "stacks", len(data.get("stacks", [])))
+          print("dose rows", [r["label"] for r in dose["rows"]])
+          PY
+          git config user.name "Kevin"
+          git config user.email "kevinvanarnam@gmail.com"
+          git add data/peptides.json
+          git diff --cached --stat
+          git commit -m "Restore full peptides.json with Retatrutide structured dose"
+          git push origin HEAD:main
