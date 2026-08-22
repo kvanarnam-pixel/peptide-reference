@@ -36,7 +36,7 @@
     card.querySelector(".card-desc")?.setAttribute("data-jump", `${id}-biology`);
     card.querySelector(".tagline")?.setAttribute("data-jump", `${id}-biology`);
 
-    if (card.querySelector(".quick-jump") || card.querySelector(".reta-quick")) return;
+    if (card.querySelector(".quick-jump") || card.querySelector(".reta-quick") || card.querySelector(".chip-grid")) return;
 
     const dose = factText(card, "dose") || (card.querySelector(".dose-line")?.textContent || "").replace(/^\s*dose\s*/i, "");
     const timing = factText(card, "timing") || factText(card, "food");
