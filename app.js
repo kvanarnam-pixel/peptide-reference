@@ -9,7 +9,12 @@
   const factsHtml=p=>`<dl class="facts"><div class="fact"><dt>Dose</dt><dd>${escapeHtml(p.dose)}</dd></div><div class="fact"><dt>Half-life</dt><dd>${escapeHtml(p.halfLife)}</dd></div><div class="fact"><dt>Timing / food</dt><dd>${escapeHtml(p.timing)}</dd></div><div class="fact"><dt>Cycling</dt><dd>${escapeHtml(p.cycling)}</dd></div></dl>`;
   const jumpAttr=(id,section)=>`data-jump="${id}-${section}"`;
 
-  const TECH_DOC_NAMES = { "tb-500": "TB-500_Compound_Research.md" };
+  const TECH_DOC_NAMES = {
+    "tb-500": "TB-500_Compound_Research.md",
+    "bpc-157": "BPC-157_Compound_Research.md",
+    "ghk-cu": "GHK-Cu_Compound_Research.md",
+    "mots-c": "MOTS-c_Compound_Research.md"
+  };
   const techCache = new Map();
   const inlineMd = t => { let s = escapeHtml(t); s = s.replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>"); s = s.replace(/\*(.+?)\*/g, "<em>$1</em>"); s = s.replace(/`(.+?)`/g, "<code>$1</code>"); return s };
   const slugify = s => s.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
@@ -34,6 +39,7 @@
   };
   const renderTechTier = async (id, container) => {
     container.innerHTML = `<p class="tech-loading">Loading…</p>`;
+    if (!TECH_DOC_NAMES[id]) { container.innerHTML = `<p class="tech-error">The technical writeup for this one isn't published yet.</p>`; return; }
     try {
       let sections = techCache.get(id);
       if (!sections) {
@@ -42,82 +48,28 @@
         sections = parseResearchDoc(await res.text());
         techCache.set(id, sections);
       }
-      const jumpHtml = sections.map(s => `<button type="button" data-tech-jump="${id}-${s.id}">${escapeHtml(s.title)}</button>${s.subs.map(sub => `<button type="button" class="jump-sub" data-tech-jump="${id}-${sub.id}">${escapeHtml(sub.title)}</button>`).join("")}`).join("");
-      const bodyHtml = sections.map(s => `<div class="tech-section" id="${id}-${s.id}"><h3>${escapeHtml(s.title)}</h3>${s.html}</div>`).join("");
-      container.innerHTML = `<p class="tech-header">Jump to a section</p><div class="jump-list">${jumpHtml}</div>${bodyHtml}`;
+      container.innerHTML = sections.map((s, i) => `<div class="tech-accordion-item"><button type="button" class="tech-accordion-header" data-tech-toggle="${id}|${i}" aria-expanded="false"><span>${escapeHtml(s.title)}</span></button><div class="tech-accordion-body" id="techsec-${id}-${i}" hidden>${s.html}</div></div>`).join("");
     } catch (err) {
-      container.innerHTML = `<p class="tech-error">Couldn't load the technical layer${navigator.onLine ? "" : " — you're offline and it hasn't been cached yet"}. It'll work offline once you've opened it while connected at least once.</p>`;
+      container.innerHTML = `<p class="tech-error">Couldn't load the technical layer${typeof navigator !== "undefined" && !navigator.onLine ? " — you're offline and it hasn't been cached yet" : ""}. It'll work offline once you've opened it while connected at least once.</p>`;
     }
   };
+  const clip=(s,n=18)=>{const t=String(s||"").replace(/\s+/g," ").trim();if(t.length<=n)return t;const cut=t.slice(0,n);const sp=cut.lastIndexOf(" ");return (sp>8?cut.slice(0,sp):cut).replace(/[.,;:]+$/,"")+"…"};
   const chipGridHtml = (id, chipRows) => chipRows.map((row, ri) => `<div class="chip-grid">${row.map(c => `<button type="button" class="chip-tile" data-chip="${id}|${ri}|${c.key}" aria-expanded="false"><span>${escapeHtml(c.label)}</span>${c.value ? `<b>${escapeHtml(c.value)}</b>` : ""}</button>`).join("")}</div><div class="chip-detail" id="chipdetail-${id}-${ri}" hidden></div>`).join("");
-
-
-  const retatrutideHtml=p=>{const cat=categoryById(p.category),selected=state.selected.has(p.id),open=state.open.has(p.id);return `<article class="card ${selected?"selected":""} ${open?"is-open":""}" data-id="${p.id}" data-category="${p.category}">
-    <div class="card-summary" data-toggle="${p.id}" role="button" tabindex="0" aria-expanded="${open}">
-      <div class="badge-row"><span class="badge cat">${escapeHtml(cat?.short||"")}</span></div>
-      <h2>Retatrutide</h2><p class="tagline">Triple Metabolic Signal</p><span class="reta-analogy" ${jumpAttr(p.id,"biology")}>Appetite & Fuel Traffic Controller</span>
-      <p class="card-desc" ${jumpAttr(p.id,"biology")}>Think of Retatrutide like a traffic controller working across several metabolic signals at once — helping regulate appetite, food intake, and how the body handles fuel.</p>
-      <div class="reta-quick" ${jumpAttr(p.id,"dose")}><div><span>Maintenance</span><b>0.5–2 mg weekly</b></div><div><span>Active</span><b>2–6 mg weekly</b></div><div><span>High</span><b>Up to 12 mg weekly</b></div></div>
-      <div class="dose-guide" ${jumpAttr(p.id,"dose")}><strong>Dose rule</strong><p>Hold at the lowest dose producing the result you want. Higher is not the destination.</p></div>
-      <div class="reta-quick"><div ${jumpAttr(p.id,"cycling")}><span>Cycling</span><b>No routine cycling</b></div><div ${jumpAttr(p.id,"timing")}><span>Timing</span><b>Once weekly</b></div><div ${jumpAttr(p.id,"watch")}><span>Watch for</span><b>GI tolerance · heart rate</b></div></div>
-      <div class="dose-guide" ${jumpAttr(p.id,"expect")}><strong>What to expect</strong><p><b>First:</b> less food noise, earlier fullness, smaller meals — sometimes with GI adjustment. <b>Building:</b> glucose handling and metabolic control can improve before you can feel them. <b>Over time:</b> weight, waist and metabolic markers become the better scorecard. Strong nausea is not proof of a better response.</p></div>
-    </div>
-    <div class="card-details" ${open?"":"hidden"}>
-      <aside class="bottom-line"><strong>Bottom line</strong><p>Retatrutide combines GLP-1, GIP and glucagon receptor signaling. The goal is the lowest exposure that keeps producing the desired metabolic response.</p></aside>
-      <div class="facts"><div class="fact"><dt>Use pattern</dt><dd>Continuous weekly exposure in human trials; no receptor-reset cycle is established.</dd></div><div class="fact"><dt>Half-life</dt><dd>About 6 days</dd></div><div class="fact" id="${p.id}-dose"><dt>Escalation</dt><dd>Only when the current exposure is no longer accomplishing the goal or a stronger effect is actually needed.</dd></div><div class="fact" id="${p.id}-timing"><dt>Food / timing</dt><dd>Food-independent. Consistent weekly timing matters more than time of day.</dd></div></div>
-      <p class="mechanism" id="${p.id}-expect"><span class="mechanism-label">What to expect — early</span>Changes in appetite, food noise, fullness and meal size are often the most noticeable signals. Gastrointestinal adjustment can occur, especially during dose escalation. Feeling more nausea does not mean the metabolic response is better.</p>
-      <p class="mechanism"><span class="mechanism-label">What to expect — building</span>Some of the important effects are not sensations. Glucose regulation, insulin sensitivity, hepatic metabolism and fat handling can change underneath the surface, so the absence of a dramatic weekly feeling is not the same thing as no biological response.</p>
-      <p class="mechanism"><span class="mechanism-label">What to expect — longer term</span>Body-weight trend, waist circumference, body composition and metabolically relevant markers such as glucose and A1C become more useful than judging the compound by how strongly an injection feels. Strength and recovery also matter when weight is falling quickly because lean-mass loss is a real tradeoff of aggressive intake reduction.</p>
-      <p class="mechanism" id="${p.id}-biology"><span class="mechanism-label">Biology</span>Retatrutide activates three complementary receptors. GLP-1 signaling reduces appetite and supports glucose-dependent insulin secretion. GIP adds insulinotropic and adipose-tissue signaling. Glucagon-receptor activity adds energy-expenditure and hepatic metabolic effects. The practical value is the combined signal, not simply pushing one pathway harder.</p>
-      <p class="mechanism"><span class="mechanism-label">Why the dose ladder is not a goal</span>Human trials show meaningful effects at multiple dose levels, with larger average effects at higher exposures but also more dose-related gastrointestinal effects. A higher available dose does not mean a person benefiting at a lower exposure needs to chase it.</p>
-      <p class="mechanism" id="${p.id}-cycling"><span class="mechanism-label">Why no routine cycling</span>Retatrutide has been studied as continuous once-weekly therapy rather than as an on/off receptor-reset protocol. There is no established biological cycling requirement. Stopping is a separate decision from cycling and can allow the metabolic pressures being controlled to return.</p>
-      <div class="cautions" id="${p.id}-watch"><strong>Watch for</strong><ul><li>Gastrointestinal effects are dose-related; faster escalation can buy side effects without improving the return.</li><li>Heart rate can tick up on this one, more noticeably at higher doses.</li><li>Some people notice tingling or an altered skin sensation at higher doses — usually mild, and rarely a reason to stop.</li><li>Gallbladder issues (gallstones, occasionally inflammation) show up at low rates with this class of compound generally — more likely tied to how fast someone is losing weight than to anything specific to this molecule. New or worsening upper-right abdominal pain is worth paying attention to.</li><li>A modest uptick in urinary tract infections has also been noted.</li><li>Low intake can become counterproductive if protein, hydration, micronutrients, and resistance training are neglected.</li></ul></div>
-      <div class="supplements"><strong>What to monitor</strong><ul><li>Appetite / food noise and satiety</li><li>Body-weight and waist trend — not a single weigh-in</li><li>Glucose and A1C when metabolically relevant</li><li>GI tolerance and resting heart rate</li><li>Strength, protein intake, and body composition when weight is falling quickly</li></ul></div>
-    </div>
-    <div class="card-actions"><button type="button" class="select-btn" data-select="${p.id}" aria-pressed="${selected}">${selected?"Selected":"Add to synergy"}</button><button type="button" class="primary-btn open-btn" data-toggle="${p.id}" aria-expanded="${open}">${open?"Close":"Go deeper"}</button></div>
-  </article>`};
-
-  const bpc157Html=p=>{const cat=categoryById(p.category),selected=state.selected.has(p.id),open=state.open.has(p.id);return `<article class="card ${selected?"selected":""} ${open?"is-open":""}" data-id="${p.id}" data-category="${p.category}">
-    <div class="card-summary" data-toggle="${p.id}" role="button" tabindex="0" aria-expanded="${open}">
-      <div class="badge-row"><span class="badge cat">${escapeHtml(cat?.short||"")}</span></div>
-      <h2>BPC-157</h2><p class="tagline">Repair Coordination Signal</p><span class="reta-analogy" ${jumpAttr(p.id,"biology")}>The Foreman</span>
-      <p class="card-desc" ${jumpAttr(p.id,"biology")}>Think of it as the construction foreman for injured tissue — it doesn't build anything itself. It gets your body's repair crews to the site faster and keeps them working in an organized way instead of leaving a mess.</p>
-      <div class="reta-quick" ${jumpAttr(p.id,"dose")}><div><span>Maintenance</span><b>250 mcg daily</b></div><div><span>Active</span><b>250–500 mcg daily</b></div><div><span>High</span><b>Up to 1 mg daily</b></div></div>
-      <div class="dose-guide" ${jumpAttr(p.id,"dose")}><strong>Dose rule</strong><p>Use the lowest exposure that is producing the repair response. Diminishing returns above 1 mg — more is not automatically more repair.</p></div>
-      <div class="reta-quick"><div ${jumpAttr(p.id,"cycling")}><span>Cycling</span><b>No established cycling requirement</b></div><div ${jumpAttr(p.id,"timing")}><span>Timing</span><b>Once or twice daily</b></div><div ${jumpAttr(p.id,"watch")}><span>Watch for</span><b>Angiogenesis · cancer history</b></div></div>
-      <div class="dose-guide" ${jumpAttr(p.id,"expect")}><strong>What to expect</strong><p><b>First:</b> joints, tendons, and gut are the usual reasons people reach for this — sprains, tears, stomach issues, general recovery. <b>Building:</b> repair signaling, new blood-vessel access, and organized matrix work happen underneath the surface. Nerve, spinal-cord, and heart-protection findings exist too, mostly from animal studies, not people yet. <b>Over time:</b> function, loading tolerance, and whether gut symptoms hold are the better scorecard than whether an injection feels noticeable.</p></div>
-    </div>
-    <div class="card-details" ${open?"":"hidden"}>
-      <aside class="bottom-line"><strong>Bottom line</strong><p>BPC-157 helps your body heal itself by coordinating repair, not by being the building material. Use the lowest exposure that is actually doing that job.</p></aside>
-      <aside class="bottom-line" id="${p.id}-cancer"><strong>Cancer</strong><p>Genuinely unresolved. The same blood-vessel-growth mechanism behind every benefit above is exactly what oncology drugs block in existing tumors. No study either direction. Not a casual reach with active or recent cancer history.</p></aside>
-      <div class="facts dose-table" id="${p.id}-dose">
-        <div class="fact"><dt>Trial-derived</dt><dd>~100–110 mcg/day, scaled from 10 µg/kg rodent dose.</dd></div>
-        <div class="fact"><dt>Practical</dt><dd>250 mcg–1 mg/day, split AM/PM ~12h apart. Up to 2 mg short-term for severe acute injury; diminishing returns above 1 mg.</dd></div>
-        <div class="fact"><dt>Why they differ</dt><dd>Practical dose is empirical human convention, 2–5× the scaled number — use the practical range for real protocols.</dd></div>
-      </div>
-      <div class="facts"><div class="fact"><dt>Half-life / PK</dt><dd>~15-min plasma half-life, but effects last 24h+ — triggers a cascade, doesn't need to stay in blood. Gut-stable; systemic oral absorption uncharacterized.</dd></div><div class="fact" id="${p.id}-timing"><dt>Food / timing</dt><dd>Injectable: once daily or split AM/PM ~12h apart. Oral is a gut-local argument, not a stealth systemic route.</dd></div><div class="fact" id="${p.id}-cycling"><dt>Cycling</dt><dd>No evidence of tolerance/downregulation with continuous use — no receptor has been identified to test that. 8–12 week runs track structural repair better than the shorter convention.</dd></div><div class="fact"><dt>Use pattern</dt><dd>Usually 250–500 mcg/day as a small shot under the skin. For gut-specific issues, some people take it by mouth instead.</dd></div></div>
-      <p class="mechanism" id="${p.id}-biology"><span class="mechanism-label">Biology</span>Turns on blood-vessel growth two ways (VEGFR2 + eNOS release) and flips the master switch (EGR-1) that pulls repair cells into the area. Resolves inflammation rather than blocking it outright. No dedicated receptor has been identified.</p>
-      <p class="mechanism"><span class="mechanism-label">Cardiac</span>In infarct models: eliminates visible infarct damage, normalizes heart-attack blood markers, preserves pump function — same blood-flow mechanism as everywhere else.</p>
-      <p class="mechanism"><span class="mechanism-label">Stroke</span>Full functional recovery (motor, memory, balance) in ischemia models via the same blood-flow pathway.</p>
-      <p class="mechanism"><span class="mechanism-label">Spinal cord</span>Reduces the injury cascade after cord compression; spasticity resolves in ~2 weeks. Nerve cuts heal faster, thicker, less painful.</p>
-      <p class="mechanism"><span class="mechanism-label">Tendon / ligament</span>Strongest, most independently-replicated evidence here — organized collagen along force lines, healed tissue stronger than original.</p>
-      <p class="mechanism"><span class="mechanism-label">Bone</span>Heals defects that don't heal untreated, comparable to a graft. Smaller evidence base than soft tissue.</p>
-      <p class="mechanism"><span class="mechanism-label">Kidney</span>Protects the injured kidney directly — and protects kidney/liver/lungs as distant organs from injury elsewhere.</p>
-      <p class="mechanism"><span class="mechanism-label">Gut</span>Home turf — restores lining integrity, deepest evidence base, only system with real human-trial history.</p>
-      <p class="mechanism"><span class="mechanism-label">Lungs</span>Real protection in general lung-injury models. COVID-specific claims are hypothesis only.</p>
-      <p class="mechanism"><span class="mechanism-label">Mood</span>Antidepressant-like effect in standard models, tied to serotonin. Not "rapid," not proven via dopamine/HPA.</p>
-      <p class="mechanism"><span class="mechanism-label">Metabolic</span>Mechanism would predict better insulin sensitivity — reasoned extrapolation, not directly tested for this compound.</p>
-      <p class="mechanism"><span class="mechanism-label">Why the dose ladder is not a goal</span>This is a cascade initiator, not a linear agonist. Once repair pathways are engaged, extra peptide does not keep amplifying the result. Tissue capacity becomes the bottleneck.</p>
-      <p class="mechanism"><span class="mechanism-label">Cycling biology</span>No receptor-reset cycle is established. The common 4–6 week on/off rhythm is convention and cost/caution, not downregulation biology. 8–12 week runs match how long organized vessels and collagen actually take to mature.</p>
-      <div class="synergy-detail" id="${p.id}-synergy"><strong>Synergy — BPC-157 + TB-500</strong><ul><li>Non-overlapping jobs: local build (foreman) versus systemic mobilization (scaffolding + access crew).</li><li>Complementary on paper. The combination is untested, not proven.</li></ul></div>
-      <div class="cautions" id="${p.id}-watch"><strong>Watch for</strong><ul><li>The same "grow new blood vessels" trick that makes it good at healing is the same thing doctors worry about with existing cancer. Nobody has actually tested it either way in someone with cancer.</li><li>Feeling better can arrive before structural tissue has regained strength; pain relief is not proof that loading capacity is fully restored.</li><li>Most of the organ-system drama is animal work, heavily concentrated in one research group. Independent tendon and angiogenesis papers exist; they do not convert rodent findings into human protocols.</li><li>Banned for competitive athletes. A US pharmacy cannot legally compound it right now.</li></ul></div>
-      <div class="supplements"><strong>Supportive supplements</strong><ul><li>Vitamin C</li><li>Collagen peptides</li><li>Zinc carnosine</li><li>NAC</li><li>Glutamine</li><li>Silica</li><li>Lysine/Proline</li></ul></div>
-      <div class="dose-guide"><strong>What They’re Not Telling You</strong><p>Foreman, not lumber. The 4–6 week cycle is convention, not receptor biology. Oral is for the gut lining, not a stealth systemic route. And "grows new blood vessels" is both the healing trick and the cancer caution — same mechanism.</p></div>
-      <p class="regulatory-note">WADA-prohibited (S0). Not FDA-compoundable as of Aug 2026 — July 2026 advisory vote to reverse, not yet enacted.</p>
-      <details class="source-tail"><summary>12 sources, verified Aug 2026</summary><p>Full citation list lives in research/BPC-157_Compound_Research.md. Not duplicated on the card.</p></details>
-    </div>
-    <div class="card-actions"><button type="button" class="select-btn" data-select="${p.id}" aria-pressed="${selected}">${selected?"Selected":"Add to synergy"}</button><button type="button" class="primary-btn open-btn" data-toggle="${p.id}" aria-expanded="${open}">${open?"Close":"Go deeper"}</button></div>
-  </article>`};
+  const genericChips = p => [
+    [
+      { key: "dose", label: "Dose", value: clip(p.dose, 16), detail: `<p>${escapeHtml(p.dose)}</p>` },
+      { key: "timing", label: "Timing", value: clip(p.timing, 16), detail: `<p>${escapeHtml(p.timing)}</p>` },
+      { key: "cycling", label: "Cycling", value: clip(p.cycling, 16), detail: `<p>${escapeHtml(p.cycling)}</p>` },
+      { key: "half", label: "Half-life", value: clip(p.halfLife, 16), detail: `<p>${escapeHtml(p.halfLife)}</p>` }
+    ],
+    [
+      { key: "watch", label: "Watch for", value: `${(p.cautions||[]).length} notes`, detail: listHtml(p.cautions||[]) },
+      { key: "support", label: "Take alongside", value: `${(p.supplements||[]).length} picks`, detail: listHtml(p.supplements||[]) },
+      { key: "biology", label: "Biology", value: "", detail: `<p>${escapeHtml(p.mechanism)}</p>` },
+      { key: "catch", label: "The catch", value: "", detail: `<p>${escapeHtml(p.bottomLine||p.mechanism)}</p>` }
+    ]
+  ];
+  const chipsFor = id => CHIP_REGISTRY[id] || genericChips(state.data.peptides.find(x=>x.id===id)||{});
 
   const TB500_CHIPS = [
     [
@@ -133,97 +85,141 @@
       { key: "catch", label: "The catch", value: "", detail: `<p>This isn't really an "injury peptide" — its real job is getting repair cells where they need to go. Injury relief is a downstream result of that, not the mechanism itself.</p><p>Old injuries can actually respond well, because they're often stuck behind poor blood flow and old scar tissue — and this addresses both. And again: you don't need to inject near the injury. It finds its way there on its own.</p>` }
     ]
   ];
-  const tb500Html = p => { const cat = categoryById(p.category), selected = state.selected.has(p.id), open = state.open.has(p.id); return `<article class="card ${selected ? "selected" : ""}" data-id="${p.id}" data-category="${p.category}">
+
+  const BPC157_CHIPS = [
+    [
+      { key: "dose", label: "Dose", value: "250mcg–1mg/day", detail: `<p>Most people run somewhere between a quarter and a full milligram a day, usually split into a morning and evening shot about 12 hours apart. For a fresh, serious injury some people go up to 2 milligrams for a short stretch, but more isn't automatically better past about a milligram — you're past the point of extra benefit.</p>` },
+      { key: "timing", label: "Timing", value: "1–2x daily", detail: `<p>Once a day works, but splitting it morning and evening about 12 hours apart is the more common pattern. If you're using it for gut issues specifically, some people take it by mouth instead of injecting.</p>` },
+      { key: "cycling", label: "Cycling", value: "No hard rule", detail: `<p>There's no receptor here that gets worn out or needs a break, so there's no biological reason you have to cycle it. The common 4–6 week on/off pattern is more about cost and caution than any known biology. If you're working on something structural — a tendon, a joint — 8 to 12 weeks tracks better with how long real tissue repair actually takes.</p>` },
+      { key: "acute", label: "Acute injury", value: "Up to 2mg short-term", detail: `<p>For something fresh and serious, going up to 2 milligrams a day for a short stretch is a reasonable practical move — just don't stay there. Drop back down once the acute phase has passed.</p>` }
+    ],
+    [
+      { key: "watch", label: "Watch for", value: "Angiogenesis + cancer hx", detail: `<p>The same "grow new blood vessels" trick that makes this good at healing is exactly the kind of thing doctors worry about with an existing tumor — nobody's actually tested it either way in someone with cancer, so it's not a casual reach if that's part of your history.</p><p>Feeling better also isn't proof the tissue's actually strong again — pain relief can show up before real structural healing catches up.</p>` },
+      { key: "support", label: "Take alongside", value: "7 picks", detail: `<p>Vitamin C, collagen peptides, zinc carnosine, NAC, glutamine, silica, and lysine/proline — these give your body the raw materials while BPC-157 is coordinating the repair job.</p>` },
+      { key: "pairs", label: "Pairs well with", value: "TB-500", detail: `<p>BPC-157 is the foreman running the local job site; TB-500 is the access crew getting repair cells there from anywhere in the body. Different, non-overlapping jobs — complementary on paper, though the actual combination hasn't been tested directly.</p>` },
+      { key: "catch", label: "The catch", value: "", detail: `<p>This is the foreman, not the lumber — it coordinates the repair, it isn't the building material itself. The usual 4–6 week cycling advice is convention, not receptor biology; there's no receptor here to reset.</p><p>And taking it orally is really about reaching the gut lining directly, not a sneaky way to get it systemically — that's a different route with different reach.</p>` }
+    ]
+  ];
+
+  const GHKCU_CHIPS = [
+    [
+      { key: "dose", label: "Dose", value: "1–2mg SQ", detail: `<p>Most protocols start around 1 milligram a day for the first couple weeks, step up to 2 milligrams, then settle into 1 to 2 milligrams two or three times a week for maintenance. This whole ladder is practitioner convention — there's no controlled human dosing trial behind injectable GHK-Cu at any amount.</p>` },
+      { key: "timing", label: "Timing", value: "Anytime", detail: `<p>Food doesn't matter for timing. If you're using the topical version instead, twice a day is the common pattern.</p>` },
+      { key: "cycling", label: "Cycling", value: "4–8wks on/2–4 off", detail: `<p>If you're injecting it, cycle 4 to 8 weeks on with 2 to 4 off — that's more about managing copper load than any receptor getting worn out, since no receptor's been identified here. Topical use can run continuously for 8 to 12 weeks since barely any of it gets into your bloodstream through skin.</p>` },
+      { key: "expect", label: "What to expect", value: "2–6wks", detail: `<p>Early on: mild skin or inflammation changes, maybe better tolerance of training stress. Real, visible skin or connective-tissue improvement usually shows up over 2 to 6 weeks. This is quiet biology, not a stimulant-type effect — don't expect it to do BPC-157 or TB-500's job.</p>` }
+    ],
+    [
+      { key: "watch", label: "Watch for", value: "Copper load", detail: `<p>The real open question isn't cancer — if anything, the data leans toward this helping, not hurting, on that front. It's chronic copper buildup from repeated injecting that has zero long-term human safety data. Topical's been safe for decades because almost none of it gets into your system through skin; injecting bypasses that safety margin entirely.</p>` },
+      { key: "support", label: "Take alongside", value: "5 picks", detail: `<p>Vitamin C, silica, collagen peptides, zinc, and resveratrol — collagen-building cofactors, plus resveratrol, which appears to amplify GHK-Cu's gene-level effects.</p>` },
+      { key: "pairs", label: "Pairs well with", value: "BPC-157 + TB-500", detail: `<p><b>BPC-157</b> — GHK-Cu supplies the copper and remodeling instructions, BPC-157 coordinates the actual repair.</p><p><b>TB-500</b> — TB-500 gets repair cells to the site, GHK-Cu supplies what they need once they're there. Together with BPC-157, these three are sometimes called the "Repair Stack."</p>` },
+      { key: "catch", label: "The catch", value: "", detail: `<p>A lot of consumer GHK-Cu content quietly borrows evidence from topical cosmetic studies to imply support for injecting it systemically — those are genuinely different situations, and the well-controlled human trials all belong to the topical side.</p><p>And nearly every "reprograms thousands of genes" claim traces back to one commercially-invested lab — that doesn't make it false, just not independently stress-tested.</p>` }
+    ]
+  ];
+
+  const MOTSC_CHIPS = [
+    [
+      { key: "dose", label: "Dose", value: "5mg SC 2–3x/wk", detail: `<p>5 milligrams under the skin, two to three times a week — that's practitioner convention, not a number that came out of a human dosing trial.</p>` },
+      { key: "timing", label: "Timing", value: "Fasted", detail: `<p>Take it fasted. And since the downstream mitochondrial work outlasts how long the peptide is actually in your blood, dosing more often than this isn't automatically doing more.</p>` },
+      { key: "cycling", label: "Cycling", value: "8–12wks on/1–2 off", detail: `<p>Run it 8 to 12 weeks, then take 1 to 2 weeks off — and pair it with SS-31 the whole way through if you can, that combination is doing real work here even though SS-31 isn't its own card yet.</p>` },
+      { key: "expect", label: "What to expect", value: "~6.5wks", detail: `<p>Early on you might notice a shift in energy or glucose handling — not a stimulant kick. The real mitochondrial building is slower; one household case saw real improvement show up around 6.5 weeks in. If it fades within a couple weeks after stopping, that's detraining, not the treatment failing.</p>` }
+    ],
+    [
+      { key: "watch", label: "Watch for", value: "No receptor to reset", detail: `<p>There's no receptor here to wear out or need a break from — MOTS-c works enzymatically, not through a receptor. The off-period is really a checkpoint (how are you feeling, any reaction at the injection site) rather than something your biology requires.</p>` },
+      { key: "support", label: "Take alongside", value: "5 picks", detail: `<p>Berberine, CoQ10 with MCT, alpha-lipoic acid, magnesium glycinate, and chromium — supporting the same AMPK and mitochondrial pathway MOTS-c is working through.</p>` },
+      { key: "pairs", label: "Pairs well with", value: "SS-31 + 2 more", detail: `<p><b>SS-31</b> — MOTS-c builds new mitochondria, SS-31 protects what gets built. Run MOTS-c first, SS-31 alongside through the cycle.</p><p><b>TB-500</b> and <b>GHK-Cu</b> — repair work costs energy either way, so pairing with the power plant makes mechanistic sense, even without a combined trial to point to.</p>` },
+      { key: "catch", label: "The catch", value: "", detail: `<p>A lot of MOTS-c cycling advice borrows "receptor reset" language from a completely different kind of peptide — that's not how this one works. Fading after you stop is exactly what you'd expect from something that works like exercise does, not proof it failed.</p><p>And the claim that this helps your liver through something called FGF-21 has it backwards — the data actually shows both rising together with worse liver disease, not one helping the other.</p>` }
+    ]
+  ];
+
+  const RETATRUTIDE_CHIPS = [
+    [
+      { key: "dose", label: "Dose", value: "0.5–12mg/wk", detail: `<p>Most people land somewhere between half a milligram and six milligrams a week — the ladder goes up to twelve, but higher isn't the goal, just there if you actually need it. Stay at the lowest amount that's doing the job.</p>` },
+      { key: "timing", label: "Timing", value: "Once weekly", detail: `<p>Once a week, food doesn't matter. Keeping it on the same day each week matters more than what time of day you take it.</p>` },
+      { key: "cycling", label: "Cycling", value: "Continuous", detail: `<p>This one isn't really an on/off thing — it's built to run every week, ongoing. Stopping is a separate decision from cycling, and whatever it was controlling can come back once you stop.</p>` },
+      { key: "escalate", label: "Going up a dose", value: "Only if needed", detail: `<p>Go up a step only when your current dose stops doing the job or you genuinely need a stronger effect — not because the calendar says so, and not because someone else's dose is higher. Same logic in reverse: if it's working, there's no reason to climb.</p>` }
+    ],
+    [
+      { key: "watch", label: "Watch for", value: "GI + heart rate", detail: `<p>Nausea and other GI stuff is dose-related — pushing up faster gets you more of that without necessarily a better result. Heart rate can tick up a little, more at higher doses. New or worsening pain in the upper right belly is worth paying attention to, and there's a small uptick in urinary tract infections reported too.</p>` },
+      { key: "support", label: "Take alongside", value: "7 picks", detail: `<p>Berberine, alpha-lipoic acid, benfotiamine, magnesium glycinate, chromium, vitamin D3/K2, and cinnamon — supporting insulin sensitivity and guarding against the nerve and metabolic stress that comes with fast weight loss.</p>` },
+      { key: "track", label: "What to track", value: "5 things", detail: `<p>Appetite and food noise, your weight and waist trend over time (not one weigh-in), glucose or A1C if that's relevant to you, GI tolerance and resting heart rate, and — if weight's falling fast — your strength, protein intake, and body composition.</p>` },
+      { key: "catch", label: "The catch", value: "", detail: `<p>Once the metabolic pathways are actually engaged, more peptide doesn't keep amplifying the result. Higher doses in trials show bigger average effects, but also more GI side effects — a stronger available dose doesn't mean someone doing well at a lower one needs to chase it.</p><p>And losing weight fast without enough protein or training is how you lose muscle instead of fat.</p>` }
+    ]
+  ];
+
+  const CHIP_REGISTRY = { "tb-500": TB500_CHIPS, "bpc-157": BPC157_CHIPS, "ghk-cu": GHKCU_CHIPS, "mots-c": MOTSC_CHIPS, "retatrutide": RETATRUTIDE_CHIPS };
+
+  const goDeeperTierHtml = p => TECH_DOC_NAMES[p.id]
+    ? `<button type="button" class="go-deeper-btn" data-go-deeper="${p.id}" aria-expanded="${state.open.has(p.id)}"><span>${state.open.has(p.id) ? "Close technical layer" : "Go deeper — the technical layer"}</span></button><div class="tech-tier ${state.open.has(p.id) ? "open" : ""}" id="techtier-${p.id}"><div class="tech-inner" id="techinner-${p.id}"></div></div>`
+    : `<p class="tech-pending">Technical writeup in progress — check back soon.</p>`;
+
+  const tb500Html = p => { const cat = categoryById(p.category), selected = state.selected.has(p.id); return `<article class="card ${selected ? "selected" : ""}" data-id="${p.id}" data-category="${p.category}">
     <div class="badge-row"><span class="badge cat">${escapeHtml(cat?.short || "")}</span><span class="badge analogy">Scaffolding + Access Crew</span></div>
     <h2>TB-500</h2><p class="tagline">Systemic Repair Mobilization</p>
     <p class="card-desc">Think of damaged tissue as a job site repair crews can't easily reach. TB-500 doesn't build anything itself — it reorganizes the cellular scaffolding that lets repair cells move, opens vascular access, and helps the whole crew get where it's needed, anywhere in the body.</p>
     <div class="bottom-line"><strong>Bottom line</strong><p>Mobilizes repair activity across the body — muscle, vessels, and scar tissue alike.</p></div>
     ${chipGridHtml(p.id, TB500_CHIPS)}
-    <button type="button" class="go-deeper-btn" data-go-deeper="${p.id}" aria-expanded="${open}"><span>${open ? "Close technical layer" : "Go deeper — the technical layer"}</span></button>
-    <div class="tech-tier ${open ? "open" : ""}" id="techtier-${p.id}"><div class="tech-inner" id="techinner-${p.id}"></div></div>
+    ${goDeeperTierHtml(p)}
     <div class="card-actions"><button type="button" class="select-btn" data-select="${p.id}" aria-pressed="${selected}">${selected ? "Selected" : "Add to synergy"}</button></div>
   </article>`};
 
-
-  const ghkcuHtml=p=>{const cat=categoryById(p.category),selected=state.selected.has(p.id),open=state.open.has(p.id);return `<article class="card ${selected?"selected":""} ${open?"is-open":""}" data-id="${p.id}" data-category="${p.category}">
-    <div class="card-summary" data-toggle="${p.id}" role="button" tabindex="0" aria-expanded="${open}">
-      <div class="badge-row"><span class="badge cat">${escapeHtml(cat?.short||"")}</span></div>
-      <h2>GHK-Cu</h2><p class="tagline">Materials & Genomic Remodeling Signal</p><span class="reta-analogy" ${jumpAttr(p.id,"biology")}>Materials & Blueprints</span>
-      <p class="card-desc" ${jumpAttr(p.id,"biology")}>Think of it as the materials-delivery and blueprints role on a repair crew — it doesn't coordinate the job (that's BPC-157) or move crews into place (that's TB-500). It delivers copper to the enzymes that need it and resets a large slice of gene expression back toward a repair-oriented, younger-tissue pattern.</p>
-      <div class="reta-quick" ${jumpAttr(p.id,"dose")}><div><span>Days 1–15</span><b>1 mg/day SQ</b></div><div><span>Days 16–30</span><b>2 mg/day SQ</b></div><div><span>Maintenance</span><b>1–2 mg 2–3×/week</b></div></div>
-      <div class="dose-guide" ${jumpAttr(p.id,"dose")}><strong>Dose rule</strong><p>This titration is a practitioner convention, not a trial-derived number — no controlled human dose-finding trial for injectable GHK-Cu exists at any dose. See the dose table below for a real gap worth knowing about.</p></div>
-      <div class="reta-quick"><div ${jumpAttr(p.id,"cycling")}><span>Cycling</span><b>4–8 wks on / 2–4 off</b></div><div ${jumpAttr(p.id,"timing")}><span>Timing</span><b>Anytime · topical 2×/day</b></div><div ${jumpAttr(p.id,"watch")}><span>Watch for</span><b>Copper load · zinc</b></div></div>
-      <div class="dose-guide" ${jumpAttr(p.id,"expect")}><strong>What to expect</strong><p><b>Early:</b> mild skin-feel or inflammation changes, better tolerance of training stress. <b>Building:</b> visible skin-quality, wound-healing, or connective-tissue improvement over 2–6 weeks. <b>Longer term:</b> cumulative remodeling — quiet biology is normal, this isn't a stimulant-type effect.</p></div>
-    </div>
-    <div class="card-details" ${open?"":"hidden"}>
-      <aside class="bottom-line"><strong>Bottom line</strong><p>GHK-Cu supplies copper and gene-level remodeling instructions to a repair job — it's the materials and blueprints, not the foreman (BPC-157) or the access crew (TB-500). Use the lowest exposure doing that job, and don't run it indefinitely without checking copper status.</p></aside>
-      <aside class="bottom-line" id="${p.id}-copperload"><strong>Long-term copper load</strong><p>The honest open question isn't cancer risk — Pickart's own data, if anything, points toward anti-metastatic gene effects in vitro, though that's thin and single-lab. The real unresolved question is chronic systemic copper load from repeated injectable cycling, which has no long-term human safety data at all. Topical use has decades of safety history because systemic absorption through skin is minimal; injectable use bypasses that margin.</p></aside>
-      <div class="facts dose-table" id="${p.id}-dose">
-        <div class="fact"><dt>Pickart's own estimate</dt><dd>~100–200 mg for systemic therapeutic action in humans, extrapolated from his group's thigh-injection and intraperitoneal systemic-healing work.</dd></div>
-        <div class="fact"><dt>Practical convention</dt><dd>1–2 mg SQ/day, most starting at 1 mg. This is a compounding-pharmacy and practitioner convention, not trial data either.</dd></div>
-        <div class="fact"><dt>Why they differ</dt><dd>50–100× apart, and neither number is validated by a controlled human trial. Treat the low convention as conservative, not as a number with real dose-response backing.</dd></div>
-      </div>
-      <div class="facts"><div class="fact"><dt>Half-life / PK</dt><dd>~0.5–2 hrs plasma — like BPC-157, effects outlast circulating peptide once the gene-expression and copper-delivery signal is engaged.</dd></div><div class="fact" id="${p.id}-timing"><dt>Food / timing</dt><dd>Food-independent. Topical: apply 2×/day.</dd></div><div class="fact" id="${p.id}-cycling"><dt>Cycling</dt><dd>Cycle for copper load and diminishing remodeling return, not classic receptor desensitization — no receptor has been identified to test that. Injectable: 4–8 weeks on, 2–4 off. Topical: can run 8–12 weeks continuously since systemic copper absorption through skin is minimal.</dd></div><div class="fact"><dt>Use pattern</dt><dd>Small SQ shot, or topical 2×/day for skin-focused use.</dd></div></div>
-      <p class="mechanism" id="${p.id}-expect"><span class="mechanism-label">What to expect — early</span>Days to two weeks: possible improvement in skin feel, mild reduction in reactive inflammation, better tolerance of training stress.</p>
-      <p class="mechanism"><span class="mechanism-label">What to expect — building</span>Two to six weeks: visible or measurable skin-quality, wound-healing, or connective-tissue improvement in a supportive protocol.</p>
-      <p class="mechanism"><span class="mechanism-label">What to expect — longer term</span>Six to twelve weeks: cumulative remodeling effects become more established. Quiet biology is normal — this is not a stimulant-type effect, and GHK-Cu shouldn't be expected to replace BPC-157 or TB-500, or act as a primary metabolic driver.</p>
-      <p class="mechanism" id="${p.id}-biology"><span class="mechanism-label">Biology — copper delivery</span>The tripeptide Gly-His-Lys has very high affinity for Cu²⁺ and readily forms the active GHK-Cu complex, feeding copper-dependent enzymes relevant to repair: lysyl oxidase (collagen cross-linking), superoxide dismutase (antioxidant defense), cytochrome c oxidase (cellular respiration). The lysyl-oxidase link is chemically reasonable — copper is its required cofactor — but GHK-Cu specifically activating it is reasoned extrapolation, not a directly-demonstrated finding.</p>
-      <p class="mechanism"><span class="mechanism-label">Biology — gene-expression modulation</span>Using the Broad Institute's Connectivity Map, Pickart's group reports GHK is capable of up- and down-regulating at least 4,000 human genes — the source of the "genome reset" framing. Real and citable, but nearly all of this literature traces back to one commercially-invested lab.</p>
-      <p class="mechanism"><span class="mechanism-label">Collagen and matrix remodeling</span>The classic in-vivo wound-chamber study (rat model) found GHK-Cu increased type I and III collagen mRNA and glycosaminoglycan content — but explicitly did not increase TGF-β mRNA. A separate COPD lung-fibroblast study found GHK reversed a gene-expression signature tied to reduced TGF-β pathway activity — different tissue, different mechanism. These are not one linked "collagen + TGF-β" effect.</p>
-      <p class="mechanism"><span class="mechanism-label">Anti-inflammatory action</span>GHK-Cu reduced TNF-α-induced IL-6 secretion in cultured human dermal fibroblasts — a real, separate finding from its TIMP-1/2 effect on matrix-metalloproteinase balance. The two mechanisms are unrelated even though both are anti-inflammatory in outcome.</p>
-      <p class="mechanism"><span class="mechanism-label">Mast cells — recruits, doesn't stabilize</span>GHK-Cu chemoattracts and activates mast cells as part of orchestrating the wound-to-remodeling transition — the opposite mechanism direction from "stabilizes mast cells, reduces histamine," which is how this often gets described in consumer sources. A classic 1985 chemoattractant study found mast cells specifically accumulate at sites releasing glycyl-histidyl-lysine.</p>
-      <p class="mechanism"><span class="mechanism-label">A genuine non-obvious insight</span>GHK isn't actually a foreign signal announcing itself for the first time via injection — it's a matrikine. The sequence sits inside the alpha-2(I) chain of type I collagen and inside SPARC, released by ordinary proteolysis whenever extracellular matrix breaks down at an injury site. Injecting it amplifies a signal the body already generates on-site.</p>
-      <p class="mechanism"><span class="mechanism-label">LRP1 and annexin A1 — unconfirmed, not disproven</span>Both appear in consumer-source framing but didn't turn up GHK-specific in a direct literature search. That's a real gap in what shows up in that search — not evidence the mechanisms are wrong. Both are mechanistically plausible; treat as reasoned extrapolation with sourcing unconfirmed.</p>
-      <div class="synergy-detail" id="${p.id}-synergy"><strong>Synergy — why these pairings make sense</strong><ul><li><b>BPC-157 + GHK-Cu:</b> foreman + materials/blueprints. GHK-Cu supplies copper and gene-level remodeling instructions; BPC-157 coordinates the repair itself.</li><li><b>TB-500 + GHK-Cu:</b> access crew + materials/blueprints. TB-500 gets repair-related cells to the site; GHK-Cu supplies what they need once they arrive.</li><li><b>MOTS-c + GHK-Cu:</b> power plant + materials/blueprints. No shared pathway — parallel, non-overlapping support.</li><li><b>ARA-290 + GHK-Cu:</b> named explicitly in the project's systemic-restoration source for comprehensive neuroprotection. ARA-290 isn't built in the app yet — forward pointer, not an active link.</li><li><b>The "Repair Stack":</b> BPC-157 + TB-500 + GHK-Cu named together as a deliberate trio addressing the structural, vascular, and regenerative aspects of organ damage.</li></ul></div>
-      <div class="cautions" id="${p.id}-watch"><strong>Common mistakes</strong><ul><li>Treating it as a "skin peptide" only and missing the systemic remodeling angle.</li><li>Running high doses continuously for months with no off-period, ignoring copper load.</li><li>Expecting it to replace BPC-157 or TB-500 instead of supplying their materials/instructions.</li><li>Confusing well-studied topical cosmetic concentrations with essentially-unstudied injectable systemic dosing.</li><li>Chasing higher doses once the copper-delivery and gene-reset jobs are already engaged at modest exposure.</li></ul></div>
-      <div class="supplements"><strong>Supportive supplements</strong>${listHtml(p.supplements)}</div>
-      <div class="dose-guide"><strong>What They're Not Telling You</strong><p>Most consumer GHK-Cu content quietly launders topical-cosmetic evidence into implied support for injectable systemic use — the two are genuinely different pharmacokinetic compartments, and the well-controlled human trials all belong to the topical side. Nearly every "reprograms 4,000 genes" claim traces back, directly or indirectly, to one commercially-invested lab. That doesn't make it false — it means it hasn't been stress-tested by anyone without a stake in the answer.</p></div>
-      <p class="regulatory-note">Not FDA-approved. Topical GHK-Cu sits in FDA 503A Category 1 (under evaluation); the injectable-route nomination was specifically withdrawn in 2026. Not named on the WADA Prohibited List (checked directly against the 2026 text — BPC-157 is named under S0, TB-500 under S2.3, GHK-Cu is in neither by name), though it plausibly falls under S0/S2.3 catch-all language even unnamed. Contraindicated in Wilson's disease on mechanistic grounds.</p>
-      <details class="source-tail"><summary>9 sources, verified Aug 2026</summary><p>Full citation list lives in research/GHK-Cu_Compound_Research.md. Not duplicated on the card.</p></details>
-    </div>
-    <div class="card-actions"><button type="button" class="select-btn" data-select="${p.id}" aria-pressed="${selected}">${selected?"Selected":"Add to synergy"}</button><button type="button" class="primary-btn open-btn" data-toggle="${p.id}" aria-expanded="${open}">${open?"Close":"Go deeper"}</button></div>
+  const bpc157Html = p => { const cat = categoryById(p.category), selected = state.selected.has(p.id); return `<article class="card ${selected ? "selected" : ""}" data-id="${p.id}" data-category="${p.category}">
+    <div class="badge-row"><span class="badge cat">${escapeHtml(cat?.short || "")}</span><span class="badge analogy">The Foreman</span></div>
+    <h2>BPC-157</h2><p class="tagline">Repair Coordination Signal</p>
+    <p class="card-desc">Think of it as the construction foreman for injured tissue — it doesn't build anything itself. It gets your body's repair crews to the site faster and keeps them working in an organized way instead of leaving a mess.</p>
+    <div class="bottom-line"><strong>Bottom line</strong><p>BPC-157 helps your body heal itself by coordinating repair, not by being the building material. Use the lowest exposure that's actually doing that job.</p></div>
+    ${chipGridHtml(p.id, BPC157_CHIPS)}
+    ${goDeeperTierHtml(p)}
+    <div class="card-actions"><button type="button" class="select-btn" data-select="${p.id}" aria-pressed="${selected}">${selected ? "Selected" : "Add to synergy"}</button></div>
   </article>`};
 
-  const motscHtml=p=>{const cat=categoryById(p.category),selected=state.selected.has(p.id),open=state.open.has(p.id);return `<article class="card ${selected?"selected":""} ${open?"is-open":""}" data-id="${p.id}" data-category="${p.category}">
-    <div class="card-summary" data-toggle="${p.id}" role="button" tabindex="0" aria-expanded="${open}">
-      <div class="badge-row"><span class="badge cat">${escapeHtml(cat?.short||"")}</span></div>
-      <h2>MOTS-c</h2><p class="tagline">Mitochondrial & Grid Reprogrammer</p><span class="reta-analogy" ${jumpAttr(p.id,"biology")}>Power-Plant Upgrade</span>
-      <p class="card-desc" ${jumpAttr(p.id,"biology")}>Think of it as the power plant on a repair crew — it doesn't coordinate the job (that's BPC-157), move crews into place (that's TB-500), or deliver materials (that's GHK-Cu). A 16-amino-acid mitochondrial-encoded peptide that tells the cell to take up glucose without waiting on insulin and to build more mitochondria.</p>
-      <div class="reta-quick" ${jumpAttr(p.id,"dose")}><div><span>Typical</span><b>5 mg SC</b></div><div><span>Rhythm</span><b>2–3×/week</b></div><div><span>Cycle</span><b>8–12 wks on / 1–2 off</b></div></div>
-      <div class="dose-guide" ${jumpAttr(p.id,"dose")}><strong>Dose rule</strong><p>5 mg is practitioner convention, not a human trial-derived number. Hold at the exposure producing the metabolic/energy response. More frequent is not automatically more AMPK.</p></div>
-      <div class="reta-quick"><div ${jumpAttr(p.id,"cycling")}><span>Cycling</span><b>8–12 wks on / 1–2 off</b></div><div ${jumpAttr(p.id,"timing")}><span>Timing</span><b>Fasted</b></div><div ${jumpAttr(p.id,"watch")}><span>Watch for</span><b>Detraining · injection site</b></div></div>
-      <div class="dose-guide" ${jumpAttr(p.id,"expect")}><strong>What to expect</strong><p><b>Early:</b> possible shift in energy or glucose handling — not a stimulant kick. <b>Building:</b> mitochondrial work is slower; observed improvement around 6.5 weeks on. <b>Longer term:</b> adaptations are maintenance-dependent. Fade after stopping is detraining, not failure.</p></div>
-    </div>
-    <div class="card-details" ${open?"":"hidden"}>
-      <aside class="bottom-line"><strong>Bottom line</strong><p>MOTS-c is the power plant: insulin-independent glucose uptake and new mitochondria. Use the lowest exposure doing that job. Run it with SS-31 throughout this protocol — that pairing is interpretive, not optional here.</p></aside>
-      <aside class="bottom-line" id="${p.id}-detrain"><strong>Not a receptor reset</strong><p>The off-period is not receptor desensitization. MOTS-c turns on AMPK through AICAR, not through a receptor-ligand event, so there is no receptor to reset. Gains behave like training adaptations: maintenance-dependent. Observed household case — real improvement at 6.5 weeks on, full reversal ~2 weeks after stopping — matches detraining, not treatment failure. Classification: evidence-limited/conservative + protocol convention + observed case (physiologically consistent, not a formal study).</p></aside>
-      <div class="facts dose-table" id="${p.id}-dose">
-        <div class="fact"><dt>Mouse / paper pattern</dt><dd>Intermittent 3×/week in Reynolds 2021 — exercise/aging physical performance in mice, not an obesity paper. Lee 2015 is the obesity/insulin-resistance mouse work.</dd></div>
-        <div class="fact"><dt>Practical convention</dt><dd>5 mg SC, 2–3×/week. Practitioner convention, not a controlled human dose-finding result.</dd></div>
-        <div class="fact"><dt>Why they differ</dt><dd>The milligram number is empirical human convention. Do not quietly "correct" it toward mouse milligram-per-kilogram math, and do not hang obesity claims on Reynolds.</dd></div>
-      </div>
-      <div class="facts"><div class="fact"><dt>Half-life / PK</dt><dd>${escapeHtml(p.halfLife)} — downstream AMPK/PGC-1α signaling outlasts circulating peptide. More frequent is not automatically more biology.</dd></div><div class="fact" id="${p.id}-timing"><dt>Food / timing</dt><dd>${escapeHtml(p.timing)}</dd></div><div class="fact" id="${p.id}-cycling"><dt>Cycling</dt><dd>8–12 weeks on / 1–2 weeks off, with SS-31 throughout. Off-period is a monitoring checkpoint (labs, subjective response, injection-site/allergic-reaction check), not a required biological reset.</dd></div><div class="fact"><dt>Use pattern</dt><dd>Small SC shot, typically 2–3×/week at 5 mg.</dd></div></div>
-      <p class="mechanism" id="${p.id}-expect"><span class="mechanism-label">What to expect — early</span>Days to two weeks: possible shift in energy or glucose handling as AMPK/GLUT4 engages. Not a stimulant-type kick.</p>
-      <p class="mechanism"><span class="mechanism-label">What to expect — building</span>Through about six to eight weeks: mitochondrial biogenesis is slower than the AMPK flip. Observed household improvement showed up around 6.5 weeks on. Function and training tolerance beat whether an injection feels like something.</p>
-      <p class="mechanism"><span class="mechanism-label">What to expect — longer term</span>Through 8–12 weeks, then the short off: adaptations are maintenance-dependent. Expect fade after stopping — detraining, not proof the run failed. Use the 1–2 week off as a checkpoint, then decide whether to restart.</p>
-      <p class="mechanism" id="${p.id}-biology"><span class="mechanism-label">Biology — folate cycle to AMPK</span>MOTS-c is a 16-amino-acid mitochondrial-derived peptide encoded in mtDNA. It inhibits the folate cycle so AICAR builds up and AMPK turns on. That is enzymatic, not a receptor-ligand event.</p>
-      <p class="mechanism"><span class="mechanism-label">Biology — GLUT4</span>AMPK activation moves GLUT4 to the muscle-cell surface. Glucose walks in without needing insulin. This is the clearest metabolic job and why "exercise mimetic" is pathway language, not branding.</p>
-      <p class="mechanism"><span class="mechanism-label">Biology — PGC-1α biogenesis</span>AMPK/PGC-1α signaling drives mitochondrial bioenergetic improvement. The long-arc job is building new power plants, not just flipping AMPK for a few hours.</p>
-      <p class="mechanism"><span class="mechanism-label">Biology — NF-κB / NLRP3</span>NF-κB suppression is reported in cardiac cells and a mouse model. Pathway evidence, not a human anti-inflammatory indication.</p>
-      <p class="mechanism"><span class="mechanism-label">What this cascade does not include</span>Hepatic FGF-21 upregulation as a benefit is unsupported and likely backwards. FGF-21 and MOTS-c both correlate with liver-disease severity in 2025 data — that is not MOTS-c causing FGF-21 as a therapeutic effect.</p>
-      <p class="mechanism"><span class="mechanism-label">A genuine non-obvious insight</span>Gains behave like training adaptations — maintenance-dependent, not permanent. Stop the signal and the adaptation detains. Receptor-reset cycling language is describing a different class of molecule.</p>
-      <p class="mechanism"><span class="mechanism-label">Cancer — scoped, not generalized</span>One 2024 paper is ovarian-cancer-specific. General AMPK/mTOR tumor-suppression biology is a separate frame. Do not convert that into a MOTS-c oncology claim.</p>
-      <div class="synergy-detail" id="${p.id}-synergy"><strong>Synergy — why these pairings make sense</strong><ul><li><b>MOTS-c + SS-31:</b> power plant + membrane protection. MOTS-c builds new mitochondria; SS-31 stabilizes cardiolipin of what is built. Sequence: MOTS-c first, SS-31 second, continued alongside through the cycle. Interpretive, consistent with the observed case — not a proven combined-use mechanism. SS-31 is integrated here, not optional. Not a live card in the app yet.</li><li><b>MOTS-c + TB-500:</b> power plant + scaffolding/access crew. Repair is energy-intensive. Mechanistic complementarity, not a combined-use trial.</li><li><b>MOTS-c + GHK-Cu:</b> power plant + materials/blueprints. Parallel, non-overlapping support.</li><li><b>MOTS-c + BPC-157:</b> power plant + foreman. Local repair still costs energy. Mechanistic complementarity, not proven combination.</li></ul></div>
-      <div class="cautions" id="${p.id}-watch"><strong>Common mistakes</strong><ul><li>Calling the off-period a receptor reset. There is no receptor in this cascade to desensitize.</li><li>Treating the post-stop fade as treatment failure instead of detraining.</li><li>Running MOTS-c as a mitochondrial rebuild without SS-31 in a protocol that claims to keep what was built.</li><li>Dosing more often only because plasma half-life is short.</li><li>Attributing obesity/insulin-resistance findings to the 2021 exercise/aging paper.</li><li>Repeating "hepatic FGF-21 upregulation" as a MOTS-c benefit.</li></ul></div>
-      <div class="supplements"><strong>Supportive supplements</strong>${listHtml(p.supplements)}</div>
-      <div class="dose-guide"><strong>What They're Not Telling You</strong><p>Most MOTS-c cycling advice imports receptor-reset language from a different class of peptides. AMPK does not work like that. The fade after stopping is what you would expect from an exercise mimetic. "FGF-21 upregulation" has been sold as a liver benefit; 2025 liver-disease data has MOTS-c and FGF-21 moving with severity, which is not that story. And FDA has not approved MOTS-c for compounding: staff recommended against 503A listing, PCAC voted in favor in July 2026, no final rule has issued.</p></div>
-      <p class="regulatory-note">WADA 2026 Prohibited List: named directly under S4.4.1. FDA 503A: staff briefing proposed against adding MOTS-c to the Bulks List (insufficient human safety/efficacy data); Pharmacy Compounding Advisory Committee voted in favor July 23–24, 2026; no final FDA rule as of this writing. State both. Do not pick a side.</p>
-      <details class="source-tail"><summary>7 sources, verified Aug 2026</summary><p>Full citation list lives in research/MOTS-c_Compound_Research.md. Not duplicated on the card.</p></details>
-    </div>
-    <div class="card-actions"><button type="button" class="select-btn" data-select="${p.id}" aria-pressed="${selected}">${selected?"Selected":"Add to synergy"}</button><button type="button" class="primary-btn open-btn" data-toggle="${p.id}" aria-expanded="${open}">${open?"Close":"Go deeper"}</button></div>
+  const ghkcuHtml = p => { const cat = categoryById(p.category), selected = state.selected.has(p.id); return `<article class="card ${selected ? "selected" : ""}" data-id="${p.id}" data-category="${p.category}">
+    <div class="badge-row"><span class="badge cat">${escapeHtml(cat?.short || "")}</span><span class="badge analogy">Materials + Blueprints</span></div>
+    <h2>GHK-Cu</h2><p class="tagline">Materials & Genomic Remodeling Signal</p>
+    <p class="card-desc">Think of it as the materials-delivery and blueprints role on a repair crew — it doesn't coordinate the job (that's BPC-157) or move crews into place (that's TB-500). It delivers copper to the enzymes that need it and resets a slice of gene expression back toward a repair-oriented pattern.</p>
+    <div class="bottom-line"><strong>Bottom line</strong><p>GHK-Cu supplies copper and gene-level remodeling instructions to a repair job — materials and blueprints, not the foreman or the access crew. Use the lowest exposure doing that job, and don't run it indefinitely without checking copper status.</p></div>
+    ${chipGridHtml(p.id, GHKCU_CHIPS)}
+    ${goDeeperTierHtml(p)}
+    <div class="card-actions"><button type="button" class="select-btn" data-select="${p.id}" aria-pressed="${selected}">${selected ? "Selected" : "Add to synergy"}</button></div>
   </article>`};
 
-  const cardHtml=p=>{if(p.id==="retatrutide")return retatrutideHtml(p);if(p.id==="bpc-157")return bpc157Html(p);if(p.id==="tb-500")return tb500Html(p);if(p.id==="ghk-cu")return ghkcuHtml(p);if(p.id==="mots-c")return motscHtml(p);const cat=categoryById(p.category),selected=state.selected.has(p.id),open=state.open.has(p.id);return `<article class="card ${selected?"selected":""} ${open?"is-open":""}" data-id="${p.id}" data-category="${p.category}"><div class="card-summary" data-toggle="${p.id}" role="button" tabindex="0" aria-expanded="${open}"><div class="badge-row"><span class="badge cat">${escapeHtml(cat?.short||"")}</span></div><h2>${escapeHtml(p.name)}</h2>${p.tagline?`<p class="tagline">${escapeHtml(p.tagline)}</p>`:""}${p.aka?.length?`<p class="aka">${escapeHtml(p.aka.join(" · "))}</p>`:""}${p.cardDescription?`<p class="card-desc">${escapeHtml(p.cardDescription)}</p>`:""}<p class="dose-line"><span>Dose</span> ${escapeHtml(p.dose)}</p></div><div class="card-details" ${open?"":"hidden"}>${p.bottomLine?`<aside class="bottom-line"><strong>Bottom line</strong><p>${escapeHtml(p.bottomLine)}</p></aside>`:""}<div class="badge-row detail-badges"><span class="badge analogy">${escapeHtml(p.analogy)}</span></div>${factsHtml(p)}<p class="mechanism"><span class="mechanism-label">Key mechanism</span>${escapeHtml(p.mechanism)}</p><div class="cautions"><strong>Key cautions</strong>${listHtml(p.cautions)}</div><div class="supplements"><strong>Supportive supplements</strong>${listHtml(p.supplements)}</div></div><div class="card-actions"><button type="button" class="select-btn" data-select="${p.id}" aria-pressed="${selected}">${selected?"Selected":"Add to synergy"}</button><button type="button" class="primary-btn open-btn" data-toggle="${p.id}" aria-expanded="${open}">${open?"Close":"Open"}</button></div></article>`};
+  const motscHtml = p => { const cat = categoryById(p.category), selected = state.selected.has(p.id); return `<article class="card ${selected ? "selected" : ""}" data-id="${p.id}" data-category="${p.category}">
+    <div class="badge-row"><span class="badge cat">${escapeHtml(cat?.short || "")}</span><span class="badge analogy">Power-Plant Upgrade</span></div>
+    <h2>MOTS-c</h2><p class="tagline">Mitochondrial & Grid Reprogrammer</p>
+    <p class="card-desc">Think of it as the power plant on a repair crew — it doesn't coordinate the job, move crews into place, or deliver materials. It tells the cell to take up glucose without waiting on insulin and to build more mitochondria.</p>
+    <div class="bottom-line"><strong>Bottom line</strong><p>MOTS-c is the power plant: insulin-independent glucose uptake and new mitochondria. Use the lowest exposure doing that job — and run it with SS-31 throughout, that pairing matters here even though SS-31 isn't its own card yet.</p></div>
+    ${chipGridHtml(p.id, MOTSC_CHIPS)}
+    ${goDeeperTierHtml(p)}
+    <div class="card-actions"><button type="button" class="select-btn" data-select="${p.id}" aria-pressed="${selected}">${selected ? "Selected" : "Add to synergy"}</button></div>
+  </article>`};
+
+  const retatrutideHtml = p => { const cat = categoryById(p.category), selected = state.selected.has(p.id); return `<article class="card ${selected ? "selected" : ""}" data-id="${p.id}" data-category="${p.category}">
+    <div class="badge-row"><span class="badge cat">${escapeHtml(cat?.short || "")}</span><span class="badge analogy">Appetite & Fuel Traffic Controller</span></div>
+    <h2>Retatrutide</h2><p class="tagline">Triple Metabolic Signal</p>
+    <p class="card-desc">Think of Retatrutide like a traffic controller working across several metabolic signals at once — helping regulate appetite, food intake, and how the body handles fuel.</p>
+    <div class="bottom-line"><strong>Bottom line</strong><p>Combines three metabolic signals (GLP-1, GIP, and glucagon) into one weekly shot. The goal is the lowest exposure that keeps producing the result you want, not the highest dose available.</p></div>
+    ${chipGridHtml(p.id, RETATRUTIDE_CHIPS)}
+    ${goDeeperTierHtml(p)}
+    <div class="card-actions"><button type="button" class="select-btn" data-select="${p.id}" aria-pressed="${selected}">${selected ? "Selected" : "Add to synergy"}</button></div>
+  </article>`};
+
+  const cardHtml=p=>{
+    if(p.id==="retatrutide")return retatrutideHtml(p);
+    if(p.id==="bpc-157")return bpc157Html(p);
+    if(p.id==="tb-500")return tb500Html(p);
+    if(p.id==="ghk-cu")return ghkcuHtml(p);
+    if(p.id==="mots-c")return motscHtml(p);
+    const cat=categoryById(p.category),selected=state.selected.has(p.id);
+    return `<article class="card ${selected?"selected":""}" data-id="${p.id}" data-category="${p.category}">
+      <div class="badge-row"><span class="badge cat">${escapeHtml(cat?.short||"")}</span>${p.analogy?`<span class="badge analogy">${escapeHtml(p.analogy)}</span>`:""}</div>
+      <h2>${escapeHtml(p.name)}</h2>
+      ${p.tagline?`<p class="tagline">${escapeHtml(p.tagline)}</p>`:""}
+      ${p.cardDescription?`<p class="card-desc">${escapeHtml(p.cardDescription)}</p>`:""}
+      ${p.bottomLine?`<div class="bottom-line"><strong>Bottom line</strong><p>${escapeHtml(p.bottomLine)}</p></div>`:""}
+      ${chipGridHtml(p.id, genericChips(p))}
+      ${goDeeperTierHtml(p)}
+      <div class="card-actions"><button type="button" class="select-btn" data-select="${p.id}" aria-pressed="${selected}">${selected?"Selected":"Add to synergy"}</button></div>
+    </article>`;
+  };
   const renderFilters=()=>{const chips=[{id:"all",label:"All"},...state.data.categories.map(c=>({id:c.id,label:c.short}))];els.filters.innerHTML=chips.map(c=>`<button type="button" class="chip" role="tab" data-cat="${c.id}" aria-pressed="${state.category===c.id}">${escapeHtml(c.label)}</button>`).join("")};
   const renderLibrary=()=>{const items=state.data.peptides.filter(matches);els.count.textContent=`${items.length} of ${state.data.peptides.length} entries`;els.grid.innerHTML=items.map(cardHtml).join("");els.empty.hidden=items.length>0};
   const renderPresets=()=>{els.presets.innerHTML=state.data.stacks.map(s=>`<button type="button" class="preset" data-stack="${s.id}" aria-pressed="${state.activeStack===s.id}">${escapeHtml(s.name)}</button>`).join("")};
@@ -235,7 +231,7 @@
   const jumpTo=(id,target)=>{state.open.add(id);state.view==="compare"?renderCompare():renderLibrary();requestAnimationFrame(()=>document.getElementById(target)?.scrollIntoView({behavior:"smooth",block:"start"}))};
   const toggleSelect=id=>{if(state.selected.has(id))state.selected.delete(id);else{if(state.selected.size>=5){els.dockLabel.textContent="Maximum 5 peptides";els.dock.hidden=false;return}state.selected.add(id)}const s=state.data.stacks.find(x=>x.peptideIds.length===state.selected.size&&x.peptideIds.every(pid=>state.selected.has(pid)));state.activeStack=s?s.id:null;persist();state.view==="compare"?renderCompare():renderLibrary();renderDock()};
   const applyStack=id=>{const s=state.data.stacks.find(x=>x.id===id);if(!s)return;state.selected=new Set(s.peptideIds.slice(0,5));state.activeStack=s.id;persist();setView("compare")};
-  const onClick=e=>{const nav=e.target.closest("[data-nav]");if(nav){const v=nav.dataset.nav;if(v==="stacks")setView("compare");else if(v==="search"){setView("library");setTimeout(()=>els.search.focus(),250)}else setView(v);return}const jump=e.target.closest("[data-jump]");if(jump){e.stopPropagation();const card=jump.closest(".card");if(card)jumpTo(card.dataset.id,jump.dataset.jump);return}const homeJump=e.target.closest("[data-home-jump]");if(homeJump){document.getElementById(homeJump.dataset.homeJump)?.scrollIntoView({behavior:"smooth"});return}const cat=e.target.closest("[data-cat]");if(cat){state.category=cat.dataset.cat;renderFilters();renderLibrary();return}const select=e.target.closest("[data-select]");if(select){toggleSelect(select.dataset.select);return}const toggle=e.target.closest("[data-toggle]");if(toggle){toggleOpen(toggle.dataset.toggle);return}
+  const onClick=e=>{const nav=e.target.closest("[data-nav]");if(nav){const v=nav.dataset.nav;if(v==="stacks")setView("compare");else setView(v);return}const jump=e.target.closest("[data-jump]");if(jump){e.stopPropagation();const card=jump.closest(".card");if(card)jumpTo(card.dataset.id,jump.dataset.jump);return}const homeJump=e.target.closest("[data-home-jump]");if(homeJump){document.getElementById(homeJump.dataset.homeJump)?.scrollIntoView({behavior:"smooth"});return}const cat=e.target.closest("[data-cat]");if(cat){state.category=cat.dataset.cat;renderFilters();renderLibrary();return}const select=e.target.closest("[data-select]");if(select){toggleSelect(select.dataset.select);return}const toggle=e.target.closest("[data-toggle]");if(toggle){toggleOpen(toggle.dataset.toggle);return}
     const chip = e.target.closest("[data-chip]");
     if (chip) {
       const [cid, ri, key] = chip.dataset.chip.split("|");
@@ -245,8 +241,8 @@
       row.querySelectorAll(".chip-tile").forEach(t => t.setAttribute("aria-expanded", "false"));
       if (wasThisOpen) { slot.hidden = true; slot.innerHTML = ""; }
       else {
-        const rows = cid === "tb-500" ? TB500_CHIPS : [];
-        const chipData = rows[ri]?.find(c => c.key === key);
+        const rows = chipsFor(cid) || [];
+        const chipData = rows[Number(ri)]?.find(c => c.key === key);
         slot.innerHTML = chipData ? `<div class="chip-detail-inner">${chipData.detail}</div>` : "";
         slot.hidden = false;
         chip.setAttribute("aria-expanded", "true");
@@ -264,8 +260,21 @@
       if (nowOpen) renderTechTier(id, document.getElementById(`techinner-${id}`));
       return;
     }
-    const techJump = e.target.closest("[data-tech-jump]");
-    if (techJump) { document.getElementById(techJump.dataset.techJump)?.scrollIntoView({ behavior: "smooth", block: "start" }); return; }
+    const techToggle = e.target.closest("[data-tech-toggle]");
+    if (techToggle) {
+      const [tid, idx] = techToggle.dataset.techToggle.split("|");
+      const container = techToggle.closest(".tech-inner");
+      const body = document.getElementById(`techsec-${tid}-${idx}`);
+      const wasOpen = techToggle.getAttribute("aria-expanded") === "true";
+      container.querySelectorAll(".tech-accordion-header").forEach(h => h.setAttribute("aria-expanded", "false"));
+      container.querySelectorAll(".tech-accordion-body").forEach(b => b.hidden = true);
+      if (!wasOpen) {
+        body.hidden = false;
+        techToggle.setAttribute("aria-expanded", "true");
+        requestAnimationFrame(() => techToggle.scrollIntoView({ behavior: "smooth", block: "start" }));
+      }
+      return;
+    }
     const stack=e.target.closest("[data-stack]");if(stack)applyStack(stack.dataset.stack)};
   const setOffline=()=>{els.offline.hidden=navigator.onLine};
   const bind=()=>{document.addEventListener("click",onClick);els.search.addEventListener("input",e=>{state.query=e.target.value;renderLibrary()});els.dockCompare.addEventListener("click",()=>setView("compare"));els.compareToggle.addEventListener("click",()=>setView("compare"));els.back.addEventListener("click",()=>setView("library"));const clear=()=>{state.selected.clear();state.activeStack=null;persist();state.view==="compare"?renderCompare():renderLibrary();renderDock()};els.dockClear.addEventListener("click",clear);els.clearCompare.addEventListener("click",clear);document.addEventListener("keydown",e=>{if(e.key!=="Enter"&&e.key!==" ")return;const t=e.target.closest(".card-summary[data-toggle]");if(!t)return;e.preventDefault();toggleOpen(t.dataset.toggle)});window.addEventListener("online",setOffline);window.addEventListener("offline",setOffline)};
