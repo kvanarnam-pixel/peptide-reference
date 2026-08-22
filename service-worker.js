@@ -1,4 +1,4 @@
-const CACHE_NAME = "peptide-reference-v22";
+const CACHE_NAME = "peptide-reference-v23";
 const ASSETS = [
   "./index.html",
   "./styles.css",
@@ -7,7 +7,10 @@ const ASSETS = [
   "./manifest.json",
   "./data/peptides.json",
   "./icons/icon.svg",
-  "./research/TB-500_Compound_Research.md"
+  "./research/TB-500_Compound_Research.md",
+  "./research/BPC-157_Compound_Research.md",
+  "./research/GHK-Cu_Compound_Research.md",
+  "./research/MOTS-c_Compound_Research.md"
 ];
 
 self.addEventListener("install", (event) => {
