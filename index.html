@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#120D1F"><meta name="color-scheme" content="light"><meta name="description" content="Biology-first peptide reference for practical dosing, cycling, mechanisms, cautions and synergies."><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="Peptides"><title>Peptide Reference</title><link rel="manifest" href="manifest.json"><link rel="icon" type="image/svg+xml" href="icons/icon.svg"><link rel="apple-touch-icon" href="icons/icon.svg"><link rel="stylesheet" href="styles.css?v=22">
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#120D1F"><meta name="color-scheme" content="light"><meta name="description" content="Biology-first peptide reference for practical dosing, cycling, mechanisms, cautions and synergies."><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="Peptides"><title>Peptide Reference</title><link rel="manifest" href="manifest.json"><link rel="icon" type="image/svg+xml" href="icons/icon.svg"><link rel="apple-touch-icon" href="icons/icon.svg"><link rel="stylesheet" href="styles.css?v=26">
 <style>
 body{padding-bottom:82px;background-color:var(--parchment);background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E")}
 .home-view{max-width:1180px;margin:0 auto;padding:18px 16px 110px}
@@ -37,7 +37,7 @@ body{padding-bottom:82px;background-color:var(--parchment);background-image:url(
 .principle-card b{display:block;margin-top:3px;font-family:var(--serif);font-size:1rem;color:var(--ink)}
 
 .bottom-nav{position:fixed;z-index:60;left:0;right:0;bottom:0;padding:8px 12px calc(8px + env(safe-area-inset-bottom));background:rgba(251,246,234,.97);border-top:1px solid var(--line);backdrop-filter:blur(16px)}
-.bottom-nav-inner{max-width:620px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:4px}
+.bottom-nav-inner{max-width:620px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:4px}
 .nav-btn{min-height:52px;border:0;border-radius:12px;background:transparent;color:var(--ink-soft);font-family:var(--sans);font-size:.7rem}
 .nav-btn .nav-icon{display:block;font-size:1.15rem;line-height:1.1;margin-bottom:3px}
 .nav-btn.active{color:var(--ember);background:rgba(211,84,0,.09)}
@@ -45,53 +45,53 @@ body{padding-bottom:82px;background-color:var(--parchment);background-image:url(
 .site-foot{padding-bottom:92px}
 
 /* ===== Premium peptide reference card — shared visual standard. Any card using the quick-card structure inherits this. ===== */
-.card:has(.reta-quick){overflow:hidden;background:var(--card);border:1px solid var(--line);border-top:3px solid var(--midnight);border-radius:var(--radius);box-shadow:0 1px 0 rgba(18,13,31,.03);color:var(--ink)}
-.card:has(.reta-quick) .card-summary,.card:has(.reta-quick) .card-details,.card:has(.reta-quick) .card-actions{position:relative;z-index:1}
-.card:has(.reta-quick) h2{font-size:1.5rem;color:var(--ink);font-family:var(--serif)}
-.card:has(.reta-quick) .tagline{color:var(--ink-soft)}
-.card:has(.reta-quick) .card-desc,.card:has(.reta-quick) .aka{color:var(--ink)}
-.card:has(.reta-quick) .badge.cat{background:transparent;border:1px solid var(--field);color:var(--field)}
+.card-premium{overflow:hidden;background:var(--card);border:1px solid var(--line);border-top:3px solid var(--midnight);border-radius:var(--radius);box-shadow:0 1px 0 rgba(18,13,31,.03);color:var(--ink)}
+.card-premium .card-summary,.card-premium .card-details,.card-premium .card-actions{position:relative;z-index:1}
+.card-premium h2{font-size:1.5rem;color:var(--ink);font-family:var(--serif)}
+.card-premium .tagline{color:var(--ink-soft)}
+.card-premium .card-desc,.card-premium .aka{color:var(--ink)}
+.card-premium .badge.cat{background:transparent;border:1px solid var(--field);color:var(--field)}
 
 /* Analogy — the card-level entry point. Gets the lift. Never the dose tiers, regardless of tier. */
-.card:has(.reta-quick) .reta-analogy{display:inline-flex;margin-top:9px;padding:8px 14px;border:1px solid rgba(211,84,0,.4);border-radius:12px;background:var(--parchment);box-shadow:0 4px 24px rgba(18,13,31,.10);color:var(--midnight);font-family:var(--sans);font-size:.78rem;font-weight:700}
+.card-premium .reta-analogy{display:inline-flex;margin-top:9px;padding:8px 14px;border:1px solid rgba(211,84,0,.4);border-radius:12px;background:var(--parchment);box-shadow:0 4px 24px rgba(18,13,31,.10);color:var(--midnight);font-family:var(--sans);font-size:.78rem;font-weight:700}
 
 /* Dose tiers — outline only, color-coded by meaning (green=grounded, ember=active, midnight=high), never filled, never lifted. */
-.card:has(.reta-quick) .reta-quick{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin-top:12px}
-.card:has(.reta-quick) .reta-quick>div{padding:9px 8px;border-radius:10px;background:transparent;border:1px solid var(--line)}
-.card:has(.reta-quick) .reta-quick span{display:block;color:var(--ink-soft);font-family:var(--sans);font-size:.62rem;text-transform:uppercase;letter-spacing:.07em}
-.card:has(.reta-quick) .reta-quick b{display:block;margin-top:3px;color:var(--ink);font-size:.82rem;line-height:1.25;font-family:var(--serif)}
-.card:has(.reta-quick) .reta-quick>div:nth-child(1){border-color:rgba(35,75,51,.4)}
-.card:has(.reta-quick) .reta-quick>div:nth-child(1) span{color:var(--field)}
-.card:has(.reta-quick) .reta-quick>div:nth-child(2){border-color:rgba(211,84,0,.4)}
-.card:has(.reta-quick) .reta-quick>div:nth-child(2) span{color:var(--ember)}
-.card:has(.reta-quick) .reta-quick>div:nth-child(3){border-color:rgba(18,13,31,.35)}
-.card:has(.reta-quick) .reta-quick>div:nth-child(3) span{color:var(--midnight)}
+.card-premium .reta-quick{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin-top:12px}
+.card-premium .reta-quick>div{padding:9px 8px;border-radius:10px;background:transparent;border:1px solid var(--line)}
+.card-premium .reta-quick span{display:block;color:var(--ink-soft);font-family:var(--sans);font-size:.62rem;text-transform:uppercase;letter-spacing:.07em}
+.card-premium .reta-quick b{display:block;margin-top:3px;color:var(--ink);font-size:.82rem;line-height:1.25;font-family:var(--serif)}
+.card-premium .reta-quick>div:nth-child(1){border-color:rgba(35,75,51,.4)}
+.card-premium .reta-quick>div:nth-child(1) span{color:var(--field)}
+.card-premium .reta-quick>div:nth-child(2){border-color:rgba(211,84,0,.4)}
+.card-premium .reta-quick>div:nth-child(2) span{color:var(--ember)}
+.card-premium .reta-quick>div:nth-child(3){border-color:rgba(18,13,31,.35)}
+.card-premium .reta-quick>div:nth-child(3) span{color:var(--midnight)}
 
-.card:has(.reta-quick) .dose-guide{margin-top:10px;padding:11px 12px;border-left:2px solid var(--field);background:transparent}
-.card:has(.reta-quick) .dose-guide strong{display:block;color:var(--field);font-family:var(--sans);font-size:.67rem;letter-spacing:.08em;text-transform:uppercase}
-.card:has(.reta-quick) .dose-guide p{margin:4px 0 0;color:var(--ink);font-size:.88rem;line-height:1.4}
+.card-premium .dose-guide{margin-top:10px;padding:11px 12px;border-left:2px solid var(--field);background:transparent}
+.card-premium .dose-guide strong{display:block;color:var(--field);font-family:var(--sans);font-size:.67rem;letter-spacing:.08em;text-transform:uppercase}
+.card-premium .dose-guide p{margin:4px 0 0;color:var(--ink);font-size:.88rem;line-height:1.4}
 
-.card:has(.reta-quick) .select-btn{color:var(--ink);border:1px solid var(--line);background:transparent}
-.card:has(.reta-quick) .primary-btn{background:var(--ember);color:#fff7ef;border-color:var(--ember)}
+.card-premium .select-btn{color:var(--ink);border:1px solid var(--line);background:transparent}
+.card-premium .primary-btn{background:var(--ember);color:#fff7ef;border-color:var(--ember)}
 
-.card:has(.reta-quick) .facts .fact{background:transparent;border:1px solid var(--line);border-radius:10px}
-.card:has(.reta-quick) .fact dt{color:var(--ink-soft)}
-.card:has(.reta-quick) .fact dd,.card:has(.reta-quick) .mechanism{color:var(--ink)}
+.card-premium .facts .fact{background:transparent;border:1px solid var(--line);border-radius:10px}
+.card-premium .fact dt{color:var(--ink-soft)}
+.card-premium .fact dd,.card-premium .mechanism{color:var(--ink)}
 
 /* Bottom Line — the anchor. Solid fill, the one other bold move besides the lift. */
-.card:has(.reta-quick) .bottom-line{background:var(--midnight);color:var(--parchment);border-radius:12px;padding:16px 18px}
-.card:has(.reta-quick) .bottom-line strong{color:#c9a2ff}
+.card-premium .bottom-line{background:var(--midnight);color:var(--parchment);border-radius:12px;padding:16px 18px}
+.card-premium .bottom-line strong{color:#c9a2ff}
 
 /* Watch For — ember margin-flag, not a filled box. */
-.card:has(.reta-quick) .cautions{background:rgba(211,84,0,.06);border-left:3px solid var(--ember);border-radius:0 10px 10px 0}
-.card:has(.reta-quick) .cautions strong{color:var(--ember)}
+.card-premium .cautions{background:rgba(211,84,0,.06);border-left:3px solid var(--ember);border-radius:0 10px 10px 0}
+.card-premium .cautions strong{color:var(--ember)}
 
 /* What to monitor — plain, no accent. Neutral reference info, not a caution; giving it color would dilute what ember means elsewhere. */
-.card:has(.reta-quick) .supplements{color:var(--ink)}
-.card:has(.reta-quick) .supplements strong{color:var(--ink)}
+.card-premium .supplements{color:var(--ink)}
+.card-premium .supplements strong{color:var(--ink)}
 
 [data-jump]{cursor:pointer}
-.card:has(.reta-quick) [data-jump]:hover{box-shadow:inset 0 0 0 1px rgba(211,84,0,.4)}
+.card-premium [data-jump]:hover{box-shadow:inset 0 0 0 1px rgba(211,84,0,.4)}
 .jump-flash{animation:jump-flash 1.2s ease}
 @keyframes jump-flash{0%{box-shadow:0 0 0 0 rgba(211,84,0,.55)}35%{box-shadow:0 0 0 3px rgba(211,84,0,.45)}100%{box-shadow:0 0 0 0 transparent}}
 
@@ -102,14 +102,32 @@ body{padding-bottom:82px;background-color:var(--parchment);background-image:url(
 .card.is-open .quick-jump{display:none}
 [id$="-dose"],[id$="-timing"],[id$="-cycling"],[id$="-biology"],[id$="-expect"],[id$="-watch"],[id$="-synergy"]{scroll-margin-top:88px;scroll-margin-bottom:110px}
 
-.card:has(.reta-quick) .dose-table{display:grid;grid-template-columns:1fr;gap:8px}
-.card:has(.reta-quick) .source-tail{margin-top:8px;color:var(--ink-soft);font-size:.82rem}
-.card:has(.reta-quick) .source-tail summary{cursor:pointer;font-family:var(--sans);font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft)}
-.card:has(.reta-quick) .source-tail p{margin:8px 0 0;line-height:1.4}
-.card:has(.reta-quick) .synergy-detail{background:transparent;border:1px solid var(--line);border-left:3px solid var(--field);color:var(--ink)}
-.card:has(.reta-quick) .synergy-detail>strong{color:var(--field);font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;font-family:var(--sans)}
-.card:has(.reta-quick) .regulatory-note{color:var(--ink-soft);font-size:.78rem;margin:8px 0 0}
+.card-premium .dose-table{display:grid;grid-template-columns:1fr;gap:8px}
+.card-premium .source-tail{margin-top:8px;color:var(--ink-soft);font-size:.82rem}
+.card-premium .source-tail summary{cursor:pointer;font-family:var(--sans);font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft)}
+.card-premium .source-tail p{margin:8px 0 0;line-height:1.4}
+.card-premium .synergy-detail{background:transparent;border:1px solid var(--line);border-left:3px solid var(--field);color:var(--ink)}
+.card-premium .synergy-detail>strong{color:var(--field);font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;font-family:var(--sans)}
+.card-premium .regulatory-note{color:var(--ink-soft);font-size:.78rem;margin:8px 0 0}
 
+
+
+.card-premium .chip-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:7px;margin-top:12px}
+.card-premium .chip-tile{align-items:flex-start;text-align:left;min-height:0;padding:9px 8px;border:1px solid var(--line);border-radius:10px;background:transparent;color:var(--ink)}
+.card-premium .chip-tile span{color:var(--ink-soft);font-size:.62rem;letter-spacing:.07em}
+.card-premium .chip-tile b{font-family:var(--serif);font-size:.82rem;color:var(--ink);font-weight:600}
+.card-premium .chip-grid .chip-tile:nth-child(1){border-color:rgba(35,75,51,.4)}
+.card-premium .chip-grid .chip-tile:nth-child(1) span{color:var(--field)}
+.card-premium .chip-grid .chip-tile:nth-child(2){border-color:rgba(211,84,0,.4)}
+.card-premium .chip-grid .chip-tile:nth-child(2) span{color:var(--ember)}
+.card-premium .chip-grid .chip-tile:nth-child(3){border-color:rgba(18,13,31,.35)}
+.card-premium .chip-grid .chip-tile:nth-child(3) span{color:var(--midnight)}
+.card-premium .chip-tile[aria-expanded="true"]{background:transparent;box-shadow:inset 0 0 0 1px rgba(211,84,0,.45);border-color:var(--ember)}
+.card-premium .chip-detail-inner{background:var(--parchment);border-left:2px solid var(--field);border-radius:0 10px 10px 0;color:var(--ink)}
+.card-premium .go-deeper-btn{background:var(--ember);color:#fff7ef}
+.card-premium .tech-inner{background:var(--parchment);border:1px solid var(--line);color:var(--ink)}
+.card-premium .tech-section h3{color:var(--midnight)}
+.card-premium .jump-list button{background:var(--card);border-color:var(--line);color:var(--ink)}
 
 @media(min-width:720px){
 .home-view{padding-top:28px}
@@ -131,5 +149,5 @@ body{padding-bottom:82px;background-color:var(--parchment);background-image:url(
 <main id="main"><section id="library-view" class="view" hidden><div class="meta-row"><p id="result-count" class="count"></p><p class="hint">Tap a card for the quick answer and deeper biology.</p></div><div id="card-grid" class="card-grid"></div><p id="empty-state" class="empty" hidden>No peptides match that search.</p></section><section id="compare-view" class="view" hidden><div class="compare-head"><button type="button" class="ghost-btn" id="back-to-library">← Peptides</button><h2>Synergy</h2><button type="button" class="text-btn" id="clear-compare">Clear</button></div><div class="stack-presets" id="stack-presets"></div><p id="stack-note" class="stack-note" hidden></p><div id="compare-board" class="compare-board"></div></section></main>
 <div id="compare-dock" class="dock" hidden><div class="dock-inner"><p id="dock-label">0 selected</p><div class="dock-actions"><button type="button" class="text-btn" id="dock-clear">Clear</button><button type="button" class="primary-btn" id="dock-compare" disabled>Compare synergy</button></div></div></div>
 <footer class="site-foot"><p>Peptide Reference · Biology first · Works offline after first load.</p></footer>
-<nav class="bottom-nav" aria-label="Primary navigation"><div class="bottom-nav-inner"><button class="nav-btn active" type="button" data-nav="home"><span class="nav-icon">⌂</span>Home</button><button class="nav-btn" type="button" data-nav="library"><span class="nav-icon">⌬</span>Peptides</button><button class="nav-btn" type="button" data-nav="stacks"><span class="nav-icon">◉</span>Synergy</button><button class="nav-btn" type="button" data-nav="search"><span class="nav-icon">⌕</span>Search</button></div></nav>
-<script src="app.js?v=22" defer></script><script src="jump.js?v=22" defer></script></body></html>
+<nav class="bottom-nav" aria-label="Primary navigation"><div class="bottom-nav-inner"><button class="nav-btn active" type="button" data-nav="home"><span class="nav-icon">⌂</span>Home</button><button class="nav-btn" type="button" data-nav="library"><span class="nav-icon">⌬</span>Peptides</button><button class="nav-btn" type="button" data-nav="stacks"><span class="nav-icon">◉</span>Synergy</button></div></nav>
+<script src="app.js?v=26" defer></script><script src="jump.js?v=26" defer></script></body></html>
