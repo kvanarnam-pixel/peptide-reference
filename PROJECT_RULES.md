@@ -58,3 +58,13 @@ When reporting a completed app edit, state:
 - and any remaining uncertainty.
 
 Do not say `done`, `fixed`, or `matches` until the verification pass is complete.
+
+## 9. Card content has two storage locations — know which one renders
+- `data/peptides.json` per-compound fields (`dose`, `timing`, `cautions`, etc.) feed the search index only. They are not displayed.
+- The actual rendered chip content lives in `app.js`, in each compound's hardcoded `*_CHIPS` array (`TB500_CHIPS`, `BPC157_CHIPS`, `GHKCU_CHIPS`, `MOTSC_CHIPS`, `RETATRUTIDE_CHIPS`, `ARA290_CHIPS`, `KPV_CHIPS`), via `CHIP_REGISTRY[id] || genericChips(p)`.
+- Any edit meant to change what a user sees on a card must target the compound's `*_CHIPS` block in `app.js`. Editing `peptides.json` alone changes nothing visible — confirm which file you're editing before reporting a content fix as complete.
+
+## 10. Version bump applies to content edits, not just new file paths
+- Any change to `app.js`, `index.html`, `styles.css`, `jump.js`, `service-worker.js`, or any `research/*.md` file requires bumping `?v=` in `index.html` and `CACHE_NAME` in `service-worker.js` together, to the same number — even when the file path itself hasn't changed.
+- The service worker caches by exact URL, including the `?v=` query string. If that string doesn't change, an already-installed phone keeps serving the old cached content indefinitely, regardless of what's live on GitHub.
+- "It's just a content edit, not a new asset" is not an exception to this rule. That reasoning has already caused one near-miss on this project.
