@@ -1,6 +1,6 @@
 (() => {
   const state={data:null,query:"",category:"all",selected:new Set(),open:new Set(),activeStack:null,view:"home"};
-  const els={home:document.getElementById("home-view"),toolbar:document.getElementById("library-toolbar"),filters:document.getElementById("filters"),search:document.getElementById("search"),grid:document.getElementById("card-grid"),empty:document.getElementById("empty-state"),count:document.getElementById("result-count"),library:document.getElementById("library-view"),compare:document.getElementById("compare-view"),compareBoard:document.getElementById("compare-board"),presets:document.getElementById("stack-presets"),stackNote:document.getElementById("stack-note"),dock:document.getElementById("compare-dock"),dockLabel:document.getElementById("dock-label"),dockCompare:document.getElementById("dock-compare"),dockClear:document.getElementById("dock-clear"),clearCompare:document.getElementById("clear-compare"),back:document.getElementById("back-to-library"),compareToggle:document.getElementById("compare-toggle"),offline:document.getElementById("offline-pill")};
+  const els={home:document.getElementById("home-view"),toolbar:document.getElementById("library-toolbar"),filters:document.getElementById("filters"),search:document.getElementById("search"),grid:document.getElementById("card-grid"),empty:document.getElementById("empty-state"),count:document.getElementById("result-count"),library:document.getElementById("library-view"),compare:document.getElementById("compare-view"),compareBoard:document.getElementById("compare-board"),presets:document.getElementById("stack-presets"),stackNote:document.getElementById("stack-note"),dock:document.getElementById("compare-dock"),dockLabel:document.getElementById("dock-label"),dockCompare:document.getElementById("dock-compare"),dockClear:document.getElementById("dock-clear"),clearCompare:document.getElementById("clear-compare"),back:document.getElementById("back-to-library"),compareToggle:document.getElementById("compare-toggle"),offline:document.getElementById("offline-pill"),synergy:document.getElementById("synergy-view"),synergyGrid:document.getElementById("synergy-grid")};
   const escapeHtml=v=>String(v).replace(/&/g,["&","amp;"].join("")).replace(/</g,["&","lt;"].join("")).replace(/>/g,["&","gt;"].join("")).replace(/"/g,["&","quot;"].join(""));
   const categoryById=id=>state.data.categories.find(c=>c.id===id); const selectedPeptides=()=>state.data.peptides.filter(p=>state.selected.has(p.id));
   const persist=()=>{try{localStorage.setItem("peptide-ref-selected",JSON.stringify([...state.selected]))}catch{}}; const restore=()=>{try{const r=JSON.parse(localStorage.getItem("peptide-ref-selected")||"[]");if(Array.isArray(r))r.slice(0,5).forEach(id=>state.selected.add(id))}catch{}};
@@ -57,6 +57,32 @@
       container.innerHTML = `<p class="tech-error">Couldn't load the technical layer${typeof navigator !== "undefined" && !navigator.onLine ? " — you're offline and it hasn't been cached yet" : ""}. It'll work offline once you've opened it while connected at least once.</p>`;
     }
   };
+  const PROTOCOL_DOC_NAMES = {};
+  const protocolCache = new Map();
+  const renderProtocolDoc = async (id, container) => {
+    container.innerHTML = `<p class="tech-loading">Loading…</p>`;
+    if (!PROTOCOL_DOC_NAMES[id]) { container.innerHTML = `<p class="tech-error">This one hasn't been rewritten in the new format yet — it's queued.</p>`; return; }
+    try {
+      let sections = protocolCache.get(id);
+      if (!sections) {
+        const res = await fetch(`./protocols/${PROTOCOL_DOC_NAMES[id]}`);
+        if (!res.ok) throw new Error("fetch failed");
+        sections = parseResearchDoc(await res.text());
+        protocolCache.set(id, sections);
+      }
+      const tid = `p-${id}`;
+      container.innerHTML = sections.map((s, i) => `<div class="tech-accordion-item"><button type="button" class="tech-accordion-header" data-tech-toggle="${tid}|${i}" aria-expanded="false"><span>${escapeHtml(s.title)}</span></button><div class="tech-accordion-body" id="techsec-${tid}-${i}" hidden>${s.html}</div></div>`).join("");
+    } catch (err) {
+      container.innerHTML = `<p class="tech-error">Couldn't load this${typeof navigator !== "undefined" && !navigator.onLine ? " — you're offline and it hasn't been cached yet" : ""}.</p>`;
+    }
+  };
+  const protocolTileHtml = p => `<article class="card" data-protocol-id="${p.id}">
+      <h2>${escapeHtml(p.name)}</h2>
+      <p class="card-desc">${escapeHtml(p.oneLiner || "")}</p>
+      <button type="button" class="go-deeper-btn" data-protocol-deeper="${p.id}" aria-expanded="false"><span>See the full reasoning</span></button>
+      <div class="tech-tier" id="ptier-${p.id}"><div class="tech-inner" id="pinner-${p.id}"></div></div>
+    </article>`;
+  const renderSynergyList = () => { els.synergyGrid.innerHTML = (state.data.protocols || []).map(protocolTileHtml).join("") || `<p class="empty">No protocols published yet.</p>`; };
   const clip=(s,n=18)=>{const t=String(s||"").replace(/\s+/g," ").trim();if(t.length<=n)return t;const cut=t.slice(0,n);const sp=cut.lastIndexOf(" ");return (sp>8?cut.slice(0,sp):cut).replace(/[.,;:]+$/,"")+"…"};
   const chipGridHtml = (id, chipRows) => chipRows.map((row, ri) => `<div class="chip-grid">${row.map(c => `<button type="button" class="chip-tile" data-chip="${id}|${ri}|${c.key}" aria-expanded="false"><span>${escapeHtml(c.label)}</span>${c.value ? `<b>${escapeHtml(c.value)}</b>` : ""}</button>`).join("")}</div><div class="chip-detail" id="chipdetail-${id}-${ri}" hidden></div>`).join("");
   const genericChips = p => [
@@ -170,7 +196,7 @@
     <div class="bottom-line"><strong>Bottom line</strong><p>Mobilizes repair activity across the body — muscle, vessels, and scar tissue alike.</p></div>
     ${chipGridHtml(p.id, TB500_CHIPS)}
     ${goDeeperTierHtml(p)}
-    <div class="card-actions"><button type="button" class="select-btn" data-select="${p.id}" aria-pressed="${selected}">${selected ? "Selected" : "Add to synergy"}</button></div>
+    <div class="card-actions"><button type="button" class="select-btn" data-select="${p.id}" aria-pressed="${selected}">${selected ? "Selected" : "Add to compare"}</button></div>
   </article>`};
 
   const bpc157Html = p => { const cat = categoryById(p.category), selected = state.selected.has(p.id); return `<article class="card ${selected ? "selected" : ""}" data-id="${p.id}" data-category="${p.category}">
@@ -180,7 +206,7 @@
     <div class="bottom-line"><strong>Bottom line</strong><p>BPC-157 helps your body heal itself by coordinating repair, not by being the building material. Use the lowest exposure that's actually doing that job.</p></div>
     ${chipGridHtml(p.id, BPC157_CHIPS)}
     ${goDeeperTierHtml(p)}
-    <div class="card-actions"><button type="button" class="select-btn" data-select="${p.id}" aria-pressed="${selected}">${selected ? "Selected" : "Add to synergy"}</button></div>
+    <div class="card-actions"><button type="button" class="select-btn" data-select="${p.id}" aria-pressed="${selected}">${selected ? "Selected" : "Add to compare"}</button></div>
   </article>`};
 
   const ghkcuHtml = p => { const cat = categoryById(p.category), selected = state.selected.has(p.id); return `<article class="card ${selected ? "selected" : ""}" data-id="${p.id}" data-category="${p.category}">
@@ -190,7 +216,7 @@
     <div class="bottom-line"><strong>Bottom line</strong><p>GHK-Cu supplies copper and gene-level remodeling instructions to a repair job — materials and blueprints, not the foreman or the access crew. Use the lowest exposure doing that job, and don't run it indefinitely without checking copper status.</p></div>
     ${chipGridHtml(p.id, GHKCU_CHIPS)}
     ${goDeeperTierHtml(p)}
-    <div class="card-actions"><button type="button" class="select-btn" data-select="${p.id}" aria-pressed="${selected}">${selected ? "Selected" : "Add to synergy"}</button></div>
+    <div class="card-actions"><button type="button" class="select-btn" data-select="${p.id}" aria-pressed="${selected}">${selected ? "Selected" : "Add to compare"}</button></div>
   </article>`};
 
   const motscHtml = p => { const cat = categoryById(p.category), selected = state.selected.has(p.id); return `<article class="card ${selected ? "selected" : ""}" data-id="${p.id}" data-category="${p.category}">
@@ -200,7 +226,7 @@
     <div class="bottom-line"><strong>Bottom line</strong><p>MOTS-c is the power plant: insulin-independent glucose uptake and new mitochondria. Use the lowest exposure doing that job — and run it with SS-31 throughout, that pairing matters here even though SS-31 isn't its own card yet.</p></div>
     ${chipGridHtml(p.id, MOTSC_CHIPS)}
     ${goDeeperTierHtml(p)}
-    <div class="card-actions"><button type="button" class="select-btn" data-select="${p.id}" aria-pressed="${selected}">${selected ? "Selected" : "Add to synergy"}</button></div>
+    <div class="card-actions"><button type="button" class="select-btn" data-select="${p.id}" aria-pressed="${selected}">${selected ? "Selected" : "Add to compare"}</button></div>
   </article>`};
 
   const retatrutideHtml = p => { const cat = categoryById(p.category), selected = state.selected.has(p.id); return `<article class="card ${selected ? "selected" : ""}" data-id="${p.id}" data-category="${p.category}">
@@ -210,7 +236,7 @@
     <div class="bottom-line"><strong>Bottom line</strong><p>Combines three metabolic signals (GLP-1, GIP, and glucagon) into one weekly shot. The goal is the lowest exposure that keeps producing the result you want, not the highest dose available.</p></div>
     ${chipGridHtml(p.id, chipsFor(p.id))}
     ${goDeeperTierHtml(p)}
-    <div class="card-actions"><button type="button" class="select-btn" data-select="${p.id}" aria-pressed="${selected}">${selected ? "Selected" : "Add to synergy"}</button></div>
+    <div class="card-actions"><button type="button" class="select-btn" data-select="${p.id}" aria-pressed="${selected}">${selected ? "Selected" : "Add to compare"}</button></div>
   </article>`};
 
   const cardHtml=p=>{
@@ -228,16 +254,16 @@
       ${p.bottomLine?`<div class="bottom-line"><strong>Bottom line</strong><p>${escapeHtml(p.bottomLine)}</p></div>`:""}
       ${chipGridHtml(p.id, genericChips(p))}
       ${goDeeperTierHtml(p)}
-      <div class="card-actions"><button type="button" class="select-btn" data-select="${p.id}" aria-pressed="${selected}">${selected?"Selected":"Add to synergy"}</button></div>
+      <div class="card-actions"><button type="button" class="select-btn" data-select="${p.id}" aria-pressed="${selected}">${selected?"Selected":"Add to compare"}</button></div>
     </article>`;
   };
   const renderFilters=()=>{const chips=[{id:"all",label:"All"},...state.data.categories.map(c=>({id:c.id,label:c.short}))];els.filters.innerHTML=chips.map(c=>`<button type="button" class="chip" role="tab" data-cat="${c.id}" aria-pressed="${state.category===c.id}">${escapeHtml(c.label)}</button>`).join("")};
   const renderLibrary=()=>{const items=state.data.peptides.filter(matches);els.count.textContent=`${items.length} of ${state.data.peptides.length} entries`;els.grid.innerHTML=items.map(cardHtml).join("");els.empty.hidden=items.length>0};
   const renderPresets=()=>{els.presets.innerHTML=state.data.stacks.map(s=>`<button type="button" class="preset" data-stack="${s.id}" aria-pressed="${state.activeStack===s.id}">${escapeHtml(s.name)}</button>`).join("")};
-  const renderCompare=()=>{const items=selectedPeptides();els.compareBoard.innerHTML=items.length===0?`<p class="empty">Select 2–5 peptides, or choose a synergy above.</p>`:items.map(p=>`<div class="compare-col">${cardHtml(p)}</div>`).join("");const s=state.data.stacks.find(x=>x.id===state.activeStack);if(s){els.stackNote.hidden=false;els.stackNote.textContent=`${s.subtitle}. ${s.note}`}else els.stackNote.hidden=true};
+  const renderCompare=()=>{const items=selectedPeptides();els.compareBoard.innerHTML=items.length===0?`<p class="empty">Select 2–5 peptides, or choose a preset above.</p>`:items.map(p=>`<div class="compare-col">${cardHtml(p)}</div>`).join("");const s=state.data.stacks.find(x=>x.id===state.activeStack);if(s){els.stackNote.hidden=false;els.stackNote.textContent=`${s.subtitle}. ${s.note}`}else els.stackNote.hidden=true};
   const renderDock=()=>{const n=state.selected.size,show=n>0&&state.view==="library";els.dock.hidden=!show;els.compareToggle.hidden=n<2;els.dockLabel.textContent=n===0?"0 selected":n===1?"1 selected · add 1–4 more":`${n} selected`;els.dockCompare.disabled=n<2||n>5;els.dockCompare.textContent=n<2?"Need 2–5":`Compare ${n}`};
   const markNav=view=>document.querySelectorAll("[data-nav]").forEach(b=>b.classList.toggle("active",(view==="compare"?"stacks":view)===b.dataset.nav));
-  const setView=view=>{state.view=view;els.home.hidden=view!=="home";els.library.hidden=view!=="library";els.compare.hidden=view!=="compare";els.toolbar.dataset.hidden=view!=="library"?"true":"false";if(view==="library")renderLibrary();if(view==="compare"){renderPresets();renderCompare()}renderDock();markNav(view);window.scrollTo({top:0,behavior:"smooth"})};
+  const setView=view=>{state.view=view;els.home.hidden=view!=="home";els.library.hidden=view!=="library";els.compare.hidden=view!=="compare";els.synergy.hidden=view!=="synergy";els.toolbar.dataset.hidden=view!=="library"?"true":"false";if(view==="library")renderLibrary();if(view==="compare"){renderPresets();renderCompare()}if(view==="synergy")renderSynergyList();renderDock();markNav(view);window.scrollTo({top:0,behavior:"smooth"})};
   const toggleOpen=id=>{state.open.has(id)?state.open.delete(id):state.open.add(id);state.view==="compare"?renderCompare():renderLibrary()};
   const jumpTo=(id,target)=>{state.open.add(id);state.view==="compare"?renderCompare():renderLibrary();requestAnimationFrame(()=>document.getElementById(target)?.scrollIntoView({behavior:"smooth",block:"start"}))};
   const toggleSelect=id=>{if(state.selected.has(id))state.selected.delete(id);else{if(state.selected.size>=5){els.dockLabel.textContent="Maximum 5 peptides";els.dock.hidden=false;return}state.selected.add(id)}const s=state.data.stacks.find(x=>x.peptideIds.length===state.selected.size&&x.peptideIds.every(pid=>state.selected.has(pid)));state.activeStack=s?s.id:null;persist();state.view==="compare"?renderCompare():renderLibrary();renderDock()};
@@ -260,7 +286,18 @@
       }
       return;
     }
-    const goDeeper = e.target.closest("[data-go-deeper]");
+    const protocolDeeper = e.target.closest("[data-protocol-deeper]");
+    if (protocolDeeper) {
+      const id = protocolDeeper.dataset.protocolDeeper;
+      const tier = document.getElementById(`ptier-${id}`);
+      const nowOpen = !tier.classList.contains("open");
+      tier.classList.toggle("open", nowOpen);
+      protocolDeeper.setAttribute("aria-expanded", nowOpen ? "true" : "false");
+      protocolDeeper.querySelector("span").textContent = nowOpen ? "Close" : "See the full reasoning";
+      if (nowOpen) renderProtocolDoc(id, document.getElementById(`pinner-${id}`));
+      return;
+    }
+        const goDeeper = e.target.closest("[data-go-deeper]");
     if (goDeeper) {
       const id = goDeeper.dataset.goDeeper;
       const tier = document.getElementById(`techtier-${id}`);
@@ -290,6 +327,6 @@
   const setOffline=()=>{els.offline.hidden=navigator.onLine};
   const bind=()=>{document.addEventListener("click",onClick);els.search.addEventListener("input",e=>{state.query=e.target.value;renderLibrary()});els.dockCompare.addEventListener("click",()=>setView("compare"));els.compareToggle.addEventListener("click",()=>setView("compare"));els.back.addEventListener("click",()=>setView("library"));const clear=()=>{state.selected.clear();state.activeStack=null;persist();state.view==="compare"?renderCompare():renderLibrary();renderDock()};els.dockClear.addEventListener("click",clear);els.clearCompare.addEventListener("click",clear);document.addEventListener("keydown",e=>{if(e.key!=="Enter"&&e.key!==" ")return;const t=e.target.closest(".card-summary[data-toggle]");if(!t)return;e.preventDefault();toggleOpen(t.dataset.toggle)});window.addEventListener("online",setOffline);window.addEventListener("offline",setOffline)};
   const registerWorker=()=>{if("serviceWorker" in navigator)navigator.serviceWorker.register("./service-worker.js").catch(()=>{})};
-  const init=async()=>{bind();setOffline();restore();const response=await fetch("./data/peptides.json");state.data=await response.json();renderFilters();renderLibrary();renderDock();setView("home");registerWorker()};
+  const init=async()=>{bind();setOffline();restore();const response=await fetch("./data/peptides.json");state.data=await response.json();try{const protoRes=await fetch("./data/protocols.json");state.data.protocols=protoRes.ok?(await protoRes.json()).protocols||[]:[]}catch{state.data.protocols=[]}renderFilters();renderLibrary();renderDock();setView("home");registerWorker()};
   init().catch(error=>{els.grid.innerHTML="";els.empty.hidden=false;els.empty.textContent="Could not load peptide data. "+error.message});
 })();
