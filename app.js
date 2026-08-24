@@ -17,7 +17,8 @@
     "ghk-cu": "GHK-Cu_Compound_Research.md",
     "mots-c": "MOTS-c_Compound_Research.md",
     "retatrutide": "Retatrutide_Compound_Research.md",
-    "ss-31": "SS-31_Compound_Research.md"
+    "ss-31": "SS-31_Compound_Research.md",
+    "ara-290": "ARA-290_Compound_Research.md"
   };
   const techCache = new Map();
   const inlineMd = t => { let s = escapeHtml(t); s = s.replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>"); s = s.replace(/\*(.+?)\*/g, "<em>$1</em>"); s = s.replace(/`(.+?)`/g, "<code>$1</code>"); return s };
@@ -186,7 +187,22 @@
     ]
   ];
 
-  const CHIP_REGISTRY = { "tb-500": TB500_CHIPS, "bpc-157": BPC157_CHIPS, "ghk-cu": GHKCU_CHIPS, "mots-c": MOTSC_CHIPS, "retatrutide": RETATRUTIDE_CHIPS };
+  const ARA290_CHIPS = [
+    [
+      { key: "dose", label: "Dose", value: "4mg SQ daily", detail: `<p>4 milligrams under the skin, once a day — this is one of the few compounds here where the practical dose and the trial dose are the same number. The sarcoidosis trial actually tested a range (1, 4, and 8 mg), and 4 mg came out clearest. 8 mg wasn't simply stronger, so more isn't automatically better here.</p>` },
+      { key: "timing", label: "Timing", value: "Daily, any time", detail: `<p>No trial has flagged time-of-day as mattering, and food doesn't affect it. Both completed trials just dosed once daily for the full course.</p>` },
+      { key: "cycling", label: "Cycling", value: "28 days — not a ceiling", detail: `<p>28 days is how long the trials happened to run, not a biological limit. Nobody's tested it longer, nobody's tested it shorter — that's an absence of data, not evidence that day 29 is a problem. There's no receptor here that wears out with repeated use, the receptor it works through barely exists on healthy tissue to begin with, and the EPO-side-effect risk (blood thickening) was specifically engineered out of this molecule. The "28 on, 56 off" number that circulates online doesn't trace back to any trial or source we could verify — treat it as unconfirmed, not as a rule.</p>` },
+      { key: "expect", label: "What to expect", value: "Builds for months", detail: `<p>In the sarcoidosis trial, nerve fiber density kept increasing for 16 weeks after a single 28-day course ended — the repair process runs well past the last injection. If a course doesn't look "finished" right when the shots stop, that's expected, not a sign it didn't work.</p>` }
+    ],
+    [
+      { key: "watch", label: "Watch for at home", value: "4 signs to track", detail: `<p>The trials measured recovery with equipment nobody has at home — here's what the same biology looks like from outside. Nerve regrowth moves from the body outward, so improvement plausibly shows up first closer to the wrist or ankle before it reaches fingers or toes — track where the symptomatic edge sits, not just "better or worse."</p><p>A shift from constant burning to intermittent tingling or odd "static" sensations can mean fibers are reconning and firing sporadically — that's a possible sign of repair, not failure. A simple temperature check (warm vs. cool touch, affected side vs. unaffected) tests the same small-fiber population the trials measured. And judge on a longer clock than the dosing window — resolution can lag the last dose by months.</p>` },
+      { key: "support", label: "Take alongside", value: "6 picks", detail: `<p>ALA, benfotiamine, omega-3 DHA, methylated B12, magnesium glycinate, and liposomal glutathione — supporting nerve conduction and myelin while ARA-290 handles the injury-site signaling. Not sourced to trial data for this specific compound yet — flagged for a future pass.</p>` },
+      { key: "cautions", label: "Cautions", value: "4 to know", detail: `<p>Two Phase 2 trials is genuinely strong evidence for this reference, but it's still Phase 2, still 28 days, still from one concentrated research group — not an approved therapy. It's engineered specifically to avoid EPO's blood-thickening receptor, so don't treat it as "a form of EPO."</p><p>If any new or unexpected symptom shows up — especially a new malignancy diagnosis — stop and see a physician. Not because any trial showed it causes cancer, but because its core mechanism tells stressed cells to survive rather than die, which is exactly what helps a damaged nerve and exactly what deserves scrutiny elsewhere. And there's no safety data past about two months of total observation — anything beyond that is genuinely unstudied territory.</p>` },
+      { key: "catch", label: "The catch", value: "", detail: `<p>The receptor this compound depends on barely exists without injury or inflammation to switch it on — it's not a general tonic, it's damage-triggered. And a full course "not working" by day 28, or even by the end of a shorter off-period, doesn't mean it failed. The repair process it kicks off keeps running for months — you may just be checking before the biology finished.</p>` }
+    ]
+  ];
+
+  const CHIP_REGISTRY = { "tb-500": TB500_CHIPS, "bpc-157": BPC157_CHIPS, "ghk-cu": GHKCU_CHIPS, "mots-c": MOTSC_CHIPS, "retatrutide": RETATRUTIDE_CHIPS, "ara-290": ARA290_CHIPS };
 
   const goDeeperTierHtml = p => TECH_DOC_NAMES[p.id]
     ? `<button type="button" class="go-deeper-btn" data-go-deeper="${p.id}" aria-expanded="${state.open.has(p.id)}"><span>${state.open.has(p.id) ? "Close technical layer" : "Go deeper — the technical layer"}</span></button><div class="tech-tier ${state.open.has(p.id) ? "open" : ""}" id="techtier-${p.id}"><div class="tech-inner" id="techinner-${p.id}"></div></div>`
