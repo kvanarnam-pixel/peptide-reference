@@ -60,6 +60,14 @@ The practical read: SS-31 appears to be a genuinely effective cardiolipin-stabil
 
 **One piece of mechanistic support for lower doses, offered as context, not validation:** preclinical work shows SS-31 accumulates in mitochondria with *saturable* binding — once cardiolipin binding sites in a cell are occupied, additional drug does not add proportional benefit ([DOI](https://doi.org/10.1074/jbc.RA119.012094)). This is a real pharmacological property and is the mechanistic basis for believing a therapeutic window narrower than 40 mg could plausibly exist. It is not the same thing as evidence that 1–5 mg achieves it in humans.
 
+**Observed/self-report tier — the fourth evidence layer, distinct from and below the clinical layer above:** absence of a trial at community doses doesn't mean absence of information. A recurring, convergent pattern shows up across independent, unrelated self-report sources (not one narrative repeated by content sites, but genuinely separate posters describing the same thing in their own words):
+
+- A transient "tired / energy-drained" feeling on dose ramp-up that resolves — reversal reported over roughly 1–3 weeks — appears independently in multiple community threads. Worth flagging as an expected early-phase experience rather than a reason to stop.
+- Subjective response run alone is commonly reported as subtle-to-absent; several independent posters report noticing SS-31's effect only once paired with MOTS-c, not before.
+- Community starting points cluster around 1–5 mg with gradual titration, consistent with (though not proof of) the saturable-binding mechanism above.
+
+This is Tier 4 — observed/physiologically consistent, not peer-reviewed and not a substitute for the trial-dose data above it. It earns a place in this doc because it's a real, convergent pattern, not because it's been validated. Held to the same standard as everything else here: no specific claim above is stated more confidently than its source supports.
+
 **Practical patterns, explicitly labeled as convention, not validated protocol:**
 - Subcutaneous injection, rotating sites (abdomen, thigh, upper arm) — injection site reactions (pruritus, pain, erythema, bruising) are the single most consistently reported adverse event across every trial, occurring in a majority of treated patients in ReCLAIM-2.
 - Morning dosing is commonly cited for practical/circadian reasons; there is no trial evidence this timing matters for effect.
@@ -67,7 +75,7 @@ The practical read: SS-31 appears to be a genuinely effective cardiolipin-stabil
 
 ## What to expect and monitor
 
-**Early:** Nothing dramatic and nothing should be expected quickly. This is not an acute-effect compound. Injection site reactions, if they occur, typically show up within the first days to weeks and are the most likely thing to actually notice early.
+**Early:** Nothing dramatic and nothing should be expected quickly. This is not an acute-effect compound. Injection site reactions, if they occur, typically show up within the first days to weeks and are the most likely thing to actually notice early. A second thing worth expecting, from the observed/self-report tier rather than trial data: a transient tired or energy-drained feeling on ramp-up is a recurring community-reported pattern, typically resolving over 1–3 weeks. Worth knowing in advance so it reads as an expected adjustment phase rather than a signal to stop.
 
 **Building:** In the trial population where SS-31 has the clearest signal (Barth syndrome), meaningful functional improvement (walk-test distance, muscle strength) built gradually and was still increasing at 168 weeks — this is a slow, cumulative-repair compound, not a lever that moves fast. There is no trial data describing a "building" phase in healthy adults at community doses, because no such trial exists.
 
@@ -84,7 +92,13 @@ The practical read: SS-31 appears to be a genuinely effective cardiolipin-stabil
 ## Synergy
 
 ### MOTS-c + SS-31 [Power plant + Wiring crew]
-Mechanistically complementary, not combined-use-evidenced. MOTS-c signals cells to use fuel more efficiently and drives mitochondrial biogenesis (more power plants); SS-31 protects the wiring inside each existing plant so what's already there wastes less. This is the pairing the app's own MOTS-c card already anticipates ("run WITH SS-31 throughout" in its cycling note) — a reasonable mechanistic story, not a claim that the combination has been studied together in a trial.
+**Stated protocol sequence: MOTS-c first, then SS-31.** This isn't just this reference's mechanistic inference — it's the explicitly stated sequence from a Trevor Bachmeyer protocol video ("MOTS-C or SS-31: A Comprehensive Guide"), and it's treated here as this project's highest evidence tier for dosing/cycling/sequencing decisions specifically, per HOUSE_STANDARDS.
+
+Bachmeyer's stated reasoning: MOTS-c's AMPK activation forces insulin sensitivity and clears metabolic debris — it resets the cell's fuel-handling environment. SS-31 doesn't supply fuel; it stabilizes the membrane architecture that fuel gets converted to ATP through. Going straight to SS-31 on a cell that's still metabolically sluggish or insulin-resistant is, in his framing, like repairing the engine of a car that's out of gas and has a broken computer — the repair work has nothing to run on yet. MOTS-c first restores the metabolic landscape; SS-31 second stabilizes the structure now that there's something worth stabilizing for.
+
+The alternative order — SS-31 before MOTS-c, "control damage before increasing demand" — also has real mechanistic and community-convention support, and is named here rather than hidden: if cardiolipin oxidation is an active, ongoing pressure, new biogenesis capacity forms into the same damaging environment before that pressure is addressed. But between an anonymous community-forum convention and a specifically sourced practitioner statement treated as this project's highest dosing/sequencing tier, the latter carries more weight here.
+
+This is the pairing the app's own MOTS-c card already anticipates ("run WITH SS-31 throughout" in its cycling note).
 
 ### GHK-Cu + SS-31 [Materials/blueprints + Wiring crew]
 Mechanistic complementarity at the tissue-repair level: GHK-Cu supports the extracellular signaling/remodeling side of repair, SS-31 supports the cellular energy supply that repair work actually runs on. No combined-use trial evidence; the case here is purely mechanistic plausibility — repair processes are energy-intensive, and a compound that improves ATP availability plausibly supports one that's driving tissue remodeling.
@@ -108,7 +122,7 @@ The opposite oversimplification is just as misleading: dismissing SS-31 because 
 
 ## Source synthesis
 
-This doc was built from a targeted PubMed literature pull (mechanism, structure-activity, and all major published clinical trials: EMBRACE-STEMI, PROGRESS-HF, TAZPOWER and its 168-week open-label extension, ReCLAIM-2, MMPOWER-3) plus a peer-reviewed 2025 structural/mechanistic review that synthesizes the full clinical program in one place. Regulatory status (FORZINITY accelerated approval, September 2025) was verified against the FDA-approval press announcement and independent clinical-news coverage published at the time, since this postdates most general knowledge and needed direct confirmation rather than assumption. Practical/community dosing claims were sourced from peptide-community reference sites and are explicitly labeled as unvalidated in every place they appear in this doc — none of that material was treated as clinical evidence.
+This doc was built from a targeted PubMed literature pull (mechanism, structure-activity, and all major published clinical trials: EMBRACE-STEMI, PROGRESS-HF, TAZPOWER and its 168-week open-label extension, ReCLAIM-2, MMPOWER-3) plus a peer-reviewed 2025 structural/mechanistic review that synthesizes the full clinical program in one place. Regulatory status (FORZINITY accelerated approval, September 2025) was verified against the FDA-approval press announcement and independent clinical-news coverage published at the time, since this postdates most general knowledge and needed direct confirmation rather than assumption. Practical/community dosing claims were sourced from peptide-community reference sites and are explicitly labeled as unvalidated in every place they appear in this doc — none of that material was treated as clinical evidence. The MOTS-c-then-SS-31 sequencing stated in the Synergy section is sourced from a Trevor Bachmeyer protocol video ("MOTS-C or SS-31: A Comprehensive Guide"), transcript-summarized in the project's Working Folder — treated per HOUSE_STANDARDS as this project's highest evidence tier specifically for dosing/cycling/sequencing decisions, distinct from and above the community-forum-convention tier used elsewhere in this doc.
 
 Every mechanism and trial-outcome claim in this document traces to a specific PMID/DOI pulled directly via PubMed in this session; none were carried over from a prior secondary source. No citation in this doc points to a paper on an unrelated topic, and no specific number in the trial-outcome sections lacks a traceable source.
 
