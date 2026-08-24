@@ -205,7 +205,7 @@ Primary project sources and decisions that shaped this document:
 - Project conversation and research draft that supplied the working foundation for mechanism, evidence boundaries, dosing reality-check, and “What They’re Not Telling You” framing.
 - HOUSE_STANDARDS.md dosing philosophy (minimum effective exposure, results earn escalation, no invented precision).
 - _TEMPLATE.md section order and role of each section.
-- Explicit ticket constraints: Site Safety Coordinator identity, ARA-290 remains Emergency Response Switch, no reconstitution section, no arbitrary cycling schedule, no unsupported half-life justification for frequency, hs-CRP not treated as a KPV-specific biomarker, mitochondrial relationship kept evidence-tiered, K(D)PT kept distinct.
+- Explicit ticket constraints: Site Safety Coordinator identity, ARA-290 remains Data Signal Repair, no reconstitution section, no arbitrary cycling schedule, no unsupported half-life justification for frequency, hs-CRP not treated as a KPV-specific biomarker, mitochondrial relationship kept evidence-tiered, K(D)PT kept distinct.
 
 Claims retained only when supported by KPV-specific primary literature or clearly labeled as mechanistic inference or practical convention. Unsupported quantitative animal-study packaging from non-primary sources was excluded per project rules.
 
