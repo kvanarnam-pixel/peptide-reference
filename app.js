@@ -18,7 +18,8 @@
     "mots-c": "MOTS-c_Compound_Research.md",
     "retatrutide": "Retatrutide_Compound_Research.md",
     "ss-31": "SS-31_Compound_Research.md",
-    "ara-290": "ARA-290_Compound_Research.md"
+    "ara-290": "ARA-290_Compound_Research.md",
+    "kpv": "KPV_Compound_Research.md"
   };
   const techCache = new Map();
   const inlineMd = t => { let s = escapeHtml(t); s = s.replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>"); s = s.replace(/\*(.+?)\*/g, "<em>$1</em>"); s = s.replace(/`(.+?)`/g, "<code>$1</code>"); return s };
@@ -202,7 +203,22 @@
     ]
   ];
 
-  const CHIP_REGISTRY = { "tb-500": TB500_CHIPS, "bpc-157": BPC157_CHIPS, "ghk-cu": GHKCU_CHIPS, "mots-c": MOTSC_CHIPS, "retatrutide": RETATRUTIDE_CHIPS, "ara-290": ARA290_CHIPS };
+  const KPV_CHIPS = [
+    [
+      { key: "dose", label: "Dose", value: "200–500 mcg/day", detail: `<p>200 to 500 micrograms a day, by mouth or under the skin — that's community convention. There is no validated human dose-response curve, no tested minimum, and no saturation point in the literature. Stay at the lowest exposure that's actually moving the inflammatory job you brought it in for; results earn a step up, not the calendar.</p>` },
+      { key: "timing", label: "Timing", value: "SQ anytime / oral off protein", detail: `<p>Injected: time of day and food don't matter. Oral: PepT1 also carries dietary peptides, so keep it away from a protein-heavy meal. No exact fasting window is established — that's mechanism, not a clock rule. Once a day is the simplest rhythm; twice-daily community use isn't justified by a measured KPV half-life, because that dataset doesn't exist.</p>` },
+      { key: "cycling", label: "Cycling", value: "No reset required", detail: `<p>No biological cycling requirement has been shown. Preclinical work kept activity with continuous exposure, so this isn't a receptor-reset peptide. Run it while a defined inflammatory job is present. An off-period is a response test — if the target stays quiet off it, you may not need to keep going.</p>` },
+      { key: "expect", label: "What to expect", value: "Target, not a feeling", detail: `<p>Don't judge this by whether you "feel" a dose. Pick the inflammatory problem first (gut flare pattern, tissue-specific symptoms, a marker if you have one). Signaling can start quickly; visible movement in models was usually days to a few weeks. hs-CRP is a blunt systemic marker, not a KPV-specific scorecard — it not falling doesn't prove nothing happened.</p>` }
+    ],
+    [
+      { key: "watch", label: "Watch for", value: "No long-term human data", detail: `<p>No adequate long-term human safety dataset exists. Watch the actual inflammatory target, not an after-dose sensation. Don't treat K(D)PT trial results as if they were free-base KPV — related molecule, different evidence.</p>` },
+      { key: "support", label: "Take alongside", value: "7 picks", detail: `<p>Curcumin, glutamine, zinc carnosine, omega-3 EPA/DHA, quercetin, liposomal glutathione, and boswellia — supporting overlapping inflammatory and barrier pathways. Mechanistic companions, not a combined-use trial stack.</p>` },
+      { key: "pairs", label: "Pairs well with", value: "Foreman first after", detail: `<p><b>BPC-157</b> — site safety first, then the foreman coordinates repair in a quieter environment.</p><p><b>TB-500</b> and <b>GHK-Cu</b> — access crew and materials once the site isn't in a shutdown. That's sequence logic, not a combined trial.</p><p><b>MOTS-c / SS-31</b> — KPV is not a mitochondrial peptide; pairing is about less inflammatory interference with energy systems.</p>` },
+      { key: "catch", label: "The catch", value: "", detail: `<p>This is not "shutting inflammation off" and it is not a repair peptide. It limits excessive escalation so other crews can keep working. Sequence from α-MSH is not pharmacology from α-MSH. Community microgram ranges are convention, not validated human pharmacology.</p>` }
+    ]
+  ];
+
+  const CHIP_REGISTRY = { "tb-500": TB500_CHIPS, "bpc-157": BPC157_CHIPS, "ghk-cu": GHKCU_CHIPS, "mots-c": MOTSC_CHIPS, "retatrutide": RETATRUTIDE_CHIPS, "ara-290": ARA290_CHIPS, "kpv": KPV_CHIPS };
 
   const goDeeperTierHtml = p => TECH_DOC_NAMES[p.id]
     ? `<button type="button" class="go-deeper-btn" data-go-deeper="${p.id}" aria-expanded="${state.open.has(p.id)}"><span>${state.open.has(p.id) ? "Close technical layer" : "Go deeper — the technical layer"}</span></button><div class="tech-tier ${state.open.has(p.id) ? "open" : ""}" id="techtier-${p.id}"><div class="tech-inner" id="techinner-${p.id}"></div></div>`
@@ -258,12 +274,23 @@
     <div class="card-actions"><button type="button" class="select-btn" data-select="${p.id}" aria-pressed="${selected}">${selected ? "Selected" : "Add to compare"}</button></div>
   </article>`};
 
+  const kpvHtml = p => { const cat = categoryById(p.category), selected = state.selected.has(p.id); return `<article class="card ${selected ? "selected" : ""}" data-id="${p.id}" data-category="${p.category}">
+    <div class="badge-row"><span class="badge cat">${escapeHtml(cat?.short || "")}</span><span class="badge analogy">Site Safety Coordinator</span></div>
+    <h2>KPV</h2><p class="tagline">Inflammatory Escalation Control</p>
+    <p class="card-desc">Think of it as the site safety coordinator on a construction job — it doesn't build anything or move the crews. It turns down runaway inflammatory signaling so the repair crews can keep working without the whole site getting consumed by the response.</p>
+    <div class="bottom-line"><strong>Bottom line</strong><p>Limits excessive inflammatory signaling so other repair processes aren't fighting a site-wide shutdown.</p></div>
+    ${chipGridHtml(p.id, KPV_CHIPS)}
+    ${goDeeperTierHtml(p)}
+    <div class="card-actions"><button type="button" class="select-btn" data-select="${p.id}" aria-pressed="${selected}">${selected ? "Selected" : "Add to compare"}</button></div>
+  </article>`};
+
   const cardHtml=p=>{
     if(p.id==="retatrutide")return retatrutideHtml(p);
     if(p.id==="bpc-157")return bpc157Html(p);
     if(p.id==="tb-500")return tb500Html(p);
     if(p.id==="ghk-cu")return ghkcuHtml(p);
     if(p.id==="mots-c")return motscHtml(p);
+    if(p.id==="kpv")return kpvHtml(p);
     const cat=categoryById(p.category),selected=state.selected.has(p.id);
     return `<article class="card ${selected?"selected":""}" data-id="${p.id}" data-category="${p.category}">
       <div class="badge-row"><span class="badge cat">${escapeHtml(cat?.short||"")}</span>${p.analogy?`<span class="badge analogy">${escapeHtml(p.analogy)}</span>`:""}</div>
