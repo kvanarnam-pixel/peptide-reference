@@ -58,7 +58,8 @@
     }
   };
   const PROTOCOL_DOC_NAMES = {
-    "systemic-inflammation": "Systemic_Inflammation.md"
+    "systemic-inflammation": "Systemic_Inflammation.md",
+    "diabetic-neuropathy": "Diabetic_Neuropathy.md"
   };
   const protocolCache = new Map();
   const renderProtocolDoc = async (id, container) => {
