@@ -57,7 +57,9 @@
       container.innerHTML = `<p class="tech-error">Couldn't load the technical layer${typeof navigator !== "undefined" && !navigator.onLine ? " — you're offline and it hasn't been cached yet" : ""}. It'll work offline once you've opened it while connected at least once.</p>`;
     }
   };
-  const PROTOCOL_DOC_NAMES = {};
+  const PROTOCOL_DOC_NAMES = {
+    "systemic-inflammation": "Systemic_Inflammation.md"
+  };
   const protocolCache = new Map();
   const renderProtocolDoc = async (id, container) => {
     container.innerHTML = `<p class="tech-loading">Loading…</p>`;
