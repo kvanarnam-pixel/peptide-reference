@@ -16,6 +16,14 @@ Companion to PROJECT_RULES.md. That doc governs how cards behave (structure, ver
 - Trial-arm doses are a data point, not the recommendation. Trials optimize for a measurable population-level endpoint on a fixed protocol, not for one person finding their own minimum effective response.
 - Where the practical/Kevin-Trevor-calibrated number diverges from the trial-derived number, both stay visible in the compound's research doc, with one sentence on why they diverge. This preserves the reasoning trail so a future editing pass doesn't quietly "correct" the number back toward the trial figure.
 
+### Handling Bachmeyer-sourced protocol documents
+
+Some Trevor Bachmeyer-sourced material (e.g., "exact specified dosages" write-ups framed as completed animal studies) wraps real mechanistic and protocol-combination reasoning in fabricated quantitative packaging — invented p-values, animal-study formatting, IACUC-style protocol numbers, and embedded sales links. This is decided policy, not a per-instance judgment call, and should not be re-litigated or re-flagged as a fresh discovery in future sessions:
+
+- Evaluate the biological/mechanistic logic and protocol-combination reasoning on its own merits, same as any interpretive/practitioner-tier source. Pull it forward if the mechanism holds up; drop it if it doesn't.
+- Never cite specific numbers, percentages, survival rates, or claimed study results from these documents as evidence — they are not real, regardless of how the mechanism underneath them checks out.
+- A genuine Bachmeyer statement with a real, checkable source (a specific video, transcript, or direct quote) is a different and legitimate category — cite those normally, as this doc's existing highest tier for dosing/cycling/sequencing decisions.
+
 ### Worked example — Retatrutide
 
 Trial-derived: Phase 2/3 titrated across 1/4/8/12 mg weekly dose arms; larger average effect and more GI/dysesthesia burden toward the top of that range.
