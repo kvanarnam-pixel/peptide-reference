@@ -23,24 +23,27 @@ Not a mechanism recap — an editorial angle that adds real reasoning value (TB-
 **6. Practical dosing/cycling logic**
 State the popular/practical claim → note plainly if it lacks a real source (most will) → give "the more defensible statement" as the fallback → list practical patterns as patterns, explicitly labeled convention, not validated protocol.
 
-**7. What to expect and monitor** — Early / Building / Longer term subsections.
+**7. Response-guided dosing framework**
+Required in shape, scaled in depth to what the compound actually needs — same discipline as the dose-tier axis choice in HOUSE_STANDARDS.md, not a copy-paste template. Answers three questions the card alone can't: how does someone know it's working, when does it make sense to change the dose, and when do they stop? For a compound with a genuinely unestablished human dose (most of them), this earns real length: a conservative starting point, a baseline-setting step (pick 2–3 specific, repeatable, currently-limited things — not "more energy"), a checkpoint structure over a defined evaluation window, and an explicit accounting of what "not working" and "worse" each mean — worse is a hold-and-reassess signal, never reflexively reframed as the compound "doing its job" or "detoxing." For a compound with real human dose-ranging data already (ARA-290's 4 mg), this section shrinks — the "what dose" question is mostly answered, so it's mostly the how-you'll-know/when-to-stop half. State plainly whether any specific framework offered here is trial-derived, practitioner-sourced, or this reference's own inference — same evidence-tiering rule as everywhere else in the doc. Whether this section also earns a front-card chip is a separate, per-compound decision — not automatic just because the section exists.
 
-**8. Common mistakes** — numbered list of real practical errors. Not a restatement of the cautions section.
+**8. What to expect and monitor** — Early / Building / Longer term subsections.
 
-**9. Synergy**
+**9. Common mistakes** — numbered list of real practical errors. Not a restatement of the cautions section.
+
+**10. Synergy**
 One `###` subsection per compound it actually pairs with in the app's roster, each tagged "[Role A] + [Role B]." State plainly whether a pairing is mechanistic complementarity or something with actual combined-use evidence — don't blur the two.
 
-**10. [Highest-stakes open question] nuance**
+**11. [Highest-stakes open question] nuance**
 Honest, mechanism-based, doesn't overclaim in either direction. Explicitly separates contexts that get conflated (fragment vs. whole molecule, existing disease vs. healthy tissue, intracellular vs. exogenous exposure — whatever applies).
 
-**11. What They're Not Telling You**
+**12. What They're Not Telling You**
 The differentiator section. Contrarian-but-defensible reframes against oversimplified narratives everyone else repeats. Bold framing, never bold fabrication — every line here still has to survive the evidence-boundary rules from section 3.
 
-**12. Source synthesis**
+**13. Source synthesis**
 Documents which internal sources/conversations shaped the doc, and how claims were retained, narrowed, or relabeled by evidence tier. This is the audit trail.
 **New requirement, added after the BPC-157 citation audit:** this section must state plainly whether a PubMed-verification pass has been completed on the doc's mechanism claims, and if not, say so explicitly rather than silently omitting it. "PubMed-verification pass: complete" or "PubMed-verification pass: not yet done."
 
-**13. Regulatory note** — one line, bottom of the document, never the frame.
+**14. Regulatory note** — one line, bottom of the document, never the frame.
 
 ---
 
@@ -54,3 +57,6 @@ Documents which internal sources/conversations shaped the doc, and how claims we
 
 **TB-500 / GHK-Cu / MOTS-c** (have the full structure, no verification pass yet):
 - Add "PubMed-verification pass: not yet done" to each Source synthesis section until each gets the same citation audit BPC-157 went through — same treatment, not urgent, just marked honestly until it happens
+
+**TB-500 / BPC-157 / GHK-Cu / MOTS-c / Retatrutide** (predate the Response-guided dosing framework section, added 2026-08-24):
+- Add section 7, Response-guided dosing framework, to each — not urgent, same low-priority treatment as the verification-pass backlog above. SS-31's version (research/SS-31_Compound_Research.md) is the reference implementation for this section.

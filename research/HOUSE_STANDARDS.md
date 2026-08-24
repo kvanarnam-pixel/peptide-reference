@@ -16,6 +16,16 @@ Companion to PROJECT_RULES.md. That doc governs how cards behave (structure, ver
 - Trial-arm doses are a data point, not the recommendation. Trials optimize for a measurable population-level endpoint on a fixed protocol, not for one person finding their own minimum effective response.
 - Where the practical/Kevin-Trevor-calibrated number diverges from the trial-derived number, both stay visible in the compound's research doc, with one sentence on why they diverge. This preserves the reasoning trail so a future editing pass doesn't quietly "correct" the number back toward the trial figure.
 
+### Response-guided dosing framework
+
+Every compound doc's research file includes a "Response-guided dosing framework" section (template section 7) — see `_TEMPLATE.md` for the required shape, `SS-31_Compound_Research.md` for the reference implementation. It answers three questions the card alone can't: how someone knows it's working, when raising the dose makes sense, and when to stop. Depth scales to what's actually known — a compound with real human dose-ranging data needs much less of the "start conservative" scaffolding than one with no established human dose-response curve.
+
+Two things this is not:
+- **Not a license for false precision.** If the framework can't be stated more confidently than the underlying pharmacology supports, say so — same rule as everywhere else in this doc.
+- **Not an automatic front-card chip.** The research-doc section is mandatory; a corresponding chip is a per-compound decision, made with the same discipline as choosing a dose-tier label — earned, not inherited because another compound has one.
+
+One recurring pattern worth naming explicitly wherever it applies: a reproducible decline in function after starting or increasing a dose is a hold-and-reassess signal, not evidence the compound is "working hard," "detoxing," or otherwise doing something good that just feels bad. That explanation shows up often in peptide-community discussion and rarely has a mechanistic basis.
+
 ### Handling Bachmeyer-sourced protocol documents
 
 Some Trevor Bachmeyer-sourced material (e.g., "exact specified dosages" write-ups framed as completed animal studies) wraps real mechanistic and protocol-combination reasoning in fabricated quantitative packaging — invented p-values, animal-study formatting, IACUC-style protocol numbers, and embedded sales links. This is decided policy, not a per-instance judgment call, and should not be re-litigated or re-flagged as a fresh discovery in future sessions:
