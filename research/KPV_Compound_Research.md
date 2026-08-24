@@ -14,7 +14,7 @@ Construction model:
 - **MOTS-c:** power plant — supports the cellular energy capacity needed to execute repair.
 - **Retatrutide:** logistics manager — coordinates metabolic resource allocation and demand signals.
 - **SS-31:** wiring & grid-stabilization crew — supports mitochondrial membrane integrity and bioenergetic stability.
-- **ARA-290:** emergency response switch — activates a protective/repair response in damaged or inflamed tissue where the appropriate injury-responsive receptor is expressed.
+- **ARA-290:** Data Signal Repair — activates a protective/repair response in damaged or inflamed tissue where the appropriate injury-responsive receptor is expressed.
 - **KPV:** Site Safety Coordinator — limits excessive inflammatory signaling and escalation so other crews can continue working.
 
 ## Identity and evidence boundary
@@ -163,7 +163,7 @@ Reassess whether the original job is still present. If the target has stabilized
 **Wiring & grid-stabilization crew + Site Safety Coordinator.** Mitochondrial membrane/bioenergetic support plus inflammatory-signaling control is a strong conceptual pairing. No combined-use evidence claimed.
 
 ### ARA-290 + KPV
-**Emergency Response Switch + Site Safety Coordinator.** Damage-responsive protective signaling and inflammatory-escalation control are distinct jobs that can be complementary in inflamed or injured tissue. Included because the distinction is useful; still mechanistic complementarity rather than combined-use evidence.
+**Data Signal Repair + Site Safety Coordinator.** Damage-responsive protective signaling and inflammatory-escalation control are distinct jobs that can be complementary in inflamed or injured tissue. Included because the distinction is useful; still mechanistic complementarity rather than combined-use evidence.
 
 ### Retatrutide
 Not included as a primary synergy pairing at this time. Insufficient unique mechanistic value beyond general metabolic-inflammation overlap to justify a dedicated subsection.
