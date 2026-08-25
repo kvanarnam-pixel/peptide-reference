@@ -110,7 +110,7 @@ Collagen or gelatin is a convenient way to supply collagen-building amino acids,
 
 BPC-157 helps organize the repair job. TB-500 helps repair cells move to where they're needed. The jobs are different enough that pairing them makes biological sense on paper.
 
-Worth knowing: a rat Achilles-tendon study that directly tested BPC-157, TB-500, and the two together found the combination didn't add extra benefit over either one alone — TB-500 by itself actually showed the clearest measurable advantage in that particular study. Different jobs don't automatically mean stacking them produces more healing. At some point the tissue itself, not the signal, becomes the limiting factor. This doesn't rule out the pairing making sense for other reasons — it just means "two repair peptides together must work better" isn't a settled fact.
+Worth knowing: one rat Achilles-tendon study — not yet repeated by another lab — directly tested BPC-157, TB-500, and the two together, and found the combination didn't add extra benefit over either one alone. TB-500 by itself actually showed the clearest measurable advantage in that single study. Different jobs don't automatically mean stacking them produces more healing. At some point the tissue itself, not the signal, becomes the limiting factor. This doesn't rule out the pairing making sense for other reasons — it just means "two repair peptides together must work better" isn't a settled fact, and it's resting on one unreplicated result.
 
 ### GHK-Cu + BPC-157 — Foreman + Materials/Blueprints
 
@@ -126,7 +126,7 @@ BPC-157 helps organize the repair. GHK-Cu supplies the copper and remodeling ins
 
 **Feeling better can outrun healing.** This is probably the most practically important thing here. If irritation settles before the tissue structure has actually finished rebuilding, someone can feel ready before they are. The risk isn't that BPC-157 "masks" the injury like a painkiller — it's that improvement can tempt someone to load the tissue faster than it can actually rebuild.
 
-**"Two repair peptides together" isn't automatically "more healing."** The most direct test of BPC-157 + TB-500 to date didn't show the combination beating the individual compounds. That doesn't prove the pairing never helps a person — but it does push back hard on treating a repair-peptide stack as automatically synergistic just because the mechanisms sound complementary.
+**"Two repair peptides together" isn't automatically "more healing."** The most direct test of BPC-157 + TB-500 to date — a single study, not yet replicated by anyone else — didn't show the combination beating the individual compounds. That's a meaningfully lower confidence level than the fibroblast/collagen mechanism work elsewhere in this doc, which has been independently reproduced across labs. This one result doesn't prove the pairing never helps a person — but it does push back hard on treating a repair-peptide stack as automatically synergistic just because the mechanisms sound complementary, and it could look different if another lab runs it.
 
 **Most of the extraordinary claims about this compound — heart, brain, spinal cord, kidney — are still animal claims.** They're not fabricated or dismissible, but they're not demonstrated human benefits either. Animal research tells us where to look. It doesn't automatically tell us what happens in a person.
 
@@ -173,7 +173,7 @@ BPC-157 behaves as a pleiotropic modulator rather than a classic receptor agonis
 
 ## One genuine non-obvious insight
 
-The most rigorous head-to-head test run so far (the 2026 BPC-157/TB-500 Achilles combination study) is quietly the most important data point in this file, and not for the reason it gets cited — the "no additive benefit from combining them" headline. The more interesting detail is that in that same study, TB-500 alone reached statistical significance on biomechanical strength while BPC-157 alone did not, despite BPC-157 having the older and more repeated tendon-repair literature behind it.
+The most rigorous head-to-head test run so far (the 2026 BPC-157/TB-500 Achilles combination study — one study, not yet replicated) is quietly the most important data point in this file, and not for the reason it gets cited — the "no additive benefit from combining them" headline. The more interesting detail is that in that same study, TB-500 alone reached statistical significance on biomechanical strength while BPC-157 alone did not, despite BPC-157 having the older and more repeated tendon-repair literature behind it.
 
 That's not evidence BPC-157 doesn't work — the older Achilles studies used different doses, timelines, and injury models. But it's a useful check on treating "foreman coordinates, therefore foreman is the intervention with the biggest effect" as automatically true. In a repair job, the compound that gets the crew moving and the compound that determines how much tissue rebuilds may not carry equal weight, and the newest, best-controlled study is a reminder that assumption hasn't actually been tested until now.
 
