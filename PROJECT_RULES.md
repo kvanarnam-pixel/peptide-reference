@@ -65,7 +65,7 @@ Do not say `done`, `fixed`, or `matches` until the verification pass is complete
 - Any edit meant to change what a user sees on a card must target the compound's `*_CHIPS` block in `app.js`. Editing `peptides.json` alone changes nothing visible — confirm which file you're editing before reporting a content fix as complete.
 
 ## 10. Version bump applies to content edits, not just new file paths
-- Any change to `app.js`, `index.html`, `styles.css`, `jump.js`, `service-worker.js`, or any `research/*.md` file requires bumping `?v=` in `index.html` and `CACHE_NAME` in `service-worker.js` together, to the same number — even when the file path itself hasn't changed.
+- Any change to `app.js`, `index.html`, `styles.css`, `jump.js`, `service-worker.js`, any `research/*.md` file, or any file in `service-worker.js`'s `ASSETS` array (including `data/peptides.json`, `data/protocols.json`, and `protocols/*.md`) requires bumping `?v=` in `index.html` and `CACHE_NAME` in `service-worker.js` together, to the same number — even when the file path itself hasn't changed.
 - The service worker caches by exact URL, including the `?v=` query string. If that string doesn't change, an already-installed phone keeps serving the old cached content indefinitely, regardless of what's live on GitHub.
 - "It's just a content edit, not a new asset" is not an exception to this rule. That reasoning has already caused one near-miss on this project.
 

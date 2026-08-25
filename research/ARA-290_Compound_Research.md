@@ -128,10 +128,12 @@ Reassess — do not automatically push through — if:
 - new weakness, new loss of function, or a new neurologic deficit shows up;
 - walking, balance, or daily function is declining even if pain is quieter;
 - injection-site reactions are getting significant;
-- the thing injuring the nerve (blood sugar, for example) is still uncontrolled.
+- the thing injuring the nerve (blood sugar, for example) is still uncontrolled;
+- a new or unexpected diagnosis — especially a new cancer diagnosis — shows up during use.
 
 Do not call unpleasant symptoms "detox."
 Feeling better is not permission to load a nerve that is still mid-repair.
+If a new cancer diagnosis comes up while using this, stop and see a physician. That's not because any trial has shown ARA-290 causes cancer — none has. It's because the same pro-survival signal that helps a dying nerve fiber hold on is worth extra scrutiny if an abnormal cell is already in the picture.
 
 **Common mistakes:**
 - Treating this as a form of EPO that will thicken the blood. It was built specifically not to do that job.
@@ -270,6 +272,9 @@ Evidence layers:
 **Response-framework evidence:** "How Do I Know" markers are this reference's translation of trial endpoints (symptoms, function, small-fiber measures) into things a person can actually compare — plus the explicit split between analgesia and structural recovery.
 
 Governing line: mechanism earns inclusion; evidence type determines wording. Human 28-day data is real and bounded. Do not inflate it into an approved therapy or a biological maximum.
+
+**Theoretical caution, not a trial finding:** the downstream signaling ARA-290 triggers (anti-apoptotic, pro-survival) is exactly why it helps a dying nerve fiber — and exactly why it deserves scrutiny if a new malignancy shows up during use. No trial has shown ARA-290 causes or accelerates cancer; this is mechanistic reasoning about pro-survival signaling in general, stated honestly rather than waved away.
+
 
 ## Core biological cascade
 
