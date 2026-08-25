@@ -1,216 +1,337 @@
 # TB-500 Compound Research
 
-## Executive identity
+## What Happens After You Take It
 
-**TB-500 is the scaffolding + access/crew-mobility system.** Its clearest biological job is not "healing" in the abstract. It is regulation of the actin cytoskeleton, the internal framework cells use to change shape and move. That mobility can help endothelial, progenitor, immune, and other repair-related cells reach damaged tissue, establish vascular access, and participate in remodeling.
+TB-500 is not a peptide most people should expect to *feel* immediately. Its practical job is to help cells reorganize their internal scaffolding so they can move, migrate, and participate in repair.
 
-Construction model:
+### Starts
 
-- **TB-500:** scaffolding + access crew - reorganizes cellular scaffolding, helps crews move, and opens routes into damaged tissue.
-- **BPC-157:** foreman - helps coordinate the local repair environment and rebuild.
-- **GHK-Cu:** materials and blueprints - supports matrix production and remodeling instructions.
-- **MOTS-c:** power plant - supports the cellular energy capacity needed to execute repair.
+**What starts happening first?**
 
-## Identity and evidence boundary
+The useful way to think about the first step is not pain relief. It is access. Cells involved in repair have to change shape, crawl, organize, and enter damaged tissue. TB-500 is associated with the actin machinery that makes that movement possible.
 
-Commercially described TB-500 is associated with **N-acetyl-LKKTETQ (Ac-LKKTETQ)**, a seven-amino-acid sequence corresponding to thymosin beta-4's actin-binding region (aa 17-23). This is not identical to the full 43-amino-acid thymosin beta-4 molecule.
+### One Dose
 
-The evidence should therefore be read in layers:
+**How long does one shot matter?**
 
-1. **Fragment-specific evidence:** studies using LKKTETQ or its acetylated form directly. This layer most directly supports actin interaction, endothelial migration/angiogenesis, wound-healing activity, and a directly-demonstrated anti-fibrotic effect in activated human hepatic stellate cells (see Fibrosis, below).
-2. **Full-length thymosin beta-4 evidence:** broader biology involving cardiac, neural, muscle-progenitor, inflammatory-resolution, and vessel-maturation pathways. This is useful translational context but is not automatically proof of the same outcome from Ac-LKKTETQ.
-3. **Mechanistic inference:** downstream implications that follow coherently from demonstrated actin, cell-migration, vascular, or remodeling biology.
-4. **Practical experience:** common dosing rhythms and reported uses that have not been established by controlled human dose-response trials.
+We do not have a measured human half-life for TB-500. Animal work shows the parent peptide appears in blood after an under-the-skin dose and is then broken down into smaller peptide fragments. The repair biology may therefore outlast the parent molecule itself.
 
-Mechanism earns inclusion; evidence type determines wording.
+That matters because a short time in blood does not automatically mean a short biological effect.
 
-**A governing rule, sharpened by this pass:** a fragment inherits credit only for what has been tested in fragment form. Full-length evidence is context and hypothesis for the fragment, never automatic inheritance — regardless of how mechanistically adjacent it looks. Different short sequences within the same 43-amino-acid parent molecule can do genuinely different, even opposite, things (see the Akt discussion under Fibrosis, below, for direct proof of this rather than boilerplate hedging).
+### Builds
 
-## Core biological cascade
+**Does it build up?**
 
-**Ac-LKKTETQ -> actin dynamics -> cytoskeletal reorganization -> cell-shape change and migration -> endothelial/progenitor/repair-cell access -> vascularization and tissue remodeling.**
+Not in the same sense as a long-half-life weekly drug. The better mental model is repeated waves of repair support during a period when tissue is actively trying to rebuild. Cell migration, vascular organization, scar remodeling, and matrix maturation all run on longer clocks than the peptide's appearance in blood.
 
-### Actin and cytoskeletal remodeling
+### Notice
 
-Actin exists in a dynamic balance between monomeric G-actin and filamentous F-actin. Cells continually assemble and disassemble actin structures to form a leading edge, contract, crawl, divide, and reorganize damaged tissue. The LKKTETQ region is the actin-binding motif that anchors TB-500's strongest mechanistic identity.
+**What might someone actually notice?**
 
-This means TB-500 should not be taught as repair material. It changes the physical conditions that let repair work happen. Collagen, amino acids, oxygen, rehabilitation, and local signaling still matter; TB-500's distinctive contribution is mobility and access.
+Usually the injury is the readout: less irritation with normal movement, better range of motion, improved tolerance to rehabilitation or training, and recovery that holds between doses. A dramatic after-dose sensation is not part of the mechanism.
 
-### Cell migration and systemic repair reach
+### Judge It
 
-Repair is not accomplished merely because the body possesses growth factors or collagen. Relevant cells must enter the injury zone. Actin-dependent motility is fundamental to endothelial migration, fibroblast movement, immune-cell trafficking, progenitor recruitment, and tissue organization.
+**When is there enough information to decide whether it is helping?**
 
-This also explains why TB-500 is best understood as systemic. It does not need to be injected beside an elbow, tendon, or muscle to "find" it. Tissue damage creates chemotactic and inflammatory signals that help define where repair activity is needed; the mobility program can operate throughout the body.
+Judge durable function over weeks, not whether a shot produced a sensation. A tendon or muscle can feel better before it is structurally ready for full loading, so improvement should be followed by progressive testing rather than an immediate return to maximum use.
 
-### Vascular access and angiogenesis
+## Cancer and angiogenesis — what the concern actually is
 
-Angiogenesis is often reduced to "increases VEGF," but the deeper job is physical vascular access. Endothelial cells must migrate, organize, sprout, form tubes, and mature a usable network. Fragment-specific and broader thymosin beta-4 work supports endothelial migration and angiogenic activity.
+The common claim that TB-500 "causes cancer" is too simple. There is no evidence showing that TB-500 turns normal cells into malignant cells.
 
-In construction language, this is not merely ordering more roads. It helps road-building crews reach the site and organize routes into poorly perfused tissue. That can be especially relevant to tendon, ligament, ischemic muscle, scarred tissue, and chronic injuries in which access is itself a bottleneck.
+The real question is narrower: repair and cancer can use some of the same biological tools. Cells moving through tissue and new blood vessels entering an area are useful during wound healing, but an existing tumor can also exploit migration and vascular growth.
 
-### Fibrosis and scar remodeling
+That does not make normal repair equivalent to tumor growth, and most of the alarming cancer discussion comes from work on the full 43-amino-acid thymosin beta-4 molecule or from thymosin beta-4 being produced inside cancer cells. That is not the same situation as intermittent exposure to the much smaller molecule sold as TB-500.
 
-Scar tissue is functional architecture, not simply cosmetic residue. Excessive or disorganized fibrosis can alter tissue stiffness, movement, perfusion, and signaling.
+The practical conclusion is neither "cancer risk proven" nor "nothing to worry about." Active malignancy is a context where the migration/angiogenesis biology deserves extra caution because the human safety data for TB-500 itself simply do not exist.
 
-Direct LKKTETQ-fragment work in PDGF-BB-activated human hepatic stellate cells (Shah, Reyes-Gordillo & Rojkind, 2018, *Expert Opin Biol Ther*, PMID 30063851) tested the exact 17-23aa actin-binding peptide against another Tβ4-derived fragment (the N-terminal 1-15aa, Ac-SDKP-containing piece) head-to-head, in the same assay. The 17-23aa fragment — TB-500's actual sequence — blocked PDGFβ-receptor upregulation, alpha-smooth-muscle actin, and collagen-I induction by blunting Akt phosphorylation at T308/S473, which shut down PRAS40 phosphorylation, proliferation, and migration. The 1-15aa fragment barely touched Akt and had no effect on fibrogenic behavior. The study's own conclusion: the anti-fibrogenic action of Tβ4 is exerted specifically via 17-23aa. This is a real, direct, fragment-specific finding — not an extrapolation from the full molecule.
+## Dose / Route / Timing / Duration
 
-**Why this doesn't contradict the cardioprotection literature below:** full-length thymosin beta-4 is separately shown to *activate* Akt via a PINCH/integrin-linked-kinase complex, driving cardiomyocyte survival (see Cardiac and vascular protection). That looks like a contradiction — "inhibits Akt" next to "activates Akt" — until you notice these are two different molecules, in two different cell types, studied by two different research groups. A structure/function review (Sosne et al., 2010, *FASEB J*, PMID 20179146) maps distinct short active sites within the 43-amino-acid parent molecule to distinct functions — an N-terminal 4aa site (Ac-SDKP) for anti-inflammatory action, an N-terminal 15aa site for anti-apoptotic/survival signaling, and LKKTETQ (17-23aa) for angiogenesis, wound healing, and migration — while explicitly noting the ILK/PINCH/Akt-activating function has not been localized to any specific short site. TB-500 (LKKTETQ) inhibiting Akt in the fibrosis context and full-length Tβ4 activating Akt in the cardiac context are both real, both directly studied, and describe different parts of the same parent molecule doing different jobs. Collapsing either into an unqualified blanket statement — "Tβ4 inhibits Akt" or "Tβ4 activates Akt" — is the actual error; both are accurate for their specific context and nowhere else.
+**What's actually on the card:** 5 mg under the skin about every 4–5 days as the common rhythm, with somewhat tighter spacing sometimes used early in a fresh injury.
 
-### Cardiac and vascular protection
+**Why that rhythm rather than daily dosing:** the every-4-to-5-day pattern comes from practitioner use, not from a human dose-finding experiment. There is no human pharmacokinetic study proving that interval is uniquely correct. The reason it still makes biological sense is that the downstream work — cell migration, vascular organization, and tissue remodeling — continues on a much longer clock than the parent peptide's appearance in blood.
 
-TB-500's fibrosis-reducing and anti-inflammatory mechanism (above) is not organ-specific — the same activity demonstrated in liver tissue plausibly extends to cardiac tissue, since post-injury cardiac fibrosis runs through comparable activation pathways. That is the most defensible route to a heart-protective claim for the fragment itself.
+**Acute injury:** a fresh tear is a busier repair site. More inflammatory signaling, cell recruitment, and early tissue organization are happening at once. Using the compound somewhat more frequently during the first week or two is a reasonable practical interpretation of that higher demand state, then spacing back out as the acute phase settles.
 
-Full-length thymosin beta-4 has a separate, well-documented cardioprotective mechanism: it complexes with PINCH and integrin-linked kinase (ILK) to activate the survival kinase Akt, improving cardiomyocyte survival, angiogenesis, and cardiac function after infarction (Srivastava et al., 2007, *Ann NY Acad Sci*, PMID 17600280). This is corroborated by later work tying the pro-angiogenic effect specifically to PI3K/Akt signaling in chronic ischemia models (Trenkwalder et al., 2015, *Expert Opin Biol Ther*, PMID 25652683), and by an embryonic-stem-cell/Tβ4-overexpression infarct model showing the same Akt-up/PTEN-down survival axis alongside reduced cardiac fibrosis (Yan et al., 2013, *PLoS One*, PMID 24086577). All three studies used full-length thymosin beta-4 — none tested the isolated LKKTETQ fragment.
+**Route:** under the skin. There is no mechanistic reason the injection has to be beside the injury. TB-500 is being used as a systemic signal, not as a local depot.
 
-**Working claim:** TB-500 plausibly supports cardiac protection through its fibrosis-reduction and anti-inflammatory mechanism — real fragment-level evidence, generalized across organs. The VEGF/Akt-activation cardioprotective pathway is real and replicated for full-length thymosin beta-4, and a reasonable mechanistic extension to the fragment — but not something directly demonstrated for TB-500 itself. Nobody has tested whether the isolated fragment reproduces the PINCH/ILK/Akt-activation function, and the active-site mapping work above suggests that function may not live in the LKKTETQ domain at all.
+**Timing:** time of day and food do not appear to be important practical variables.
 
-### Why old injuries may be especially interesting
+**How long to run it:** long enough to serve a defined repair job. There is no known receptor that needs a scheduled reset, so an off-period is not required by receptor biology. Stop because the goal is met, because the response has stalled, because something new needs to be reassessed, or because the risk/benefit no longer makes sense — not because a calendar says the body has become "used to it."
 
-A chronic injury is not simply an acute injury that has waited longer. It can become stuck behind several bottlenecks:
-
-- poor vascularity and oxygen delivery;
-- altered extracellular matrix;
-- fibrosis and mechanical stiffness;
-- incomplete cellular migration;
-- persistent inflammatory or failed-resolution signaling;
-- rehabilitation that cannot progress because the site repeatedly re-irritates.
-
-TB-500 intersects several of these problems at once: mobility, access, angiogenesis, and fibrotic-cell behavior. That gives a plausible biological explanation for its practical reputation around old tendon, ligament, muscle, and connective-tissue injuries without pretending that controlled human trials have established those outcomes.
-
-## Muscle, satellite cells, and neuromuscular repair
-
-Beyond actin reorganization, TB-500 accelerates muscle fiber repair by promoting activation of satellite cells — stem-cell-like progenitors directly responsible for muscle tissue regeneration. These cells leave their niche, move into damaged muscle, proliferate, and rebuild fibers, consistent with an actin-driven mobility mechanism. This activation extends to improving the neuromuscular junction — the connection point that determines whether a rebuilt fiber actually fires correctly once repair is complete.
-
-**TB-500 activates satellite cells and supports neuromuscular-junction repair as a core part of its muscle-regeneration role — not simply a soreness-relief effect.** This claim currently sits on practitioner-tier sourcing (the project's Deep Dive Report); direct fragment-specific published evidence for the neuromuscular-junction piece specifically has not been located and verified against PubMed as of this writing.
-
-## Emerging nerve-repair biology
-
-Peripheral nerve repair depends on cytoskeletal movement, Schwann-cell migration, axonal extension, debris clearance, and remyelination. Broader thymosin beta-4 models make Schwann-cell and neural repair a credible emerging area. The actin/migration mechanism provides a strong biological bridge, but direct fragment-specific human evidence is not sufficient to present remyelination or nerve regeneration as settled TB-500 outcomes.
-
-This belongs in the card as an emerging rabbit hole, not as a headline promise and not as a discarded idea.
-
-## Practical dosing and cycling logic
-
-There is no well-established human pharmacokinetic experiment supporting a precise 2.5- to 3-hour Ac-LKKTETQ half-life. The more defensible statement is:
-
-**Short circulating exposure; downstream migration, vascular, and remodeling processes persist beyond the presence of peptide in blood.**
-
-That distinction matters. TB-500 is not necessarily a compound where maintaining continuous blood exposure produces proportional repair. Once cytoskeletal reorganization and downstream repair programs begin, repeated administration simply to keep peptide present may add diminishing returns.
-
-- **5 mg subcutaneous, every 4–5 days** is the consistent practical rhythm across the project's Bachmeyer-sourced material — practitioner convention (evidence layer 4), not a controlled human dose-finding result. This sits in the same practical family as the "twice weekly" convention referenced in earlier drafts of this document; they are not competing numbers.
-- **Acute injury** can justify tighter spacing during the first one to two weeks, while recruitment demand into the injury site is at its highest tempo — wound-healing's inflammatory/recruitment phase runs roughly the first 3-5 days, with proliferative repair through day ~21. This is mechanistic inference (layer 3), not a sourced dose-frequency study: nobody has published a dose-response comparison for TB-500 in acute injury specifically. Tighter spacing does not mean maximal spacing — the diminishing-returns logic below still applies once a given wave of cells has its actin program engaged.
-- **Site of administration does not need to be local.** Because the mechanism is systemic (tissue-damage signaling recruits mobilized cells, not injection proximity), there is no mechanistic reason to inject beside the injury the way local-signal compounds like BPC-157 are sometimes dosed.
-- **Routine daily exposure is not established as superior** merely because circulating exposure is short.
-
-### Cycling and tolerance
-
-No receptor-desensitization mechanism applies here. TB-500 binds G-actin directly — a structural cytoplasmic protein — not a cell-surface receptor that can internalize, downregulate, or become resistant with chronic occupancy the way classic receptor-agonist drugs do. This is the same structural argument already established for MOTS-c's cycling rationale (enzymatic/AICAR-driven, no receptor to reset); TB-500 is a different mechanism but the same absence-of-receptor logic applies.
-
-Two considerations worth flagging honestly rather than dismissing:
-
-- **G-actin levels themselves are a transcriptional sensor** — free G-actin holds the transcription factor MRTF inactive in the cytoplasm; when G-actin polymerizes to F-actin, MRTF is released to drive SRF-dependent gene transcription (general cell biology, not TB-500-specific research). Chronic, repeated G-actin sequestration could theoretically interact with this feedback loop over time. Nobody has studied what chronic TB-500 dosing does to it — flagged as a real, unstudied mechanistic consideration, not a demonstrated effect.
-- **Immunogenicity is a genuine unknown**, as it is for any repeated exogenous peptide. No TB-500-specific antibody-formation or immunogenicity data exists either way. The honest caution, matching the same language already used on MOTS-c's card, is to watch for allergic-type reaction or unexplained loss of response with repeated exposure — not because either is expected, but because no long-term human safety trial has ruled it out.
-
-**Practical takeaway:** run it while it's actually doing a job — an injury, a training block, a defined goal. There is no biological requirement to keep dosing once the goal is met, and no evidence the body "gets used to it" the way it would a receptor-mediated drug. Stopping is a straightforward decision, not a required reset.
-
-## What to expect and monitor
+## What to Expect + Watch For
 
 ### Early
 
-Pain, mobility, or perceived recovery may change before tissue has regained structural strength. Feeling better is permission to reassess function, not proof that unrestricted loading is safe.
+Pain, mobility, or perceived recovery may improve before tissue strength catches up. Feeling better is a reason to reassess function, not proof that unrestricted loading is safe.
 
 ### Building
 
-The important work may be invisible: cell migration, endothelial organization, vascular access, and matrix remodeling. Lack of a dramatic sensation does not mean no biological response is occurring.
+The important work may be quiet: cell movement, endothelial organization, scar remodeling, and improvement in how the extracellular matrix is being laid down. Lack of a noticeable "kick" after a shot is normal.
 
 ### Longer term
 
 The better scorecard is durable function:
 
-- pain trend and whether improvement holds between doses;
+- pain or irritation that continues to improve rather than bouncing back between doses;
 - range of motion;
-- tolerance to progressive loading;
-- recovery between training or rehabilitation sessions;
+- progressive loading tolerance;
+- recovery between rehabilitation or training sessions;
 - recurrence as normal activity returns;
-- swelling, warmth, or persistent irritation;
-- imaging or clinician-guided structural testing when appropriate to the injury.
+- swelling, warmth, or persistent re-irritation;
+- imaging or clinician-guided structural testing when the injury warrants it.
 
-## Common mistakes
+### Common mistakes worth flagging here
 
-1. Treating TB-500 as a local injection that must be placed next to the injury.
-2. Dosing more frequently only to keep peptide in the bloodstream.
-3. Assuming more actin manipulation automatically means more repair.
-4. Attributing every full-length thymosin beta-4 finding directly to Ac-LKKTETQ — or the reverse, assuming a fragment-specific finding (like Akt inhibition) applies to the full molecule.
-5. Treating early pain relief as proof of structural recovery.
-6. Expecting TB-500 to provide the collagen, protein, oxygen, sleep, rehabilitation, or progressive loading the repair process still requires.
-7. Presenting a practice-derived dose or cycle as validated human pharmacology.
-8. Describing the compound as merely anti-inflammatory; its more distinctive job is moving the site from damage response toward accessible reconstruction.
-9. Assuming overdose risk is definitively low just because the mechanism is "natural" — the reasoning is sound, but it isn't a substitute for missing formal human toxicology data.
+1. Injecting next to the injury because it is assumed to be a local peptide.
+2. Dosing more often only to keep something in the bloodstream.
+3. Treating early pain improvement as proof the tissue is fully healed.
+4. Assuming every thymosin beta-4 study automatically proves the same thing about TB-500.
+5. Assuming the seven-amino-acid molecule and the uncapped version of that sequence are interchangeable just because the letters look the same.
+6. Expecting TB-500 to supply collagen, protein, oxygen, sleep, rehabilitation, or progressive loading. It improves access; it does not provide the building materials.
+7. Treating "natural mechanism" as proof of a known overdose ceiling or long-term safety profile. Those human data do not exist.
 
-## Synergy
+## How Do I Know It's Working?
+
+**Baseline before starting:** define the job. Pick the injury or functional problem being targeted and record something concrete: pain with a repeatable movement, range of motion, load tolerated, distance walked, grip strength, training volume, swelling, or another reproducible measure that actually belongs to the injury.
+
+**What a meaningful response looks like:**
+
+- the same movement is less irritating;
+- range of motion improves;
+- loading can progress without the next-day flare getting worse;
+- recovery between sessions improves;
+- the benefit survives the interval between doses instead of disappearing immediately;
+- return toward normal function continues without repeated setbacks.
+
+**Practical checkpoints:**
+
+- Early improvement with no functional progress → do not confuse symptom relief with structural recovery.
+- Clear improvement in function → hold the working rhythm; there is no reason to chase more exposure simply because more is available.
+- Partial response → first ask whether the tissue has the materials, blood flow, rehabilitation stimulus, and time needed to finish the job before assuming dose is the bottleneck.
+- No meaningful change across a reasonable repair window → hold and reassess the diagnosis, the tissue being targeted, loading strategy, and whether TB-500 is actually the missing piece.
+- New allergic-type reaction, unexpected systemic symptom, or a newly diagnosed malignancy → stop and reassess rather than treating it as part of the repair process.
+
+Stopping can also be informative. If function continues improving after the last dose, that fits the idea that the biological program outlasts the peptide itself. If the same problem immediately returns, that is a reason to re-examine the underlying injury or loading environment rather than reflexively deciding the answer is permanent dosing.
+
+## What to Take Alongside
+
+TB-500's job is access and mobility. It does not supply the raw material required to rebuild tendon, muscle, ligament, or extracellular matrix.
+
+**Protein and rehabilitation are the foundation.** Repair cells cannot build strong tissue without adequate amino acids, and repaired tissue still has to be progressively loaded so collagen and muscle reorganize around real mechanical demand.
+
+**Vitamin C and collagen-supporting amino acids make mechanistic sense when connective tissue is the target.** Vitamin C is required for collagen hydroxylation and maturation; collagen peptides or adequate dietary glycine/proline provide substrate. These support the repair job rather than amplifying TB-500 itself.
+
+**Zinc and magnesium are general repair cofactors, not TB-500-specific enhancers.** Zinc participates in wound-healing enzymes and matrix biology. Magnesium supports muscle function and general recovery. They belong here only when intake or status makes them relevant.
+
+**Omega-3s and NAC can support the inflammatory/oxidative environment, but they should not be described as a proven TB-500 stack.** They are mechanistic companions, not combined-use evidence.
+
+The guiding rule is simple: give the access crew something useful to arrive *with*. Do not mistake a supplement list for proof that more compounds automatically create more repair.
+
+## Pairs Well With / Synergy
 
 ### BPC-157 + TB-500
 
-**Foreman + scaffolding/access crew.** BPC-157 helps coordinate the local repair environment through overlapping vascular, nitric-oxide, fibroblast, and matrix-related pathways. TB-500 makes cells mobile, improves access, and gives the combination systemic reach. They are complementary jobs, not two versions of the same repair peptide.
+**Foreman + access crew.** The jobs are genuinely different: BPC-157 is framed around local repair coordination, while TB-500 is framed around mobility and access.
+
+That makes the pairing biologically coherent, but "different jobs" does not guarantee that the combination is stronger than either compound alone. A 2026 rat Achilles-tendon study directly compared BPC-157, TB-500, and the two together. TB-500 produced the clearest biomechanical advantage in that model, while the combination did **not** outperform the single agents. That does not disprove complementarity; it does show that tissue capacity or shared downstream pathways can become the bottleneck once enough repair signaling is already present.
 
 ### GHK-Cu + TB-500
 
-**Materials/blueprints + access crew.** GHK-Cu supports collagen and extracellular-matrix production, matrix turnover, copper-dependent crosslinking, and remodeling instructions. TB-500 helps cells enter and reorganize the damaged environment. The pairing concept is access plus reconstruction quality.
+**Materials/blueprints + access crew.** GHK-Cu supports collagen and extracellular-matrix production, matrix turnover, and copper-dependent crosslinking. TB-500 helps cells reach and reorganize the damaged environment. This is a mechanistically complementary pairing; no controlled combined-use evidence establishes an additive effect.
 
 ### MOTS-c + TB-500
 
-**Power plant + access crew.** Repair is energy-intensive. MOTS-c supports metabolic stress signaling and cellular fuel handling, while TB-500 supports cell movement and tissue access. This is mechanistic complementarity, not a clinically proven combination.
-
-## Cancer-mechanism nuance
-
-There is no evidence that TB-500 transforms normal cells into cancer. The biologically relevant question is different: could an existing malignancy exploit migration or angiogenesis programs that are useful during normal tissue repair?
-
-Cancer cells can co-opt actin remodeling, invasion, and new-vessel formation. However, much of the tumor literature concerns full-length thymosin beta-4 expression inside malignant cells, not intermittent exposure to exogenous Ac-LKKTETQ. These are not interchangeable scenarios.
-
-The accurate conclusion is:
-
-- angiogenesis and migration are legitimate mechanisms to think about in the presence of an existing malignancy;
-- this does not establish that TB-500 causes cancer;
-- fragment, full-length protein, intracellular overexpression, dose, tissue, and disease context must remain separated.
-
-*(Open item: a practitioner video specifically addressing TB-500 and cancer claims was flagged this session but not yet reviewed — transcript inaccessible via automated fetch. This section reflects the pre-existing mechanistic analysis only.)*
+**Power plant + access crew.** Repair is energy-intensive. MOTS-c supports metabolic stress signaling and cellular fuel handling, while TB-500 supports movement and access. This is mechanistic complementarity, not a tested repair combination.
 
 ## What They're Not Telling You
 
-**TB-500 is not really an "injury peptide."** Its primary identity is cell movement and tissue remodeling. Injury applications are downstream consequences of that job.
+**The molecule in the vial may not be the final active worker.** TB-500 is Ac-LKKTETQ, an acetylated seven-amino-acid peptide. A 2024 metabolism study found that the parent peptide itself did not significantly improve fibroblast scratch-wound closure under the tested conditions, while one of its breakdown products, Ac-LKKTE, did. That raises a real possibility that at least some biological activity depends on metabolism after administration rather than the intact seven-amino-acid peptide doing every job directly.
 
-**The peptide does not need to remain in blood for repair processes to continue.** Cytoskeletal, migration, vascular, and remodeling programs do not stop the instant circulating peptide disappears.
+**The classic LKKTETQ literature is not automatically TB-500 literature.** Many of the strongest actin, angiogenesis, wound-healing, and anti-fibrotic findings used the *unacetylated* LKKTETQ sequence. TB-500 carries an N-terminal acetyl group. Closely related is not identical, and the distinction matters more now that the parent-versus-metabolite study has shown biological differences are possible.
 
-**More frequent is not automatically more repair.** Productive remodeling is the goal, not maximum continuous actin manipulation. Acute injury can represent a different demand state than ordinary recovery or maintenance — but "different" means somewhat tighter spacing for a couple of weeks, not dosing as often as possible.
+**There is no established human TB-500 half-life.** The commonly repeated "2–3 hour" number is not a human measurement. Animal pharmacokinetic work shows systemic exposure after an under-the-skin dose and disappearance of measurable parent peptide over hours, but translating that directly into a human half-life is not justified.
 
-**Old injuries may be more biologically interesting than fresh ones.** Chronic tissue can be trapped behind poor perfusion, fibrosis, altered matrix, and incomplete remodeling. TB-500 intersects multiple bottlenecks that keep these sites inaccessible.
+**More frequent is not automatically more repair.** Repair processes run much longer than circulating exposure. A short-lived signal can start a long-lived biological program.
 
-**Scar tissue is not passive leftover material.** It changes mechanics, perfusion, and function. Fragment-specific evidence gives anti-fibrotic remodeling a directly-demonstrated basis (PMID 30063851), not generic thymosin beta-4 extrapolation.
+**Old injuries may be especially interesting for a different reason than fresh ones.** Chronic tissue can be trapped behind poor perfusion, fibrosis, altered matrix, and incomplete remodeling. A mobility/access mechanism intersects several of those bottlenecks at once.
 
-**"TB-500 inhibits Akt" and "thymosin beta-4 activates Akt" are both true — and both incomplete on their own.** One describes the fragment in a fibrosis context; the other describes the full molecule in a cardiac context. Treating either as a universal statement about the compound is the actual mistake, not a matter of which side is "correct."
+**Scar tissue is active architecture, not harmless leftover material.** In the unacetylated LKKTETQ literature, the actin-binding fragment directly altered fibrogenic stellate-cell behavior and Akt signaling. That is real fragment-level biology, but it should not be silently relabeled as direct proof for Ac-LKKTETQ.
 
-**Angiogenesis is only half the vascular story.** Endothelial migration and organization determine whether useful access routes are actually built.
+**"TB-500 inhibits Akt" and "thymosin beta-4 activates Akt" can both be true because they describe different molecules in different cellular contexts.** The actin-binding fragment suppressed Akt signaling in one fibrosis model; full-length thymosin beta-4 activates an ILK/PINCH/Akt survival pathway in cardiac work. Collapsing those into one universal Akt claim is the mistake.
 
-**Muscle repair is not the same as feeling less sore.** Regeneration requires progenitor recruitment and physical cell movement into damaged muscle.
+**The BPC-157 pairing is plausible, not guaranteed synergy.** The first direct rat Achilles comparison found no extra benefit from combining them beyond the single agents. That is exactly the kind of result a mechanism-first reference should keep rather than hiding because it complicates the popular "Wolverine stack" story.
 
-**Systemic reach is a feature, not a targeting failure.** Damage signals help recruit repair activity; the injection does not need to sit beside the injury — including for acute tears.
+**Systemic reach is the point.** The injection does not need to sit beside the injury for a systemic mobility/access model to make sense.
 
-**Nerve repair is an underappreciated emerging area.** Schwann-cell movement, axonal extension, and myelination all depend on cytoskeletal dynamics, although direct fragment evidence is not yet sufficient for a settled clinical claim.
+---
 
-**BPC-157 and TB-500 are not redundant.** The foreman and the access crew solve different parts of the same repair problem.
+*— Everything below this line is the technical deep dive: mechanism, audit trail, and evidence sourcing. Not written to be read aloud. —*
 
-**There's no biological tolerance to watch for, in the classic sense.** No receptor exists here to desensitize. Cycling is a practical/monitoring decision, not a required biological reset.
+---
+
+## Executive identity
+
+**TB-500 is the scaffolding + access/crew-mobility system.** Its clearest defensible biological identity is regulation of actin-linked cell movement and the tissue-access conditions that make repair possible, with a major evidence complication: commercial TB-500 is the N-acetylated peptide Ac-LKKTETQ, while much of the classic short-fragment biology was generated with unacetylated LKKTETQ.
+
+Construction model:
+
+- **TB-500:** scaffolding + access crew — cell movement, cytoskeletal organization, and repair-site access.
+- **BPC-157:** foreman — local repair coordination and rebuild organization.
+- **GHK-Cu:** materials and blueprints — matrix production, remodeling instructions, and copper-dependent structural work.
+- **MOTS-c:** power plant — cellular energy capacity and fuel handling.
+- **Retatrutide:** logistics manager — intake, fuel allocation, and metabolic throughput.
+
+## Identity and evidence boundary
+
+Commercially described TB-500 is **N-acetyl-LKKTETQ (Ac-LKKTETQ)**. It corresponds to the central 17–23 region of the 43-amino-acid parent molecule thymosin beta-4, but the N-terminal acetylation means it is not chemically identical to the unacetylated LKKTETQ peptide used in several foundational short-fragment studies.
+
+The evidence therefore needs **five** layers rather than the older four-layer version:
+
+1. **Direct Ac-LKKTETQ / TB-500 evidence.** This is the highest-priority layer for claims about the product actually called TB-500. It currently includes metabolism/analytical work, limited nonhuman pharmacokinetics, in-vitro functional screening, and the 2026 rat Achilles-tendon study labeled as TB-500.
+2. **Unacetylated LKKTETQ evidence.** This supports the biological importance of the 17–23 actin-binding region, including migration/angiogenesis/wound-healing activity and direct anti-fibrotic signaling in human hepatic stellate cells. It is highly relevant mechanistic context but is not automatically direct proof for Ac-LKKTETQ.
+3. **Full-length thymosin beta-4 evidence.** This supports broader cardiac, neural, inflammatory-resolution, angiogenic, muscle-progenitor, and vessel-maturation biology. It is parent-molecule context, not automatic inheritance by TB-500.
+4. **Mechanistic inference.** Claims that follow coherently from actin dynamics, migration, vascular access, scar behavior, or known repair biology but have not been directly tested with Ac-LKKTETQ.
+5. **Practical experience.** Common dose rhythms, cycling choices, and injury-use patterns that have not been established in controlled human dose-response trials.
+
+**Governing rule:** the closer the molecular form gets to the vial, the stronger the wording it earns. Similar sequence is context; identical molecule is evidence.
+
+### Dose evidence boundary
+
+There is no controlled human dose-ranging study for Ac-LKKTETQ. The project's practical rhythm of **5 mg SC every 4–5 days** comes from practitioner convention and repeated real-world protocol use in the project's source set. It should remain visible because the app is meant to be practically useful, but it is not presented as validated human pharmacology.
+
+The 2026 Achilles study used **60 µg/kg/day intraperitoneally for 30 days in rats**. That is useful proof that a TB-500-labeled intervention can alter a tendon-repair model, but it does not define a human dose, route, or frequency.
+
+### Response-framework evidence boundary
+
+The response-guided framework above is this reference's own mechanism-based monitoring structure. No validated TB-500 clinical-response algorithm exists. Functional loading tolerance, range of motion, recurrence, and durable symptom trend were chosen because they answer whether a repair intervention is producing useful tissue-level progress without pretending a peptide-specific biomarker exists.
+
+## Core biological cascade
+
+**Ac-LKKTETQ → systemic exposure + rapid peptide metabolism → intact-parent and/or metabolite interaction with repair biology → actin/cytoskeletal and migration-related effects → endothelial/progenitor/repair-cell access → matrix remodeling and functional tissue repair.**
+
+The cascade is deliberately written with an **intact-parent and/or metabolite** branch. The 2024 metabolism study makes a single-step "TB-500 directly binds actin and therefore heals" cascade too certain for the current evidence.
+
+### Molecular identity and the metabolite problem
+
+Rahaman et al. (2024, *J Chromatogr B*, PMID 38382158, DOI 10.1016/j.jchromb.2024.124033) directly studied Ac-LKKTETQ and its metabolites. TB-500 was incubated in human serum and several enzyme systems, and metabolites were tracked in rats after administration. The parent molecule did not significantly improve fibroblast scratch-wound closure at the tested concentration; **Ac-LKKTE** did.
+
+The authors concluded that wound-healing activity previously attributed to TB-500 may in part be mediated by that metabolite. This does **not** prove TB-500 is a prodrug, nor does it show that intact Ac-LKKTETQ lacks other biological activity. It does establish that the parent molecule and its metabolites should not be treated as pharmacologically interchangeable by assumption.
+
+This finding also sharpens the project's source hierarchy: older LKKTETQ studies establish the biological importance of the actin-binding region, while the 2024 paper asks what acetylation and metabolism do to the actual TB-500 molecule.
+
+### Actin and cytoskeletal remodeling
+
+Actin cycles between monomeric G-actin and filamentous F-actin. Cells continuously assemble and disassemble actin structures to change shape, form a leading edge, contract, migrate, divide, and reorganize damaged tissue.
+
+Sosne et al. (2010, *FASEB J*, PMID 20179146, DOI 10.1096/fj.09-142307) mapped distinct functional regions within thymosin beta-4 and identified the central LKKTETQ-containing actin-binding region as a short sequence associated with angiogenesis, wound healing, and cell migration.
+
+Important boundary: that work defines **LKKTETQ-region biology**. It does not by itself establish that N-acetylated Ac-LKKTETQ has the same potency, kinetics, or downstream profile.
+
+### Cell migration and systemic repair reach
+
+Repair is not accomplished merely because the body has collagen or growth factors. Endothelial cells, fibroblasts, immune cells, and progenitor populations must physically enter and reorganize the injury zone. Actin-dependent motility is fundamental to those processes.
+
+That is the cleanest reason the systemic-access analogy survives the stricter evidence pass. Whether the intact parent peptide or an active metabolite is carrying part of the signal, the relevant biological family is still cell movement and tissue access rather than local material delivery.
+
+### Vascular access and angiogenesis
+
+Angiogenesis is more than "more VEGF." Endothelial cells have to migrate, sprout, align, form tubes, and stabilize a usable vascular network.
+
+Unacetylated LKKTETQ and broader thymosin beta-4 literature support pro-migratory and angiogenic activity. Full-length thymosin beta-4 also has well-developed vascular biology. The current defensible wording for Ac-LKKTETQ is therefore **vascular-access plausibility**, not an unqualified claim that the commercial fragment directly upregulates VEGF in humans.
+
+### Fibrosis and scar remodeling
+
+Shah, Reyes-Gordillo & Rojkind (2018, *Expert Opin Biol Ther*, PMID 30063851) directly compared two thymosin-beta-4-derived sequences in PDGF-BB-activated human hepatic stellate cells. The **unacetylated 17–23 LKKTETQ fragment** reduced PDGFβ-receptor upregulation, α-smooth-muscle actin, collagen-I induction, proliferation, and migration by blunting Akt phosphorylation. The N-terminal 1–15 fragment did not reproduce that effect.
+
+This is strong evidence that the 17–23 region carries a distinct anti-fibrogenic function. It is **not** direct evidence that Ac-LKKTETQ reproduces the same effect unchanged. That distinction was blurred in the previous version of this document and is corrected here.
+
+### Why Akt claims can look contradictory
+
+Full-length thymosin beta-4 has separately been shown to activate an ILK/PINCH/Akt survival pathway in cardiac contexts (e.g. PMID 17600280; PMID 25652683; PMID 24086577). The short 17–23 fragment suppressed Akt phosphorylation in activated hepatic stellate cells.
+
+Those findings are not mutually exclusive. They involve different molecular forms, cell types, disease contexts, and active sites within the parent protein. The wrong move is to turn either observation into a universal claim that "TB-500 activates Akt" or "TB-500 inhibits Akt."
+
+### Direct tendon evidence — 2026 Achilles model
+
+Biçer et al. (2026, *Jt Dis Relat Surg*, PMID 42542926, DOI 10.52312/jdrs.2026.2951) randomized 32 male Sprague-Dawley rats after standardized Achilles transection and repair to control, BPC-157, TB-500, or the combination. The TB-500 group received 60 µg/kg/day intraperitoneally for 30 days.
+
+At four weeks, the TB-500 group had a statistically significant increase in maximum load to failure versus control and improved histopathological scores consistent with better tendon architecture and matrix organization. The BPC-157 + TB-500 combination did **not** confer additional benefit over either agent alone.
+
+This is the first direct tendon-repair result in the current evidence set that materially strengthens the TB-500 card. It is still a small exploratory rat study with only four tendons per group allocated to each analytical endpoint, one sacrifice time point, no formal TB-500 dose-response optimization, and no human translation.
+
+One additional identity caution remains: the paper describes the intervention as TB-500 and lists a commercial product source, but the article is not an analytical characterization paper proving sequence, acetylation state, purity, or metabolite exposure in the treated animals. It therefore strengthens **TB-500-labeled in-vivo tendon evidence** without closing the molecular-form question raised by Rahaman 2024.
+
+### Cardiac and vascular protection
+
+Full-length thymosin beta-4 has replicated cardiac-protection biology involving ILK/PINCH/Akt signaling, cardiomyocyte survival, angiogenesis, and reduced fibrosis after ischemic injury. Those findings remain useful parent-molecule context.
+
+For Ac-LKKTETQ itself, the strongest defensible heart-related bridge is indirect: the 17–23 region has anti-fibrotic activity in one human-cell model, and the broader molecular family has vascular and survival biology. Claims such as "reverses athlete's heart" are not adequately supported for TB-500 and are not retained as established outcomes.
+
+### Muscle, satellite cells, and neuromuscular repair
+
+The project's Bachmeyer-derived Deep Dive Report describes satellite-cell activation and neuromuscular-junction repair as part of TB-500's muscle-regeneration role. The biological concept fits the access/mobility model because satellite cells must activate, migrate, proliferate, and fuse during muscle repair.
+
+However, a direct Ac-LKKTETQ primary source establishing satellite-cell activation or neuromuscular-junction repair was **not located in the current verification pass**. These remain practitioner-tier claims and should not be promoted to front-card settled biology.
+
+### Emerging nerve-repair biology
+
+Peripheral nerve repair depends on Schwann-cell migration, axonal extension, cytoskeletal remodeling, debris clearance, and remyelination. Broader thymosin beta-4 models make neural repair a credible research direction.
+
+Direct Ac-LKKTETQ evidence remains insufficient to call nerve regeneration or remyelination a demonstrated TB-500 outcome. This stays an emerging rabbit hole rather than a headline promise.
+
+### Pharmacokinetics and why the half-life number changed
+
+The project's earlier source set repeated a **2.5–3 hour plasma half-life**. That number is no longer carried as established human pharmacology.
+
+FDA's 2026 review identified an in-vivo study in thoroughbred geldings given **10 mg TB-500 SC**. Plasma concentrations peaked between 60 and 120 minutes and became unquantifiable between roughly 6 and 10 hours. Absolute SC bioavailability could not be established.
+
+FDA also stated that it did **not** identify human clinical pharmacokinetic or pharmacodynamic studies of TB-500 by any route. Therefore the correct card-level statement is: **human half-life not established; animal data show systemic exposure over hours, while downstream repair processes can persist far longer.**
+
+### Cycling and tolerance
+
+There is no classic receptor-desensitization story available here. The historical mechanistic framing centers on actin-related structural biology rather than chronic activation of a cell-surface receptor that can internalize or downregulate.
+
+That does **not** mean long-term repeated use is proven safe. FDA's 2026 review found no human exposure dataset adequate to define safety, no repeat-dose toxicology program for the nominated TB-500 substances, and no carcinogenicity or reproductive-toxicity studies. Injectable peptides also carry theoretical immunogenicity considerations.
+
+The practical rule therefore remains: **run it while it has a defined job; stop when that job is complete or the response no longer justifies exposure.** Cycling is a monitoring and goal-management decision, not a demonstrated receptor reset.
+
+## One genuine non-obvious insight
+
+**TB-500 may be less like a finished worker and more like a deployable tool kit.**
+
+The older story says a seven-amino-acid actin-binding fragment enters the body and directly performs the repair job. The newer direct-metabolism data complicate that: Ac-LKKTETQ is rapidly processed into smaller fragments, and at least one of those metabolites showed more wound-closure activity than the parent molecule in vitro.
+
+That changes how several old arguments should be held:
+
+- short plasma exposure does not necessarily mean a short biological window;
+- an acetylated peptide cannot automatically inherit every result generated with unacetylated LKKTETQ;
+- dose frequency may be governing *metabolite-generation waves* as much as parent-peptide occupancy;
+- apparent contradictions between studies may partly reflect which molecular species was actually present in the assay or tissue.
+
+This is not yet proof of a prodrug model. It is a better working hypothesis than pretending the intact parent molecule is the only pharmacologically relevant species.
 
 ## Source synthesis
 
 Primary project sources reviewed:
 
-- *Peptide Educational Master Reference v2* - TB-500 mechanism, systemic mobilization, vascular access, practical dosing conventions, monitoring, and BPC-157 pairing.
-- *Peptide Quick Reference v2* - quick-reference structure, construction-theme roles, timing, and repair-stack relationships.
-- Existing *TB-500 Deep Dive Report* (project Working Folder) - actin reorganization, satellite-cell/neuromuscular-junction claim, cardiac/vascular protection framing, VEGF mechanism, Akt-inhibition claim, half-life and dosing-frequency reasoning, overdose/toxicity reasoning. Claims were retained, corrected, or relabeled against direct PubMed verification this session — see below.
-- A set of practitioner-branded "murine study" protocol documents (multiple compounds bundled, formatted to resemble peer-reviewed animal trials with IACUC numbers, statistics, and embedded commercial links) - **outcome data, statistics, and study framing from these were explicitly excluded as unverifiable and structurally resembling marketing content, not research.** Only the embedded dosing-frequency pattern (5 mg every 4-5 days, consistently repeated across documents) was retained as corroborating evidence of practitioner convention, not as trial data.
-- Decisions from the "Synthesize TB 500 Biology" conversation and this session's follow-up audit - scaffolding + access/crew-mobility identity, cancer-mechanism nuance, "What They're Not Telling You" section.
+- *Peptide Educational Master Reference v2* — TB-500 systemic-mobilizer framing, practical loading/maintenance conventions, vascular-access story, monitoring, supplements, and BPC-157 pairing. The TB-500 section appears on pages 13–14. Its useful mechanism and practical framing were retained where they survived source verification; its <2-hour half-life, direct-VEGF wording, full-length cardiac/neural inheritance, and "synergistic" BPC-157 combination language were narrowed. fileciteturn12file1
+- *Peptide Quick Reference v2* — loading/maintenance convention, timing-independent use, supportive-supplement list, and systemic-mobilizer framing. The TB-500 row is on page 3. These were treated as project-source conventions rather than independent proof. fileciteturn12file0
+- *TB-500 Deep Dive Report* — Bachmeyer-derived actin reorganization, satellite-cell/neuromuscular-junction claims, cardiac/vascular framing, Akt-inhibition language, 2.5–3 hour half-life claim, every-five-day rhythm, and low-toxicity framing. The every-five-day rhythm and mechanism questions were retained as practitioner input; the human half-life and low-overdose certainty were not retained as established facts. fileciteturn12file6
+- Previous project TB-500 research doc and prior "Synthesize TB 500 Biology" decisions — construction-role identity, chronic-injury reasoning, cancer-mechanism nuance, and the requirement to keep practitioner observations when the biology survives audit.
 
-**PubMed-verification pass: partial, this session.** Directly verified against primary literature: the fragment-specific Akt-inhibition/anti-fibrotic mechanism (PMID 30063851), the full-length Tβ4 PINCH/ILK/Akt-activation cardioprotective mechanism (PMID 17600280, PMID 25652683, PMID 24086577), and the active-site structural mapping distinguishing fragment from full-length function (PMID 20179146). **Not yet independently verified against PubMed:** the satellite-cell/neuromuscular-junction claim, the nerve-repair/Schwann-cell claim, and the general angiogenesis/VEGF claims beyond what's cited above. These remain practitioner-tier or earlier-mechanistic-inference sourcing until checked directly.
+Primary / regulatory verification added in this retrofit:
 
-Regulatory context: TB-500 is primarily represented here as a research compound. That status belongs at the bottom of the information hierarchy; the biology and evidence distinctions remain the core of the entry.
+1. **Rahaman KA et al. 2024.** *J Chromatogr B Analyt Technol Biomed Life Sci.* PMID 38382158. DOI 10.1016/j.jchromb.2024.124033. Direct Ac-LKKTETQ metabolism and in-vitro functional study. Parent TB-500 did not significantly improve scratch-wound closure under the tested conditions; metabolite Ac-LKKTE did. This is the key source for the new parent-versus-metabolite distinction.
+2. **Sosne G et al. 2010.** *FASEB J.* PMID 20179146. DOI 10.1096/fj.09-142307. Structure/function mapping of thymosin beta-4 active sites; supports LKKTETQ-region actin/migration/angiogenesis/wound-healing biology while separating it from other active regions.
+3. **Shah R, Reyes-Gordillo K, Rojkind M. 2018.** *Expert Opin Biol Ther.* PMID 30063851. Direct unacetylated 17–23 LKKTETQ anti-fibrotic signaling in activated human hepatic stellate cells; explicitly reclassified here from "TB-500 direct" to "unacetylated fragment" evidence.
+4. **Biçer O et al. 2026.** *Jt Dis Relat Surg.* PMID 42542926. DOI 10.52312/jdrs.2026.2951. Exploratory rat Achilles-tendon repair study directly comparing control, BPC-157, TB-500, and combination. TB-500 improved maximum load to failure and several histological outcomes; combination did not add benefit.
+5. **FDA Pharmacy Compounding Advisory Committee review, July 2026 — TB-500 free base / acetate.** Used for molecular identity, nonhuman SC pharmacokinetic summary, absence of human PK/PD studies, absence of adequate human exposure data, metabolite discussion, and toxicology gaps.
+6. **Full-length thymosin beta-4 cardiac sources retained from the previous pass:** PMID 17600280, PMID 25652683, PMID 24086577. Kept strictly as parent-molecule context, not Ac-LKKTETQ proof.
+
+**PubMed-verification pass: substantially expanded but not fully closed.** Directly checked in this retrofit: Ac-LKKTETQ metabolism / metabolite activity (PMID 38382158), LKKTETQ active-site mapping (PMID 20179146), LKKTETQ anti-fibrotic signaling (PMID 30063851), and the 2026 rat Achilles study (PMID 42542926). Previously verified full-length cardiac papers remain correctly labeled as parent-molecule evidence. **Still open:** direct Ac-LKKTETQ evidence for satellite-cell activation, neuromuscular-junction repair, Schwann-cell/nerve repair, and any human efficacy or safety outcome. Those claims remain practitioner-tier or mechanistic inference until a direct source is found.
+
+## Regulatory note
+
+TB-500 is not FDA-approved for wound healing or another therapeutic indication; the 2026 FDA compounding review found no human clinical exposure dataset adequate to establish safety or effectiveness for Ac-LKKTETQ.
