@@ -248,6 +248,10 @@ Most of KPV's story is gut and skin. But it's also been tested on joint cells un
 
 But it didn't do everything the receptor-binding melanocortin peptides did in the same test — one inflammatory messenger kept going with KPV on board where the receptor-binding versions shut it down. That's not a knock, it's a real boundary. Skipping receptor binding is exactly what makes KPV different from its parent hormone and avoids the receptor-based baggage — but the same design may mean it doesn't cover every angle of an inflammatory response the way a receptor-bound relative does. Worth knowing before assuming KPV is a complete stand-in for anything α-MSH-related, in every tissue.
 
+## One genuine non-obvious insight
+
+KPV's most useful role may not be "anti-inflammatory compound" so much as **interference removal for whatever else is trying to work**. It doesn't rebuild tissue, doesn't supply energy, and doesn't have a receptor to reset — its job is narrowly to stop excessive inflammatory signaling from jamming the systems that do those other jobs. That reframes the MOTS-c/SS-31 pairing logic: it isn't "more support compounds stacked together," it's one compound clearing interference out of the inflammation↔mitochondrial-dysfunction feedback loop so the other two can do what they're actually built for. Judged as a standalone healing agent, KPV is easy to underrate. Judged as environmental cleanup for everything else on the site, its narrow mechanism is the point, not a limitation.
+
 ### — Technical Deep Dive divider —
 
 ### TIER 2 — Technical (renders below the divider)
@@ -352,10 +356,6 @@ KPV is not a mitochondrial peptide, not an ATP-producing compound, and not a dir
 Excessive inflammatory signaling and ROS can impair mitochondrial function; mitochondrial dysfunction and excess ROS can also feed inflammatory signaling. This creates a plausible two-way feedback loop. By limiting the inflammatory side of that loop, KPV may reduce one source of interference with cellular energy systems.
 
 This supplies a mechanistic basis for complementarity with MOTS-c and/or SS-31. It remains mechanistic complementarity unless direct combined-use evidence appears.
-
-## One genuine non-obvious insight
-
-KPV's most useful role may not be "anti-inflammatory compound" so much as **interference removal for whatever else is trying to work**. It doesn't rebuild tissue, doesn't supply energy, and doesn't have a receptor to reset — its job is narrowly to stop excessive inflammatory signaling from jamming the systems that do those other jobs. That reframes the MOTS-c/SS-31 pairing logic: it isn't "more support compounds stacked together," it's one compound clearing interference out of the inflammation↔mitochondrial-dysfunction feedback loop so the other two can do what they're actually built for. Judged as a standalone healing agent, KPV is easy to underrate. Judged as environmental cleanup for everything else on the site, its narrow mechanism is the point, not a limitation.
 
 ## Source synthesis
 

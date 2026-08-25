@@ -139,6 +139,10 @@ Same logic — mechanistic complementarity, not a tested combination.
 
 **Fading after stopping isn't automatically failure.** If MOTS-c behaves like a training signal, some fade when the signal disappears isn't surprising. The useful question isn't "how long do I have to stay off" — it's how much of the adaptation your body actually kept after the signal stopped.
 
+## One genuine non-obvious insight
+
+MOTS-c may expose mitochondrial capacity as much as it improves it. AMPK is an energy-stress response system — if MOTS-c increases adaptive demand in a system with adequate reserve, function may improve. If downstream machinery, fuel, redox handling, or recovery can't keep up, that increased demand may expose the limiting step as fatigue or reduced function instead. This is an interpretive response framework, not a diagnostic test for mitochondrial dysfunction — it should never be presented as one.
+
 ---
 
 *Everything below this line is the technical deep dive: mechanism, audit trail, and evidence sourcing. Not written to be read aloud.*
@@ -204,10 +208,6 @@ NF-κB suppression is reported in a mouse bone-osteolysis model — osteocyte/os
 ### Cancer — scoped, not generalized
 
 Yin et al. 2024 is ovarian-cancer-specific. General AMPK/mTOR tumor-suppression biology is a separate, broader frame. Do not cite "Oncogene 2020" — it does not exist. Do not convert one ovarian-cancer paper into a MOTS-c oncology claim.
-
-## One genuine non-obvious insight
-
-MOTS-c may expose mitochondrial capacity as much as it improves it. AMPK is an energy-stress response system — if MOTS-c increases adaptive demand in a system with adequate reserve, function may improve. If downstream machinery, fuel, redox handling, or recovery can't keep up, that increased demand may expose the limiting step as fatigue or reduced function instead. This is an interpretive response framework, not a diagnostic test for mitochondrial dysfunction — it should never be presented as one.
 
 ## Source synthesis
 

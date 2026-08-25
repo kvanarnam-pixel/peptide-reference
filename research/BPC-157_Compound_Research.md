@@ -130,6 +130,12 @@ BPC-157 helps organize the repair. GHK-Cu supplies the copper and remodeling ins
 
 **Most of the extraordinary claims about this compound — heart, brain, spinal cord, kidney — are still animal claims.** They're not fabricated or dismissible, but they're not demonstrated human benefits either. Animal research tells us where to look. It doesn't automatically tell us what happens in a person.
 
+## One genuine non-obvious insight
+
+The most careful head-to-head comparison run so far isn't the headline everyone quotes — "no added benefit from combining them." The more interesting detail buried in that same comparison: TB-500 alone hit a real, measurable strength improvement that BPC-157 alone didn't, even though BPC-157 has the older and more repeated healing literature behind it. This is one comparison, not yet repeated elsewhere — worth knowing before treating it as settled.
+
+That's not evidence BPC-157 doesn't work — the older studies used different doses, timelines, and injury setups. But it's a useful check on assuming "the foreman coordinates the job, so the foreman must be doing the most work." The compound that gets the crew moving and the compound that determines how much tissue actually rebuilds may not carry equal weight — and this is the first careful side-by-side test of that assumption, not proof it was always true.
+
 ---
 
 *Everything below this line is the technical deep dive: mechanism, audit trail, and evidence sourcing. Not written to be read aloud.*
@@ -170,12 +176,6 @@ Inflammation is resolved rather than blocked outright — acute cytokine signali
 
 ### No identified high-affinity receptor
 BPC-157 behaves as a pleiotropic modulator rather than a classic receptor agonist. This is precisely why cycling arguments built on receptor desensitization don't have a target to point to — there's no receptor on record to desensitize.
-
-## One genuine non-obvious insight
-
-The most rigorous head-to-head test run so far (the 2026 BPC-157/TB-500 Achilles combination study — one study, not yet replicated) is quietly the most important data point in this file, and not for the reason it gets cited — the "no additive benefit from combining them" headline. The more interesting detail is that in that same study, TB-500 alone reached statistical significance on biomechanical strength while BPC-157 alone did not, despite BPC-157 having the older and more repeated tendon-repair literature behind it.
-
-That's not evidence BPC-157 doesn't work — the older Achilles studies used different doses, timelines, and injury models. But it's a useful check on treating "foreman coordinates, therefore foreman is the intervention with the biggest effect" as automatically true. In a repair job, the compound that gets the crew moving and the compound that determines how much tissue rebuilds may not carry equal weight, and the newest, best-controlled study is a reminder that assumption hasn't actually been tested until now.
 
 ## Source synthesis
 

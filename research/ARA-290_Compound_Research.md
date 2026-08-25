@@ -233,6 +233,12 @@ Pain can move first. Small-fiber measures can move on a slower schedule. Improve
 That is why a pain score alone is the wrong report card.
 It is also why "it didn't finish by day 28" is a weak reason to call the course a failure.
 
+## One genuine non-obvious insight
+
+The useful model is not "ARA-290 heals nerves" or "ARA-290 is just an analgesic."
+It is **repair rate versus damage rate.**
+The molecule can turn on a local protective/recovery program. Human 28-day trials show that program can move both symptoms and small-fiber surrogates in selected populations. They do not measure what happens when the original injury (hyperglycemia, ongoing inflammation, compression) keeps arriving every day after the protocol ends. If damage rate stays higher than repair rate, a real signal can still look like "it didn't work." That is a systems question those studies were not built to answer — and it is the question that changes how someone should use the 28-day result in real life.
+
 ---
 
 *— Everything below this line is the technical deep dive: mechanism, audit trail, and evidence sourcing. Not written to be read aloud. —*
@@ -302,12 +308,6 @@ Culver 2017 used corneal nerve fiber area and GAP-43+ regenerating intraepiderma
 - A receptor-desensitization cycle that would biologically require 56 days off.
 - A demonstrated 12-week neuropathy course.
 - Automatic conversion of corneal CNFA into "this regrows every peripheral nerve."
-
-## One genuine non-obvious insight
-
-The useful model is not "ARA-290 heals nerves" or "ARA-290 is just an analgesic."
-It is **repair rate versus damage rate.**
-The molecule can turn on a local protective/recovery program. Human 28-day trials show that program can move both symptoms and small-fiber surrogates in selected populations. They do not measure what happens when the original injury (hyperglycemia, ongoing inflammation, compression) keeps arriving every day after the protocol ends. If damage rate stays higher than repair rate, a real signal can still look like "it didn't work." That is a systems question the RCTs were not built to answer — and it is the question that changes how someone should use the 28-day result in real life.
 
 ## Source synthesis
 

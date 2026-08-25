@@ -286,6 +286,11 @@ If the real problem is mitochondrial machinery, metabolic programming, inflammat
 That does not mean NAD+ is useless.
 It means:
 **use it where the bottleneck actually is.**
+
+## One genuine non-obvious insight
+
+NAD availability can be **downstream** of mitochondrial dysfunction as well as upstream of it. If the bottleneck is membrane damage, substrate, anemia, sleep, inflammation, or mitochondrial *quantity*, pouring carrier on the problem can look like "NAD+ didn't work" when the wrong job was hired. That is why this card pairs conceptually with MOTS-c and SS-31 without collapsing the three into "mitochondrial boosters."
+
 ---
 
 *— Everything below this line is the technical deep dive: mechanism, audit trail, and evidence sourcing. Not written to be read aloud. —*
@@ -331,10 +336,6 @@ Sirtuins (SIRT1–7) and PARP-1 consume NAD+. Chronic inflammation can hyperacti
 ### Extracellular metabolism and mitochondrial import
 
 Injected NAD+ meets ectoenzymes before it is "inside" in the way people imagine. Mitochondrial NAD+ import in mammalian cells depends on the inner-membrane carrier SLC25A51 ([PMID 32906142](https://pubmed.ncbi.nlm.nih.gov/32906142/), Luongo et al., *Nature* 2020). Direct injection is not immediate intact mitochondrial delivery. This is STRONG cell biology applied to a use-case with LIMITED human SC data.
-
-## One genuine non-obvious insight
-
-NAD availability can be **downstream** of mitochondrial dysfunction as well as upstream of it. If the bottleneck is membrane damage, substrate, anemia, sleep, inflammation, or mitochondrial *quantity*, pouring carrier on the problem can look like "NAD+ didn't work" when the wrong job was hired. That is why this card pairs conceptually with MOTS-c and SS-31 without collapsing the three into "mitochondrial boosters."
 
 ## Source synthesis
 

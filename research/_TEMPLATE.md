@@ -37,22 +37,22 @@ One `###` subsection per compound it actually pairs with in the app's roster, ea
 **9. What They're Not Telling You**
 The differentiator section — outside-the-trial pass, practitioner/community observations that survive the biology check. Contrarian-but-defensible reframes against oversimplified narratives everyone else repeats. Bold framing, never bold fabrication — every line here still has to survive the evidence-boundary rules from section 11.
 
+**10. One genuine non-obvious insight**
+Moved into Tier 1, locked 2026-08-25 — this section renders live, so it follows the same Tier 1 voice rules as every other section above the divider: no PMIDs, no DOIs, no author-name mentions, no trial names, no phase/arm labels, no formal evidence-tier words stated as such. Not a mechanism recap — a capstone that ties the specific findings in "What They're Not Telling You" into one bigger reframe. It's the single best editorial idea in the doc, positioned last in Tier 1 so the reader lands on it after the specifics, not before them. Earn this one if the biology supports it; skip it rather than force a weak one.
+
 ### — Technical Deep Dive divider —
 
 ### TIER 2 — Technical (renders below the divider)
 
-**10. Executive identity**
+**11. Executive identity**
 Kept as a brief orientation opener, not cut — even though it's largely a recap of the front card. One bolded sentence stating what the compound fundamentally IS/does, in the construction-crew metaphor. Followed by the **Construction model** list — a living registry, not a one-off: every compound already built keeps its role tag here, and the new compound's role gets added. Update this list in every doc whenever a new compound joins the roster.
 Current roster: BPC-157 = foreman · TB-500 = scaffolding/access crew · GHK-Cu = materials/blueprints · MOTS-c = power plant · Retatrutide = logistics manager · SS-31 = wiring & grid-stabilization crew · ARA-290 = Data Signal Repair · KPV = Site Safety Coordinator.
 
-**11. Identity and evidence boundary**
+**12. Identity and evidence boundary**
 Name this compound's specific evidence complication up front — whatever it actually is (fragment vs. parent molecule for TB-500; trial-scaled vs. practical dose and single-lab-dominance for BPC-157; something else for the next one). Lay out the evidence layers that matter for *this* compound. Close with a governing maxim, e.g. "Mechanism earns inclusion; evidence type determines wording." **This is also where the dose-evidence and response-framework evidence-sourcing detail lands** — the "trial-derived vs. practitioner-sourced vs. convention" caveat language that used to live inline in sections 6/7 of the old flat order now lives here as subsections, keeping Tier 1's Dose/Route/Timing/Duration and How Do I Know It's Working? sections clean of hedging language. (Documented default — revisit if a compound's evidence picture doesn't fit cleanly as a subsection here.)
 
-**12. Core biological cascade**
+**13. Core biological cascade**
 One bolded arrow-chain: molecule → target → cellular change → tissue effect → systemic consequence. Then `###` subsections per major pathway — receptor/transporter/enzyme detail, mechanistic nuance — written in real, confident prose, willing to correct overreach *inline* rather than saving all the hedging for a caveats section at the end.
-
-**13. One genuine non-obvious insight**
-Not a mechanism recap — an editorial angle that adds real reasoning value. Earn this one if the biology supports it. Skip it rather than force a weak one.
 
 **14. Source synthesis**
 Documents which internal sources/conversations shaped the doc, and how claims were retained, narrowed, or relabeled by evidence tier. This is the audit trail, including PubMed/DOI references. Must state plainly whether a PubMed-verification pass has been completed on the doc's mechanism claims: "PubMed-verification pass: complete" or "PubMed-verification pass: not yet done."
