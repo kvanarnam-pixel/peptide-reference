@@ -24,6 +24,8 @@ Do not accept a claim because practitioners or communities repeat it.
 
 Do not reject a claim merely because no trial exists.
 
+**A second, equally valid entry point: reasoning forward from established mechanism, with no prior observation or community claim required.** Not every genuine insight in this section starts as something practitioners are already saying. Some of the most valuable content here comes from taking a mechanism already established elsewhere in the same doc seriously enough to follow it somewhere nobody's stated plainly — even without a test or a repeated community claim to anchor it. A test only ever answers the specific question it was designed to ask; the absence of a test on a specific question is not evidence against a mechanistically sound inference, and is not a reason to omit it. The same discipline applies regardless of entry point: the mechanism has to actually support the claim, and the claim has to be labeled honestly as interpretive reasoning rather than dressed up as more settled than it is.
+
 Each candidate should land as:
 
 - **HOLDS UP** — observation has credible biological support and does not conflict with stronger evidence.
@@ -59,6 +61,7 @@ Some Trevor Bachmeyer-sourced material (e.g., "exact specified dosages" write-up
 - Evaluate the biological/mechanistic logic and protocol-combination reasoning on its own merits, same as any interpretive/practitioner-tier source. Pull it forward if the mechanism holds up; drop it if it doesn't.
 - Never cite specific numbers, percentages, survival rates, or claimed study results from these documents as evidence — they are not real, regardless of how the mechanism underneath them checks out.
 - A genuine Bachmeyer statement with a real, checkable source (a specific video, transcript, or direct quote) is a different and legitimate category — cite those normally, as this doc's existing highest tier for dosing/cycling/sequencing decisions.
+- For "What They're Not Telling You" specifically — the mechanism-first entry point described above — Bachmeyer material is the first place to look for candidates. He goes deepest on mechanism, pharmacology, and endocrinology (often via animal studies) of anything in this project's source material, which is exactly the kind of biologically-plausible-but-untested reasoning that section exists to surface. The rules above still apply in full here: pull the mechanistic logic forward, never cite the fabricated numbers, percentages, or study results from his write-ups as if they were real data.
 
 ### Worked example — Retatrutide
 

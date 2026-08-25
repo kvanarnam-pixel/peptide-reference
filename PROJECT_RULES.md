@@ -68,3 +68,8 @@ Do not say `done`, `fixed`, or `matches` until the verification pass is complete
 - Any change to `app.js`, `index.html`, `styles.css`, `jump.js`, `service-worker.js`, or any `research/*.md` file requires bumping `?v=` in `index.html` and `CACHE_NAME` in `service-worker.js` together, to the same number — even when the file path itself hasn't changed.
 - The service worker caches by exact URL, including the `?v=` query string. If that string doesn't change, an already-installed phone keeps serving the old cached content indefinitely, regardless of what's live on GitHub.
 - "It's just a content edit, not a new asset" is not an exception to this rule. That reasoning has already caused one near-miss on this project.
+
+## 11. Don't assert "this is the pattern" or "this already exists" without checking
+Before stating that something already exists, is already fixed, or "is the pattern" across the app (e.g. "blank chip values are consistent across every card," "the doc already has X structure") — verify against every relevant live file, not a sample, or search prior session history for an actual decision. If neither check has been done, say "unverified" rather than asserting it as settled.
+
+This is distinct from Rule 8 (verifying a fix landed after the fact). This rule covers asserting a *starting* state without checking it first — which can send an entire task in the wrong direction before any edit is even made. (Origin: a session asserted a blank front-card chip value was "the established pattern, not a bug" without checking session history; it was actually flagged debt already fixed on one card as the emerging correct standard.)
