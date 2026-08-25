@@ -59,6 +59,7 @@
   };
 
   const scan = () => document.querySelectorAll(".card").forEach(enhance);
+  const scrollWithOffset = el => { if (!el) return; const bar = document.querySelector(".topbar"); const offset = (bar ? bar.getBoundingClientRect().height : 0) + 12; window.scrollTo({ top: window.scrollY + el.getBoundingClientRect().top - offset, behavior: "smooth" }); };
 
   const jumpTo = (card, target) => {
     const id = card.dataset.id;
@@ -71,7 +72,7 @@
       const el = document.getElementById(target);
       if (!el) return;
       el.classList.add("jump-flash");
-      el.scrollIntoView({ behavior: "auto", block: "start" });
+      scrollWithOffset(el);
       window.setTimeout(() => el.classList.remove("jump-flash"), 1400);
     };
     requestAnimationFrame(() => requestAnimationFrame(go));

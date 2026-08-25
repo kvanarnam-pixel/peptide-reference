@@ -5,45 +5,57 @@
 
 ## Required section order
 
+**Architecture, locked 2026-08-25:** Go Deeper is a three-level information hierarchy, not a flat accordion. Front card = quick answer. Top of Go Deeper (Tier 1, below) = conversation-ready explanation — what you'd actually say out loud mid-conversation, in plain language. Bottom of Go Deeper (Tier 2, below the "Technical Deep Dive" divider) = mechanism and audit trail — nobody reads this live. Rule: every front-card chip must have a corresponding Tier 1 section. The chip is the short answer; the Tier 1 section is the usable explanation; Tier 2 is the proof.
+
 **1. Title** — `# [Compound] Compound Research`
 
-**2. Executive identity**
-One bolded sentence stating what the compound fundamentally IS/does, in the construction-crew metaphor. Followed by the **Construction model** list — a living registry, not a one-off: every compound already built keeps its role tag here, and the new compound's role gets added. Update this list in every doc whenever a new compound joins the roster, so the cast always reads consistently across files.
-Current roster: BPC-157 = foreman · TB-500 = scaffolding/access crew · GHK-Cu = materials/blueprints · MOTS-c = power plant · Retatrutide = logistics manager.
+### TIER 1 — Conversation-ready (renders above the Technical Deep Dive divider)
 
-**3. Identity and evidence boundary**
-Name this compound's specific evidence complication up front — whatever it actually is (fragment vs. parent molecule for TB-500; trial-scaled vs. practical dose and single-lab-dominance for BPC-157; something else for the next one). Lay out the evidence layers that matter for *this* compound — don't force TB-500's exact 4 layers if they don't fit. Close with a governing maxim, e.g. "Mechanism earns inclusion; evidence type determines wording."
+**2. What Happens After You Take It**
+Starts / one dose / builds / notice / judge it. The most natural face-to-face question there is — lead with it.
 
-**4. Core biological cascade**
-One bolded arrow-chain: molecule → target → cellular change → tissue effect → systemic consequence. Then `###` subsections per major pathway, written in real, confident prose — willing to correct overreach *inline* ("The Akt finding should remain context-specific...") rather than saving all the hedging for a caveats section at the end.
+**3. [Highest-stakes open question] nuance**
+Moved up from the technical tier deliberately — this is the dinner-table pushback question ("isn't this the one that causes X"), and it needs to be answerable in plain language before someone gets asked it, not buried under mechanism. Honest, mechanism-based, doesn't overclaim in either direction. Explicitly separates contexts that get conflated (fragment vs. whole molecule, existing disease vs. healthy tissue, intracellular vs. exogenous exposure — whatever applies). Keep the plain-language version here; if it needs deeper mechanistic backing, that goes in Core biological cascade (Tier 2), cross-referenced.
 
-**5. One genuine non-obvious insight**
-Not a mechanism recap — an editorial angle that adds real reasoning value (TB-500's was "why old injuries may be especially interesting"). Earn this one if the biology supports it. Skip it rather than force a weak one.
+**4. Dose / Route / Timing / Duration**
+Expands the front-card dose/timing/cycling chips into full answers to the follow-up questions someone would actually ask. This is the plainspoken half of what used to be "Practical dosing/cycling logic" — state the practical pattern in usable language. The evidence-tiering caveat (trial-derived vs. practitioner-sourced vs. convention, "lacks a real source" framing) belongs in Identity and evidence boundary (Tier 2), not here — don't let the hedging leak into the conversational answer.
 
-**6. Practical dosing/cycling logic**
-State the popular/practical claim → note plainly if it lacks a real source (most will) → give "the more defensible statement" as the fallback → list practical patterns as patterns, explicitly labeled convention, not validated protocol.
+**5. What to Expect + Watch For**
+Early / Building / Longer term subsections (absorbed from the old "What to expect and monitor"), plus what it feels like, common practical quirks, and what means "reassess." **Also absorbs Common mistakes** — fold real practical errors in here as part of the same plainspoken section rather than a separate numbered list.
 
-**7. Response-guided dosing framework**
-Required in shape, scaled in depth to what the compound actually needs — same discipline as the dose-tier axis choice in HOUSE_STANDARDS.md, not a copy-paste template. Answers three questions the card alone can't: how does someone know it's working, when does it make sense to change the dose, and when do they stop? For a compound with a genuinely unestablished human dose (most of them), this earns real length: a conservative starting point, a baseline-setting step (pick 2–3 specific, repeatable, currently-limited things — not "more energy"), a checkpoint structure over a defined evaluation window, and an explicit accounting of what "not working" and "worse" each mean — worse is a hold-and-reassess signal, never reflexively reframed as the compound "doing its job" or "detoxing." For a compound with real human dose-ranging data already (ARA-290's 4 mg), this section shrinks — the "what dose" question is mostly answered, so it's mostly the how-you'll-know/when-to-stop half. State plainly whether any specific framework offered here is trial-derived, practitioner-sourced, or this reference's own inference — same evidence-tiering rule as everywhere else in the doc. Whether this section also earns a front-card chip is a separate, per-compound decision — not automatic just because the section exists.
+**6. How Do I Know It's Working?**
+The plainspoken half of what used to be "Response-guided dosing framework": what to track, what a meaningful response looks like, what "not working" means (a hold-and-reassess signal, never reflexively reframed as the compound "doing its job"). The evidence-sourcing statement (trial-derived / practitioner-sourced / this reference's own inference) belongs in Identity and evidence boundary (Tier 2), not here.
 
-**8. What to expect and monitor** — Early / Building / Longer term subsections.
+**7. What to Take Alongside**
+New section. Substrate/cofactor support and any important companion logic — this is where the front-card "Take Alongside" chip gets its full, sourced explanation. This section resolves the previously-flagged debt item (unsourced supplement-stack chips on TB-500/GHK-Cu/MOTS-c): when built or retrofitted, it must carry the same evidence-tier sourcing as every other claim in the doc, not ship as an unsourced holdover.
 
-**9. Common mistakes** — numbered list of real practical errors. Not a restatement of the cautions section.
-
-**10. Synergy**
+**8. Pairs Well With / Synergy**
 One `###` subsection per compound it actually pairs with in the app's roster, each tagged "[Role A] + [Role B]." State plainly whether a pairing is mechanistic complementarity or something with actual combined-use evidence — don't blur the two.
 
-**11. [Highest-stakes open question] nuance**
-Honest, mechanism-based, doesn't overclaim in either direction. Explicitly separates contexts that get conflated (fragment vs. whole molecule, existing disease vs. healthy tissue, intracellular vs. exogenous exposure — whatever applies).
+**9. What They're Not Telling You**
+The differentiator section — outside-the-trial pass, practitioner/community observations that survive the biology check. Contrarian-but-defensible reframes against oversimplified narratives everyone else repeats. Bold framing, never bold fabrication — every line here still has to survive the evidence-boundary rules from section 11.
 
-**12. What They're Not Telling You**
-The differentiator section. Contrarian-but-defensible reframes against oversimplified narratives everyone else repeats. Bold framing, never bold fabrication — every line here still has to survive the evidence-boundary rules from section 3.
+### — Technical Deep Dive divider —
 
-**13. Source synthesis**
-Documents which internal sources/conversations shaped the doc, and how claims were retained, narrowed, or relabeled by evidence tier. This is the audit trail.
-**New requirement, added after the BPC-157 citation audit:** this section must state plainly whether a PubMed-verification pass has been completed on the doc's mechanism claims, and if not, say so explicitly rather than silently omitting it. "PubMed-verification pass: complete" or "PubMed-verification pass: not yet done."
+### TIER 2 — Technical (renders below the divider)
 
-**14. Regulatory note** — one line, bottom of the document, never the frame.
+**10. Executive identity**
+Kept as a brief orientation opener, not cut — even though it's largely a recap of the front card. One bolded sentence stating what the compound fundamentally IS/does, in the construction-crew metaphor. Followed by the **Construction model** list — a living registry, not a one-off: every compound already built keeps its role tag here, and the new compound's role gets added. Update this list in every doc whenever a new compound joins the roster.
+Current roster: BPC-157 = foreman · TB-500 = scaffolding/access crew · GHK-Cu = materials/blueprints · MOTS-c = power plant · Retatrutide = logistics manager.
+
+**11. Identity and evidence boundary**
+Name this compound's specific evidence complication up front — whatever it actually is (fragment vs. parent molecule for TB-500; trial-scaled vs. practical dose and single-lab-dominance for BPC-157; something else for the next one). Lay out the evidence layers that matter for *this* compound. Close with a governing maxim, e.g. "Mechanism earns inclusion; evidence type determines wording." **This is also where the dose-evidence and response-framework evidence-sourcing detail lands** — the "trial-derived vs. practitioner-sourced vs. convention" caveat language that used to live inline in sections 6/7 of the old flat order now lives here as subsections, keeping Tier 1's Dose/Route/Timing/Duration and How Do I Know It's Working? sections clean of hedging language. (Documented default — revisit if a compound's evidence picture doesn't fit cleanly as a subsection here.)
+
+**12. Core biological cascade**
+One bolded arrow-chain: molecule → target → cellular change → tissue effect → systemic consequence. Then `###` subsections per major pathway — receptor/transporter/enzyme detail, mechanistic nuance — written in real, confident prose, willing to correct overreach *inline* rather than saving all the hedging for a caveats section at the end.
+
+**13. One genuine non-obvious insight**
+Not a mechanism recap — an editorial angle that adds real reasoning value. Earn this one if the biology supports it. Skip it rather than force a weak one.
+
+**14. Source synthesis**
+Documents which internal sources/conversations shaped the doc, and how claims were retained, narrowed, or relabeled by evidence tier. This is the audit trail, including PubMed/DOI references. Must state plainly whether a PubMed-verification pass has been completed on the doc's mechanism claims: "PubMed-verification pass: complete" or "PubMed-verification pass: not yet done."
+
+**15. Regulatory note** — one line, bottom of the document, never the frame.
 
 ---
 
@@ -60,3 +72,6 @@ Documents which internal sources/conversations shaped the doc, and how claims we
 
 **TB-500 / BPC-157 / GHK-Cu / MOTS-c / Retatrutide** (predate the Response-guided dosing framework section, added 2026-08-24):
 - Add section 7, Response-guided dosing framework, to each — not urgent, same low-priority treatment as the verification-pass backlog above. SS-31's version (research/SS-31_Compound_Research.md) is the reference implementation for this section.
+
+**All 9 live cards** (predate the tier-architecture lock, added 2026-08-25):
+- Every existing doc still uses the old flat section order. None have been reordered into Tier 1 (conversational) / Tier 2 (technical) yet. This requires real content-splitting work per doc — not a pure reorder — since the old "Practical dosing/cycling logic" and "Response-guided dosing framework" sections each contain both a plainspoken answer and evidence-tiering caveat language that need to separate into a Tier 1 section and a Tier 2 subsection. "What to Take Alongside" is new content, not a move — it doesn't exist in any doc yet, and directly absorbs the unsourced-supplement-chip debt (TB-500/GHK-Cu/MOTS-c) rather than leaving it for a later pass. Do one doc at a time, NAD+ first since it prompted the redesign, with a full independent verification before moving to the next.
