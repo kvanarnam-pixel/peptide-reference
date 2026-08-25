@@ -10,6 +10,32 @@ Companion to PROJECT_RULES.md. That doc governs how cards behave (structure, ver
 - "What They're Not Telling You" — standard section wherever there's a real corrective to make to the mainstream framing of a compound.
 - Practical over institutional. "Common mistakes" beats "adverse events." "Watch for" beats "warnings." Function and felt experience over lab-value chasing, without pretending labs don't matter.
 
+## What They're Not Telling You
+
+Published trials answer the questions they were designed to ask. An unanswered question is not the same thing as a disproven idea.
+
+After the conventional evidence audit, every compound gets a deliberate second-pass search for practitioner observations, recurring community patterns, unconventional uses, timing/frequency strategies, sequencing, combinations, unusual responses, and other questions formal trials may not have examined.
+
+The process is:
+
+**Find the observation first → identify the claim → take it back to the biology → keep, qualify, or reject it.**
+
+Do not accept a claim because practitioners or communities repeat it.
+
+Do not reject a claim merely because no trial exists.
+
+Each candidate should land as:
+
+- **HOLDS UP** — observation has credible biological support and does not conflict with stronger evidence.
+- **PLAUSIBLE BUT OPEN** — biologically possible/useful but important assumptions remain.
+- **DOESN'T HOLD UP** — biology contradicts it, the premise fails, or it is unsupported lore.
+
+Keep practitioner/community observations distinct from INTERPRETIVE biological reasoning. The verdict label (HOLDS UP / PLAUSIBLE BUT OPEN / DOESN'T HOLD UP) is applied on top of the existing evidence-tier label, never in place of it.
+
+Governing line:
+
+> **Trials answer the questions they were designed to ask. Our job is to investigate the useful questions they did not ask.**
+
 ## Dosing philosophy
 
 - Root cause and minimum effective dose over maximum tolerated. Results earn the next step up — not the calendar.

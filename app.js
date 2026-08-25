@@ -244,7 +244,7 @@
       { key: "watch", label: "Watch for", value: "Fatigue, nausea, heart rate", detail: `<p>Stop and reassess for pronounced or worsening fatigue, significant nausea, abdominal discomfort, chest pressure, palpitations or a jump in heart rate, or severe/persistent injection-site pain. None of those is a detox badge.</p>` },
       { key: "know", label: "How do I know?", value: "Repeatable function", detail: `<p>Judge it on functional markers you can repeat: afternoon energy stability, work or exercise capacity at the same effort, recovery after equivalent work, post-exertion fatigue, mental stamina. A useful response should be repeatable, functionally meaningful, and larger than ordinary day-to-day variation.</p><p>Feeling nothing does not automatically mean no biology. Feeling nothing also does not justify dosing forever. "Maybe it's working invisibly" is not an answer.</p>` },
       { key: "pairs", label: "Pairs well with", value: "MOTS-c + SS-31", detail: `<p><b>MOTS-c</b> — power-plant upgrade: metabolic programming and insulin-independent glucose uptake.</p><p><b>SS-31</b> — wiring crew: membrane/machinery the electron-transport chain runs on.</p><p><b>NAD+/NADH</b> — the rechargeable carrier running through that machinery. Three distinct jobs, not three mitochondrial boosters. Mechanistic/interpretive synergy — no combined-use human outcome trial.</p>` },
-      { key: "catch", label: "The catch", value: "More isn't automatically more energy", detail: `<p>If NAD availability is not the bottleneck — or the mitochondrial machinery cannot efficiently recycle NADH back toward NAD+ — adding more carrier may not fix the problem. Injected NAD+ also does not simply travel intact into every mitochondrion; extracellular metabolism and mitochondrial transport matter. The long version lives in Go Deeper.</p>` }
+      { key: "catch", label: "The catch", value: "More isn't automatically more energy", detail: `<p>If NAD+ isn't the bottleneck — or the mitochondrial system isn't efficiently using and recycling it — adding more carrier may not solve the problem. The longer version is in Go Deeper.</p>` }
     ]
   ];
 
@@ -316,9 +316,9 @@
 
   const nadHtml = p => { const cat = categoryById(p.category), selected = state.selected.has(p.id); return `<article class="card ${selected ? "selected" : ""}" data-id="${p.id}" data-category="${p.category}">
     <div class="badge-row"><span class="badge cat">${escapeHtml(cat?.short || "")}</span><span class="badge analogy">Rechargeable Power Carrier</span></div>
-    <h2>NAD+</h2><p class="tagline">Redox Carrier & Maintenance Currency</p>
-    <p class="card-desc">Think of NAD+ as the rechargeable electrical carrier moving through the site's power system — it picks up energy while fuel is processed, delivers that reducing power into the mitochondrial machinery, gets recharged, and does it again. Repair crews spend it too. It is a coenzyme, not a peptide, and it is not the fuel itself.</p>
-    <div class="bottom-line"><strong>Bottom line</strong><p>Carrier and maintenance currency, not fuel and not ATP. More NAD+ is not automatically more energy.</p></div>
+    <h2>NAD+</h2><p class="tagline">Energy Carrier & Repair Support</p>
+    <p class="card-desc">Think of NAD+ like the rechargeable batteries used all over a construction site. Your body uses food to charge them, the batteries help carry that energy to the equipment that turns it into usable power, and then they have to be recharged and used again. Your repair crews use NAD+ too, so it helps with both making energy and maintaining the site.</p>
+    <div class="bottom-line"><strong>Bottom line</strong><p>NAD+ helps carry energy through the system and supports cellular repair, but it only helps if the machinery using it can do its job.</p></div>
     ${chipGridHtml(p.id, NAD_CHIPS)}
     ${goDeeperTierHtml(p)}
     <div class="card-actions"><button type="button" class="select-btn" data-select="${p.id}" aria-pressed="${selected}">${selected ? "Selected" : "Add to compare"}</button></div>
