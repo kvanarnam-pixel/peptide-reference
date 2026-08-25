@@ -2,203 +2,290 @@
 
 ## What Happens After You Take It
 
-Vital orientation for someone actually using NAD+. This is not the mechanism walkthrough. Four clocks that are not interchangeable: onset, duration of one dose, accumulation/steady state, and functional response. Human SC pharmacokinetics for intact NAD+ are largely unestablished — that gap is left visible rather than filled from IV, animal, or community reports.
-
 ### Starts
 
-**When does biologically meaningful exposure/action begin?**
-
-Human SC onset for injected NAD+ is **not established**. IV data, animal data, and "I felt it in twenty minutes" reports do not silently become human SC pharmacokinetics.
-
-What *is* well-established: extracellular NAD+ gets broken down by enzymes sitting outside the cell (CD38, CD73, and related enzymes) before it can act, and intact NAD+ doesn't simply travel from the syringe into every mitochondrion. Getting NAD+ into a mitochondrion depends on dedicated transporters. Direct injection is not the same thing as immediate delivery into the cell's power plants.
+We don't know exactly how quickly an NAD+ shot starts working in a person.
+What we do know is that it isn't as simple as injecting NAD+ and having it travel straight into your mitochondria.
+The body has to process it, move it, and use it through several steps before it becomes useful inside the cell.
+So the honest answer is:
+**We know the biology it feeds into. We do not know the exact human under-the-skin start time.**
 
 ### One Dose
 
-**How long does one administration remain biologically relevant?**
-
-There is no honest universal "NAD+ half-life = X" that covers SC, IV, and oral precursors. Extracellular metabolism and route make that simplification misleading.
-
-IV NAD+ is cleared on a different clock and a different milligram scale than SC. Oral NR/NMN are precursors with their own absorption and conversion pharmacology — not delayed-release NAD+ injections. **Do not treat one half-life figure as transferable across routes.**
+We don't know exactly how long one under-the-skin NAD+ shot stays useful in the body.
+IV NAD+, under-the-skin NAD+, and oral NAD boosters are different routes and behave differently.
+So there isn't one honest number that answers:
+**"How long does NAD+ last?"**
+for all of them.
 
 ### Builds
 
-**Does repeated dosing accumulate toward a steady operating level?**
-
-Unknown for human SC NAD+. Do not import a Retatrutide-style weekly-accumulation model. Retatrutide's ~6-day half-life means each weekly dose stacks; that is a specific pharmacokinetic fact, not a template for every compound.
-
-If someone feels better after several weeks, that is a functional-response observation, not proof of plasma steady state. If they feel nothing, that is also not proof of no biology. Neither substitutes for an SC accumulation study that does not exist here.
+We also don't know whether repeated under-the-skin NAD+ doses build up to a steady level over time.
+Do not think of it like Retatrutide, where each weekly dose clearly stacks on top of the one before it.
+That kind of buildup has not been shown here.
+If someone feels better after several weeks, that's useful.
+But it does not prove NAD+ has been slowly piling up in the bloodstream.
 
 ### Notice
 
-**When might somebody actually notice something?**
-
-Three different questions, often mashed together:
-
-- Pharmacokinetic exposure — when the molecule/metabolites are present.
-- Subjective sensation — sting, alertness, sleepiness, "cleaner energy," brain fog.
-- Meaningful functional effect — repeatable afternoon energy, work/exercise capacity, recovery, mental stamina.
-
-Some users report relatively acute subjective effects (alertness, sting, or paradoxical fatigue). That does **not** establish mitochondrial remodeling. Feeling nothing immediately does **not** establish that no biological effect occurred. Unpleasant effects are **not** detox and are **not** proof it is working.
+Some people feel something fairly quickly.
+Some feel more alert.
+Some feel cleaner or steadier energy.
+Some feel tired or foggy.
+Some feel almost nothing.
+And the shot itself can sting.
+The important thing is not:
+**"Did I feel the shot?"**
+The better question is:
+**"Did something I actually care about get better?"**
 
 ### Judge It
 
-**When has there been enough use to reasonably decide whether this is earning its place?**
+Before starting, pick two or three things you can actually compare.
+For example:
+- afternoon energy;
+- work capacity;
+- exercise tolerance;
+- recovery;
+- mental stamina.
+Pick one dosing rhythm — how much and how often — and hold it steady through the whole check.
+Switching things up partway through makes it impossible to tell what actually changed.
+Then watch those same things for several weeks.
+A practical 4–6 week checkpoint makes sense.
+Not because that's a proven NAD+ cycle.
+Because it gives you enough time to ask:
+**"Is this actually earning its place?"**
+If nothing meaningful changes, don't keep taking more just because NAD+ sounds important.
 
-This is this reference's own response-guided framework, not a cited protocol — the 4–6 week window is a practical checkpoint, **not** a validated NAD+ pharmacological cycle.
+---
 
-Pick 2–3 specific, repeatable, currently-limited things before starting — not "more energy." Afternoon crash after a normal work block. Recovery after an equivalent training session. Mental stamina on a known task. Quantify simply.
+## The Big Question: Is NAD+ Actually the Missing Piece?
 
-- A useful response should be repeatable, functionally meaningful, and larger than ordinary day-to-day variation.
-- No sensation does not automatically mean no biology.
-- No sensation also does not justify indefinite dosing. "Maybe it's working invisibly" is not allowed to become unfalsifiable.
-- If there is no reproducible functional benefit by the checkpoint, reassess whether continued use makes sense.
-- If benefit persists after stopping, continued exposure may not be necessary.
-- If a reproducible benefit disappears off and returns on, that is useful practical information — not a controlled trial.
-- Worse (new or worsening fatigue, significant nausea, chest pressure, palpitations) is a hold-and-reassess signal, not detox.
+This is the part people tend to skip.
+NAD+ is important.
+That does not mean more NAD+ automatically fixes low energy.
+Think of it like a rechargeable battery moving through the power system.
+It picks up charge, carries it where it is needed, gets emptied, and gets recharged again.
+But the battery still depends on the rest of the power system working.
+If the machinery that uses and recharges it is badly damaged, adding more batteries may not solve the real problem.
+So the real question is not:
+**"Is NAD+ good?"**
+It is:
+**"Is NAD+ the part of the system that's actually limiting me?"**
 
-## Highest-stakes open question nuance
-
-The highest-stakes open question is whether exogenous NAD+ — especially **human SC NAD+** — produces reliable, repeatable functional benefit when NAD availability is actually the bottleneck, and how to know that in a living person without turning "no sensation" into an unfalsifiable win.
-
-Keep separate:
-- Well-established cell biology of NAD+ vs. how much of that actually shows up as a benefit from an injected shot — two different confidence levels, and the second one is the open question.
-- Oral precursor trials vs injected NAD+.
-- IV exposures vs SC convention.
-- Subjective acute effects vs mitochondrial remodeling.
-- Upstream NAD shortage vs downstream broken recycling machinery.
+---
 
 ## Dose / Route / Timing / Duration
 
-**Popular claim:** a single milligram ladder (or "loading") that treats oral NR/NMN, SC NAD+, and IV NAD+ as the same dose in different clothing.
+### Dose
 
-**What that lacks:** a validated human SC dose-response curve, and any basis for milligram equivalence across routes.
+For under-the-skin use, the practical range people commonly use is roughly:
+**25–100 mg per dose**
+with **50 mg** being a common middle point.
+Most people use it a few times a week rather than every day — often around **2–3 times a week** — though some use a smaller amount daily instead.
+This is not a proven human dose-response ladder.
+It is simply where practical use has settled.
+More is not automatically better.
 
-**The more defensible statement:** treat **route / compartment** as the primary axis.
+### Route
 
-- **SC — common practical range, not a trial-derived dose.** Approximately 25 mg per administration at the lower end, 50 mg commonly, 75–100 mg at the higher common end; often ~2–3× weekly; smaller daily schedules also exist. The 25 → 50 → 75–100 mg pattern is a response/tolerability titration convention. It is **not** Maintenance / Therapeutic / High. Do not label 25 = maintenance, 50 = therapeutic, 100 = high.
-- **IV — documented exposures, not an optimum.** Human IV studies/practice have used exposures including approximately 500 mg and 750 mg. Those milligrams are **not** equivalent to SC milligrams.
-- **Oral precursors — different pharmacology.** NR/NMN have substantially more human intervention evidence than injected NAD+, and their milligram amounts must not appear on the same ladder.
+Under-the-skin NAD+, IV NAD+, and oral NAD boosters are not the same thing.
+Do not compare the milligrams directly.
+They are different ways of getting into the same general system.
 
-**Loading** should not be presented as established SC pharmacology.
+### Timing
 
-**Timing:** morning is common convention, not a biological mandate. No mandatory fasted state, meal-separation, or pre-workout window is established. Some people report alertness; some report little timing effect; some report fatigue/sleepiness. Use the timing that produces the most useful reproducible response without wrecking sleep.
+Morning is common because some people feel more alert.
+But there is no rule that says NAD+ has to be taken in the morning.
+Some people actually feel tired from it.
+So use the time that gives the most useful response without messing up sleep or daily function.
 
-**Cycling:** NAD+ does not have an established peptide-style receptor-reset cycle. Do not invent 8-on/4-off or 12-on/X-off. Use a defined evaluation period (see Judge It). Continuous use is a decision that has to keep earning its place, not a default.
+### Cycling
+
+There is no established receptor-reset cycle for NAD+.
+That means there is no good reason to invent something like:
+**8 weeks on / 4 weeks off**
+just because other compounds get cycled.
+Use a defined evaluation period.
+Then ask whether continued use is still helping.
+
+---
 
 ## What to Expect + Watch For
 
-### Early
+### What to Expect
 
-SC NAD+ can sting or burn noticeably. That is a common practical report, not a efficacy biomarker. Some people notice alertness or a "cleaner" energy the same day; some notice little; some get paradoxical fatigue, sleepiness, or brain fog. Unpleasant effects are not automatically detox and are not proof of benefit.
+Under-the-skin NAD+ can sting or burn.
+That is common enough to know ahead of time.
+Other responses vary:
+- more alertness;
+- steadier energy;
+- better stamina;
+- better recovery;
+- brain fog;
+- sleepiness;
+- no obvious feeling at all.
+Feeling uncomfortable is not proof it is working.
+And not feeling anything is not proof it is doing nothing.
 
-### Building
+### Watch For
 
-The useful scorecard is repeatable function against the pre-specified baseline, not a dramatic sensation after each shot.
+Reassess if you get:
+- worsening fatigue;
+- significant nausea;
+- chest pressure;
+- palpitations;
+- severe or persistent injection-site pain.
+Do not call unpleasant symptoms "detox" just because they happened after NAD+.
 
-### Longer term
-
-No long-term human SC NAD+ safety or efficacy dataset establishes indefinite use. Reassess whether the original job is still present and whether NAD availability is still a plausible bottleneck.
-
-### Common mistakes worth flagging here
-
-1. Calling NAD+ fuel or treating milligrams as watts.
-2. Equating IV milligrams, SC milligrams, and oral NR/NMN milligrams.
-3. Labeling 25 / 50 / 100 mg as Maintenance / Therapeutic / High.
-4. Inventing a receptor-reset on/off cycle.
-5. Treating sting, fatigue, or brain fog as detox or as proof it is working.
-6. Inferring human SC onset or half-life from IV or animal data.
-7. Assuming injected NAD+ arrives intact in every mitochondrion.
-8. Using "I feel nothing, so it must be working deeper" as a reason to dose forever.
-9. Collapsing MOTS-c, SS-31, and NAD+ into one "mito stack" with one job.
-10. Restoring oral-precursor debate packaging that this reference has already declined (including unsupported "published debate" framing).
+---
 
 ## How Do I Know It's Working?
 
-**This section is this reference's own practical framework, not a trial-derived NAD+ protocol.** Depth is mostly "how you'll know / when to stop," because the SC milligram number is convention rather than a found minimum effective dose.
+Pick something real.
+Not:
+**"I feel healthier."**
+Use things like:
+- afternoon crash;
+- how much work you can get through;
+- how long you can exercise;
+- recovery after the same effort;
+- mental stamina on the same kind of task.
+Then compare before and after.
 
-**Start conservative on the community ladder** — there is no human data showing a specific SC dose is the minimum that "works," so there is no reason to start at the high end of 75–100 mg. Daily vs 2–3× weekly is also convention; pick one rhythm and hold it through the evaluation window so you can actually judge it.
+### Clearly working
 
-**Baseline.** Two or three specific, currently-limited, repeatable things. Not ten, not "more energy."
+You can repeatedly do more or recover better.
 
-**Checkpoints (practical, ~4–6 weeks — not a validated cycle):**
-- Early: tolerance — sting, nausea, sleep disruption, palpitations. Don't chase dose yet.
-- Through the window: reproducibility against baseline.
-- Decision: clearly improving → don't automatically increase. Some improvement, still limited → cautious step on the community ladder is reasonable. No reproducible improvement → don't keep raising milligrams indefinitely; ask whether NAD availability was the bottleneck. Worse → hold and reassess. Decline is not detox.
+### Some improvement
 
-**Stopping can be part of the experiment.** Function holds off → maybe you don't need to stay on it. Function drifts back → useful within-person information. Nothing changes either way → the original "effect" likely wasn't NAD+.
+There is a real change, but it is small or inconsistent.
+Hold steady before automatically increasing the dose.
 
-## How do I know if I'm low?
+### No improvement
 
-There is currently no routine blood test that can cleanly tell someone, "Your NAD+ is low, therefore you need NAD+."
+Nothing meaningful changes after a fair evaluation window.
+That is a reason to ask whether NAD+ was the missing piece in the first place.
 
-Specialty and research assays can measure NAD+ and related metabolites in whole blood, plasma, PBMCs, or tissues. NAD biology is compartmentalized. A blood NAD+ number does not automatically report the NAD+/NADH state inside skeletal-muscle mitochondria, liver, brain, or other tissues.
+### Worse
 
-Also distinguish **total NAD pool** from **NAD+/NADH redox state and turnover**. Someone could have an adequate pool and still have impaired recycling.
+Function clearly gets worse.
+That is a hold-and-reassess signal.
+Not proof of detox.
 
-Practical answer: we do not currently have a routine validated test that cleanly identifies who will benefit from injected NAD+. Do not oversell specialty NAD testing.
+---
+
+## How Do I Know If I'm Low?
+
+There is no simple routine blood test that can tell you:
+**"Your NAD+ is low, so you need NAD+ shots."**
+There are special tests that can measure NAD-related compounds in blood or cells.
+But that still doesn't tell you exactly what is happening inside your muscle, liver, brain, or mitochondria.
+So the practical answer is:
+**We currently do not have a simple test that tells us who will definitely benefit from injected NAD+.**
+
+---
 
 ## What to Take Alongside
 
-**If I'm using this, what substrate/cofactor support does the research actually back?**
+There is no one mandatory NAD+ stack.
+The useful support depends on what part of the energy system is struggling.
 
-These are mechanistic companions for the same energy-and-maintenance system — **not** a combined-use trial stack, and not upgraded in evidence tier because they sit higher in this doc.
+### CoQ10
 
-- **CoQ10** — works downstream of NADH in the electron-transport chain. This pairing is reasoning about how the two fit together, not a tested combination; SS-31 handles membrane protection, which is a separate job entirely.
-- **Magnesium** — cofactor for NAD-related enzymes including NAMPT salvage. Mechanistic, not NAD+-specific outcome data.
-- **ALA** — redox cycling that can intersect NAD+/NADH. Mechanistic companion.
-- **Resveratrol** — often framed as making sirtuins more NAD+-sensitive. That is a popular pairing, not a requirement, and not a substitute for NAD+ availability actually being the bottleneck.
-- **5-Amino-1MQ** — a pairing people reach for based on reasoning about reducing NNMT-driven NAD+ drain in fat tissue, not on any completed trial. Distinct molecule, distinct claim; do not treat it as "the NAD+ stack."
+Works farther downstream in the same power system.
+Interesting when the machinery that moves energy through the mitochondria is the limiting part.
 
-Oral NR/NMN are **not** "take alongside" for injected NAD+ in the sense of stacking the same milligrams. They are a different route into NAD metabolism. If the injectable is the intervention being judged, do not muddy the experiment with a second NAD-raising strategy unless that is a deliberate, labeled choice.
+### Magnesium
+
+Basic support for many of the reactions involved in making and using energy.
+
+### ALA
+
+Can support the same redox/energy system from a different angle.
+
+### Resveratrol
+
+Often framed as making sirtuins more sensitive to NAD+.
+That's a popular pairing, not a requirement — and it doesn't substitute for NAD+ actually being the missing piece.
+
+### 5-Amino-1MQ
+
+A different approach entirely — aimed at reducing NAD+ drain in fat tissue rather than adding more NAD+.
+People reach for it based on that reasoning, not a completed trial.
+Different molecule, different claim. Don't treat it as part of "the NAD+ stack."
+
+### NAD-related precursors
+
+NR and NMN are different ways of trying to raise NAD-related availability.
+They are not the same thing as injected NAD+.
+If you are trying to figure out whether injected NAD+ is helping, adding multiple NAD-raising strategies at the same time makes the answer harder to read.
+
+---
 
 ## Pairs Well With / Synergy
 
 ### MOTS-c + NAD+
-**Power-plant upgrade + rechargeable power carrier.** MOTS-c programs fuel handling and biogenesis; NAD+ is carrier/currency running through that system. Distinct jobs. Mechanistic complementarity; no combined-use human outcome trial claimed.
+
+**Training signal + rechargeable carrier.**
+MOTS-c asks the energy system to adapt.
+NAD+/NADH helps carry energy through that system.
+Different jobs.
 
 ### SS-31 + NAD+
-**Wiring & grid-stabilization + rechargeable power carrier.** SS-31 protects the membrane the electron-transport chain runs on; NAD+/NADH is the reducing-power carrier that chain uses. If the wiring is leaking, more carrier may not help. This pairing is reasoning from how the two systems fit together, not a trial that tested them combined.
+
+**Machinery support + rechargeable carrier.**
+SS-31 works closer to the mitochondrial machinery itself.
+NAD+/NADH is part of the carrier system running through that machinery.
+If the machinery is badly damaged, adding more carrier may not fix it.
 
 ### MOTS-c + SS-31 + NAD+
-Three jobs, not three boosters: programming, machinery, carrier. Sequence logic for MOTS-c before SS-31 is this project's sourced practitioner call (see SS-31 doc). Adding NAD+ into that sequence is this reference's own reasoning, not a tested triad.
+
+Three different jobs:
+- MOTS-c = adaptation;
+- SS-31 = machinery support;
+- NAD+ = carrier system.
+That is a much better way to think about the combination than calling all three "mitochondrial boosters."
 
 ### 5-Amino-1MQ + NAD+
-Demand-side leak (NNMT) vs adding carrier. Different intervention. Do not treat as interchangeable.
+
+**Reducing the drain + rechargeable carrier.**
+5-Amino-1MQ targets one specific leak — NAD+ drain in fat tissue.
+NAD+/NADH is the carrier itself, not the leak.
+Different jobs. Nobody's actually tested them together.
+
+---
 
 ## What They're Not Telling You
 
-The usual NAD+ story is simple: NAD+ falls as you age, low NAD+ means less cellular energy, so replacing NAD+ should restore what was lost. Human biology is not that tidy.
+### "You lose half your NAD+ as you age" is too simple
 
-**Aging can alter NAD metabolism, but there is not a defensible universal percentage by which every person's NAD+ supply falls simply because they got older.** Age-related NAD changes appear to vary by tissue, health status, metabolic state, physical activity, and measurement compartment — a close look at the research behind the popular "NAD+ drops 50% by middle age" claim found the actual human evidence a lot thinner and more tissue-specific than the sound bite suggests. The appropriate conclusion is not "aging doesn't affect NAD+." It is that AGE → assumed NAD+ deficiency → replacement is too simplistic. *(Sourcing for this claim is in the technical section below.)*
+Aging does affect NAD biology.
+But there is not one clean percentage that applies to every person and every tissue.
+So:
+**older = automatically NAD deficient**
+is too simple.
 
-**"How much NAD+ do I have?" and "Is my NAD system working properly?" are not the same question.** Availability, NADH formation, NADH oxidation/recycling, electron transport, synthesis/salvage, and consumption are different parts of one system. An adequate pool with poor turnover is a coherent possibility.
+### More NAD+ does not automatically mean more energy
 
-In the battery picture used on the front card: food charges the batteries (NAD+ → NADH). NADH delivers that charge into the electron-transport chain, especially Complex I. Giving up those electrons recycles the battery toward NAD+ so the cycle can continue, and it helps build the gradient that makes ATP. **The ETC is part of what allows the NAD+/NADH system to keep turning over.** If electron flow through that machinery is badly impaired, simply supplying more NAD+ may not fix the bottleneck. That is not the same claim as "ETC dysfunction means NAD+ won't work." It is bottleneck identification — and it's textbook, well-established biology, not a stretch.
+NAD+ is part of the power system.
+It is not the entire power system.
+If the machinery using it is not working well, adding more NAD+ may not solve the bottleneck.
 
-**Biochemical target engagement is not functional recovery.** Human precursor work has shown NAD-related metabolites can rise without corresponding improvements in mitochondrial bioenergetics — in one study, twelve weeks of a popular oral NAD+ precursor raised the expected blood markers but didn't change muscle mitochondrial function at all. If raising NAD-related biomarkers doesn't reliably restore function, the limiting step may not have been "not enough NAD+." *(Sourcing for this claim is in the technical section below.)*
+### A higher NAD number does not guarantee better function
 
-**NAD+ should not automatically be framed as the first-line mitochondrial fix.** It is a support tool for a system that still has to be able to use and recycle it. If the major bottleneck is membrane/ETC function, metabolic programming, inflammation, excessive NAD consumption, or impaired recycling, adding more carrier may not address the upstream problem. Addressing mitochondrial/metabolic function before or alongside NAD+ is biologically coherent. It is not a proven order.
+It is possible to raise NAD-related markers without seeing a matching improvement in actual mitochondrial performance.
+That means the real question is not only:
+**"Did NAD go up?"**
+It is:
+**"Did the person function better?"**
 
-**MOTS-c / SS-31 / NAD+ jobs (keep the boundary):**
-- MOTS-c = metabolic programming / adaptation
-- SS-31 = inner-membrane / machinery support
-- NAD+/NADH = carrier/redox system operating through that machinery
+### NAD+ may not be the first thing to fix
 
-The reasoning here, not a tested finding: in someone whose primary bottleneck is machinery or programming, addressing that first or concurrently may make more biological sense than blindly escalating NAD+. **Do not convert this into "MOTS-c and SS-31 must always come before NAD+."** That sequence has not been established. Practitioners disagree. Distinct jobs are biologically coherent; optimal order remains unresolved.
-
-**5-Amino-1MQ is not in the same bucket.** NNMT is an interesting relationship to nicotinamide metabolism, NAD salvage, and metabolic regulation — a more indirect route. Human evidence is too limited to treat it as a default prerequisite or first-line step before NAD+.
-
-**What people report, outside of what any trial measured:**
-
-- Some people use NAD+ specifically alongside MOTS-c- or SS-31-style mitochondrial work, rather than as a standalone energy shot — the jobs are genuinely different (see above), but nobody's tested the combination directly.
-- Low-dose SC NAD+ for fatigue during GLP-1/GIP therapy, with some reports of better daytime energy, mental clarity, motivation, or recovery. Worth naming as a real pattern — not an established treatment for GLP-1-related fatigue.
-- Paradoxical fatigue, sleepiness, brain fog, or a preference for dosing later in the day or at bedtime instead of morning. Don't explain this as detox, as proof NAD+ is working, or as a methylation problem unless there's actual evidence for that in a given case — the pattern itself is real even though why it happens isn't settled.
-- Effects may be easier to notice when NAD+/redox capacity is genuinely part of what's limiting someone (fatigue, poor recovery, metabolic stress, GLP-1-associated exhaustion) than in someone already functioning well who's using it for general longevity. Don't turn this into a proven "responder type."
-
-*Everything in this list is a practitioner/community-reported pattern, not a trial finding — plausible given the mechanism, not demonstrated.*
-
-**The more useful question may not be "Am I low on NAD+?" It may be "What part of my energy system is actually limiting me?"**
-
+If the real problem is mitochondrial machinery, metabolic programming, inflammation, or poor recycling, NAD+ may be support rather than the first move.
+That does not mean NAD+ is useless.
+It means:
+**use it where the bottleneck actually is.**
 ---
 
 *— Everything below this line is the technical deep dive: mechanism, audit trail, and evidence sourcing. Not written to be read aloud. —*
