@@ -1,29 +1,5 @@
 # NAD+ Compound Research
 
-## Executive identity
-
-**NAD+ is the rechargeable power carrier and maintenance currency — not the fuel, and not the spendable energy.**
-
-**Construction model:** BPC-157 = foreman · TB-500 = scaffolding/access crew · GHK-Cu = materials/blueprints · MOTS-c = power plant · Retatrutide = logistics manager · SS-31 = wiring & grid-stabilization crew · ARA-290 = Data Signal Repair · KPV = Site Safety Coordinator · **NAD+ = rechargeable power carrier + maintenance currency.**
-
-Food-derived substrates are the fuel. ATP is what the site actually spends. NAD+/NADH is one of the major carrier systems that picks up reducing power while fuel is processed, delivers it into the mitochondrial machinery, gets recharged, and does it again. Repair and maintenance crews (sirtuins, PARPs, and related systems) also *spend* NAD+ while doing their jobs. Adding more carrier does not automatically produce more work if the machinery cannot recycle NADH, or if NAD availability was never the bottleneck.
-
-NAD+ is technically not a peptide. It is an endogenous dinucleotide coenzyme. That classification fact is noted here so it is not confused with the peptide roster; it is not the point of the card.
-
-## Identity and evidence boundary
-
-NAD+'s evidence complication is a route problem disguised as a dose problem. The molecule is one of the best-characterized coenzymes in biology. The *exogenous-use* picture is three different pharmacological conversations that keep getting collapsed into one milligram number:
-
-1. **STRONG — established biology/mechanism.** NAD+/NADH as a redox carrier; NAD+ consumption by sirtuins and PARPs; mitochondrial inner-membrane NAD+ import via SLC25A51; extracellular NAD+ metabolism. These are not up for debate as cell biology.
-2. **MODERATE — meaningful but context-dependent human evidence.** Oral NR/NMN intervention literature (raising NAD metabolome markers, mixed functional outcomes). IV NAD+ exposures in the hundreds of milligrams appear in human studies and clinical practice. Neither automatically transfers to subcutaneous NAD+.
-3. **LIMITED / VERY LIMITED.** Direct human subcutaneous NAD+ pharmacokinetics, dose-response, accumulation, and functional outcomes. Major gaps. Do not fill them with IV numbers.
-4. **PRACTITIONER / COMMUNITY CONVENTION.** Recurring SC use clusters (~25 mg at the low end, ~50 mg commonly, ~75–100 mg at the higher common end; often ~2–3× weekly; some daily schedules). This is a real-world titration pattern, not a validated human dose-response curve.
-5. **INTERPRETIVE.** Sequencing and pairing with MOTS-c and SS-31 (distinct jobs: metabolic programming, membrane/machinery, redox carrier). Mechanistically coherent; not combined-use trial evidence.
-
-Do not collapse practitioner/community convention into interpretive. "People commonly use ~50 mg SC" is a different kind of claim from "SS-31 may complement NAD+ by improving the machinery through which NADH is recycled."
-
-Governing maxim: **mechanism earns inclusion; route determines the number; more carrier is not automatically more energy.**
-
 ## What Happens After You Take It
 
 Vital orientation for someone actually using NAD+. This is not the mechanism walkthrough. Four clocks that are not interchangeable: onset, duration of one dose, accumulation/steady state, and functional response. Human SC pharmacokinetics for intact NAD+ are largely unestablished — that gap is left visible rather than filled from IV, animal, or community reports.
@@ -80,41 +56,18 @@ Pick 2–3 specific, repeatable, currently-limited things before starting — no
 - If a reproducible benefit disappears off and returns on, that is useful practical information — not a controlled trial.
 - Worse (new or worsening fatigue, significant nausea, chest pressure, palpitations) is a hold-and-reassess signal, not detox.
 
-### What to Take Alongside
+## Highest-stakes open question nuance
 
-**If I'm using this, what substrate/cofactor support does the research actually back?**
+The highest-stakes open question is whether exogenous NAD+ — especially **human SC NAD+** — produces reliable, repeatable functional benefit when NAD availability is actually the bottleneck, and how to know that in a living person without turning "no sensation" into an unfalsifiable win.
 
-Relocated from the front card on purpose. These are mechanistic companions for the same energy-and-maintenance system — **not** a combined-use trial stack, and not upgraded in evidence tier because they sit higher in this doc.
+Keep separate:
+- Cell-biology of NAD+ (STRONG) vs exogenous SC outcomes (VERY LIMITED).
+- Oral precursor trials vs injected NAD+.
+- IV exposures vs SC convention.
+- Subjective acute effects vs mitochondrial remodeling.
+- Upstream NAD shortage vs downstream broken recycling machinery.
 
-- **CoQ10** — works downstream of NADH in the electron-transport chain. INTERPRETIVE pairing with NAD+ as carrier; SS-31 as membrane protection is a separate job.
-- **Magnesium** — cofactor for NAD-related enzymes including NAMPT salvage. Mechanistic, not NAD+-specific outcome data.
-- **ALA** — redox cycling that can intersect NAD+/NADH. Mechanistic companion.
-- **Resveratrol** — often framed as making sirtuins more NAD+-sensitive. That is a popular pairing, not a requirement, and not a substitute for NAD+ availability actually being the bottleneck.
-- **5-Amino-1MQ** — community/interpretive pairing aimed at reducing NNMT-driven NAD+ drain in fat tissue. Distinct molecule, distinct claim; do not treat it as "the NAD+ stack."
-
-Oral NR/NMN are **not** "take alongside" for injected NAD+ in the sense of stacking the same milligrams. They are a different route into NAD metabolism. If the injectable is the intervention being judged, do not muddy the experiment with a second NAD-raising strategy unless that is a deliberate, labeled choice.
-
-## Core biological cascade
-
-**NAD+ ⇄ NADH → carries reducing power from fuel processing into Complex I (and related redox reactions) → ATP production capacity at the electron-transport chain; separately, NAD+ is consumed by sirtuins and PARPs → gene regulation, mitochondrial biogenesis programs, and DNA-repair activity → cellular maintenance. Inflamed or PARP-hyperactive tissue can drain the pool.**
-
-### Not fuel, not ATP
-
-Calling NAD+ "cellular fuel" is the main popular error. Substrates from food are fuel. ATP is spendable energy. NAD+/NADH is a carrier. If the electron-transport chain is damaged, extra carrier cannot force ATP out of broken machinery — that is the SS-31 complementarity in one sentence (INTERPRETIVE).
-
-### Maintenance currency
-
-Sirtuins (SIRT1–7) and PARP-1 consume NAD+. Chronic inflammation can hyperactivate PARP and drain the pool. Age-related decline in NAD+ is widely discussed; "replace what age took" is a slogan, not a dosing protocol.
-
-### Extracellular metabolism and mitochondrial import
-
-Injected NAD+ meets ectoenzymes before it is "inside" in the way people imagine. Mitochondrial NAD+ import in mammalian cells depends on the inner-membrane carrier SLC25A51 ([PMID 32906142](https://pubmed.ncbi.nlm.nih.gov/32906142/), Luongo et al., *Nature* 2020). Direct injection is not immediate intact mitochondrial delivery. This is STRONG cell biology applied to a use-case with LIMITED human SC data.
-
-## One genuine non-obvious insight
-
-NAD availability can be **downstream** of mitochondrial dysfunction as well as upstream of it. If the bottleneck is membrane damage, substrate, anemia, sleep, inflammation, or mitochondrial *quantity*, pouring carrier on the problem can look like "NAD+ didn't work" when the wrong job was hired. That is why this card pairs conceptually with MOTS-c and SS-31 without collapsing the three into "mitochondrial boosters."
-
-## Practical dosing/cycling logic
+## Dose / Route / Timing / Duration
 
 **Popular claim:** a single milligram ladder (or "loading") that treats oral NR/NMN, SC NAD+, and IV NAD+ as the same dose in different clothing.
 
@@ -132,7 +85,34 @@ NAD availability can be **downstream** of mitochondrial dysfunction as well as u
 
 **Cycling:** NAD+ does not have an established peptide-style receptor-reset cycle. Do not invent 8-on/4-off or 12-on/X-off. Use a defined evaluation period (see Judge It). Continuous use is a decision that has to keep earning its place, not a default.
 
-## Response-guided dosing framework
+## What to Expect + Watch For
+
+### Early
+
+SC NAD+ can sting or burn noticeably. That is a common practical report, not a efficacy biomarker. Some people notice alertness or a "cleaner" energy the same day; some notice little; some get paradoxical fatigue, sleepiness, or brain fog. Unpleasant effects are not automatically detox and are not proof of benefit.
+
+### Building
+
+The useful scorecard is repeatable function against the pre-specified baseline, not a dramatic sensation after each shot.
+
+### Longer term
+
+No long-term human SC NAD+ safety or efficacy dataset establishes indefinite use. Reassess whether the original job is still present and whether NAD availability is still a plausible bottleneck.
+
+### Common mistakes worth flagging here
+
+1. Calling NAD+ fuel or treating milligrams as watts.
+2. Equating IV milligrams, SC milligrams, and oral NR/NMN milligrams.
+3. Labeling 25 / 50 / 100 mg as Maintenance / Therapeutic / High.
+4. Inventing a receptor-reset on/off cycle.
+5. Treating sting, fatigue, or brain fog as detox or as proof it is working.
+6. Inferring human SC onset or half-life from IV or animal data.
+7. Assuming injected NAD+ arrives intact in every mitochondrion.
+8. Using "I feel nothing, so it must be working deeper" as a reason to dose forever.
+9. Collapsing MOTS-c, SS-31, and NAD+ into one "mito stack" with one job.
+10. Restoring oral-precursor debate packaging that this reference has already declined (including unsupported "published debate" framing).
+
+## How Do I Know It's Working?
 
 **This section is this reference's own practical framework, not a trial-derived NAD+ protocol.** Depth is mostly "how you'll know / when to stop," because the SC milligram number is convention rather than a found minimum effective dose.
 
@@ -147,34 +127,31 @@ NAD availability can be **downstream** of mitochondrial dysfunction as well as u
 
 **Stopping can be part of the experiment.** Function holds off → maybe you don't need to stay on it. Function drifts back → useful within-person information. Nothing changes either way → the original "effect" likely wasn't NAD+.
 
-## What to expect and monitor
+## How do I know if I'm low?
 
-### Early
+There is currently no routine blood test that can cleanly tell someone, "Your NAD+ is low, therefore you need NAD+."
 
-SC NAD+ can sting or burn noticeably. That is a common practical report, not a efficacy biomarker. Some people notice alertness or a "cleaner" energy the same day; some notice little; some get paradoxical fatigue, sleepiness, or brain fog. Unpleasant effects are not automatically detox and are not proof of benefit.
+Specialty and research assays can measure NAD+ and related metabolites in whole blood, plasma, PBMCs, or tissues. NAD biology is compartmentalized. A blood NAD+ number does not automatically report the NAD+/NADH state inside skeletal-muscle mitochondria, liver, brain, or other tissues.
 
-### Building
+Also distinguish **total NAD pool** from **NAD+/NADH redox state and turnover**. Someone could have an adequate pool and still have impaired recycling.
 
-The useful scorecard is repeatable function against the pre-specified baseline, not a dramatic sensation after each shot.
+Practical answer: we do not currently have a routine validated test that cleanly identifies who will benefit from injected NAD+. Do not oversell specialty NAD testing.
 
-### Longer term
+## What to Take Alongside
 
-No long-term human SC NAD+ safety or efficacy dataset establishes indefinite use. Reassess whether the original job is still present and whether NAD availability is still a plausible bottleneck.
+**If I'm using this, what substrate/cofactor support does the research actually back?**
 
-## Common mistakes
+These are mechanistic companions for the same energy-and-maintenance system — **not** a combined-use trial stack, and not upgraded in evidence tier because they sit higher in this doc.
 
-1. Calling NAD+ fuel or treating milligrams as watts.
-2. Equating IV milligrams, SC milligrams, and oral NR/NMN milligrams.
-3. Labeling 25 / 50 / 100 mg as Maintenance / Therapeutic / High.
-4. Inventing a receptor-reset on/off cycle.
-5. Treating sting, fatigue, or brain fog as detox or as proof it is working.
-6. Inferring human SC onset or half-life from IV or animal data.
-7. Assuming injected NAD+ arrives intact in every mitochondrion.
-8. Using "I feel nothing, so it must be working deeper" as a reason to dose forever.
-9. Collapsing MOTS-c, SS-31, and NAD+ into one "mito stack" with one job.
-10. Restoring oral-precursor debate packaging that this reference has already declined (including unsupported "published debate" framing).
+- **CoQ10** — works downstream of NADH in the electron-transport chain. INTERPRETIVE pairing with NAD+ as carrier; SS-31 as membrane protection is a separate job.
+- **Magnesium** — cofactor for NAD-related enzymes including NAMPT salvage. Mechanistic, not NAD+-specific outcome data.
+- **ALA** — redox cycling that can intersect NAD+/NADH. Mechanistic companion.
+- **Resveratrol** — often framed as making sirtuins more NAD+-sensitive. That is a popular pairing, not a requirement, and not a substitute for NAD+ availability actually being the bottleneck.
+- **5-Amino-1MQ** — community/interpretive pairing aimed at reducing NNMT-driven NAD+ drain in fat tissue. Distinct molecule, distinct claim; do not treat it as "the NAD+ stack."
 
-## Synergy
+Oral NR/NMN are **not** "take alongside" for injected NAD+ in the sense of stacking the same milligrams. They are a different route into NAD metabolism. If the injectable is the intervention being judged, do not muddy the experiment with a second NAD-raising strategy unless that is a deliberate, labeled choice.
+
+## Pairs Well With / Synergy
 
 ### MOTS-c + NAD+
 **Power-plant upgrade + rechargeable power carrier.** MOTS-c programs fuel handling and biogenesis; NAD+ is carrier/currency running through that system. Distinct jobs. Mechanistic complementarity; no combined-use human outcome trial claimed.
@@ -187,27 +164,6 @@ Three jobs, not three boosters: programming, machinery, carrier. Sequence logic 
 
 ### 5-Amino-1MQ + NAD+
 Demand-side leak (NNMT) vs adding carrier. Different intervention. Do not treat as interchangeable.
-
-## Highest-stakes open question nuance
-
-The highest-stakes open question is whether exogenous NAD+ — especially **human SC NAD+** — produces reliable, repeatable functional benefit when NAD availability is actually the bottleneck, and how to know that in a living person without turning "no sensation" into an unfalsifiable win.
-
-Keep separate:
-- Cell-biology of NAD+ (STRONG) vs exogenous SC outcomes (VERY LIMITED).
-- Oral precursor trials vs injected NAD+.
-- IV exposures vs SC convention.
-- Subjective acute effects vs mitochondrial remodeling.
-- Upstream NAD shortage vs downstream broken recycling machinery.
-
-## How do I know if I'm low?
-
-There is currently no routine blood test that can cleanly tell someone, "Your NAD+ is low, therefore you need NAD+."
-
-Specialty and research assays can measure NAD+ and related metabolites in whole blood, plasma, PBMCs, or tissues. NAD biology is compartmentalized. A blood NAD+ number does not automatically report the NAD+/NADH state inside skeletal-muscle mitochondria, liver, brain, or other tissues.
-
-Also distinguish **total NAD pool** from **NAD+/NADH redox state and turnover**. Someone could have an adequate pool and still have impaired recycling.
-
-Practical answer: we do not currently have a routine validated test that cleanly identifies who will benefit from injected NAD+. Do not oversell specialty NAD testing.
 
 ## What They're Not Telling You
 
@@ -241,6 +197,56 @@ The INTERPRETIVE hypothesis: in someone whose primary bottleneck is machinery or
 
 **The more useful question may not be "Am I low on NAD+?" It may be "What part of my energy system is actually limiting me?"**
 
+---
+
+*— Everything below this line is the technical deep dive: mechanism, audit trail, and evidence sourcing. Not written to be read aloud. —*
+
+---
+
+## Executive identity
+
+**NAD+ is the rechargeable power carrier and maintenance currency — not the fuel, and not the spendable energy.**
+
+**Construction model:** BPC-157 = foreman · TB-500 = scaffolding/access crew · GHK-Cu = materials/blueprints · MOTS-c = power plant · Retatrutide = logistics manager · SS-31 = wiring & grid-stabilization crew · ARA-290 = Data Signal Repair · KPV = Site Safety Coordinator · **NAD+ = rechargeable power carrier + maintenance currency.**
+
+Food-derived substrates are the fuel. ATP is what the site actually spends. NAD+/NADH is one of the major carrier systems that picks up reducing power while fuel is processed, delivers it into the mitochondrial machinery, gets recharged, and does it again. Repair and maintenance crews (sirtuins, PARPs, and related systems) also *spend* NAD+ while doing their jobs. Adding more carrier does not automatically produce more work if the machinery cannot recycle NADH, or if NAD availability was never the bottleneck.
+
+NAD+ is technically not a peptide. It is an endogenous dinucleotide coenzyme. That classification fact is noted here so it is not confused with the peptide roster; it is not the point of the card.
+
+## Identity and evidence boundary
+
+NAD+'s evidence complication is a route problem disguised as a dose problem. The molecule is one of the best-characterized coenzymes in biology. The *exogenous-use* picture is three different pharmacological conversations that keep getting collapsed into one milligram number:
+
+1. **STRONG — established biology/mechanism.** NAD+/NADH as a redox carrier; NAD+ consumption by sirtuins and PARPs; mitochondrial inner-membrane NAD+ import via SLC25A51; extracellular NAD+ metabolism. These are not up for debate as cell biology.
+2. **MODERATE — meaningful but context-dependent human evidence.** Oral NR/NMN intervention literature (raising NAD metabolome markers, mixed functional outcomes). IV NAD+ exposures in the hundreds of milligrams appear in human studies and clinical practice. Neither automatically transfers to subcutaneous NAD+.
+3. **LIMITED / VERY LIMITED.** Direct human subcutaneous NAD+ pharmacokinetics, dose-response, accumulation, and functional outcomes. Major gaps. Do not fill them with IV numbers.
+4. **PRACTITIONER / COMMUNITY CONVENTION.** Recurring SC use clusters (~25 mg at the low end, ~50 mg commonly, ~75–100 mg at the higher common end; often ~2–3× weekly; some daily schedules). This is a real-world titration pattern, not a validated human dose-response curve.
+5. **INTERPRETIVE.** Sequencing and pairing with MOTS-c and SS-31 (distinct jobs: metabolic programming, membrane/machinery, redox carrier). Mechanistically coherent; not combined-use trial evidence.
+
+Do not collapse practitioner/community convention into interpretive. "People commonly use ~50 mg SC" is a different kind of claim from "SS-31 may complement NAD+ by improving the machinery through which NADH is recycled."
+
+Governing maxim: **mechanism earns inclusion; route determines the number; more carrier is not automatically more energy.**
+
+## Core biological cascade
+
+**NAD+ ⇄ NADH → carries reducing power from fuel processing into Complex I (and related redox reactions) → ATP production capacity at the electron-transport chain; separately, NAD+ is consumed by sirtuins and PARPs → gene regulation, mitochondrial biogenesis programs, and DNA-repair activity → cellular maintenance. Inflamed or PARP-hyperactive tissue can drain the pool.**
+
+### Not fuel, not ATP
+
+Calling NAD+ "cellular fuel" is the main popular error. Substrates from food are fuel. ATP is spendable energy. NAD+/NADH is a carrier. If the electron-transport chain is damaged, extra carrier cannot force ATP out of broken machinery — that is the SS-31 complementarity in one sentence (INTERPRETIVE).
+
+### Maintenance currency
+
+Sirtuins (SIRT1–7) and PARP-1 consume NAD+. Chronic inflammation can hyperactivate PARP and drain the pool. Age-related decline in NAD+ is widely discussed; "replace what age took" is a slogan, not a dosing protocol.
+
+### Extracellular metabolism and mitochondrial import
+
+Injected NAD+ meets ectoenzymes before it is "inside" in the way people imagine. Mitochondrial NAD+ import in mammalian cells depends on the inner-membrane carrier SLC25A51 ([PMID 32906142](https://pubmed.ncbi.nlm.nih.gov/32906142/), Luongo et al., *Nature* 2020). Direct injection is not immediate intact mitochondrial delivery. This is STRONG cell biology applied to a use-case with LIMITED human SC data.
+
+## One genuine non-obvious insight
+
+NAD availability can be **downstream** of mitochondrial dysfunction as well as upstream of it. If the bottleneck is membrane damage, substrate, anemia, sleep, inflammation, or mitochondrial *quantity*, pouring carrier on the problem can look like "NAD+ didn't work" when the wrong job was hired. That is why this card pairs conceptually with MOTS-c and SS-31 without collapsing the three into "mitochondrial boosters."
+
 ## Source synthesis
 
 v48 wrote this file because it was missing on `main`. v49 revises the front-card explanation for a zero-background reader, rebuilds this section around bottleneck-vs-pool (not a universal age-percentage story), adds the no-routine-test answer, and syncs search-index JSON to the live card.
@@ -251,6 +257,8 @@ Citations used in this revision, checked against PubMed (paper exists; title/aut
 - Dollerup et al., *J Physiol* 2020 — NR did not alter skeletal-muscle mitochondrial respiration, content, or morphology in obese insulin-resistant men. [PMID 31710095](https://pubmed.ncbi.nlm.nih.gov/31710095/). Supports target engagement ≠ functional recovery for that precursor, in that tissue and population — not a claim about injected NAD+.
 
 Practitioner/community observations above are labeled as such plus a verdict (HOLDS UP / PLAUSIBLE BUT OPEN / DOESN'T HOLD UP). Verdict is not a substitute for evidence type. Unsupported Yoshino "published debate" wording was not restored.
+
+**2026-08-25 reorder:** This doc was restructured into the Tier 1 (conversation-ready) / Tier 2 (technical) architecture locked in `_TEMPLATE.md`. Content unchanged — sections moved, retitled ("Practical dosing/cycling logic" → "Dose / Route / Timing / Duration"; "Response-guided dosing framework" → "How Do I Know It's Working?"; "Synergy" → "Pairs Well With / Synergy"), and "What to Take Alongside" promoted from a subsection to its own top-level section. "Common mistakes" was folded into "What to Expect + Watch For" as a subsection. No claims, citations, or evidence-tier labels were altered in this pass.
 
 **PubMed-verification pass: complete for the three PMIDs listed in this section.** Broader NAD biochemistry (sirtuins, PARPs, extracellular CD38/CD73) remains standard textbook cell biology without a citation-by-citation audit in this file. SC milligram figures remain practitioner/community convention.
 
