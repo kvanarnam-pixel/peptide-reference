@@ -1,4 +1,4 @@
-const CACHE_NAME = "peptide-reference-v47";
+const CACHE_NAME = "peptide-reference-v48";
 const ASSETS = [
   "./index.html",
   "./styles.css",
@@ -16,6 +16,7 @@ const ASSETS = [
   "./research/SS-31_Compound_Research.md",
   "./research/ARA-290_Compound_Research.md",
   "./research/KPV_Compound_Research.md",
+  "./research/NAD+_Compound_Research.md",
   "./protocols/Systemic_Inflammation.md",
   "./protocols/Diabetic_Neuropathy.md"
 ];

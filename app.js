@@ -19,7 +19,8 @@
     "retatrutide": "Retatrutide_Compound_Research.md",
     "ss-31": "SS-31_Compound_Research.md",
     "ara-290": "ARA-290_Compound_Research.md",
-    "kpv": "KPV_Compound_Research.md"
+    "kpv": "KPV_Compound_Research.md",
+    "nad": "NAD+_Compound_Research.md"
   };
   const techCache = new Map();
   const inlineMd = t => { let s = escapeHtml(t); s = s.replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>"); s = s.replace(/\*(.+?)\*/g, "<em>$1</em>"); s = s.replace(/`(.+?)`/g, "<code>$1</code>"); return s };
@@ -49,7 +50,7 @@
     try {
       let sections = techCache.get(id);
       if (!sections) {
-        const res = await fetch(`./research/${TECH_DOC_NAMES[id]}`);
+        const res = await fetch("./research/" + encodeURIComponent(TECH_DOC_NAMES[id]));
         if (!res.ok) throw new Error("fetch failed");
         sections = parseResearchDoc(await res.text());
         techCache.set(id, sections);
@@ -232,7 +233,22 @@
       { key: "catch", label: "The catch", value: "", detail: `<p>SS-31's strongest human evidence comes from Barth syndrome — a genetic disease where cardiolipin damage <i>is</i> the problem, not a downstream bystander of something else. The mechanism plausibly generalizes to general age-related mitochondrial wear; the clinical proof doesn't, yet. Treat that trial data as evidence for that specific population, not as a stand-in for general mitochondrial support.</p>` }
     ]
   ];
-  const CHIP_REGISTRY = { "tb-500": TB500_CHIPS, "bpc-157": BPC157_CHIPS, "ghk-cu": GHKCU_CHIPS, "mots-c": MOTSC_CHIPS, "retatrutide": RETATRUTIDE_CHIPS, "ara-290": ARA290_CHIPS, "kpv": KPV_CHIPS, "ss-31": SS31_CHIPS };
+  const NAD_CHIPS = [
+    [
+      { key: "dose", label: "Route / dose", value: "SC: 25–100 mg", detail: `<p>Subcutaneous NAD+ in the 25–100 mg range is practitioner/community convention, not a validated human dose-response curve. The pattern people actually titrate — roughly 25 mg at the low end, 50 mg commonly, 75–100 mg at the higher common end, often 2–3× a week — is a response/tolerability ladder, not Maintenance / Therapeutic / High.</p><p>IV uses a completely different milligram scale (hundreds of milligrams in documented exposures). Oral NR/NMN are a different pharmacological approach again. Do not treat those numbers as interchangeable with an SC shot.</p>` },
+      { key: "timing", label: "Timing", value: "Response-driven", detail: `<p>Morning is common, not mandatory. Some people notice alertness, some notice little timing effect, some get fatigue or sleepiness. Use the timing that gives the most useful repeatable response without wrecking sleep or the rest of the day. No established rule for fasting, meal separation, or a pre-workout window.</p>` },
+      { key: "cycling", label: "Duration", value: "Reassess — don't auto-cycle", detail: `<p>NAD+ has no established peptide-style receptor-reset cycle — don't invent 8-on/4-off. Hold a defined evaluation window, about 4–6 weeks as a practical checkpoint (not a validated NAD+ cycle), and ask whether continued exposure is still earning its place. No reproducible functional benefit → reassess. Benefit that holds after stopping → you may not need to stay on it. Benefit that disappears off and returns on → useful practical information.</p>` },
+      { key: "expect", label: "What to expect", value: "Can sting. Response varies.", detail: `<p>SC NAD+ can sting or burn noticeably. Some people report cleaner energy, alertness, stamina, or recovery. Some notice little. Some get paradoxical fatigue, sleepiness, or brain fog. Unpleasant effects are not "detox" and are not proof that NAD+ is working.</p>` }
+    ],
+    [
+      { key: "watch", label: "Watch for", value: "Fatigue, nausea, heart rate", detail: `<p>Stop and reassess for pronounced or worsening fatigue, significant nausea, abdominal discomfort, chest pressure, palpitations or a jump in heart rate, or severe/persistent injection-site pain. None of those is a detox badge.</p>` },
+      { key: "know", label: "How do I know?", value: "Repeatable function", detail: `<p>Judge it on functional markers you can repeat: afternoon energy stability, work or exercise capacity at the same effort, recovery after equivalent work, post-exertion fatigue, mental stamina. A useful response should be repeatable, functionally meaningful, and larger than ordinary day-to-day variation.</p><p>Feeling nothing does not automatically mean no biology. Feeling nothing also does not justify dosing forever. "Maybe it's working invisibly" is not an answer.</p>` },
+      { key: "pairs", label: "Pairs well with", value: "MOTS-c + SS-31", detail: `<p><b>MOTS-c</b> — power-plant upgrade: metabolic programming and insulin-independent glucose uptake.</p><p><b>SS-31</b> — wiring crew: membrane/machinery the electron-transport chain runs on.</p><p><b>NAD+/NADH</b> — the rechargeable carrier running through that machinery. Three distinct jobs, not three mitochondrial boosters. Mechanistic/interpretive synergy — no combined-use human outcome trial.</p>` },
+      { key: "catch", label: "The catch", value: "More isn't automatically more energy", detail: `<p>If NAD availability is not the bottleneck — or the mitochondrial machinery cannot efficiently recycle NADH back toward NAD+ — adding more carrier may not fix the problem. Injected NAD+ also does not simply travel intact into every mitochondrion; extracellular metabolism and mitochondrial transport matter. The long version lives in Go Deeper.</p>` }
+    ]
+  ];
+
+  const CHIP_REGISTRY = { "tb-500": TB500_CHIPS, "bpc-157": BPC157_CHIPS, "ghk-cu": GHKCU_CHIPS, "mots-c": MOTSC_CHIPS, "retatrutide": RETATRUTIDE_CHIPS, "ara-290": ARA290_CHIPS, "kpv": KPV_CHIPS, "ss-31": SS31_CHIPS, "nad": NAD_CHIPS };
 
   const goDeeperTierHtml = p => TECH_DOC_NAMES[p.id]
     ? `<button type="button" class="go-deeper-btn" data-go-deeper="${p.id}" aria-expanded="${state.open.has(p.id)}"><span>${state.open.has(p.id) ? "Close technical layer" : "Go deeper — the technical layer"}</span></button><div class="tech-tier ${state.open.has(p.id) ? "open" : ""}" id="techtier-${p.id}"><div class="tech-inner" id="techinner-${p.id}"></div></div>`
@@ -298,6 +314,16 @@
     <div class="card-actions"><button type="button" class="select-btn" data-select="${p.id}" aria-pressed="${selected}">${selected ? "Selected" : "Add to compare"}</button></div>
   </article>`};
 
+  const nadHtml = p => { const cat = categoryById(p.category), selected = state.selected.has(p.id); return `<article class="card ${selected ? "selected" : ""}" data-id="${p.id}" data-category="${p.category}">
+    <div class="badge-row"><span class="badge cat">${escapeHtml(cat?.short || "")}</span><span class="badge analogy">Rechargeable Power Carrier</span></div>
+    <h2>NAD+</h2><p class="tagline">Redox Carrier & Maintenance Currency</p>
+    <p class="card-desc">Think of NAD+ as the rechargeable electrical carrier moving through the site's power system — it picks up energy while fuel is processed, delivers that reducing power into the mitochondrial machinery, gets recharged, and does it again. Repair crews spend it too. It is a coenzyme, not a peptide, and it is not the fuel itself.</p>
+    <div class="bottom-line"><strong>Bottom line</strong><p>Carrier and maintenance currency, not fuel and not ATP. More NAD+ is not automatically more energy.</p></div>
+    ${chipGridHtml(p.id, NAD_CHIPS)}
+    ${goDeeperTierHtml(p)}
+    <div class="card-actions"><button type="button" class="select-btn" data-select="${p.id}" aria-pressed="${selected}">${selected ? "Selected" : "Add to compare"}</button></div>
+  </article>`};
+
   const cardHtml=p=>{
     if(p.id==="retatrutide")return retatrutideHtml(p);
     if(p.id==="bpc-157")return bpc157Html(p);
@@ -305,6 +331,7 @@
     if(p.id==="ghk-cu")return ghkcuHtml(p);
     if(p.id==="mots-c")return motscHtml(p);
     if(p.id==="kpv")return kpvHtml(p);
+    if(p.id==="nad")return nadHtml(p);
     const cat=categoryById(p.category),selected=state.selected.has(p.id);
     return `<article class="card ${selected?"selected":""}" data-id="${p.id}" data-category="${p.category}">
       <div class="badge-row"><span class="badge cat">${escapeHtml(cat?.short||"")}</span>${p.analogy?`<span class="badge analogy">${escapeHtml(p.analogy)}</span>`:""}</div>
