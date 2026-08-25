@@ -791,7 +791,7 @@ img {
 .chip-detail-inner p+p{margin-top:8px}
 .go-deeper-btn{margin-top:6px;width:100%;min-height:var(--tap);border:0;border-radius:12px;background:var(--ember);color:#fff;font-family:var(--sans);font-weight:700;font-size:.95rem;cursor:pointer}
 .tech-tier{max-height:0;overflow:hidden;transition:max-height .3s ease}
-.tech-tier.open{max-height:8000px}
+.tech-tier.open{max-height:none}
 .tech-inner{margin-top:10px;padding:6px 14px;background:var(--parchment);border:1px solid var(--line);border-radius:12px}
 .tech-pending{margin-top:6px;font-size:.85rem;color:var(--ink-soft);font-style:italic}
 .tech-loading,.tech-error{font-size:.88rem;color:var(--ink-soft);padding:10px 0}
@@ -804,6 +804,7 @@ img {
 .tech-accordion-body h4{font-family:var(--serif);font-size:.88rem;margin:12px 0 4px;color:var(--cat,var(--field))}
 .tech-accordion-body p{font-size:.88rem;line-height:1.55;margin:0 0 8px;color:var(--ink)}
 .tech-accordion-body ul,.tech-accordion-body ol{margin:0 0 8px;padding-left:20px;font-size:.88rem;line-height:1.55}
+.tech-deep-dive{margin:10px 0 2px;padding:12px 2px 4px;border-top:1px solid var(--line);font-family:var(--sans);font-size:.7rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--field)}
 
 .dose-tiers {
   display: grid;
