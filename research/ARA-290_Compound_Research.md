@@ -1,106 +1,326 @@
 # ARA-290 Compound Research
 
+## What Happens After You Take It
+
+### Starts
+
+ARA-290 does not hang around in the blood. It is gone in minutes.
+What it does is flip a repair switch that the body only puts out where tissue is actually injured.
+So the biology can start quickly even though the shot itself does not stay in circulation.
+That is not the same as feeling better in minutes.
+
+### One Dose
+
+One shot does not need to stay in your blood to keep mattering.
+The peptide itself is short-lived. The repair program it turns on can keep running after it is gone.
+Think of a light switch, not a drip.
+We do not have a clean human number for "how many hours one under-the-skin dose stays useful."
+
+### Builds
+
+This is not Retatrutide. Repeated doses are not stacking a drug level in the bloodstream.
+What can build is the tissue response — less irritation, better small-fiber function, maybe healthier nerve endings over weeks.
+That is repair accumulating, not the peptide piling up.
+
+### Notice
+
+Pain, burning, or tingling can move during a 28-day course.
+That is useful. It is not proof the nerve itself has fully recovered.
+Some people feel a change. Some do not feel much while measures of small-fiber health are still moving.
+The shot is not a stimulant. Do not judge it by a rush.
+
+### Judge It
+
+The human studies that matter here watched people for 28 days of daily shots.
+Use that as a real observation window, not as a rule that the biology stops on day 28.
+Before you start, pick a few things you can compare: burning, tingling, numbness, sleep lost to nerve pain, walking tolerance, balance, how much normal activity you can stand.
+Hold the same dose through the whole check.
+Then ask:
+**Did the thing I actually care about get better — and is the nerve still being injured underneath?**
+
+---
+
+## Is It Actually Healing the Nerve — Or Just Making It Feel Better?
+
+This is the first question someone with neuropathy usually cares about.
+Feeling less pain is real help. It is not automatically the same as the nerve getting healthier.
+
+ARA-290 is more interesting than a simple pain mask.
+Human research has looked at small-fiber nerve measures — including nerve-fiber appearance in the cornea — not only at pain scores.
+Symptom relief and those nerve measures can move together. They can also move on different clocks.
+A better pain score is not proof the wiring has been rebuilt.
+A better nerve-fiber measure is not a promise that every numb toe is going to come back.
+
+The honest distinction:
+**Feeling better**
+and
+**the nerve becoming healthier**
+can overlap. They are not the same thing.
+
+---
+
+## Is Something Still Damaging the Nerve?
+
+ARA-290 cannot be judged in a vacuum.
+If high blood sugar, insulin resistance, inflammation, a nutritional gap, compression, or another injury is still active, repair signaling is working against ongoing damage.
+
+Think of patching a leak while the pipe is still being hit.
+The patch can be real. The leak can still win.
+
+**Repair works better when you also stop whatever is causing the damage.**
+That is not a reason to skip ARA-290. It is a reason not to expect it to outrun an injury that is still happening.
+
+---
+
+## Dose / Route / Timing / Duration
+
+### Dose
+
+The dose actually tested in people is **4 mg under the skin, once a day.**
+That is not a made-up community number. It is the human-study dose.
+A higher amount was tested and was not simply better.
+Treat 4 mg as the starting point, not a ladder you climb because more sounds stronger.
+
+### Route
+
+Under the skin.
+It does not need to be injected next to the painful nerve.
+This is a whole-body signal that shows up where injury has turned the repair switch on.
+
+### Timing
+
+No study has shown that morning, fasting, or meal timing is required.
+Pick a time you can repeat every day.
+
+### Cycling
+
+Keep calling this cycling, because that is the question people actually ask.
+What the studies showed is:
+**28 days of daily treatment was tested.**
+That tells us 28 days was studied.
+It does not prove day 28 is a biological stopping point.
+There is no established receptor-reset reason that requires a long washout.
+The common "28 days on / 56 days off" rule has not been traced to convincing human pharmacology in this project's audit.
+Longer continuous use is an evidence gap — not proven safe, not proven forbidden.
+The correct sentence is:
+**28 days tested; longer remains unanswered.**
+
+---
+
+## What to Expect + Watch For
+
+### What to Expect
+
+During a 28-day course, the useful changes are often quiet:
+- burning or stabbing pain that eases or becomes less constant;
+- tingling that shifts instead of staying locked;
+- a little more walking or activity before symptoms flare;
+- sleep that is less interrupted by nerve pain.
+You may not feel a structural nerve change even if small-fiber measures would.
+In one diabetes study, some pain improvement was still there a month after the last shot.
+That fits a switch, not a drug that only works while it is in the blood.
+It does not prove every person will keep improving after they stop.
+
+### Watch For
+
+Reassess — do not automatically push through — if:
+- symptoms are clearly worse, not just fluctuating;
+- new weakness, new loss of function, or a new neurologic deficit shows up;
+- walking, balance, or daily function is declining even if pain is quieter;
+- injection-site reactions are getting significant;
+- the thing injuring the nerve (blood sugar, for example) is still uncontrolled.
+
+Do not call unpleasant symptoms "detox."
+Feeling better is not permission to load a nerve that is still mid-repair.
+
+**Common mistakes:**
+- Treating this as a form of EPO that will thicken the blood. It was built specifically not to do that job.
+- Expecting it to work as a general tonic in uninjured tissue. The switch is mostly off until there is damage.
+- Assuming a higher dose is automatically stronger.
+- Stopping the story at "pain went down," as if that proves the nerve is rebuilt.
+- Treating day 28 as a biological deadline instead of a study calendar.
+- Judging the whole course the morning after the last shot.
+
+---
+
+## How Do I Know It's Working?
+
+Do not judge ARA-290 only by a pain number.
+
+Before you start, pick real markers:
+- burning / stabbing pain;
+- tingling;
+- numbness;
+- touch or temperature sensitivity;
+- walking tolerance;
+- balance, if that is part of the problem;
+- sleep lost to neuropathy;
+- whether normal activity keeps causing flare-ups;
+- whether any improvement holds after the shots stop.
+
+**Working.** Less irritation plus better function — and, when it is available, a clinician-measured sign that small fibers are actually healthier.
+
+**Some improvement.** Pain eases but function or sensation does not. That can mean the tissue needs more time, or that pain relief and nerve recovery are on different clocks. Hold steady before automatically increasing anything.
+
+**No improvement.** After a fair 28-day look, ask whether ARA-290 is the missing piece — or whether ongoing damage is cancelling the repair signal.
+
+**Worse.** Clear decline is a hold-and-reassess signal. Not proof it is "working harder."
+
+Clinics can use small-fiber testing or corneal nerve imaging. Those methods and the citations live in the technical section below.
+
+---
+
+## What to Take Alongside
+
+There is no required ARA-290 supplement stack.
+Nerve repair needs the injury to slow down and the body to have the basics to rebuild with.
+
+**Stop the ongoing damage where you can.** Blood-sugar control is the first companion when diabetes or insulin resistance is part of the injury. ARA-290 cannot outrun high glucose on its own.
+
+**Food and protein.** Repair is tissue work. It still needs raw material and recovery.
+
+**B12 and thiamine.** Worth checking when deficiency is plausible. They are not ARA-290 cofactors. A gap here can keep nerves injured on a separate track.
+
+**Alpha-lipoic acid.** Studied in diabetic neuropathy in its own right. That does not make it a required ARA-290 partner. Use it for a named reason, not because it showed up on a list.
+
+Do not keep a long "nerve stack" just because it is traditional.
+
+---
+
+## Pairs Well With / Synergy
+
+### ARA-290 + Retatrutide — Recovery Crew + Logistics Manager
+
+ARA-290 supports injured nerve and tissue-protection signaling.
+Retatrutide can change an upstream metabolic driver when insulin resistance or diabetes is still feeding the nerve injury.
+Different jobs. Nobody has tested them as a combined human outcome.
+
+### ARA-290 + BPC-157 — Recovery Crew + Foreman
+
+ARA-290 is the damage-triggered protective signal.
+BPC-157 helps coordinate the local repair environment.
+Complementary on paper. Not a tested combination.
+
+### ARA-290 + GHK-Cu — Recovery Crew + Materials/Blueprints
+
+Possible remodeling complementarity once protective signaling is on.
+Mechanistic, not a combined trial.
+
+Mitochondrial support (MOTS-c, SS-31, NAD+) only belongs here if energy machinery is actually part of the bottleneck.
+Do not add them because "more repair compounds" sounds better.
+
+---
+
+## What They're Not Telling You
+
+**28 days is a study calendar, not a biological wall.**
+The trials stopped dosing at 28 days because that was the protocol.
+That does not prove the repair switch becomes useless or harmful on day 29.
+It also does not prove that staying on it longer is safe.
+It is an unanswered duration question. Most summaries skip that and just repeat "28 days."
+
+**The real contest may be repair rate versus damage rate.**
+ARA-290 can send a protective / recovery signal.
+If the nerve is still being injured, the useful question is not only "did I take ARA-290?"
+It is:
+**Is repair happening faster than new damage?**
+A trial that lasts 28 days in a selected group cannot fully answer that for someone whose blood sugar, compression, or inflammation is still active.
+
+**Feeling better and the nerve recovering can run on different clocks.**
+Pain can move first. Small-fiber measures can move on a slower schedule. Improvement can still be present after the last shot.
+That is why a pain score alone is the wrong report card.
+It is also why "it didn't finish by day 28" is a weak reason to call the course a failure.
+
+---
+
+*— Everything below this line is the technical deep dive: mechanism, audit trail, and evidence sourcing. Not written to be read aloud. —*
+
+---
+
 ## Executive identity
 
-**ARA-290 is the emergency response switch — a system that's dormant in healthy tissue and only activates where there's actual damage.**
+**ARA-290 is the emergency stabilization and recovery crew** — a tissue-protective peptide that acts where injury has turned on a repair receptor healthy tissue mostly does not display. The job is not "always-on healing." It is limiting further damage at injured sites and creating conditions in which damaged nerve and tissue can recover.
 
-**Construction model:** BPC-157 = foreman · TB-500 = scaffolding/access crew · GHK-Cu = materials/blueprints · MOTS-c = power plant · Retatrutide = logistics manager · SS-31 = wiring & grid-stabilization crew · **ARA-290 = emergency response switch.**
+Construction-site roster (as currently established in this project): BPC-157 = foreman · TB-500 = scaffolding/access crew · GHK-Cu = materials/blueprints · MOTS-c = power plant · Retatrutide = logistics manager · SS-31 = wiring & grid-stabilization crew · **ARA-290 = emergency stabilization & recovery crew** · KPV = Site Safety Coordinator · NAD+ = rechargeable power carrier. *(Roster-propagation debt: other compound docs still carry the older "emergency response switch" / "Data Signal Repair" tags for ARA-290. Not updated in those files in this pass — smallest-change scope.)*
 
-Every other compound on this roster does its job more or less all the time, wherever it's present. ARA-290 is structurally different: it binds a receptor that healthy tissue essentially doesn't express at all — the receptor only gets built and put on the cell surface *after* injury or inflammation shows up. So ARA-290 isn't a general-purpose signal that happens to help wherever it's active; it's a key that only fits a lock the body installs specifically at damage sites. Once it's triggered, it sets off a broad protective response — reduced cell death, reduced inflammation, reduced oxidative damage — right where the damage actually is.
+The prior "Emergency Response Switch" label captured damage-triggered lock-and-key well and undersold the recovery half of the biology (anti-apoptotic / neurite-outgrowth / small-fiber measures). This pass locks the dual job: stabilize the injured site, and allow recovery.
 
 ## Identity and evidence boundary
 
-ARA-290's evidence picture is unusual for this reference in a good way: it's one of the few compounds here with **two independent completed human Phase 2 randomized controlled trials**, in two different disease contexts, both showing convergent results on the same objective measurement (corneal nerve fiber density) and the same subjective measurement (neuropathic pain scores). That's a materially different evidence tier than most of what's in this app.
+ARA-290 / cibinetide is unusual in this reference: completed human randomized trials exist, with a tight exposure: **4 mg SC once daily for 28 days** in the neuropathy studies that actually answer symptom and small-fiber questions.
 
-The evidence layers that matter here:
+Evidence layers:
 
-- **Peer-reviewed, human, RCT, positive on primary/secondary endpoints:** two Phase 2 trials — type 2 diabetic painful neuropathy (28 days, single 4 mg dose) and sarcoidosis-associated small nerve fiber loss (28 days, dose-ranging 1/4/8 mg).
-- **Peer-reviewed, mechanistic, genetically validated:** the receptor mechanism isn't just proposed — a knockout-mouse study showed ARA-290 loses its effect entirely in animals lacking the receptor's structural component, direct proof the pathway is necessary, not just correlated.
-- **Peer-reviewed, cell-culture, protective-effect evidence:** several in vitro studies showing ARA-290 blunts chemotherapy-drug toxicity (cisplatin, doxorubicin) in kidney, liver, and other cell lines through the same anti-apoptotic/anti-inflammatory/antioxidant mechanism.
-- **Not yet built:** ARA-290 has been used as a supporting compound in this reference's Diabetic Neuropathy and Systemic Multi-Organ protocols before this card existed — those citations are consistent with what's documented here.
+1. **Human randomized neuropathy trials (compound-specific, strongest available):**
+   - Brines et al., 2015, *Mol Med*, PMID 25387363 — type 2 diabetes with painful neuropathy; 4 mg SC daily × 28 days vs placebo; additional 28 days off-treatment follow-up. PainDetect improved; HbA1c/lipids improved; CNFD increased in the subgroup that started with reduced CNFD.
+   - Dahan et al., 2013, *Mol Med*, PMID 24136731 — sarcoidosis-associated small-fiber loss; 28 days daily SC; neuropathic symptoms and corneal nerve fiber density.
+   - Culver et al., 2017, *IOVS*, PMID 28475703 — sarcoidosis-associated SNFL; 28-day RCT, 1 / 4 / 8 mg/day vs placebo, n=64. Primary endpoint CNFA at day 28: 4 mg was the only dose with a statistically significant placebo-corrected CNFA increase (P = 0.012); GAP-43+ intraepidermal fibers increased at 4 mg (P = 0.035). 8 mg was not simply better than 4 mg.
+2. **Human IV pilot (same molecule, different route):** Heij et al., 2012, *Mol Med*, PMID 23168581 — 2 mg IV three times weekly × 4 weeks in sarcoidosis SFN. Symptom improvement; **not interchangeable with the SC 4 mg daily schedule.**
+3. **Human 12-week SC exposure, different disease:** Lois et al., 2020, *J Clin Med*, PMID 32674280 — diabetic macular edema; 4 mg SC daily × **12 weeks**; reported safe in that window. This is **not** a neuropathy duration study. It is the independently located source for "12 weeks of continuous daily 4 mg SC has been given to people." It does not fill the neuropathy longer-use gap and must not be converted into a neuropathy protocol.
+4. **Failed search (neuropathy 12-week continuous):** no completed human ARA-290/cibinetide neuropathy trial demonstrating ~12 weeks of continuous daily dosing was found. That claim stays out.
+5. **Mechanism / receptor:** Collino et al., 2015, *Pharmacol Ther*, PMID 25728128 — IRR as EPOR/CD131 heterodimer; ~2 min plasma half-life; "molecular switch" framing. Swartjes et al., 2011, *Anesthesiology*, PMID 21873879 — ARA-290 loses neuropathic-pain relief in β-common-receptor (CD131) knockout mice.
+6. **Direct nociceptor effect:** Zhang et al., 2016, *Peptides*, PMID 26774587 — TRPV1-targeted analgesia, a separate clock from structural small-fiber change.
+7. **Practitioner/community convention:** 28-on / 56-off. Not traced to a trial protocol or a receptor-reset requirement in this audit.
+8. **This reference's own inference:** the repair-rate-vs-damage-rate framing; home functional tracking (pain/function/temperature) as a stand-in for CCM/skin biopsy. Not a validated diagnostic instrument.
 
-Governing maxim for this compound: unlike most of the roster, the mechanism story and the human trial data point in the same direction independently — this is a case where the evidence tier is genuinely strong, and the discipline is not overstating it into something it isn't (a completed Phase 3 program, an approved drug, or a cure). But it is a reason to describe this as "two positive Phase 2 trials," not as "clinically proven" or "FDA approved" — no Phase 3 program or regulatory approval exists for ARA-290/cibinetide as of the most recent literature reviewed here. The gap between "two positive early-phase trials from a concentrated research group" and "an approved therapy" is exactly the kind of distinction this reference tries not to blur in either direction — neither dismissing real trial data nor inflating it past what it actually establishes.
+**Dose evidence:** 4 mg SC daily is trial-derived for neuropathy, not practitioner guesswork. 1 vs 4 vs 8 mg is Culver 2017 dose-ranging — 4 mg clearest.
+
+**Cycling evidence:** 28 days is protocol length. No neuropathy RCT tested a longer course, a shorter course, or a mandated 56-day washout. No IRR desensitization/reset cycle is described the way peptide GPCR agonists are.
+
+**Response-framework evidence:** "How Do I Know" markers are this reference's translation of trial endpoints (symptoms, function, small-fiber measures) into things a person can actually compare — plus the explicit split between analgesia and structural recovery.
+
+Governing line: mechanism earns inclusion; evidence type determines wording. Human 28-day data is real and bounded. Do not inflate it into an approved therapy or a biological maximum.
 
 ## Core biological cascade
 
-**ARA-290 → binds the innate repair receptor (an EPOR + CD131 heterodimer, induced only by injury/inflammation) → triggers anti-apoptotic, anti-inflammatory, and antioxidant signaling at the damage site → reduced cell death and tissue damage, faster nerve fiber regeneration, and — through a separate, direct mechanism — reduced pain signaling.**
+**ARA-290 (pHBSP, 11 aa from EPO helix B) → selective IRR (EPOR + CD131 heterodimer, injury-induced) → anti-apoptotic / anti-inflammatory / antioxidant signaling at damaged tissue → reduced further cell death + conditions for small-fiber recovery; separately, TRPV1-linked reduction in pain signaling.**
 
-### The receptor split that makes this compound work
+### The receptor split
 
-Erythropoietin (EPO) does two separate jobs through two separate receptors, and understanding the split is the key to understanding why ARA-290 exists at all. Classic EPO binds an EPO-receptor homodimer, which is what drives red blood cell production — this is EPO's approved use for anemia, and it's also the source of EPO's real safety problems (elevated hematocrit, platelet activation, thrombosis risk) when used off-label for its other effects. Separately, EPO also binds a second receptor complex — a heterodimer made of one EPO-receptor subunit and one β-common-receptor (CD131) subunit, called the innate repair receptor (IRR) — and this second receptor is what mediates EPO's tissue-protective effects, entirely independent of red blood cell production. According to PubMed, this IRR complex is typically not expressed on normal tissue at all; it's rapidly induced specifically by injury or inflammation ([DOI](https://doi.org/10.1016/j.pharmthera.2015.02.005)). ARA-290 (also called pyroglutamate helix B surface peptide, or pHBSP) is an 11-amino-acid peptide engineered from the 3D structure of EPO's helix B region, designed to selectively activate the IRR without touching the EPO-receptor homodimer — protection without the hematopoietic side effects.
+Full EPO activates (1) an EPOR homodimer that drives erythropoiesis — hematocrit, platelets, thrombosis risk — and (2) a heterodimeric innate repair receptor (EPOR + β-common / CD131) that mediates tissue protection. ARA-290 was engineered to hit the second complex, not the first. Innate repair receptor / tissue-protective receptor language in the current literature still refers to this EPOR/CD131 heterodimer (Collino 2015). It is typically not expressed on normal tissue and is induced by injury or inflammation — that is the damage-triggered lock.
 
-### A short-lived molecule with long-lasting effects
+### Short plasma presence, longer program
 
-ARA-290's plasma half-life is roughly two minutes — remarkably short. According to PubMed, the same review describes this as "flipping a molecular switch": despite being cleared from circulation almost immediately, ARA-290 triggers a signaling cascade that produces sustained biological effects lasting well beyond its own presence in the body ([DOI](https://doi.org/10.1016/j.pharmthera.2015.02.005)). This matters practically — the compound doesn't need to stay in circulation to keep working, which is part of why relatively infrequent dosing shows real effects in the trial data below.
+Collino 2015: plasma half-life on the order of ~2 minutes, described as flipping a molecular switch. Downstream signaling outlasts the peptide. Do not equate time-in-blood with duration of effect. SC vs IV kinetics differ; the practical neuropathy schedule is daily SC, not a plasma-level targeting exercise.
 
-### Proof the mechanism is necessary, not just correlated
+### Proof the receptor is necessary
 
-According to PubMed, researchers tested ARA-290 in mice genetically engineered to lack CD131, the structural component that makes the innate repair receptor a heterodimer instead of a plain EPO receptor. In those knockout mice, ARA-290 completely lost its ability to relieve neuropathic pain — even though the drug was administered identically to normal mice, where it worked ([DOI](https://doi.org/10.1371/journal.pone.0071326)). That's a materially stronger form of evidence than the correlational pathway studies most peptides in this reference are built on: it's not "ARA-290 is associated with reduced pain and also activates this receptor" — it's "remove the receptor, and the drug simply stops working," which is about as close to mechanistic proof as animal pharmacology gets.
+Swartjes 2011: in CD131/β-common knockout mice, ARA-290 lost neuropathic-pain relief that was present in wild-type animals. Pathway-necessary, not merely correlated.
 
-## Practical dosing/cycling logic
+### Small-fiber measures vs symptoms
 
-This is one of the few compounds in this reference where practical dosing can be grounded in actual human dose-ranging trial data rather than community convention alone.
+Culver 2017 used corneal nerve fiber area and GAP-43+ regenerating intraepidermal fibers as surrogate disease-modification endpoints, distinct from pain scores (pain moved in all groups, including placebo). Brines 2015: PainDetect moved inside 28 days and was still improved at day 56 (28 days off); CNFD change was concentrated in those who started below normal. That is the human basis for "symptom clocks and structural clocks can differ" — not proof of whole-body nerve regeneration from a corneal image.
 
-**What the trial data actually shows:** the sarcoidosis Phase 2b trial tested 1, 4, and 8 mg/day for 28 days against placebo. According to PubMed, the 4 mg dose showed the clearest and only statistically significant improvement in corneal nerve fiber area (P = 0.012) and intraepidermal nerve fiber regeneration (P = 0.035); the 1 mg dose showed a smaller, non-significant effect, and the 8 mg dose showed an intermediate, less clearly significant effect than 4 mg ([DOI](https://doi.org/10.1167/iovs.16-21291)). That's a real, if imperfect, dose-response signal — and notably not a simple "more is better" curve, which is worth stating honestly rather than smoothing over. The type 2 diabetes trial used a single 4 mg dose and showed positive results across HbA1c, lipid profile, pain, and corneal nerve fiber density.
+### What this cascade does not include
 
-**The more defensible statement:** 4 mg subcutaneously daily is the dose with the most consistent positive trial signal across both completed human studies.
+- Erythropoiesis / hematocrit rise as an expected effect.
+- A receptor-desensitization cycle that would biologically require 56 days off.
+- A demonstrated 12-week neuropathy course.
+- Automatic conversion of corneal CNFA into "this regrows every peripheral nerve."
 
-**What isn't established:** cycling patterns. Both trials ran 28 days continuous with a follow-up observation period off treatment; neither trial tested a specific on/off cycling schedule. **28 days is the length the trials happened to run, not a mechanistic ceiling** — nobody has tested longer, and nobody has tested shorter. That distinction matters, because "unstudied" and "unsafe" get treated as the same thing far too often in peptide dosing guides, and they aren't the same claim.
+## One genuine non-obvious insight
 
-**Reasoning about extending past 28 days, since no trial has:** Three separate features of the mechanism argue against expecting harm from a longer course, though none of them are trial-confirmed at longer durations:
-
-- *No desensitization pathway exists to run down.* The innate repair receptor isn't a receptor that gets worn out by repeated stimulation the way, say, a GH-secretagogue receptor does. Continuing to dose doesn't fight against a fatigue mechanism, because there isn't one described in the literature.
-- *The receptor itself is largely absent outside injury.* Since the IRR is only expressed where there's active tissue damage or inflammation, the drug has structurally limited places to act — it isn't a systemic hormone hitting every cell continuously the longer it's used.
-- *The specific EPO risk profile was engineered out.* ARA-290 was deliberately built to avoid the classic EPO receptor that drives red blood cell production and carries EPO's real safety concerns (elevated hematocrit, clotting risk). That's the mechanism most people worry about with an EPO-derived compound, and it's the one this molecule was designed from the ground up to not touch.
-
-**The one legitimate theoretical caution, not a reassurance:** The downstream signaling this compound triggers (JAK2/STAT3, PI3K/Akt, Bcl-2-family anti-apoptotic pathways) tells stressed cells to survive rather than die. That's exactly why it helps a dying nerve fiber — and exactly why every clinical protocol includes the same stop-rule: discontinue and see an oncologist if a new malignancy appears during use. This isn't evidence that longer use causes cancer — there's no data showing that happens — but it's the one theoretically coherent reason pro-survival signaling deserves ongoing attention rather than being waved off as risk-free.
-
-**Reasoning about the off-period, since 28-on/56-off has no traceable source:** No published dosing guide, trial, or practitioner source we've been able to verify actually derives 56 days from anything — it reads as a default doubling convention, the same pattern that shows up in unsourced cycling claims for other compounds. The better-grounded logic: the sarcoidosis trial kept measuring *increasing* corneal nerve fiber density for **16 weeks after a single 28-day course ended** — the repair process the drug initiates keeps running well past the injection window. An off-period meant to let that process finish and be fairly assessed should be sized to that repair curve, not to a fixed multiple of the on-period. A ~56-day gap is on the short side of that 16-week window — long enough to see early movement, likely too short to see the process fully resolve.
-
-## What to expect and monitor
-
-**Early:** Both trials measured outcomes at 28 days, so meaningful data on what happens before that window is limited. The type 2 diabetes trial's pain-score improvement (PainDetect questionnaire) was measured within that 28-day window, suggesting the pain-relief component — plausibly aided by the direct TRPV1 mechanism — may show up before the slower structural nerve-fiber changes do.
-
-**Building:** Corneal nerve fiber density — a direct, objective measurement of small nerve fiber regeneration — showed measurable improvement by day 28 in both trials, and continued to be tracked in a follow-up observation period after treatment stopped in the diabetes trial, suggesting the effect doesn't require continuous dosing to be sustained, consistent with the "molecular switch" mechanism described above.
-
-**Longer term:** No trial evidence exists beyond the 28-day treatment windows plus limited follow-up observation. Long-term safety and durability of effect beyond roughly two months of total observation is not established by the current human data.
-
-### What to watch for at home
-
-The trials measured recovery with corneal confocal microscopy and skin biopsy — equipment nobody has at home. This is what the same underlying biology looks like from the outside, so it's actually checkable mid-conversation, not just after a lab visit. Every item here is mechanistic inference from general nerve-regeneration biology, not a trial-measured endpoint for this compound specifically.
-
-- **Recovery moves from the body outward, not evenly.** Peripheral nerve fibers regrow roughly ~1mm per day once regeneration is underway, extending outward from where the fiber is still intact toward where it was damaged. For symptoms in the hands or feet, that means improvement plausibly shows up first closer to the wrist or ankle, before it reaches fingertips or toes. Tracking *where the symptomatic area's edge sits* every few weeks is more informative than asking "better or worse" as a single yes/no.
-
-- **A change in how it feels can be a sign of repair, not failure.** Regenerating nerve sprouts are transiently more excitable than either healthy nerve or fully damaged nerve. A shift from constant burning to intermittent tingling, prickling, or odd "static" sensations can mean fibers are reconnecting and firing sporadically — not that nothing is happening. This is worth saying plainly, because "it feels different but not better" is easy to read as a failed course when it may be the regrowth process itself showing up.
-
-- **Temperature discrimination is the most specific home-checkable marker.** Small nerve fibers — the population this compound and the trials both target — are what carry temperature sensation. A simple check: touch something mildly warm and something cool to the affected area and see if the difference is distinguishable, compared to an unaffected area, checked periodically. It won't replace what a confocal microscope measures, but it's testing the same fiber population and the same repair process the actual trial endpoints measured.
-
-- **Judge on a longer clock than the dosing window.** In the sarcoidosis trial, nerve fiber density kept increasing for 16 weeks after a single 28-day course ended. If symptoms haven't fully resolved by the end of a course — or even by the end of a shorter off-period — that doesn't mean the course failed. It may mean the tissue is still in the middle of a repair process that runs well past the last injection.
-
-## Common mistakes
-
-1. **Confusing ARA-290 with erythropoietin itself.** ARA-290 is specifically engineered to avoid EPO's hematopoietic receptor — it should not raise hematocrit or carry EPO's thrombosis risk profile. Treating it as "a form of EPO" invites confusion about a risk it was specifically engineered not to carry.
-2. **Assuming it works on healthy tissue the way it works on damaged tissue.** The innate repair receptor this compound depends on is barely present without injury or inflammation to induce it. Its mechanism is inherently damage-triggered, not a general tonic effect.
-3. **Overlooking the dose-response data.** The one dose-ranging trial available shows 4 mg outperforming both 1 mg and 8 mg — assuming higher doses are simply more effective isn't supported by the one trial that actually tested a range.
-4. **Treating the two human trials as proof for conditions they didn't test.** Both completed trials were in painful small-fiber neuropathy (diabetic and sarcoid-associated). Extrapolating to other injury types relies on the broader mechanism, not on trial evidence for those specific conditions.
-5. **Assuming no full resolution by the end of a course means it failed.** The repair process this compound triggers keeps running for months after dosing stops. Judging outcome too early is judging against a proxy timeline, not the biology's actual timeline.
-
-## Synergy
-
-### ARA-290 + BPC-157 [Emergency response switch + Foreman]
-Complementary, not overlapping: ARA-290's protective signaling is triggered at the moment of injury and focuses on limiting damage and cell death; BPC-157's angiogenesis- and repair-cell-recruitment mechanism handles the rebuilding phase afterward. Mechanistic plausibility, not combined-use trial evidence.
-
-### ARA-290 + TB-500 [Emergency response switch + Scaffolding/access crew]
-Similar logic — ARA-290 limits the extent of damage and reduces inflammation at the injury site; TB-500's cell-mobility mechanism gets repair cells physically to that site once it's time to rebuild. Mechanistically plausible sequencing, not trial-tested together.
+The useful model is not "ARA-290 heals nerves" or "ARA-290 is just an analgesic."
+It is **repair rate versus damage rate.**
+The molecule can turn on a local protective/recovery program. Human 28-day trials show that program can move both symptoms and small-fiber surrogates in selected populations. They do not measure what happens when the original injury (hyperglycemia, ongoing inflammation, compression) keeps arriving every day after the protocol ends. If damage rate stays higher than repair rate, a real signal can still look like "it didn't work." That is a systems question the RCTs were not built to answer — and it is the question that changes how someone should use the 28-day result in real life.
 
 ## Source synthesis
 
-This doc was built from a targeted PubMed literature pull covering: the core innate repair receptor mechanism and receptor-splitting rationale (Collino et al. 2015 review); the two completed human Phase 2 trials (type 2 diabetic neuropathy — Brines et al. 2015; sarcoidosis-associated small nerve fiber loss — Culver et al. 2017, with a companion review by van Velzen et al. 2014); the genetic knockout mechanism-validation study (Swartjes et al. 2013); the direct TRPV1 pain mechanism (Zhang et al. 2016); and cell-culture chemoprotection studies against cisplatin and doxorubicin toxicity (Ghassemi-Barghi et al. 2022; Shokrzadeh et al. 2020). This compound was first referenced in this reference's Diabetic Neuropathy and Systemic Multi-Organ synergy protocols before its own card existed; the claims made in those protocols are consistent with the sourcing documented here.
+**PubMed-verification pass: complete for the citations listed below.** Re-pulled this session against PubMed abstracts / records. One prior claim was not carried forward: "nerve fiber density kept increasing for 16 weeks after a single 28-day course" — not found in Culver 2017 (primary CNFA at day 28) or Brines 2015 (28 days on + 28 days off). Dropped rather than restated.
 
-Every mechanism and trial-outcome claim in this document traces to a specific PMID/DOI pulled directly via PubMed. No citation in this doc points to a paper on an unrelated topic, and no specific number in the trial-outcome sections lacks a traceable source. The dosing/cycling reasoning added in this update (extending past 28 days, the off-period logic) is explicitly labeled as mechanistic inference beyond the trial window — not itself trial-derived — and the "What to watch for at home" section is general nerve-regeneration biology applied to this compound's context, not a trial-measured outcome for ARA-290 specifically.
+1. Brines M, et al. ARA 290 … improves metabolic control and neuropathic symptoms in patients with type 2 diabetes. *Mol Med.* 2015. PMID 25387363. doi:10.2119/molmed.2014.00215 — 4 mg SC daily × 28 d; +28 d follow-up; PainDetect, HbA1c, CNFD subgroup.
+2. Dahan A, et al. ARA 290 improves symptoms in patients with sarcoidosis-associated small nerve fiber loss and increases corneal nerve fiber density. *Mol Med.* 2013. PMID 24136731. doi:10.2119/molmed.2013.00122 — 28 d daily SC.
+3. Culver DA, et al. Cibinetide Improves Corneal Nerve Fiber Abundance in Patients With Sarcoidosis-Associated Small Nerve Fiber Loss and Neuropathic Pain. *Invest Ophthalmol Vis Sci.* 2017. PMID 28475703. doi:10.1167/iovs.16-21291 — 1/4/8 mg; 4 mg CNFA P=0.012; GAP-43+ P=0.035; 8 mg not simply better.
+4. Heij L, et al. Safety and efficacy of ARA 290 in sarcoidosis patients with symptoms of small fiber neuropathy. *Mol Med.* 2012. PMID 23168581. doi:10.2119/molmed.2012.00332 — 2 mg IV 3×/week × 4 weeks; different route.
+5. Lois N, et al. A Phase 2 Clinical Trial on the Use of Cibinetide for the Treatment of Diabetic Macular Edema. *J Clin Med.* 2020. PMID 32674280. doi:10.3390/jcm9072225 — 4 mg SC daily × 12 weeks in DME; safety in that window; **not neuropathy duration evidence.**
+6. Collino M, Thiemermann C, Cerami A, Brines M. Flipping the molecular switch for innate protection and repair of tissues. *Pharmacol Ther.* 2015. PMID 25728128. doi:10.1016/j.pharmthera.2015.02.005 — IRR, ~2 min half-life, switch framing.
+7. Swartjes M, et al. ARA290 … long-term relief of neuropathic pain: rats and β-common receptor knockout mice. *Anesthesiology.* 2011. PMID 21873879. doi:10.1097/ALN.0b013e31822fcefd — receptor necessary.
+8. Zhang W, Yu G, Zhang M. ARA 290 relieves pathophysiological pain by targeting TRPV1 channel. *Peptides.* 2016. PMID 26774587. doi:10.1016/j.peptides.2016.01.003 — separate pain-clock mechanism.
 
-**PubMed-verification pass: complete** for all mechanism and clinical-trial citations. The dosing-extension and home-monitoring reasoning are inference, tiered and labeled as such throughout.
+**Not carried forward:** 16-week post-treatment CNFD growth (unsourced in the files checked); neuropathy 12-week continuous daily dosing (not found; DME 12-week paper is a different indication); 28-on/56-off as pharmacology.
+
+Primary project sources also reviewed: prior ARA-290_Compound_Research.md (superseded), _TEMPLATE.md, HOUSE_STANDARDS.md, PROJECT_RULES.md, NAD+ Tier 1 as voice reference.
 
 ## Regulatory note
 
-ARA-290 (cibinetide) is an investigational compound with no FDA approval for any indication. It has completed Phase 2 clinical trials in diabetic and sarcoidosis-associated painful small-fiber neuropathy; no Phase 3 program or regulatory filing has been identified in the literature reviewed here.
+ARA-290 (cibinetide) is investigational. No FDA approval for any indication as of this writing. Completed Phase 2 neuropathy trials exist; no Phase 3 program or regulatory filing identified in the literature reviewed here. Not a substitute for licensed clinical care.
