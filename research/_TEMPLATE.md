@@ -63,14 +63,10 @@ Documents which internal sources/conversations shaped the doc, and how claims we
 
 ## Retrofit queue
 
-**BPC-157_Compound_Research.md** (predates this template):
-- Add Executive identity + construction-model cross-reference (role = foreman, already established from TB-500's side — just needs the reciprocal entry)
-- Add Common mistakes
-- Add What They're Not Telling You
-- Convert the References list into a Source synthesis section — keep the PMIDs, but frame it as the audit trail and mark "PubMed-verification pass: complete"
-
 **TB-500** (structurally retrofitted, verification pass partial):
 - Its own Source synthesis already documents this precisely: several mechanism claims (satellite-cell/NMJ, nerve-repair/Schwann-cell, broader angiogenesis/VEGF) remain unverified against PubMed. GHK-Cu and MOTS-c's citation-verification passes are already complete per their own Source synthesis sections — no longer queue items.
 
 **GHK-Cu and SS-31** (predate the tier-architecture lock, added 2026-08-25 — the only two docs still pending):
 - Seven docs — NAD+, BPC-157, ARA-290, MOTS-c, KPV, Retatrutide, and TB-500 — have been reordered into Tier 1 (conversational) / Tier 2 (technical), including the literal "### — Technical Deep Dive divider —" line the renderer requires. GHK-Cu and SS-31 are the two still using the old flat section order and still need the real content-splitting work — not a pure reorder, since the old "Practical dosing/cycling logic" and "Response-guided dosing framework" sections each contain both a plainspoken answer and evidence-tiering caveat language that need to separate into a Tier 1 section and a Tier 2 subsection. "What to Take Alongside" is new content for both, not a move — it doesn't exist in either doc yet, and directly absorbs the unsourced-supplement-chip debt already logged for both compounds. Build the divider line into the file from the start rather than adding it after, since six other docs needed a follow-up patch specifically because it was skipped the first time. Do one doc at a time, with a full independent verification before moving to the next.
+
+
