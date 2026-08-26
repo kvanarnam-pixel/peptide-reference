@@ -234,6 +234,10 @@ When mitochondrial stress and inflammation appear to be feeding each other, addr
 
 None of these combinations has been proven as a combined human protocol.
 
+### Blending vs stacking — keep separate vials
+
+KLOW glues KPV to GHK-Cu, BPC, and TB-500 at a fixed ratio and mixed schedules. Own vial if you use it. See `HANDLING_Blending.md` for the full house rule.
+
 ## What They're Not Telling You
 
 ### KPV may be job-driven rather than cycle-driven

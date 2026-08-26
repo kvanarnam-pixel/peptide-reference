@@ -99,6 +99,10 @@ Sometimes treated as a deliberate trio — GHK-Cu on the materials/regenerative 
 ### MOTS-c + GHK-Cu
 Power plant + materials. Parallel support (energy capacity versus remodeling instructions). No shared pathway evidence that turns them into a required pair.
 
+### Blending vs stacking — GHK-Cu is a hard no for co-storage
+
+Do not store GHK-Cu mixed with other peptides. Own vial. Copper in a shared fridge blend is an avoidable risk; GLOW/KLOW are convenience SKUs, not better dosing. Never mix with glutathione/NAC in one vial. See `HANDLING_Blending.md` for the full house rule.
+
 ## What They're Not Telling You
 
 **This is not a copper supplement with a peptide attached.** GHK's job is to pick copper up and hand it off. Its grip on copper is almost the same as albumin's — the protein already shuttling exchangeable copper through blood. That means it can take copper from the circulating pool and deliver it to the enzymes that need it, instead of leaving free copper sitting around where it can do damage. The usual "you're injecting copper, watch toxicity" warning is aimed at the wrong object. The long-term load question is still real. The mechanism is not "dump metal into the system."

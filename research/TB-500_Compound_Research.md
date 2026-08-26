@@ -115,6 +115,10 @@ GHK-Cu supplies the copper and remodeling instructions the repair process uses. 
 
 Repair is energy-intensive. MOTS-c supports the cellular fuel side; TB-500 supports getting cells to where the work needs to happen. Mechanistic complementarity, not a tested combination.
 
+### Blending vs stacking — keep separate vials
+
+Same blends force daily TB-500 or starve BPC's schedule. Run TB-500 on its own rhythm from its own vial — a 5/5 Wolverine vial is not a protocol. See `HANDLING_Blending.md` for the full house rule.
+
 ## What They're Not Telling You
 
 **The molecule you're injecting might not be the one doing the work.** Lab work tracking how TB-500 actually breaks down in the body found that the intact peptide, on its own, didn't show much wound-healing activity — one of the pieces it breaks down into did. That doesn't make TB-500 useless or fake. It means the honest story may be less "this exact molecule heals you" and more "this molecule is the delivery form for something that does the real work downstream." Worth knowing before treating the injected dose as the whole explanation for anything it's credited with.

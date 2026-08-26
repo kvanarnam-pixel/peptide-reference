@@ -119,3 +119,7 @@ A protocol may state route, timing, or frequency when those carry
 mechanism (a peptide timed to a meal, a compound given fasted, a
 bedtime dose aligned to a repair window). Those are rationale, not
 dosing.
+
+## Blending & handling
+
+Blending: Default is no stored multi-peptide blends. GHK-Cu is a hard no for co-storage with other peptides. Wolverine / GLOW / KLOW are convenience products (schedule mismatch, dose-unit mismatch, loss of independent titration); not best practice. Pharmacy multi-peptide vials follow the same rule. Same-syringe is allowed only when compounds are due the same day, vials are not cross-contaminated (new needle per vial or separate shots), and injection is immediate. Do not co-draw GLP-1/GIP agonists with research peptides. GH-axis duals (CJC no-DAC + Ipamorelin) are the least incoherent pre-mix; separate vials still preferred for independent control. Full reasoning lives in research/HANDLING_Blending.md.

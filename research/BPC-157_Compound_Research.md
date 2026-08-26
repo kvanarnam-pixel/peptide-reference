@@ -116,6 +116,10 @@ Worth knowing: one rat Achilles-tendon study — not yet repeated by another lab
 
 BPC-157 helps organize the repair. GHK-Cu supplies the copper and remodeling instructions the repair process uses. The pairing makes biological sense — different, complementary jobs — but the combined human outcome hasn't actually been tested.
 
+### Blending vs stacking — keep separate vials
+
+Wolverine / GLOW / KLOW lock BPC (usually daily mcg) to TB-500's different clock and milligram dosing. Keep BPC in its own vial; stack on its schedule. See `HANDLING_Blending.md` for the full house rule.
+
 ## What They're Not Telling You
 
 **The famous short half-life number isn't human data.** You'll hear that BPC-157 has a roughly 15-minute half-life. That number comes from animal research. We don't actually know the human half-life for an injected dose. If the repair signal keeps working after the peptide leaves the bloodstream, obsessing over the exact plasma number may be answering the wrong question entirely.
