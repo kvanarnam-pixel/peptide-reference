@@ -91,7 +91,13 @@
     "ibs-gut-repair": "IBS_Gut.md",
     "retatrutide-plateau": "Retatrutide_Plateau.md",
     "hepatic-inflammation": "Hepatic_Inflammation.md",
-    "cognitive-decline": "Cognitive_Decline.md"
+    "cognitive-decline": "Cognitive_Decline.md",
+    "migraine": "Migraine.md",
+    "insomnia": "Insomnia.md",
+    "chronic-stress-cortisol": "Chronic_Stress_Cortisol.md",
+    "seasonal-allergies": "Seasonal_Allergies.md",
+    "hypertension": "Hypertension.md",
+    "tesamorelin-recomp": "Tesamorelin_Recomp.md"
   };
   const protocolCache = new Map();
   const renderProtocolDoc = async (id, container) => {
