@@ -152,7 +152,7 @@ That's not evidence BPC-157 doesn't work — the older studies used different do
 
 **BPC-157 is the construction foreman.** It does not build tissue itself. It gets repair crews to an injured site faster and keeps the rebuild organized instead of leaving a mess.
 
-Construction-site roster (as currently established in this project): BPC-157 = foreman · TB-500 = scaffolding/access crew · GHK-Cu = materials/blueprints · MOTS-c = power plant · Retatrutide = logistics manager. *(Note: this registry, copied from `_TEMPLATE.md`, doesn't yet include role tags for ARA-290, KPV, SS-31, or NAD+ — flagged separately below, not fixed in this task per smallest-change scope.)*
+Construction-site roster (as currently established in this project): BPC-157 = foreman · TB-500 = scaffolding/access crew · GHK-Cu = materials/blueprints · MOTS-c = power plant · Retatrutide = logistics manager · SS-31 = wiring & grid-stabilization crew · ARA-290 = Data Signal Repair · KPV = Site Safety Coordinator · NAD+ = rechargeable power carrier.
 
 ## Identity and evidence boundary
 

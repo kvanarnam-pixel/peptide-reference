@@ -155,7 +155,7 @@ MOTS-c may expose mitochondrial capacity as much as it improves it. AMPK is an e
 
 **MOTS-c is a mitochondrial-derived metabolic adaptation signal** that affects fuel handling, cellular energy-stress response, and mitochondrial capacity/efficiency, rather than functioning as a direct energy source.
 
-Construction-site roster (as currently established in this project): BPC-157 = foreman · TB-500 = scaffolding/access crew · GHK-Cu = materials/blueprints · MOTS-c = power plant · Retatrutide = logistics manager. *(Note: this registry, copied from `_TEMPLATE.md`, doesn't yet include role tags for ARA-290, KPV, SS-31, or NAD+ — flagged separately, not fixed in this task per smallest-change scope, matching the same debt already logged on BPC-157 and TB-500's docs.)*
+Construction-site roster (as currently established in this project): BPC-157 = foreman · TB-500 = scaffolding/access crew · GHK-Cu = materials/blueprints · MOTS-c = power plant · Retatrutide = logistics manager · SS-31 = wiring & grid-stabilization crew · ARA-290 = Data Signal Repair · KPV = Site Safety Coordinator · NAD+ = rechargeable power carrier.
 
 ## Identity and evidence boundary
 

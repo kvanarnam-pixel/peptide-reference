@@ -61,9 +61,14 @@ Documents which internal sources/conversations shaped the doc, and how claims we
 
 ---
 
-## Retrofit queue
+## Build status (core research docs)
 
-**TB-500** (structurally retrofitted, verification pass partial):
-- Its own Source synthesis already documents this precisely: several mechanism claims (satellite-cell/NMJ, nerve-repair/Schwann-cell, broader angiogenesis/VEGF) remain unverified against PubMed. GHK-Cu and MOTS-c's citation-verification passes are already complete per their own Source synthesis sections — no longer queue items.
+**Tier 1 / Tier 2 architecture is the standard for all compound research docs.** The retrofit era for the original core set is complete.
+
+Core research files on standard (as of this cleanup): TB-500, BPC-157, GHK-Cu, MOTS-c, Retatrutide, SS-31, ARA-290, KPV, NAD+ — plus research/HANDLING_Blending.md (global handling).
+
+**Remaining work is new compound builds**, not retrofits: any peptide id in data/peptides.json (or CHIP_REGISTRY) that lacks a full research/*_Compound_Research.md built to this template. Rank and build those one handoff at a time (research + chips + Rule 10 version bump).
+
+Do not reintroduce a “retrofit queue” of already-split docs.
 
 

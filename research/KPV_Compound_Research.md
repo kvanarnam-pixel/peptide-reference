@@ -276,6 +276,7 @@ Construction model:
 - **SS-31:** wiring & grid-stabilization crew — supports mitochondrial membrane integrity and bioenergetic stability.
 - **ARA-290:** Data Signal Repair — activates a protective/repair response in damaged or inflamed tissue where the appropriate injury-responsive receptor is expressed.
 - **KPV:** Site Safety Coordinator — limits excessive inflammatory signaling and escalation so other crews can continue working.
+- **NAD+:** rechargeable power carrier — the energy-carrier/redox currency the repair and maintenance crews draw on and recharge.
 
 ## Identity and evidence boundary
 
