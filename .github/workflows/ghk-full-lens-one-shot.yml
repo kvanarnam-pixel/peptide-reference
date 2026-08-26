@@ -1,0 +1,134 @@
+name: One-shot GHK-Cu full lens
+
+on:
+  push:
+    branches:
+      - automation/ghk-full-lens
+    paths:
+      - '.github/workflows/ghk-full-lens-one-shot.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: automation/ghk-full-lens
+          fetch-depth: 0
+          persist-credentials: true
+
+      - name: Stage handoff bodies and switch to main
+        shell: bash
+        run: |
+          cp automation/GHK-Cu_Compound_Research.md /tmp/GHK-Cu_Compound_Research.md
+          cp automation/GHKCU_CHIPS.txt /tmp/GHKCU_CHIPS.txt
+          git fetch origin main
+          git checkout -B main origin/main
+
+      - name: Apply exact handoff
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import re
+
+          research_path = Path('research/GHK-Cu_Compound_Research.md')
+          app_path = Path('app.js')
+          index_path = Path('index.html')
+          sw_path = Path('service-worker.js')
+
+          research = Path('/tmp/GHK-Cu_Compound_Research.md').read_text()
+          chips = Path('/tmp/GHKCU_CHIPS.txt').read_text().rstrip()
+
+          research_path.write_text(research)
+
+          app = app_path.read_text()
+          start_marker = '  const GHKCU_CHIPS = ['
+          next_marker = '\n\n  const MOTSC_CHIPS = ['
+          if app.count(start_marker) != 1:
+              raise SystemExit(f'GHKCU_CHIPS start count = {app.count(start_marker)}, expected 1')
+          start = app.index(start_marker)
+          end = app.index(next_marker, start)
+          app = app[:start] + chips + app[end:]
+          app_path.write_text(app)
+
+          sw = sw_path.read_text()
+          m = re.search(r'const CACHE_NAME = "peptide-reference-v(\d+)";', sw)
+          if not m:
+              raise SystemExit('CACHE_NAME version not found')
+          old_v = int(m.group(1))
+          new_v = old_v + 1
+          sw = sw.replace(f'const CACHE_NAME = "peptide-reference-v{old_v}";', f'const CACHE_NAME = "peptide-reference-v{new_v}";', 1)
+          sw_path.write_text(sw)
+
+          index = index_path.read_text()
+          versions = re.findall(r'\?v=(\d+)', index)
+          if not versions or any(int(v) != old_v for v in versions):
+              raise SystemExit(f'index ?v versions not uniformly v{old_v}: {versions}')
+          index = re.sub(r'\?v=\d+', f'?v={new_v}', index)
+          index_path.write_text(index)
+
+          # Verification requested in handoff.
+          final_research = research_path.read_text()
+          divider = '### — Technical Deep Dive divider —'
+          if final_research.count(divider) != 1:
+              raise SystemExit('Technical Deep Dive divider missing or duplicated')
+          tier1, tier2 = final_research.split(divider, 1)
+          if '## Executive identity' in tier1 or '## Identity and evidence boundary' in tier1 or '## Core biological cascade' in tier1 or '## Source synthesis' in tier1 or '## Regulatory note' in tier1:
+              raise SystemExit('Tier 2 content leaked above divider')
+          for stale in ['## Practical dosing', '## What to expect', '## Common mistakes', '## Synergy', "## What They're Not Telling You", '## What They’re Not Telling You']:
+              if stale in tier2:
+                  raise SystemExit(f'Old flat section found under divider: {stale}')
+          roles = ['BPC-157', 'TB-500', 'GHK-Cu', 'MOTS-c', 'Retatrutide', 'SS-31', 'ARA-290', 'KPV', 'NAD+']
+          construction_block = tier2.split('## Identity and evidence boundary', 1)[0]
+          missing = [r for r in roles if r not in construction_block]
+          if missing:
+              raise SystemExit(f'Construction roster missing roles: {missing}')
+          identity = tier2.split('## Identity and evidence boundary', 1)[1].split('## Core biological cascade', 1)[0]
+          if '### Dose evidence' not in identity or '### Response-framework evidence' not in identity:
+              raise SystemExit('Identity section missing Dose evidence or Response-framework evidence')
+          if '## Source synthesis' not in tier2 or '## Regulatory note' not in tier2:
+              raise SystemExit('Source synthesis / Regulatory note missing from Tier 2')
+          if not tier2.rstrip().startswith('\n\n## Executive identity'):
+              raise SystemExit('Tier 2 does not begin with Executive identity')
+          if not final_research.rstrip().endswith('this is reasoned extrapolation, not a directly-studied contraindication.'):
+              raise SystemExit('Regulatory note is not at document end')
+
+          final_app = app_path.read_text()
+          a = final_app.index(start_marker)
+          b = final_app.index(next_marker, a)
+          if final_app[a:b].rstrip() != chips:
+              raise SystemExit('GHKCU_CHIPS does not exactly match staged CHIPS BODY')
+
+          final_sw = sw_path.read_text()
+          if f'peptide-reference-v{new_v}' not in final_sw:
+              raise SystemExit('CACHE_NAME bump failed')
+          final_index = index_path.read_text()
+          final_versions = re.findall(r'\?v=(\d+)', final_index)
+          if not final_versions or any(int(v) != new_v for v in final_versions):
+              raise SystemExit(f'index versions do not match v{new_v}: {final_versions}')
+
+          print(f'VERSION_BUMP=v{old_v}->v{new_v}')
+          PY
+
+          node --check app.js
+
+          changed="$(git diff --name-only | sort)"
+          expected="$(printf '%s\n' app.js index.html research/GHK-Cu_Compound_Research.md service-worker.js | sort)"
+          if [ "$changed" != "$expected" ]; then
+            echo "Unexpected changed files:"
+            echo "$changed"
+            exit 1
+          fi
+
+      - name: Commit and push main
+        shell: bash
+        run: |
+          git config user.name "ChatGPT"
+          git config user.email "noreply@openai.com"
+          git add app.js index.html research/GHK-Cu_Compound_Research.md service-worker.js
+          git commit -m "GHK-Cu: Tier 1/Tier 2 split + front chips aligned"
+          git push origin main
