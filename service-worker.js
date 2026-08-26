@@ -1,4 +1,4 @@
-const CACHE_NAME = "peptide-reference-v76";
+const CACHE_NAME = "peptide-reference-v77";
 const ASSETS = [
   "./index.html",
   "./styles.css",
@@ -30,7 +30,13 @@ const ASSETS = [
   "./protocols/Chronic_Stress_Cortisol.md",
   "./protocols/Seasonal_Allergies.md",
   "./protocols/Hypertension.md",
-  "./protocols/Tesamorelin_Recomp.md"
+  "./protocols/Tesamorelin_Recomp.md",
+  "./protocols/Hypothyroid.md",
+  "./protocols/Immunosenescence.md",
+  "./protocols/Testosterone_Decline.md",
+  "./protocols/Shingles_VZV.md",
+  "./protocols/Atrial_Fibrillation.md",
+  "./protocols/Systemic_Multi_Organ.md"
 ];
 
 self.addEventListener("install", (event) => {

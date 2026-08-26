@@ -97,7 +97,13 @@
     "chronic-stress-cortisol": "Chronic_Stress_Cortisol.md",
     "seasonal-allergies": "Seasonal_Allergies.md",
     "hypertension": "Hypertension.md",
-    "tesamorelin-recomp": "Tesamorelin_Recomp.md"
+    "tesamorelin-recomp": "Tesamorelin_Recomp.md",
+    "hypothyroid": "Hypothyroid.md",
+    "immunosenescence": "Immunosenescence.md",
+    "testosterone-decline": "Testosterone_Decline.md",
+    "shingles-vzv": "Shingles_VZV.md",
+    "atrial-fibrillation": "Atrial_Fibrillation.md",
+    "systemic-multi-organ": "Systemic_Multi_Organ.md"
   };
   const protocolCache = new Map();
   const renderProtocolDoc = async (id, container) => {
