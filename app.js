@@ -88,7 +88,10 @@
     "diabetic-neuropathy": "Diabetic_Neuropathy.md",
     "insulin-resistance": "Insulin_Resistance.md",
     "menopause": "Menopause.md",
-    "ibs-gut-repair": "IBS_Gut.md"
+    "ibs-gut-repair": "IBS_Gut.md",
+    "retatrutide-plateau": "Retatrutide_Plateau.md",
+    "hepatic-inflammation": "Hepatic_Inflammation.md",
+    "cognitive-decline": "Cognitive_Decline.md"
   };
   const protocolCache = new Map();
   const renderProtocolDoc = async (id, container) => {

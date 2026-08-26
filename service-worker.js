@@ -1,4 +1,4 @@
-const CACHE_NAME = "peptide-reference-v74";
+const CACHE_NAME = "peptide-reference-v75";
 const ASSETS = [
   "./index.html",
   "./styles.css",
@@ -21,7 +21,10 @@ const ASSETS = [
   "./protocols/Diabetic_Neuropathy.md",
   "./protocols/Insulin_Resistance.md",
   "./protocols/Menopause.md",
-  "./protocols/IBS_Gut.md"
+  "./protocols/IBS_Gut.md",
+  "./protocols/Retatrutide_Plateau.md",
+  "./protocols/Hepatic_Inflammation.md",
+  "./protocols/Cognitive_Decline.md"
 ];
 
 self.addEventListener("install", (event) => {
