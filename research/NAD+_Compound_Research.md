@@ -297,6 +297,8 @@ NAD availability can be **downstream** of mitochondrial dysfunction as well as u
 
 ---
 
+### — Technical Deep Dive divider —
+
 ## Executive identity
 
 **NAD+ is the rechargeable power carrier and maintenance currency — not the fuel, and not the spendable energy.**

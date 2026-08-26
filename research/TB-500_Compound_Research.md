@@ -131,6 +131,8 @@ Repair is energy-intensive. MOTS-c supports the cellular fuel side; TB-500 suppo
 
 ---
 
+### — Technical Deep Dive divider —
+
 ## Executive identity
 
 **TB-500 is the scaffolding + access crew.** Its clearest biological job is not "healing" in the abstract — it's regulation of the actin cytoskeleton, the internal framework cells use to change shape and move. That mobility helps endothelial, progenitor, immune, and other repair-related cells reach damaged tissue, establish vascular access, and participate in remodeling.

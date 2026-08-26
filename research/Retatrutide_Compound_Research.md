@@ -152,6 +152,8 @@ Burning more fat in the liver and asking more of the insulin-producing cells bot
 
 ---
 
+### — Technical Deep Dive divider —
+
 ## Executive identity
 
 **Retatrutide is the site's logistics manager — not swinging a hammer, but controlling what comes onto the site, how efficiently it gets processed, and whether it's burned for today's work or stockpiled for later.**

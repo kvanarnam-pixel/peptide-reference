@@ -245,6 +245,8 @@ The molecule can turn on a local protective/recovery program. Human 28-day trial
 
 ---
 
+### — Technical Deep Dive divider —
+
 ## Executive identity
 
 **ARA-290 is the emergency stabilization and recovery crew** — a tissue-protective peptide that acts where injury has turned on a repair receptor healthy tissue mostly does not display. The job is not "always-on healing." It is limiting further damage at injured sites and creating conditions in which damaged nerve and tissue can recover.

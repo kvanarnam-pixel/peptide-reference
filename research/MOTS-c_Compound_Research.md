@@ -149,6 +149,8 @@ MOTS-c may expose mitochondrial capacity as much as it improves it. AMPK is an e
 
 ---
 
+### — Technical Deep Dive divider —
+
 ## Executive identity
 
 **MOTS-c is a mitochondrial-derived metabolic adaptation signal** that affects fuel handling, cellular energy-stress response, and mitochondrial capacity/efficiency, rather than functioning as a direct energy source.

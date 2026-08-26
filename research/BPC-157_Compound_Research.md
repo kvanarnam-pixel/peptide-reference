@@ -142,6 +142,8 @@ That's not evidence BPC-157 doesn't work — the older studies used different do
 
 ---
 
+### — Technical Deep Dive divider —
+
 ## Executive identity
 
 **BPC-157 is the construction foreman.** It does not build tissue itself. It gets repair crews to an injured site faster and keeps the rebuild organized instead of leaving a mess.
