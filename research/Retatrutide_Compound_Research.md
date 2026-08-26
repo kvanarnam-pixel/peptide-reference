@@ -144,7 +144,11 @@ Burning more fat in the liver and asking more of the insulin-producing cells bot
 
 **Lean mass loss is a specific, addressable mechanism, not an inevitable tax on any weight loss.** The glucagon leg pulls on amino acid metabolism in a way GLP-1-only drugs don't — which is a real, physiological reason to prioritize protein and resistance training here, not just generic advice recycled from any weight-loss program.
 
-**The thyroid-cancer conversation people repeat is almost always sourced from the wrong kind of data.** The alarming multiplier numbers in circulation come from spontaneous adverse-event report databases (FAERS), which have no true denominator and are known to inflate once a drug class gets media attention — not from studies that actually counted cancer cases against a population of real users. The large registry studies that do have a real denominator have not replicated a substantial risk for common thyroid cancers. One French national-registry study (Bezin et al.) found a real, if imperfectly controlled, signal specifically for cancer diagnosed at 1–3 years of use — worth knowing about, not worth treating as settled in either direction. See Regulatory note below.
+**The thyroid-cancer conversation people repeat is almost always sourced from the wrong kind of data.** The alarming multiplier numbers in circulation come from spontaneous adverse-event report databases (FAERS), which have no true denominator and are known to inflate once a drug class gets media attention — not from studies that actually counted cancer cases against a population of real users. The large registry studies that do have a real denominator have not replicated a substantial risk for common thyroid cancers. One large French national-registry study found a real, if imperfectly controlled, signal specifically for cancer diagnosed at 1–3 years of use — worth knowing about, not worth treating as settled in either direction. See Regulatory note below.
+
+## One genuine non-obvious insight
+
+The third receptor gets marketed as "even more appetite suppression," and that's the wrong mental model. GLP-1 and GIP both work upstream of intake — less food goes in. Glucagon works downstream of intake, in a different organ, through a different intracellular pathway that has nothing to do with satiety signaling. That's why the liver-fat data is disproportionate to what the weight loss alone would predict, and it's also a plausible reason retatrutide's added efficacy over dual-agonists doesn't scale with proportionally worse GI side effects the way you'd expect from "just a stronger GLP-1 drug" — a meaningful share of the extra effect isn't running through the same gastric-slowing pathway that drives nausea in GLP-1-heavy drugs. The genuine insight isn't "more receptors, more effect." It's that one of the three receptors isn't playing the same game as the other two.
 
 ---
 
@@ -208,10 +212,6 @@ From the DXA substudy of the Phase 2 type 2 diabetes trial (Coskun et al., 2025,
 Half-life is approximately 6 days. The molecule carries a C20 fatty diacid moiety that enables reversible, high-affinity albumin binding — albumin-bound peptide isn't filtered at the glomerulus, and the albumin-peptide complex gets recycled through the neonatal Fc receptor (FcRn), extending circulating time well beyond native GLP-1's roughly 2-minute half-life. Aib (alpha-aminoisobutyric acid) substitutions add steric resistance to DPP-4 cleavage on top of that. Time to maximum concentration runs 12–72 hours post-dose. Foundational pharmacology: Coskun et al., *Cell Metabolism*, 2022 (PMID 35985340).
 
 Because each week's dose stacks on the last before steady state is reached, titration speed — not just final dose — determines a meaningful share of early GI burden.
-
-## One genuine non-obvious insight
-
-The third receptor gets marketed as "even more appetite suppression," and that's the wrong mental model. GLP-1 and GIP both work upstream of intake — less food goes in. Glucagon works downstream of intake, in a different organ, through a different intracellular pathway that has nothing to do with satiety signaling. That's why the liver-fat data is disproportionate to what the weight loss alone would predict, and it's also a plausible reason retatrutide's added efficacy over dual-agonists doesn't scale with proportionally worse GI side effects the way you'd expect from "just a stronger GLP-1 drug" — a meaningful share of the extra effect isn't running through the same gastric-slowing pathway that drives nausea in GLP-1-heavy drugs. The genuine insight isn't "more receptors, more effect." It's that one of the three receptors isn't playing the same game as the other two.
 
 ## Source synthesis
 

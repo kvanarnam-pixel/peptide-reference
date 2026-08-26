@@ -125,6 +125,12 @@ Repair is energy-intensive. MOTS-c supports the cellular fuel side; TB-500 suppo
 
 **Nerve repair is an underappreciated emerging area, not a settled one.** Cell movement matters for nerve regeneration too, but the direct evidence for TB-500 specifically here is thin — a real rabbit hole, not a headline claim.
 
+## One genuine non-obvious insight
+
+The most quietly important finding in this file isn't a mechanism confirmation — it's a 2024 study suggesting the vial may not be the final worker. Injected TB-500 (Ac-LKKTETQ) gets metabolized fairly quickly, and when researchers actually tested the biological activity of the breakdown products against the parent molecule, one specific metabolite — Ac-LKKTE — carried the measurable wound-healing effect, not the intact peptide as sold.
+
+That reframes the whole compound's story in a useful way. Most peptide-community explanations treat "TB-500 heals tissue" as a direct, one-step claim: inject the molecule, the molecule does the work. This finding suggests a more accurate version might be a two-step process: inject the molecule, the body breaks it down, and one of those breakdown products is where the activity actually lives. That's not a reason to distrust TB-500's practical track record — the same downstream effect still happens either way — but it changes what "TB-500" honestly refers to biologically, and it's a good example of why fragment-level pharmacology deserves more scrutiny than it usually gets in this space.
+
 ---
 
 *Everything below this line is the technical deep dive: mechanism, audit trail, and evidence sourcing. Not written to be read aloud.*
@@ -222,12 +228,6 @@ Two considerations worth flagging honestly rather than dismissing:
 
 - **G-actin levels themselves are a transcriptional sensor** — free G-actin holds the transcription factor MRTF inactive in the cytoplasm; when G-actin polymerizes to F-actin, MRTF is released to drive SRF-dependent gene transcription (general cell biology, not TB-500-specific research). Chronic, repeated G-actin sequestration could theoretically interact with this feedback loop over time. Nobody has studied what chronic TB-500 dosing does to it — flagged as a real, unstudied mechanistic consideration, not a demonstrated effect.
 - **Immunogenicity is a genuine unknown**, as it is for any repeated exogenous peptide. No TB-500-specific antibody-formation or immunogenicity data exists either way.
-
-## One genuine non-obvious insight
-
-The most quietly important finding in this file isn't a mechanism confirmation — it's a 2024 study suggesting the vial may not be the final worker. Injected TB-500 (Ac-LKKTETQ) gets metabolized fairly quickly, and when researchers actually tested the biological activity of the breakdown products against the parent molecule, one specific metabolite — Ac-LKKTE — carried the measurable wound-healing effect, not the intact peptide as sold.
-
-That reframes the whole compound's story in a useful way. Most peptide-community explanations treat "TB-500 heals tissue" as a direct, one-step claim: inject the molecule, the molecule does the work. This finding suggests a more accurate version might be a two-step process: inject the molecule, the body breaks it down, and one of those breakdown products is where the activity actually lives. That's not a reason to distrust TB-500's practical track record — the same downstream effect still happens either way — but it changes what "TB-500" honestly refers to biologically, and it's a good example of why fragment-level pharmacology deserves more scrutiny than it usually gets in this space.
 
 ## Source synthesis
 
