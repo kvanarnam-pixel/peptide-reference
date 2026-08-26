@@ -93,3 +93,5 @@ That reframes the whole compound's story in a useful way. Most peptide-community
           git add research/Retatrutide_Compound_Research.md research/TB-500_Compound_Research.md
           git commit -m "Fix Retatrutide and TB-500 Tier 1 placement"
           git push origin main
+
+# trigger
