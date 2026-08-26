@@ -76,3 +76,9 @@ This is distinct from Rule 8 (verifying a fix landed after the fact). This rule 
 
 ## 12. A handoff document is the go-ahead — implement on receipt
 Any handoff document Kevin provides — a retrofit, a patch, a brand-new compound build, a governance-doc edit, anything — is itself the authorization to implement, regardless of task type. Do not pause to ask “should I proceed” or wait for a separate “go.” Read it, implement it, then report per Rule 8. If something specific in the handoff is genuinely ambiguous or looks wrong, flag that specific thing and ask about it — don’t hold the entire task for a blanket confirmation.
+
+## 13. Handoff execution standard — one block, literal, version-synced
+- Any handoff for a repo change (content, code, or governance-doc edit) ships as a single, complete, copy-paste-able block: file write, version bump (if Rule 10 applies), staging, and commit, all together. No multi-part handoffs, no separate follow-up pastes.
+- Execute the block literally, character for character. Do not substitute a cached or previously-drafted version of the file, regenerate content from the instructions as prose, or "improve" wording along the way.
+- Before generating any handoff, read the actual current live files relevant to the change — not memory, not a prior draft, not assumed repo state. This applies to whichever model is producing the handoff, not just one specific AI.
+- Rule 10's version-bump requirement is automatic, not a judgment call: any change touching `research/*.md`, `app.js`, `index.html`, `styles.css`, `jump.js`, `service-worker.js`, or any file in the `ASSETS` array gets the `?v=` / `CACHE_NAME` bump bundled into the same block — regardless of whether the change is user-visible.
