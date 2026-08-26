@@ -1,4 +1,4 @@
-const CACHE_NAME = "peptide-reference-v77";
+const CACHE_NAME = "peptide-reference-v78";
 const ASSETS = [
   "./index.html",
   "./styles.css",
@@ -36,7 +36,13 @@ const ASSETS = [
   "./protocols/Testosterone_Decline.md",
   "./protocols/Shingles_VZV.md",
   "./protocols/Atrial_Fibrillation.md",
-  "./protocols/Systemic_Multi_Organ.md"
+  "./protocols/Systemic_Multi_Organ.md",
+  "./protocols/Soft_Tissue_Repair.md",
+  "./protocols/Post_Viral.md",
+  "./protocols/Anxiety_Mood.md",
+  "./protocols/PCOS.md",
+  "./protocols/Sarcopenia.md",
+  "./protocols/Small_Fiber_Neuropathy.md"
 ];
 
 self.addEventListener("install", (event) => {

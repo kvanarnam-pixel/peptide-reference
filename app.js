@@ -103,7 +103,13 @@
     "testosterone-decline": "Testosterone_Decline.md",
     "shingles-vzv": "Shingles_VZV.md",
     "atrial-fibrillation": "Atrial_Fibrillation.md",
-    "systemic-multi-organ": "Systemic_Multi_Organ.md"
+    "systemic-multi-organ": "Systemic_Multi_Organ.md",
+    "soft-tissue-repair": "Soft_Tissue_Repair.md",
+    "post-viral": "Post_Viral.md",
+    "anxiety-mood": "Anxiety_Mood.md",
+    "pcos": "PCOS.md",
+    "sarcopenia": "Sarcopenia.md",
+    "small-fiber-neuropathy": "Small_Fiber_Neuropathy.md"
   };
   const protocolCache = new Map();
   const renderProtocolDoc = async (id, container) => {
