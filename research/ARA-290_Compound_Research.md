@@ -249,11 +249,11 @@ The molecule can turn on a local protective/recovery program. Human 28-day trial
 
 ## Executive identity
 
-**ARA-290 is the emergency stabilization and recovery crew** — a tissue-protective peptide that acts where injury has turned on a repair receptor healthy tissue mostly does not display. The job is not "always-on healing." It is limiting further damage at injured sites and creating conditions in which damaged nerve and tissue can recover.
+**ARA-290 is the Data Signal Repair crew** — a tissue-protective peptide that acts where injury has turned on a repair receptor healthy tissue mostly does not display. The job is not "always-on healing." It is restoring the protective/repair signal at injured sites — limiting further damage and creating the conditions in which damaged nerve and tissue can recover.
 
 Construction-site roster (as currently established in this project): BPC-157 = foreman · TB-500 = scaffolding/access crew · GHK-Cu = materials/blueprints · MOTS-c = power plant · Retatrutide = logistics manager · SS-31 = wiring & grid-stabilization crew · **ARA-290 = Data Signal Repair** · KPV = Site Safety Coordinator · NAD+ = rechargeable power carrier.
 
-The prior "Emergency Response Switch" label captured damage-triggered lock-and-key well and undersold the recovery half of the biology (anti-apoptotic / neurite-outgrowth / small-fiber measures). This pass locks the dual job: stabilize the injured site, and allow recovery.
+The earlier "Emergency Response Switch" framing captured the damage-triggered lock-and-key well but undersold the recovery half of the biology (anti-apoptotic / neurite-outgrowth / small-fiber measures). The Data Signal Repair label carries both halves of the job: it names the damage-gated signal ARA-290 restores and the recovery that signal enables — stabilize the injured site, and allow repair.
 
 ## Identity and evidence boundary
 
