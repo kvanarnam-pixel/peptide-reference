@@ -1,0 +1,33 @@
+name: Run SS-31 full lens
+
+on:
+  push:
+    branches:
+      - automation/ss31-full-lens
+
+permissions:
+  contents: write
+
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: automation/ss31-full-lens
+          fetch-depth: 0
+      - name: Extract payload
+        run: |
+          sed -n "/python3 - <<'PY'/,/^          PY$/p" .github/workflows/ss31-full-lens-one-shot.yml | sed '1d;$d;s/^          //' > /tmp/ss31_apply.py
+          test -s /tmp/ss31_apply.py
+      - name: Apply to current main
+        run: |
+          git fetch origin main
+          git checkout -B ss31-work origin/main
+          python3 /tmp/ss31_apply.py
+          node --check app.js
+          git config user.name "ChatGPT"
+          git config user.email "noreply@openai.com"
+          git add research/SS-31_Compound_Research.md app.js index.html service-worker.js research/_TEMPLATE.md
+          git commit -m "SS-31: Tier 1/Tier 2 split + front chips aligned"
+          git push origin HEAD:main
