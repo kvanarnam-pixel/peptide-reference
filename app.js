@@ -21,7 +21,8 @@
     "ss-31": "SS-31_Compound_Research.md",
     "ara-290": "ARA-290_Compound_Research.md",
     "kpv": "KPV_Compound_Research.md",
-    "nad": "NAD+_Compound_Research.md"
+    "nad": "NAD+_Compound_Research.md",
+    "5-amino-1mq": "5-Amino-1MQ_Compound_Research.md"
   };
   const techCache = new Map();
   const inlineMd = t => { let s = escapeHtml(t); s = s.replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>"); s = s.replace(/\*(.+?)\*/g, "<em>$1</em>"); s = s.replace(/`(.+?)`/g, "<code>$1</code>"); return s };
@@ -295,7 +296,22 @@
     ]
   ];
 
-  const CHIP_REGISTRY = { "tb-500": TB500_CHIPS, "bpc-157": BPC157_CHIPS, "ghk-cu": GHKCU_CHIPS, "mots-c": MOTSC_CHIPS, "retatrutide": RETATRUTIDE_CHIPS, "ara-290": ARA290_CHIPS, "kpv": KPV_CHIPS, "ss-31": SS31_CHIPS, "nad": NAD_CHIPS };
+  const AMINO1MQ_CHIPS = [
+    [
+      { key: "dose", label: "Dose", value: "50–100 mg oral", detail: `<p>The number on this card is 50 to 100 milligrams by mouth, once a day. That is what people use. A human study did not pick it.</p><p>Mouse math does not turn into this number. Leftover capsules are not a reason to take more. Nothing moving is not a reason either.</p>` },
+      { key: "timing", label: "Timing", value: "Same time most days", detail: `<p>Pick a time you can keep. Morning with food is just easier to remember.</p><p>The pill does not care about breakfast.</p>` },
+      { key: "cycling", label: "Duration", value: "Pause to read it", detail: `<p>This plugs a leak in the storage rooms. Not a vitamin. Not something you take because energy exists.</p><p>Nothing here wears out if you keep going. The eight-on, four-off story is habit. Useful because you need a clean look at whether stopping changed anything. Not a law that week nine resets you.</p><p>Nobody has watched people stay on this for months and years. That is the real reason to pause.</p>` },
+      { key: "know", label: "How you'll know", value: "Waist and clothes, not Tuesday", detail: `<p>Waist over weeks. How clothes fit. Fat versus the scale, if you already measure it that way. Same food. Same training.</p><p>The first mornings tell you nothing. Six to eight weeks is a fair look. A break after that is part of the report card.</p><p>If what you wanted was “the same walk costs less,” you were watching the wrong building.</p>` }
+    ],
+    [
+      { key: "watch", label: "Watch for", value: "A real slide — ask if you’re on a mood pill", detail: `<p>Everybody has a rough day. A real slide keeps showing up — stomach, head, energy, mood — and it tracks the pill.</p><p>There is no human study list. That is not the same as “nothing can go wrong.”</p><p>If you already take something for mood or for focus, ask the person who wrote that prescription before you add this. Not because this is a mood pill. Because mixing is the part we have not watched in people.</p><p>Something new and serious is a doctor, not another week to see.</p>` },
+      { key: "support", label: "Take alongside", value: "This plugs. NAD+ fills.", detail: `<p>This stops a skim. It does not fill the tank.</p><p>If the tank looks empty, that is a battery conversation — NAD+ as a different job, not extra of this. Food still has to be honest.</p>` },
+      { key: "pairs", label: "Pairs with", value: "Different buildings", detail: `<p><b>NAD+</b> fills the tank. This plugs the hole.</p><p><b>MOTS-c</b> rewrites the furnace in muscle. Not this pill. Bad week to start both if you need to know which one moved.</p><p><b>Tesamorelin</b> is a different fat job — deep belly fat through a growth-hormone-style signal. Same page. Not one study of both.</p><p><b>Retatrutide</b> changes how much comes in and how fuel is routed. If that shot is already live, this is a later question — not a mixer for week one.</p><p><b>SS-31</b> is wiring. Only if tomorrow is wrecked is its own story.</p>` },
+      { key: "catch", label: "The catch", value: "A leak plug is not a furnace", detail: `<p>It can plug a leak in fat cells. It cannot rewrite the furnace, fix the wiring, or knock three percent off someone who is already lean just because the label says fat.</p><p>The mouse work is real. It is heavy mice. A lot of that work was a shot, not a breakfast pill. Feeling nothing dramatic is normal. Feeling nothing forever is a reason to stop paying for it.</p>` }
+    ]
+  ];
+
+  const CHIP_REGISTRY = { "tb-500": TB500_CHIPS, "bpc-157": BPC157_CHIPS, "ghk-cu": GHKCU_CHIPS, "mots-c": MOTSC_CHIPS, "retatrutide": RETATRUTIDE_CHIPS, "ara-290": ARA290_CHIPS, "kpv": KPV_CHIPS, "ss-31": SS31_CHIPS, "nad": NAD_CHIPS, "5-amino-1mq": AMINO1MQ_CHIPS };
 
   const goDeeperTierHtml = p => TECH_DOC_NAMES[p.id]
     ? `<button type="button" class="go-deeper-btn" data-go-deeper="${p.id}" aria-expanded="${state.open.has(p.id)}"><span>${state.open.has(p.id) ? "Close technical layer" : "Go deeper — the technical layer"}</span></button><div class="tech-tier ${state.open.has(p.id) ? "open" : ""}" id="techtier-${p.id}"><div class="tech-inner" id="techinner-${p.id}"></div></div>`
