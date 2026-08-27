@@ -140,16 +140,16 @@
   const chipGridHtml = (id, chipRows) => chipRows.map((row, ri) => `<div class="chip-grid">${row.map(c => `<button type="button" class="chip-tile" data-chip="${id}|${ri}|${c.key}" aria-expanded="false"><span>${escapeHtml(c.label)}</span>${c.value ? `<b>${escapeHtml(c.value)}</b>` : ""}</button>`).join("")}</div><div class="chip-detail" id="chipdetail-${id}-${ri}" hidden></div>`).join("");
   const genericChips = p => [
     [
-      { key: "dose", label: "Dose", value: clip(doseText(p), 16), detail: doseDetailHtml(p) },
-      { key: "timing", label: "Timing", value: clip(p.timing, 16), detail: `<p>${escapeHtml(p.timing)}</p>` },
-      { key: "cycling", label: "Cycling", value: clip(p.cycling, 16), detail: `<p>${escapeHtml(p.cycling)}</p>` },
-      { key: "half", label: "Half-life", value: clip(p.halfLife, 16), detail: `<p>${escapeHtml(p.halfLife)}</p>` }
+      { key: "dose", label: "Dose", value: clip(doseText(p), 18), detail: doseDetailHtml(p) },
+      { key: "timing", label: "Timing", value: clip(p.timing, 18), detail: `<p>${escapeHtml(p.timing)}</p>` },
+      { key: "cycling", label: "Duration", value: clip(p.cycling, 18), detail: `<p>${escapeHtml(p.cycling)}</p>` },
+      { key: "know", label: "How you'll know", value: "Judge the job", detail: `<p>Pick two or three real-life markers before you start. Judge the stretch, not the morning after the first shot.</p>` }
     ],
     [
       { key: "watch", label: "Watch for", value: `${(p.cautions||[]).length} notes`, detail: listHtml(p.cautions||[]) },
       { key: "support", label: "Take alongside", value: `${(p.supplements||[]).length} picks`, detail: listHtml(p.supplements||[]) },
-      { key: "biology", label: "Biology", value: "", detail: `<p>${escapeHtml(p.mechanism)}</p>` },
-      { key: "catch", label: "The catch", value: "", detail: `<p>${escapeHtml(p.bottomLine||p.mechanism)}</p>` }
+      { key: "pairs", label: "Pairs with", value: "Different jobs", detail: `<p>Other names on a page are different jobs, not extra of this one. Do not start a second story the same week you are trying to learn whether this one held.</p>` },
+      { key: "catch", label: "The catch", value: "", detail: `<p>${escapeHtml(p.bottomLine||p.mechanism||"")}</p>` }
     ]
   ];
   const chipsFor = id => {
@@ -335,7 +335,7 @@
     <div class="badge-row"><span class="badge cat">${escapeHtml(cat?.short || "")}</span><span class="badge analogy">Power-Plant Upgrade</span></div>
     <h2>MOTS-c</h2><p class="tagline">Mitochondrial & Grid Reprogrammer</p>
     <p class="card-desc">Think of it as the power plant on a repair crew — it doesn't coordinate the job, move crews into place, or deliver materials. It tells the cell to take up glucose without waiting on insulin and to build more mitochondria.</p>
-    <div class="bottom-line"><strong>Bottom line</strong><p>MOTS-c is the power plant: insulin-independent glucose uptake and new mitochondria. Use the lowest exposure doing that job — and run it with SS-31 throughout, that pairing matters here even though SS-31 isn't its own card yet.</p></div>
+    <div class="bottom-line"><strong>Bottom line</strong><p>MOTS-c is the power plant: insulin-independent glucose uptake and a better energy program. Use the lowest exposure doing that job. SS-31 is a different job (the wiring). Seeing stamina on MOTS-c does not mean the wiring is fixed, and it does not mean SS-31 has to start the same week.</p></div>
     ${chipGridHtml(p.id, MOTSC_CHIPS)}
     ${goDeeperTierHtml(p)}
     <div class="card-actions"><button type="button" class="select-btn" data-select="${p.id}" aria-pressed="${selected}">${selected ? "Selected" : "Add to compare"}</button></div>

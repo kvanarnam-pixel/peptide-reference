@@ -1,4 +1,4 @@
-const CACHE_NAME = "peptide-reference-v79";
+const CACHE_NAME = "peptide-reference-v80";
 const ASSETS = [
   "./index.html",
   "./styles.css",
