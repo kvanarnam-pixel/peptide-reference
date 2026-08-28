@@ -23,7 +23,8 @@
     "kpv": "KPV_Compound_Research.md",
     "nad": "NAD+_Compound_Research.md",
     "5-amino-1mq": "5-Amino-1MQ_Compound_Research.md",
-    "cjc-1295-dac": "CJC-1295_DAC_Compound_Research.md"
+    "cjc-1295-dac": "CJC-1295_DAC_Compound_Research.md",
+    "cjc-1295-no-dac": "CJC-1295_no_DAC_Compound_Research.md"
   };
   const techCache = new Map();
   const inlineMd = t => { let s = escapeHtml(t); s = s.replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>"); s = s.replace(/\*(.+?)\*/g, "<em>$1</em>"); s = s.replace(/`(.+?)`/g, "<code>$1</code>"); return s };
@@ -327,7 +328,22 @@
     ]
   ];
 
-  const CHIP_REGISTRY = { "tb-500": TB500_CHIPS, "bpc-157": BPC157_CHIPS, "ghk-cu": GHKCU_CHIPS, "mots-c": MOTSC_CHIPS, "retatrutide": RETATRUTIDE_CHIPS, "ara-290": ARA290_CHIPS, "kpv": KPV_CHIPS, "ss-31": SS31_CHIPS, "nad": NAD_CHIPS, "5-amino-1mq": AMINO1MQ_CHIPS, "cjc-1295-dac": CJC1295DAC_CHIPS };
+  const CJC1295NODAC_CHIPS = [
+    [
+      { key: "dose", label: "Dose", value: "Start low, at night", detail: `<p>Start low, under the skin, at night. Around 100 micrograms is a common starting point, not a target. People also use more. A human study did not pick any of those numbers.</p><p>More is not automatically better. Extra daytime shots are more waves. They are not a better night. If nothing changes after a fair stretch, do not just increase the dosage.</p><p>Do not borrow the weekly milligrams. That is a different bottle.</p>` },
+      { key: "timing", label: "Timing", value: "Night. Not stuffed.", detail: `<p>Night. Not on a full stomach.</p><p>Finish eating a couple of hours before you sleep. Going to bed stuffed is worse for recovery.</p><p>If Ipamorelin is in the same syringe, both of those short notes are why you are standing there at bedtime.</p>` },
+      { key: "cycling", label: "Duration", value: "Weeks, then a pause", detail: `<p>Give it weeks, not one night. Then stop for a bit and see what held.</p><p>People quote twelve weeks on and four weeks off. That calendar is habit. Nobody proved this gland wore out at week twelve. Nobody proved you can run it every night forever either.</p><p>The pause is so you can read it.</p>` },
+      { key: "know", label: "How you'll know", value: "Sleep and tomorrow, not a buzz", detail: `<p>This shot does not buzz. A lot of nights will feel like nothing.</p><p>Watch sleep. Watch how hard the next day feels. Clothes later is something people may watch — not a promised result.</p><p>If Ipamorelin is in the same draw, you are judging the pair, not this bottle alone.</p><p>Pick two or three real things before you start. Judge the stretch, not the morning after the first shot.</p>` }
+    ],
+    [
+      { key: "watch", label: "Watch for", value: "Swelling, numb hands, blood sugar", detail: `<p>New swelling. Rings getting tight. Hands that go numb at night.</p><p>Headaches that follow the shot. Blood sugar drifting the wrong way. Snoring getting worse.</p><p>Redness at the shot is common and is not “it’s working.”</p><p>If you already have a cancer conversation with a doctor, this is not a casual add.</p>` },
+      { key: "support", label: "Take alongside", value: "No CJC vitamin", detail: `<p>There is no vitamin that makes this note work.</p><p>Sleep that actually happens. Finish eating a couple of hours before bed. Food and training still have to be honest.</p><p>Do not build a pill stack to justify this vial.</p>` },
+      { key: "pairs", label: "Pairs with", value: "Ipamorelin — other door", detail: `<p><b>Ipamorelin</b> is a different door on the same gland. That pairing is a coherent idea. A human trial of this exact pair was not found.</p><p>If you draw both at night, both short notes are why you are standing there at bedtime.</p><p><b>Weekly CJC</b> uses the same door. Not a pair. Do not run both.</p><p><b>Tesamorelin</b> is a related short note with a different job — deep belly fat. Not two vitamins.</p><p><b>Growth hormone in a syringe</b> is the finished messenger. Do not pour it on top.</p>` },
+      { key: "catch", label: "The catch", value: "Not a smaller weekly shot", detail: `<p>This is not a smaller weekly shot. It is not Ipamorelin.</p><p>If the night was loud — late food, no real sleep — more of this will not fix the night.</p>` }
+    ]
+  ];
+
+  const CHIP_REGISTRY = { "tb-500": TB500_CHIPS, "bpc-157": BPC157_CHIPS, "ghk-cu": GHKCU_CHIPS, "mots-c": MOTSC_CHIPS, "retatrutide": RETATRUTIDE_CHIPS, "ara-290": ARA290_CHIPS, "kpv": KPV_CHIPS, "ss-31": SS31_CHIPS, "nad": NAD_CHIPS, "5-amino-1mq": AMINO1MQ_CHIPS, "cjc-1295-dac": CJC1295DAC_CHIPS, "cjc-1295-no-dac": CJC1295NODAC_CHIPS };
 
   const goDeeperTierHtml = p => TECH_DOC_NAMES[p.id]
     ? `<button type="button" class="go-deeper-btn" data-go-deeper="${p.id}" aria-expanded="${state.open.has(p.id)}"><span>${state.open.has(p.id) ? "Close technical layer" : "Go deeper — the technical layer"}</span></button><div class="tech-tier ${state.open.has(p.id) ? "open" : ""}" id="techtier-${p.id}"><div class="tech-inner" id="techinner-${p.id}"></div></div>`
