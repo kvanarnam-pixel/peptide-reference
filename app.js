@@ -22,7 +22,8 @@
     "ara-290": "ARA-290_Compound_Research.md",
     "kpv": "KPV_Compound_Research.md",
     "nad": "NAD+_Compound_Research.md",
-    "5-amino-1mq": "5-Amino-1MQ_Compound_Research.md"
+    "5-amino-1mq": "5-Amino-1MQ_Compound_Research.md",
+    "cjc-1295-dac": "CJC-1295_DAC_Compound_Research.md"
   };
   const techCache = new Map();
   const inlineMd = t => { let s = escapeHtml(t); s = s.replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>"); s = s.replace(/\*(.+?)\*/g, "<em>$1</em>"); s = s.replace(/`(.+?)`/g, "<code>$1</code>"); return s };
@@ -311,7 +312,22 @@
     ]
   ];
 
-  const CHIP_REGISTRY = { "tb-500": TB500_CHIPS, "bpc-157": BPC157_CHIPS, "ghk-cu": GHKCU_CHIPS, "mots-c": MOTSC_CHIPS, "retatrutide": RETATRUTIDE_CHIPS, "ara-290": ARA290_CHIPS, "kpv": KPV_CHIPS, "ss-31": SS31_CHIPS, "nad": NAD_CHIPS, "5-amino-1mq": AMINO1MQ_CHIPS };
+  const CJC1295DAC_CHIPS = [
+    [
+      { key: "dose", label: "Dose", value: "1–2 mg once a week", detail: `<p>One to two milligrams under the skin, once a week. That is the number on this card. Start at the low end.</p><p>More is not automatically better. If nothing changes after a fair stretch, do not just increase the dosage.</p><p>The human papers used different math on healthy adults. Those papers asked whether the messenger moved. They did not pick this weekly milligram for you.</p>` },
+      { key: "timing", label: "Timing", value: "Any time of day", detail: `<p>You can take this any time of day.</p><p>People take it at night because that is what they do with the other CJC — the one that is gone in about half an hour. That one needs an empty stomach and bedtime. This one does not. It is still in you days later.</p><p>If you just ate a huge meal, wait a bit if you want. That is polite. It is not the main thing.</p><p>The food that actually matters is the night. Going to bed stuffed makes it harder for the body to send the overnight repair messenger. Finish eating a couple of hours before you sleep. That is just better recovery. This shot does not fix a full stomach at midnight.</p><p>If evening progesterone is already in the house, morning is fine.</p>` },
+      { key: "cycling", label: "Duration", value: "Weeks, then a pause", detail: `<p>Give it weeks, not one night. Then stop for a bit and see what held.</p><p>People quote twelve weeks on and four weeks off. That calendar is habit. It is not proof the gland wore out at week twelve.</p><p>The pause is so you can read it. Restart because the job is still there. Not because a date on the fridge said so.</p>` },
+      { key: "know", label: "How you'll know", value: "Next day, not a buzz", detail: `<p>This shot does not buzz. A lot of mornings will feel like nothing.</p><p>Watch sleep. Watch how hard the next day feels. Clothes later.</p><p>A blood test only if you already use that number. A higher number means the note landed. It does not mean you got the week back.</p><p>Pick two or three real things before you start. Judge the stretch, not the morning after the first shot.</p>` }
+    ],
+    [
+      { key: "watch", label: "Watch for", value: "Swelling, numb hands, blood sugar", detail: `<p>New swelling. Rings getting tight. Hands that go numb at night.</p><p>Headaches that follow the weekly shot. Blood sugar drifting the wrong way. Snoring or apnea getting worse.</p><p>Redness at the shot is common and is not “it’s working.”</p><p>If you already have a cancer conversation with a doctor, this is not a casual add.</p>` },
+      { key: "support", label: "Take alongside", value: "No CJC vitamin", detail: `<p>There is no vitamin that makes this note work.</p><p>Sleep that actually happens. Finish eating a couple of hours before bed. Food and training still have to be honest.</p><p>Do not build a pill stack to justify this vial.</p>` },
+      { key: "pairs", label: "Pairs with", value: "Other door, not a second CJC", detail: `<p><b>Ipamorelin</b> is a different door on the same gland. That pairing is a coherent idea. A human trial of this exact pair was not found.</p><p>They are not the same clock. This one is weekly. Ipamorelin is short. If you draw both at night, the short one is why you are standing there at bedtime.</p><p><b>The nightly CJC</b> is the same door, different clock. Do not run both.</p><p><b>Tesamorelin</b> is the same door family with a different job — deep belly fat. Not two vitamins.</p><p><b>Growth hormone in a syringe</b> is the finished messenger. That is a different strategy. Do not pour it on top of this one.</p>` },
+      { key: "catch", label: "The catch", value: "Not a bigger night", detail: `<p>It does not give you a bigger night. It leaves the repair signal on between nights.</p><p>Once a week is easier. It is also already spoken for days later if you do not like it.</p><p>They sold a pulse story. The night waves did not get bigger. What changed was the quiet between them.</p>` }
+    ]
+  ];
+
+  const CHIP_REGISTRY = { "tb-500": TB500_CHIPS, "bpc-157": BPC157_CHIPS, "ghk-cu": GHKCU_CHIPS, "mots-c": MOTSC_CHIPS, "retatrutide": RETATRUTIDE_CHIPS, "ara-290": ARA290_CHIPS, "kpv": KPV_CHIPS, "ss-31": SS31_CHIPS, "nad": NAD_CHIPS, "5-amino-1mq": AMINO1MQ_CHIPS, "cjc-1295-dac": CJC1295DAC_CHIPS };
 
   const goDeeperTierHtml = p => TECH_DOC_NAMES[p.id]
     ? `<button type="button" class="go-deeper-btn" data-go-deeper="${p.id}" aria-expanded="${state.open.has(p.id)}"><span>${state.open.has(p.id) ? "Close technical layer" : "Go deeper — the technical layer"}</span></button><div class="tech-tier ${state.open.has(p.id) ? "open" : ""}" id="techtier-${p.id}"><div class="tech-inner" id="techinner-${p.id}"></div></div>`
