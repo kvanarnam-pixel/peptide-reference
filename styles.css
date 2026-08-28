@@ -130,6 +130,11 @@ img {
   flex: 0 0 auto;
 }
 
+.brand > div {
+  position: relative;
+  min-width: 0;
+}
+
 .brand-lockup-img {
   display: block;
   width: clamp(165px, 52vw, 220px);
@@ -137,6 +142,82 @@ img {
   max-height: 18px;
   object-fit: contain;
   object-position: left center;
+
+  /*
+   * Keep the real PNG in the layout/accessibility tree, but use its
+   * alpha silhouette as the metallic treatment below.
+   */
+  opacity: 0;
+}
+
+.brand > div::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  width: clamp(165px, 52vw, 220px);
+  height: 18px;
+  pointer-events: none;
+
+  -webkit-mask-image: url("assets/plainspoken-press-lockup.png");
+  mask-image: url("assets/plainspoken-press-lockup.png");
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: left center;
+  mask-position: left center;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+
+  background:
+    linear-gradient(
+      180deg,
+      #fff7dc 0%,
+      #d8c998 14%,
+      #887b56 34%,
+      #3f392c 49%,
+      #b5aa7f 63%,
+      #665d43 79%,
+      #d8c99a 100%
+    );
+
+  filter:
+    drop-shadow(0 -0.5px 0 rgba(255, 250, 224, 0.62))
+    drop-shadow(0 1px 0 rgba(0, 0, 0, 0.88))
+    drop-shadow(0 2px 1px rgba(0, 0, 0, 0.58))
+    drop-shadow(0 0 4px rgba(111, 162, 68, 0.16));
+}
+
+.brand > div::after {
+  content: "";
+  position: absolute;
+  left: -2px;
+  top: 17px;
+  z-index: 2;
+  width: clamp(169px, 53vw, 226px);
+  height: 2px;
+  pointer-events: none;
+
+  background:
+    radial-gradient(
+      circle at 27% 50%,
+      rgba(184, 231, 111, 0.95) 0,
+      rgba(127, 181, 71, 0.55) 3%,
+      transparent 9%
+    ),
+    linear-gradient(
+      90deg,
+      transparent 0%,
+      rgba(102, 145, 64, 0.20) 8%,
+      rgba(140, 188, 80, 0.65) 25%,
+      rgba(109, 156, 67, 0.36) 48%,
+      rgba(88, 126, 58, 0.18) 72%,
+      transparent 100%
+    );
+
+  box-shadow:
+    0 0 4px rgba(128, 177, 75, 0.36),
+    0 0 9px rgba(128, 177, 75, 0.16);
 }
 
 .brand h1 {
