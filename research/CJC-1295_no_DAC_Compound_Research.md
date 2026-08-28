@@ -1,9 +1,5 @@
 # CJC-1295 (no DAC) Compound Research
-**FACE LOCKED — 2026-08-28.**  
-No treat / cure / reverse. No vendor. No personal-protocol language.  
-Identity: **Night-Shift Dispatch — Timing Signal**  
-Face: **One wave tonight. Gone before morning.**  
-Dose tile: **Start low, at night.** Around 100 mcg is a starting point in tap-open only.
+No treat / cure / reverse. No vendor.
 
 This file is **Modified GRF 1-29** sold as “CJC-1295 no DAC.” It is not the finished DAC molecule with one piece clipped off. Do not steal DAC half-life or fold-changes. Do not name the unmodified 29-mer that is out of this project.
 
@@ -217,17 +213,11 @@ Smaller fills beat arguing percentages. Separate vials beat one mixed bottle if 
 
 ## What They’re Not Telling You
 
-The face already says gone before morning and not the weekly bottle. Do not spend The catch repeating that.
-
 ### This is not a smaller weekly shot. It is not Ipamorelin.
 Weekly CJC stays in you for days. Ipamorelin is a different door on the same gland. This bottle is only tonight’s wave. If you bought it as a cheap weekly shot, or as “the other half of Ipa,” you bought the wrong sentence.
 
-**HOLDS UP** as job split.
-
 ### If the night was loud, more of this will not fix the night.
 Late food. No real sleep. The gland is already quiet. This vial asks for one wave. It does not override a bad night. Ask about the night before you raise the amount.
-
-**PLAUSIBLE.** Not a trial on this vial.
 
 ---
 
@@ -261,7 +251,7 @@ CAS often listed 863288-34-0. Mass ~3368 Da.
 
 ## Human D-Ala2 evidence (do not inflate)
 
-Soule et al.: in healthy men, D-Ala2-GHRH(1–29) during IV infusion increased disappearance half-life from approximately **4.3 to 6.7 minutes**. That supports improved resistance to degradation from **one** substitution. It does not establish a 30-minute half-life for complete Modified GRF 1-29.
+Soule et al., JCEM 1994;79:854–859. PMID 7962295. DOI 10.1210/jcem.79.4.7962295. In healthy men, D-Ala2-GHRH(1–29) during IV infusion increased disappearance half-life from approximately **4.3 to 6.7 minutes**. That supports improved resistance to degradation from **one** substitution. It does not establish a 30-minute half-life for complete Modified GRF 1-29.
 
 ## Where “~30 minutes” still sits
 
@@ -288,7 +278,7 @@ Falutz et al., AIDS 2008. PMID 18690162. 52 weeks of daily tesamorelin; visceral
 
 ## Two-door rationale
 
-GHRH receptor + ghrelin receptor (Ipamorelin) can potentiate on the same somatotroph (Cunha & Mayo 2002). Mechanism coherent. Human trial of Modified GRF 1-29 + Ipamorelin: **not found.**
+GHRH receptor + ghrelin receptor (Ipamorelin) can potentiate on the same somatotroph (Cunha & Mayo, Endocrinology 2002. PMID 12446584. DOI 10.1210/en.2002-220670). Mechanism coherent. Human trial of Modified GRF 1-29 + Ipamorelin: **not found.**
 
 ## Handling note
 
@@ -297,18 +287,3 @@ Usual multi-dose wet window ~28 days. A mixed bottle drawn every night for many 
 ## Phase II death
 
 DAC card only. This molecule was not that trial.
-
-## Live library
-
-No `cjc-1295-no-dac` entry yet. Suggested id: `cjc-1295-no-dac`.  
-Live sister: `cjc-1295-dac` at cache v84.  
-Live neighbor: `ipamorelin`.  
-Compare “Bedtime GH” still points at DAC + Ipamorelin + DSIP. Out of scope until Kevin opens Compare.
-
----
-
-## Open before chips
-
-- Dose face locked as start-around-100, not a fixed target. Range still open if a top number should print.
-- Display name: “CJC-1295 (no DAC)” vs “Modified GRF 1-29.”
-- Identity lock: Night-Shift Dispatch — Timing Signal.
