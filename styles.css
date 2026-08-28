@@ -134,34 +134,58 @@ img {
 .brand-lockup {
   margin: 0;
   font-family: var(--serif);
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 600;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
-  line-height: 1.25;
+  line-height: 1.2;
   white-space: nowrap;
   color: var(--ember);
+}
+
+.brand-lockup {
+  position: relative;
+  display: inline-block;
+}
+
+.brand-lockup::before {
+  content: attr(data-lockup);
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translate(0.7px, 1px);
+  z-index: 0;
+  pointer-events: none;
+  user-select: none;
+  background: none;
+  filter: none;
+  color: color-mix(in srgb, var(--ember-deep) 62%, var(--midnight) 38%);
+  -webkit-text-fill-color: color-mix(in srgb, var(--ember-deep) 62%, var(--midnight) 38%);
+  -webkit-background-clip: border-box;
+  background-clip: border-box;
 }
 
 @supports ((-webkit-background-clip: text) or (background-clip: text)) {
   .brand-lockup {
     background-image: linear-gradient(
-      180deg,
-      color-mix(in srgb, var(--ember) 52%, #fff) 0%,
-      var(--ember) 38%,
-      var(--ember-deep) 72%,
-      color-mix(in srgb, var(--ember) 78%, var(--ember-deep)) 100%
+      158deg,
+      color-mix(in srgb, var(--ember) 18%, #fff) 0%,
+      color-mix(in srgb, var(--ember) 42%, #fff) 12%,
+      var(--ember) 34%,
+      var(--ember-deep) 58%,
+      color-mix(in srgb, var(--ember-deep) 70%, var(--midnight) 30%) 82%,
+      color-mix(in srgb, var(--ember) 45%, var(--ember-deep)) 100%
     );
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    filter: drop-shadow(0 0.6px 0 rgba(18, 13, 31, 0.42));
+    z-index: 1;
   }
 }
 
 @media (max-width: 380px) {
   .brand-lockup {
-    letter-spacing: 0.07em;
+    letter-spacing: 0.08em;
   }
 }
 
