@@ -1,7 +1,4 @@
 # CJC-1295 (with DAC) Compound Research
-**HANDOFF-READY face + chips — 2026-08-28.**  
-Face language locked with Kevin. Compare stack left alone this pass. No treat / cure / reverse. No vendor. Live dose stays `1–2 mg SQ once weekly`.  
-Do not land until Kevin says land.
 
 This file is **CJC-1295 with DAC only**. Modified GRF 1-29 (sold as “CJC-1295 no DAC”) is a different molecule and needs its own file. Do not let this page inherit nightly-blend folklore, and do not let the no-DAC page inherit these half-life numbers.
 
