@@ -130,12 +130,39 @@ img {
   flex: 0 0 auto;
 }
 
-.eyebrow {
+.eyebrow,
+.brand-lockup {
   margin: 0;
+  font-family: var(--serif);
   font-size: 11px;
-  letter-spacing: 0.16em;
+  font-weight: 600;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: #cbb89a;
+  line-height: 1.25;
+  white-space: nowrap;
+  color: var(--ember);
+}
+
+@supports ((-webkit-background-clip: text) or (background-clip: text)) {
+  .brand-lockup {
+    background-image: linear-gradient(
+      180deg,
+      color-mix(in srgb, var(--ember) 52%, #fff) 0%,
+      var(--ember) 38%,
+      var(--ember-deep) 72%,
+      color-mix(in srgb, var(--ember) 78%, var(--ember-deep)) 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 0.6px 0 rgba(18, 13, 31, 0.42));
+  }
+}
+
+@media (max-width: 380px) {
+  .brand-lockup {
+    letter-spacing: 0.07em;
+  }
 }
 
 .brand h1 {
