@@ -1,4 +1,4 @@
-const CACHE_NAME = "peptide-reference-v88";
+const CACHE_NAME = "peptide-reference-v89";
 const ASSETS = [
   "./index.html",
   "./styles.css",
@@ -8,6 +8,7 @@ const ASSETS = [
   "./data/peptides.json",
   "./data/protocols.json",
   "./icons/icon.svg",
+  "./assets/plainspoken-press-lockup.png",
   "./research/TB-500_Compound_Research.md",
   "./research/BPC-157_Compound_Research.md",
   "./research/GHK-Cu_Compound_Research.md",
