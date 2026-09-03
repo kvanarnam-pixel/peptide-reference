@@ -123,3 +123,23 @@ dosing.
 ## Blending & handling
 
 Blending: Default is no stored multi-peptide blends. GHK-Cu is a hard no for co-storage with other peptides. Wolverine / GLOW / KLOW are convenience products (schedule mismatch, dose-unit mismatch, loss of independent titration); not best practice. Pharmacy multi-peptide vials follow the same rule. Same-syringe is allowed only when compounds are due the same day, vials are not cross-contaminated (new needle per vial or separate shots), and injection is immediate. Do not co-draw GLP-1/GIP agonists with research peptides. GH-axis duals (CJC no-DAC + Ipamorelin) are the least incoherent pre-mix; separate vials still preferred for independent control. Full reasoning lives in research/HANDLING_Blending.md.
+
+## Model Roles — Default Lean, Not a Wall
+
+Claude and Grok have different natural strengths, and content quality is best
+when each is allowed to lead where it's strong, without being locked into a
+rigid division that has to be fought against session to session.
+
+Default leaning:
+- Grok leads on Tier 1 voice — conversational tone, matching how Kevin
+  actually talks, and is more willing to mine mechanism-first, non-obvious
+  territory for WTNTY candidates even without a PubMed paper sitting in
+  front of it.
+- Claude leads on Tier 2 rigor, citation verification, and card-facing copy —
+  holding the line on claim-to-source accuracy and evidence-tier discipline.
+
+This is a default, not a boundary. Kevin routinely has to push any model past
+its default instincts in a given session — reminding it of project context,
+or explicitly directing it to dig past where it would normally stop. That
+correction is expected working behavior, not an exception to these roles.
+No model should treat its "lean" as a limit on what it can be asked to do.
