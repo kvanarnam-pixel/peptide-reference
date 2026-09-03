@@ -11,9 +11,11 @@ This file is **Modified GRF 1-29** sold as “CJC-1295 no DAC.” It is not the 
 
 ### Starts
 
-Growth hormone is your overnight repair messenger. A gland in your head — the pituitary — releases it in waves, mostly in deep sleep.
+Growth hormone is your overnight repair messenger. A gland in your head — the pituitary — releases it in waves, mostly in deep sleep. That wave helps tissue turn over. It also feeds a downstream signal other cells read as “rebuild” — IGF-1.
 
 This vial is a short note asking that gland for one wave tonight. You did not inject the messenger. You asked for one night. Then the note is gone before morning.
+
+IGF-1 is the same blood marker as the weekly bottle. On this bottle it is a night read. One shot does not leave that number sitting up all week. That week-long picture belongs to the other CJC.
 
 It is not the weekly CJC. That bottle has a tail that keeps it around for days. This one does not.
 
@@ -35,9 +37,11 @@ Not a buzz. A lot of nights will feel like nothing in the moment.
 
 Watch sleep, and how hard the next day feels, if anything. Redness at the shot is common and is not “it’s working.”
 
+If you already draw labs, IGF-1 is the number. A rise means a note landed. It is not a trophy.
+
 ### Judge it
 
-Pick two or three real things before you start — sleep, next-day effort, maybe clothes later. Judge the stretch, not the morning after the first shot. If Ipamorelin is in the same draw, you are judging the pair, not this bottle alone.
+Pick two or three real things before you start — sleep, next-day effort, maybe clothes later. If you already draw blood, add IGF-1 to that list: did it move, and did it move into a range you meant to visit. Judge the stretch, not the morning after the first shot. If Ipamorelin is in the same draw, you are judging the pair, not this bottle alone.
 
 ---
 
@@ -56,6 +60,8 @@ So: gentler-sounding by design, yes. Proven gentler in a safety trial, no. Do no
 Sleep, food, and training are already honest. You want the repair wave **on the night** — sleep, and how hard tomorrow feels — and you want to be able to skip a night if you need to.
 
 The gland that makes growth hormone still works. This is not “I want to feel younger.”
+
+If you already have an IGF-1 sitting around, it is one way to see whether the note landed. Do not start this vial just to chase that number.
 
 Not for someone whose real leak is food, liver, or calories. That is a different job.
 
@@ -86,6 +92,8 @@ Start around 100 micrograms under the skin, at night. That is a starting point, 
 
 More is not automatically better. If nothing changes after a fair stretch, do not just increase the dosage. Do not borrow the weekly milligrams — that is a different bottle.
 
+Do not raise the amount because IGF-1 is “not high enough” with no job attached to that number.
+
 ### Route / frequency
 
 Under the skin, at night. One shot is the usual picture. Extra daytime shots are more waves, not a better night.
@@ -106,6 +114,8 @@ People quote twelve weeks on and four weeks off. That calendar is habit. Nobody 
 
 The pause is so you can read it. Restart because the job is still there — not because a date on the fridge said so. Stay off if the off stretch was the first time you felt like yourself, or if nothing had happened on it.
 
+If you were drawing IGF-1, expect that number to sit back down once the nights stop. This bottle does not leave a week of leftover climate to wait out. That is the weekly bottle.
+
 ---
 
 ## What to Expect + Watch For
@@ -116,15 +126,15 @@ Not a buzz. A lot of nights will feel like nothing. Redness at the injection sit
 
 ### Building
 
-Sleep, and how hard the next day feels, are the first honest clues if anything moves. Track the two or three things you named, not a vibe.
+Sleep, and how hard the next day feels, are the first honest clues if anything moves. IGF-1 if you draw it. Track the two or three things you named, not a vibe.
 
 ### Longer term
 
-Clothes later is something people may watch — not a promised result. This bottle does not have its own human lab curve, so it cannot promise a number.
+Clothes later is something people may watch — not a promised result. If you draw blood, IGF-1 is the marker — same biology as the weekly bottle. This bottle does not have its own human lab curve, so a number cannot promise the night. If the only thing that moved is IGF-1 and nothing in the body did, the axis moved and the job did not.
 
 ### Watch for
 
-New swelling. Rings getting tight. Hands that go numb at night. Headaches that follow the shot. Blood sugar drifting the wrong way. Snoring getting worse.
+New swelling. Rings getting tight. Hands that go numb at night. Headaches that follow the shot. Blood sugar drifting the wrong way. Snoring getting worse. IGF-1 into a range you did not mean to visit.
 
 If you already have a cancer conversation with a doctor, this is not a casual add.
 
@@ -133,6 +143,8 @@ If you already have a cancer conversation with a doctor, this is not a casual ad
 - Buying it as a cheap weekly shot, or as “the other half of Ipamorelin.” It is neither.
 - Raising the dose when nothing changed, instead of asking whether the night — late food, no real sleep — was the actual problem.
 - Treating community talk that it is “gentler” than the weekly bottle as if it were a safety trial. It is talk, not a trial.
+- Treating a higher IGF-1 as the win. That number means a note landed. It does not mean you got the night back.
+- Judging this bottle with the weekly bottle’s lab habit. One shot here does not leave IGF-1 up for a week the way the other CJC can.
 
 ---
 
@@ -140,7 +152,15 @@ If you already have a cancer conversation with a doctor, this is not a casual ad
 
 Not a buzz. A lot of nights will feel like nothing, and that alone does not mean it failed.
 
-People may track sleep and how hard the next day feels. Clothes later is optional watching, not an expected result. A blood test only if you already use that number — a higher number means a note landed somewhere, not that you got the night back.
+People may track sleep and how hard the next day feels. Clothes later is optional watching, not an expected result.
+
+A blood test only if you already use that number. The number is IGF-1 — same marker as the weekly bottle. A higher number means a note landed somewhere. It does not mean you got the night back. This bottle does not have its own human lab curve.
+
+Separate two reads:
+
+**Axis moved:** IGF-1 went up, or the body signs that follow a GH wave showed up — including the ones you did not want, like fluid or tight hands. That proves a note landed. It does not prove you got the night.
+
+**Job done:** the reason you bought it moved — more useful sleep, a cheaper next day — without buying it with swelling and worse glucose.
 
 **Hold** when the nights you named are moving and the body is quiet. **Do not just increase the dosage** when nothing changed — ask whether this was the right clock first. If Ipamorelin is in the same draw, you are judging the pair.
 
@@ -150,9 +170,9 @@ People may track sleep and how hard the next day feels. Clothes later is optiona
 
 Gone before morning. There is no week-long leftover to wait out — that is the weekly bottle.
 
-Whatever you were getting from the shot stops when the shots stop. No crash file. No souvenir.
+Whatever you were getting from the shot stops when the shots stop. No crash file. No souvenir. If IGF-1 had moved, it should drift back once the nights stop. There is no published washout curve on this bottle; that picture follows from a short exposure, not from a stop trial.
 
-Stop for swelling, numb hands, headaches that follow the shot, blood sugar drifting, snoring getting worse, or a cancer conversation.
+Stop for swelling, numb hands, headaches that follow the shot, blood sugar drifting, snoring getting worse, IGF-1 higher than you meant, or a cancer conversation.
 
 ---
 
@@ -210,6 +230,8 @@ What they did not say: the published name, and the graphs, belong to the bottle 
 
 If you wanted a graph, you wanted the other vial. If you wanted a night you can skip, you wanted this one. Those are different purchases.
 
+IGF-1 is still the blood marker either way. The weekly bottle can leave that number up for days. This one does not buy you that week from one shot. Same lab. Different clock.
+
 ---
 
 ### — Technical Deep Dive divider —
@@ -259,7 +281,7 @@ The ~100 µg bedtime start and the 12-weeks-on / 4-weeks-off calendar are practi
 
 ### Washout — evidence sourcing
 
-No week-scale tail to clear: without the albumin tether, exposure is short, so stopping removes the signal by the next morning rather than over days. There is no published discontinuation/rebound study on this molecule; the “no crash, no souvenir” framing follows from the short exposure, not from a dedicated washout trial.
+No week-scale tail to clear: without the albumin tether, exposure is short, so stopping removes the signal by the next morning rather than over days. There is no published discontinuation/rebound study on this molecule; the “no crash, no souvenir” framing follows from the short exposure, not from a dedicated washout trial. IGF-1 returning toward baseline after a short GHRH analog is stopped is class / cousin physiology (tesamorelin washout), not a measured curve on this vial.
 
 ### Human D-Ala2 evidence (do not inflate)
 
@@ -275,15 +297,17 @@ Teichman 2006 JCEM (DAC): half-life 5.8–8.1 days; mean GH 2- to 10-fold ≥6 d
 
 ### Response-tracking evidence sourcing
 
-There is no human lab curve specific to this molecule. A rise in a downstream number (if someone already tracks one) shows the axis moved; it does not prove the reason the vial was bought. Tracking guidance in Tier 1 is this reference’s framework, not a trial protocol.
+IGF-1 is the downstream marker for this axis. Same biology as the weekly bottle. A rise shows the note landed at the gland and the liver answered. It does not prove the night you bought.
+
+There is no human IGF-1 curve specific to this molecule. Do not print Teichman’s 1.5- to 3-fold / 9–11 day IGF-1 numbers here. Those describe the albumin-tethered bottle. Tracking guidance in Tier 1 is this reference’s framework, not a trial protocol.
 
 ## Core biological cascade
 
-**Modified GRF 1-29 → short-lived GHRH-receptor occupancy on pituitary somatotrophs → a single evening GH wave (no raised week-long floor) → overnight hepatic/tissue repair signaling on that night → cleared by morning, nothing carried forward.**
+**Modified GRF 1-29 → short-lived GHRH-receptor occupancy on pituitary somatotrophs → a single evening GH wave (no raised week-long floor) → overnight hepatic IGF-1 and tissue repair signaling on that night → cleared by morning, nothing carried forward.**
 
 ### Short GHRH request, no albumin tether
 
-Native GHRH(1–29) dies in minutes to DPP-IV and other proteases. The four substitutions slow that degradation somewhat. What this molecule lacks is the DAC maleimide-to-albumin move that turns the DAC bottle into a week-scale agent. No tether means no multi-day floor — the whole behavioral difference from the weekly bottle traces to that missing tail.
+Native GHRH(1–29) dies in minutes to DPP-IV and other proteases. The four substitutions slow that degradation somewhat. What this molecule lacks is the DAC maleimide-to-albumin move that turns the DAC bottle into a week-scale agent. No tether means no multi-day floor — the whole behavioral difference from the weekly bottle traces to that missing tail. IGF-1 is still what the liver reads after a GH wave. The duration of that read follows the clock of the analog, not a different lab.
 
 ### Pulse pattern matters on this receptor family
 
@@ -315,7 +339,7 @@ Shaped by:
 - Teichman et al., *JCEM* 2006 and Ionescu & Frohman *JCEM* 2006 — cited only as DAC data explicitly **not** imported here.
 - HOUSE_STANDARDS.md (Tier 1 voice rules; trials answer the questions they asked; practical vs trial framing visible); `_TEMPLATE.md` Tier 1 / Tier 2 split.
 
-Claims dropped or sanded this pass: any DAC half-life / fold-change presented as this molecule’s; “~30 minutes” stated as measured fact rather than estimate; “gentler/protects receptors” promoted from community talk to proven benefit; single-substitution D-Ala2 data inflated to the whole four-substitution molecule; pulsatile-GRF animal data or tesamorelin durability read as proof this bottle needs no break.
+Claims dropped or sanded this pass: any DAC half-life / fold-change presented as this molecule’s; “~30 minutes” stated as measured fact rather than estimate; “gentler/protects receptors” promoted from community talk to proven benefit; single-substitution D-Ala2 data inflated to the whole four-substitution molecule; pulsatile-GRF animal data or tesamorelin durability read as proof this bottle needs no break; IGF-1 omitted as the blood marker because this bottle lacks its own human curve.
 
 **PubMed-verification pass: complete** for the identity, single-substitution PK, pulsatile-pattern, two-door, and tesamorelin-class citations retained above. Direct human PK/PD on this exact no-DAC molecule: **not found**. Human CJC + Ipamorelin combination trial: **not found**. Dedicated discontinuation/rebound study: **not found**.
 
