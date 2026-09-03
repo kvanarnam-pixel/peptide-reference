@@ -6,31 +6,6 @@ Bachmeyer-source rule: keep the two-door pituitary job if the biology holds. Do 
 
 ---
 
-## Front Card
-
-**CJC-1295 (with DAC)**  
-**Keeps the overnight repair messenger around for days.**
-
-Growth hormone is your overnight repair messenger. A gland in your head releases it in waves, mostly while you are in deep sleep. That is one of the ways the body repairs tissue overnight.
-
-This vial is not that messenger. It is a long note asking the gland to keep a little more of it around for days. It is not the nightly CJC. That one is gone in about half an hour. This one is still in you days later.
-
-Use it when sleep, food, and training are already honest, and the next day still costs too much. The gland has to work. This is not “I want to feel younger.”
-
-**How people use it:** 1 to 2 milligrams under the skin, once a week. Start at the low end. More is not automatically better. If nothing changes after a fair stretch, do not just increase the dosage.
-
-**When in the day:** Any time of day is fine. People do night because that is what they do with the short CJC. Night is just a habit here. Finish eating a couple of hours before you sleep. Going to bed stuffed is worse for recovery than the hour you pick for this shot.
-
-**How long:** Give it weeks, not one night. Then stop for a bit and see what held. That pause is so you can read it — not because a calendar proved the gland wore out.
-
-**What you might notice:** Not a buzz. Sleep and how hard the next day feels, if anything. Clothes later. A blood test only if you already use that number. A higher number means the note landed. It does not mean you got the week back.
-
-**When to stop:** New swelling. Hands that go numb at night. Headaches that follow the shot. Blood sugar drifting the wrong way. Snoring or apnea getting worse. Or a cancer conversation you should not ignore.
-
-**The catch:** It does not give you a bigger night. It leaves the repair signal on between nights. Once a week is easier. It is also already spoken for days later if you do not like it.
-
----
-
 ### TIER 1 — Conversation-ready (renders above the Technical Deep Dive divider)
 
 ## What Happens After You Take It
@@ -98,7 +73,7 @@ Do not say the pituitary “always stays in full control.” A higher floor is s
 
 This is not “restores a 25-year-old axis.” Aging GH decline is real. It is not the only reason energy, muscle, and recovery fall off, and it is not a diagnosis by itself.
 
-## Who this is for
+### Who this is for
 
 Start with the week, not the hormone.
 
@@ -130,7 +105,7 @@ A lot of belly fat and a rough food week cut both ways. Extra belly already quie
 
 Plain test: **if you fixed sleep, food, and training, and the week still feels under-repaired, this is in the conversation. If you have not fixed those, this is not the conversation.**
 
-## Why this — what it does that the neighbors do not
+### Why this — what it does that the neighbors do not
 
 Sleep, protein, and training still have to be in place. This does not replace them.
 
@@ -146,7 +121,7 @@ Sleep, protein, and training still have to be in place. This does not replace th
 
 What this card uniquely buys: **days of GHRH drive, a higher GH floor, and an IGF-1 climate that can overlap week to week.** That is the product. Recovery, composition, and tissue turnover are *why someone might want that climate*. They are not guaranteed deliveries.
 
-## When DAC rather than no-DAC
+### When DAC rather than no-DAC
 
 Choose the long analog when the job is a **week-scale floor** — you want the climate present days later, not only the night you injected.
 
@@ -157,6 +132,25 @@ Trade-off of the long analog: less steering, more leftover signal, a slower off-
 Do not run both. Same door, two clocks. That is not two systems. That is two work orders taped together.
 
 Bedtime matters less here than clinic culture pretends. Skipping a meal at the shot is a small courtesy, not the trick. The molecule does not vanish by breakfast. What sits on the gland all week is the food week, not the hour you picked. If a short partner is in the same syringe that night, *that* partner is why you are standing there at 10 p.m.
+
+### Trade-offs
+
+**What you buy**
+
+- Days of GHRH drive through the gland, not a bypass
+- A higher GH floor with waves still allowed
+- An IGF-1 climate that can overlap week to week
+- A recovery / composition / tissue-turnover *environment* — if that was actually the bottleneck
+
+**What it costs**
+
+- A growth climate you cannot shut off at breakfast
+- Less pulse control than the short analog
+- Fluid, tunnel hands, headaches, glucose drift when the climate is too thick
+- A slow off-ramp. If you do not like week three, week four is still partly spoken for
+- No completed long safety study
+
+DAC is not automatically the better CJC. It is the longer one.
 
 ## Dose / Route / Timing / Duration
 
@@ -258,49 +252,7 @@ Those say *hold or drop the week*, not “push through.”
 
 Judging it like HGH. Mixing it with the no-DAC story. Citing the 2- to 10-fold rise as if that were IGF-1. It was GH. Chasing milligrams because the shot was quiet.
 
-## How Do I Know It’s Working?
-
-Separate two reads.
-
-**Axis moved:** IGF-1 went up, or GH-climate signs showed up (including the ones you did not want — fluid, tight hands). That proves the work order landed. It does not prove you got the job.
-
-**Objective achieved:** the reason you bought it moved — cheaper recovery, more useful sleep, composition in the direction you named — without buying it with swelling and worse glucose.
-
-Pick two or three real things before week one.
-
-**Clearly better:** the objective moved and the climate is tolerated. Stay.
-
-**A number moved, the body did not:** climate without a job.
-
-**Nothing:** factory may not have been the bottleneck, or you wanted the short analog.
-
-**Worse function:** hold. Do not call fluid, tunnel hands, or new headaches “detox.”
-
-## When to increase
-
-Increase only if:
-
-- a real objective is still unmet
-- this week is tolerated
-- the axis looks responsive
-- more floor is a plausible answer to what is left
-
-Do not increase because:
-
-- the calendar said so
-- the injection was not felt
-- another person uses more
-- IGF-1 is not “high enough” with no job attached to that number
-
-## When to hold or stop
-
-**Hold or drop the amount** when the climate is too much: edema, carpal-tunnel hands, headaches that track the shot, glucose drifting, apnea worse, injection sites that will not settle, IGF-1 higher than you meant.
-
-**Stop because it is the wrong tool** when the gland cannot answer, the job was never this job, or nothing moved after a fair look.
-
-**Do not start — or stop and get help —** if there is active cancer or an unfinished cancer workup, known pituitary disease that has not been sorted, pregnancy, or a heart story you cannot ignore. See the caution list below. The old Phase II death is not a personal stopwatch. It is why this file does not pretend long safety was finished.
-
-## Who should be cautious or sit this out
+### Who should be cautious or sit this out
 
 Do not invent a red-label sheet this analog never earned. Borrow the *class* caution from GH/IGF-1 biology and from approved GH and GHRH products, and say that is what it is.
 
@@ -329,7 +281,49 @@ GH output falls with age. That is why people look here. It does not make every o
 - Tesamorelin — same door family, different job
 - No-DAC CJC — same door, different clock
 
-## What Happens When You Stop
+## How Do I Know It’s Working?
+
+Separate two reads.
+
+**Axis moved:** IGF-1 went up, or GH-climate signs showed up (including the ones you did not want — fluid, tight hands). That proves the work order landed. It does not prove you got the job.
+
+**Objective achieved:** the reason you bought it moved — cheaper recovery, more useful sleep, composition in the direction you named — without buying it with swelling and worse glucose.
+
+Pick two or three real things before week one.
+
+**Clearly better:** the objective moved and the climate is tolerated. Stay.
+
+**A number moved, the body did not:** climate without a job.
+
+**Nothing:** factory may not have been the bottleneck, or you wanted the short analog.
+
+**Worse function:** hold. Do not call fluid, tunnel hands, or new headaches “detox.”
+
+### When to increase
+
+Increase only if:
+
+- a real objective is still unmet
+- this week is tolerated
+- the axis looks responsive
+- more floor is a plausible answer to what is left
+
+Do not increase because:
+
+- the calendar said so
+- the injection was not felt
+- another person uses more
+- IGF-1 is not “high enough” with no job attached to that number
+
+### When to hold or stop
+
+**Hold or drop the amount** when the climate is too much: edema, carpal-tunnel hands, headaches that track the shot, glucose drifting, apnea worse, injection sites that will not settle, IGF-1 higher than you meant.
+
+**Stop because it is the wrong tool** when the gland cannot answer, the job was never this job, or nothing moved after a fair look.
+
+**Do not start — or stop and get help —** if there is active cancer or an unfinished cancer workup, known pituitary disease that has not been sorted, pregnancy, or a heart story you cannot ignore. See the caution list in What to Expect + Watch For above. The old Phase II death is not a personal stopwatch. It is why this file does not pretend long safety was finished.
+
+### What Happens When You Stop
 
 There is no dedicated human “come off DAC” trial. What we can say without making one up:
 
@@ -342,25 +336,6 @@ No published DAC withdrawal syndrome. If you feel wrecked two days after the las
 Body changes that needed the climate will tend to fade unless the rest of the house holds them. The GHRH analog that actually has fat data gives most of that fat back after it is stopped. Do not count on a souvenir.
 
 What you are supposed to learn in the off stretch is in the break section above. Restart is a job decision, not a date on the fridge.
-
-## Trade-offs
-
-**What you buy**
-
-- Days of GHRH drive through the gland, not a bypass
-- A higher GH floor with waves still allowed
-- An IGF-1 climate that can overlap week to week
-- A recovery / composition / tissue-turnover *environment* — if that was actually the bottleneck
-
-**What it costs**
-
-- A growth climate you cannot shut off at breakfast
-- Less pulse control than the short analog
-- Fluid, tunnel hands, headaches, glucose drift when the climate is too thick
-- A slow off-ramp. If you do not like week three, week four is still partly spoken for
-- No completed long safety study
-
-DAC is not automatically the better CJC. It is the longer one.
 
 ## What to Take Alongside
 
@@ -470,6 +445,7 @@ Construction model:
 - **NAD+:** rechargeable power carrier — the energy-carrier/redox currency the repair and maintenance crews draw on and recharge.
 - **5-Amino-1MQ:** supply-chain guard — plugs a skim inside fat cells.
 - **CJC-1295 with DAC:** long work order — albumin-tethered GHRH analog that raises the GH floor for days without replacing the hormone.
+- **CJC-1295 (no DAC):** one-night work order — the tetrasubstituted GHRH fragment without the albumin tether; asks for a single overnight wave and clears before morning.
 
 ## Identity and evidence boundary
 

@@ -5,31 +5,6 @@ This file is **Modified GRF 1-29** sold as “CJC-1295 no DAC.” It is not the 
 
 ---
 
-## Front Card
-
-**CJC-1295 (no DAC)**  
-**One wave tonight. Gone before morning.**
-
-Growth hormone is your overnight repair messenger. A gland in your head — the pituitary — releases it in waves, mostly while you are in deep sleep. That is one of the ways the body repairs tissue overnight.
-
-This vial is not that messenger. It is a short note asking the gland for one wave tonight. It is gone before morning. It is not the weekly CJC. That one is still in you days later.
-
-Use it when you want that wave on the night — sleep, and how hard tomorrow feels. The gland has to work. This is not “I want to feel younger.”
-
-**How people use it:** Start low, at night, under the skin. Around 100 micrograms is a common starting point, not a target. A human study did not pick this number. If nothing changes after a fair stretch, do not just increase the dosage.
-
-**When in the day:** Night. Not on a full stomach. Finish eating a couple of hours before you sleep. Going to bed stuffed is worse for recovery than the hour you pick.
-
-**How long:** Give it weeks, not one night. Then stop for a bit and see what held. That pause is so you can read it — not because a calendar proved the gland wore out.
-
-**What you might notice:** Not a buzz. Sleep, and how hard the next day feels, if anything. Clothes later is something people may watch — not a promised result. A blood test only if you already use that number. A higher number means a note landed. It does not mean you got the night back.
-
-**When to stop:** New swelling. Hands that go numb at night. Headaches that follow the shot. Blood sugar drifting the wrong way. Snoring getting worse. Or a cancer conversation you should not ignore.
-
-**The catch:** This is not a smaller weekly shot. It is not Ipamorelin. If the night was loud — late food, no real sleep — more of this will not fix the night.
-
----
-
 ### TIER 1 — Conversation-ready (renders above the Technical Deep Dive divider)
 
 ## What Happens After You Take It
@@ -76,7 +51,7 @@ So: gentler-sounding by design, yes. Proven gentler in a safety trial, no. Do no
 
 ---
 
-## Who this is for
+### Who this is for
 
 Sleep, food, and training are already honest. You want the repair wave **on the night** — sleep, and how hard tomorrow feels — and you want to be able to skip a night if you need to.
 
@@ -88,7 +63,7 @@ Not for someone who wanted leftover signal sitting around all week. That is the 
 
 ---
 
-## Why this, not the weekly CJC
+### Why this, not the weekly CJC
 
 Same door. Different clock.
 
@@ -171,7 +146,7 @@ People may track sleep and how hard the next day feels. Clothes later is optiona
 
 ---
 
-## What Happens When You Stop
+### What Happens When You Stop
 
 Gone before morning. There is no week-long leftover to wait out — that is the weekly bottle.
 
