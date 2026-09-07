@@ -24,7 +24,8 @@
     "nad": "NAD+_Compound_Research.md",
     "5-amino-1mq": "5-Amino-1MQ_Compound_Research.md",
     "cjc-1295-dac": "CJC-1295_DAC_Compound_Research.md",
-    "cjc-1295-no-dac": "CJC-1295_no_DAC_Compound_Research.md"
+    "cjc-1295-no-dac": "CJC-1295_no_DAC_Compound_Research.md",
+    "ipamorelin": "Ipamorelin_Compound_Research.md"
   };
   const techCache = new Map();
   const inlineMd = t => { let s = escapeHtml(t); s = s.replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>"); s = s.replace(/\*(.+?)\*/g, "<em>$1</em>"); s = s.replace(/`(.+?)`/g, "<code>$1</code>"); return s };
@@ -343,7 +344,22 @@
     ]
   ];
 
-  const CHIP_REGISTRY = { "tb-500": TB500_CHIPS, "bpc-157": BPC157_CHIPS, "ghk-cu": GHKCU_CHIPS, "mots-c": MOTSC_CHIPS, "retatrutide": RETATRUTIDE_CHIPS, "ara-290": ARA290_CHIPS, "kpv": KPV_CHIPS, "ss-31": SS31_CHIPS, "nad": NAD_CHIPS, "5-amino-1mq": AMINO1MQ_CHIPS, "cjc-1295-dac": CJC1295DAC_CHIPS, "cjc-1295-no-dac": CJC1295NODAC_CHIPS };
+  const IPAMORELIN_CHIPS = [
+    [
+      { key: "dose", label: "Dose", value: "Start low", detail: `<p>Start low under the skin. People pass around common amounts — habit, not a study that picked the everyday dose for you.</p><p>More is not automatically better. Extra daytime shots are more short rings, not a better night. If nothing changes after a fair stretch, do not just increase the dosage.</p>` },
+      { key: "timing", label: "Timing", value: "Night. Not stuffed.", detail: `<p>Night. Not on a full stomach.</p><p>Finish eating a couple of hours before you sleep. Wiped out or stuffed — the doorbell can click and nothing rings through.</p><p>If another short night note is in the same syringe, both are why you are standing there at bedtime.</p>` },
+      { key: "cycling", label: "Duration", value: "Weeks, then a pause", detail: `<p>Give it weeks, not one night. Then stop for a bit and see what held.</p><p>People quote twelve weeks on and four weeks off — or five on, two off. That calendar is habit. Nobody proved this door wore out on a fridge date.</p><p>The pause is so you can read it.</p>` },
+      { key: "know", label: "How you'll know", value: "Sleep and tomorrow, not a buzz", detail: `<p>This shot does not buzz. A lot of nights will feel like nothing.</p><p>Watch sleep. Watch how hard the next day feels.</p><p>Do not judge it by a weekly blood number copied from a drug that leaves the faucet on. A blood test only if you already use that number — and only as “did a note land,” not as a trophy.</p><p>If another night note is in the same draw, you are judging the pair, not this bottle alone.</p><p>Pick two or three real things before you start. Judge the stretch, not the morning after the first shot.</p>` }
+    ],
+    [
+      { key: "watch", label: "Watch for", value: "Swelling, hunger, blood sugar", detail: `<p>New swelling. Rings getting tight. Hands that go numb at night.</p><p>Headaches that follow the shot. Blood sugar drifting the wrong way. Snoring getting worse.</p><p>Appetite jumping or the waist going the wrong way — that is a clue to stop and rethink, not to ring harder.</p><p>Redness at the shot is common and is not “it’s working.”</p><p>If cancer is already being treated or watched, pause and talk to a doctor before adding growth bumps. That is a pause, not a “this causes cancer” claim.</p>` },
+      { key: "support", label: "Take alongside", value: "No magic vitamin", detail: `<p>There is no vitamin that makes this doorbell work.</p><p>Sleep that actually happens. Finish eating a couple of hours before bed. Food and training still have to be honest.</p><p>Do not build a pill stack to justify this vial.</p>` },
+      { key: "pairs", label: "Pairs with", value: "CJC — other door", detail: `<p><b>CJC</b> (nightly or weekly) is a different door on the same gland. That pairing is a coherent idea — a partner that can help the house get ready to answer. A human trial of this exact pair was not found.</p><p>If you draw the short CJC with this one at night, both short notes are why you are standing there at bedtime.</p><p><b>Growth hormone in a syringe</b> is the finished messenger. Do not pour it on top — the house is already flooded and you cannot read the doorbell.</p><p><b>Tesamorelin</b> is a related short note with a different job — deep belly fat. Not two vitamins.</p>` },
+      { key: "catch", label: "The catch", value: "Stress protection, not get-lean", detail: `<p>In animals, the richer story under real physical stress — illness, injury, hard training — is holding onto muscle and bone instead of burning through them.</p><p>Still animal data. Not a proven human rebuild drug.</p><p>Think stress protection — not get-lean peptide. This is a short doorbell, not a fat burner.</p>` }
+    ]
+  ];
+
+  const CHIP_REGISTRY = { "tb-500": TB500_CHIPS, "bpc-157": BPC157_CHIPS, "ghk-cu": GHKCU_CHIPS, "mots-c": MOTSC_CHIPS, "retatrutide": RETATRUTIDE_CHIPS, "ara-290": ARA290_CHIPS, "kpv": KPV_CHIPS, "ss-31": SS31_CHIPS, "nad": NAD_CHIPS, "5-amino-1mq": AMINO1MQ_CHIPS, "cjc-1295-dac": CJC1295DAC_CHIPS, "cjc-1295-no-dac": CJC1295NODAC_CHIPS, "ipamorelin": IPAMORELIN_CHIPS };
 
   const goDeeperTierHtml = p => TECH_DOC_NAMES[p.id]
     ? `<button type="button" class="go-deeper-btn" data-go-deeper="${p.id}" aria-expanded="${state.open.has(p.id)}"><span>${state.open.has(p.id) ? "Close technical layer" : "Go deeper — the technical layer"}</span></button><div class="tech-tier ${state.open.has(p.id) ? "open" : ""}" id="techtier-${p.id}"><div class="tech-inner" id="techinner-${p.id}"></div></div>`
