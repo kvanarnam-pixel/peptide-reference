@@ -57,7 +57,7 @@ Not for stacking on top of growth hormone in a syringe. The house is already flo
 
 ### Dose
 
-Start low under the skin. People pass around common amounts — habit, not a study that picked the everyday dose for you.
+Start low under the skin. About 100 micrograms is a common starting amount — habit, not a study that picked the everyday dose for you. People also use more.
 
 More is not automatically better. If nothing changes after a fair stretch, do not just increase the dosage.
 
@@ -67,11 +67,11 @@ Under the skin. Night is the usual picture. Extra daytime shots are more waves, 
 
 ### Timing
 
-Night. Not on a full stomach. Finish eating a couple of hours before you sleep. Wiped out or stuffed — the doorbell can click and nothing rings through.
+Night. Not on a full stomach. Finish eating a couple of hours before you sleep. Wiped out or stuffed — you can take the shot and not get much from it.
 
 ### Duration
 
-Give it weeks, then pause and see what held. Twelve-on / four-off — or five-on / two-off — is habit. The pause is so you can read it.
+Give it weeks, then pause and see what held. Twelve-on / four-off — or five-on / two-off — is habit, not proof you have to stop on that exact day. The pause is so you can read it.
 
 ---
 
